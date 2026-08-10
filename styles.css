@@ -720,3 +720,116 @@ nav {
         padding: 80px 7%;
     }
 }
+/* =========================================
+   DIGITAL UKHTI - SISTEMA VISUAL
+   ========================================= */
+
+.brand-showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 8% 110px;
+}
+
+.brand-showcase-title {
+    max-width: 750px;
+    margin-bottom: 55px;
+}
+
+.brand-showcase-title h2 {
+    color: var(--negro);
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 320px;
+}
+
+.color-block {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.color-block span {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.color-block p {
+    font-size: 0.85rem;
+}
+
+.color-black {
+    background: #1C1A18;
+    color: #FFFFFF;
+}
+
+.color-ivory {
+    background: #FAF8F4;
+    color: #1C1A18;
+    border: 1px solid #eee8df;
+}
+
+.color-beige {
+    background: #E7D5C1;
+    color: #1C1A18;
+}
+
+.color-gold {
+    background: #A98545;
+    color: #FFFFFF;
+}
+
+.brand-wordmark {
+    background: #1C1A18;
+    color: #FFFFFF;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.brand-wordmark p {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: 8px;
+    margin-bottom: 18px;
+}
+
+.brand-wordmark span {
+    color: #A98545;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 800px) {
+
+    .brand-showcase {
+        padding: 30px 7% 80px;
+    }
+
+    .color-palette {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .color-block {
+        min-height: 200px;
+    }
+
+    .brand-wordmark {
+        min-height: 260px;
+    }
+
+    .brand-wordmark p {
+        letter-spacing: 4px;
+    }
+}
