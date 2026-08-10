@@ -615,8 +615,13 @@ nav {
 
 .case-info-card {
     border: 1px solid #ddd5c8;
-    padding: 40px 30px;
+    padding: 48px 34px;
     background: var(--marfil);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.case-info-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--dorado);
 }
 
 .case-info-card span {
@@ -629,7 +634,7 @@ nav {
 
 .case-info-card h3 {
     color: var(--negro);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-weight: 500;
 }
