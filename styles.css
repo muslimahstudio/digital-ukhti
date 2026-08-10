@@ -1199,8 +1199,8 @@ border-top: 1px solid #ddd5c8;
 .contact-intro {
     color: #555;
     line-height: 1.8;
-    max-width: 650px;
-    margin-left: 0;
+    max-width: 850px;
+    padding-right: 200px;
     margin-bottom: 55px;
 }
 
