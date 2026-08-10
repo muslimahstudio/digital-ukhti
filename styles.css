@@ -1057,3 +1057,35 @@ nav {
         min-height: 330px;
     }
 }
+/* AJUSTE MÓVIL - EXPERIENCIA DIGITAL */
+
+@media (max-width: 800px) {
+
+    .web-showcase {
+        padding: 70px 7%;
+        overflow: hidden;
+    }
+
+    .web-browser {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .web-features {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .web-features > div {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ded8cf;
+        padding: 30px 20px;
+    }
+
+    .web-features > div:last-child {
+        border-bottom: none;
+    }
+}
