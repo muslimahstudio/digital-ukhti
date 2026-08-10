@@ -86,8 +86,7 @@
   <form class="contact-form"
       action="https://formspree.io/f/mrpzprnq"
       method="POST">
-      <input type="hidden" name="_next" value="https://muslimahstudio.github.io/digital-ukhti/gracias.html">
-
+    
         <div>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -121,6 +120,28 @@
 
 </section>
     </main>
+<script>
+const form = document.querySelector(".contact-form");
 
+form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    if (response.ok) {
+        window.location.href = "gracias.html";
+    } else {
+        alert("Ha ocurrido un error al enviar tu mensaje. Inténtalo de nuevo.");
+    }
+});
+</script>
 </body>
 </html>
