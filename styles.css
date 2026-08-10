@@ -1163,3 +1163,109 @@ border-top: 1px solid #ddd5c8;
         border-bottom: none;
     }
 }
+/* =========================
+   CONTACTO - DIGITAL UKHTI
+========================= */
+
+.contact-section {
+    background: var(--marfil);
+    padding: 120px 8%;
+    border-top: 1px solid #ddd5c8;
+}
+
+.contact-section > * {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-eyebrow {
+    color: var(--dorado-oscuro);
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--negro);
+    margin-bottom: 25px;
+}
+
+.contact-intro {
+    color: #555;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 55px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 30px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--negro);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #d8d1c7;
+    background: transparent;
+    padding: 16px 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: var(--negro);
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: var(--dorado);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    justify-self: start;
+    background: var(--negro);
+    color: var(--blanco);
+    border: none;
+    padding: 18px 30px;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: var(--dorado);
+    color: var(--negro);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 80px 7%;
+    }
+
+    .contact-section h2 {
+        font-size: clamp(2.5rem, 12vw, 3.8rem);
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
