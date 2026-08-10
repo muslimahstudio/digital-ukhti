@@ -1089,3 +1089,71 @@ nav {
         border-bottom: none;
     }
 }
+/* =========================================
+   CORRECCIÓN FINAL MÓVIL - EXPERIENCIA DIGITAL
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .web-showcase {
+        width: 100%;
+        max-width: 100%;
+        padding: 60px 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .web-showcase-header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .web-browser {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .browser-screen {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .browser-screen img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .web-features {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 35px 0 0 !important;
+        box-sizing: border-box;
+    }
+
+    .web-features > div {
+        display: block;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        padding: 30px 10px;
+        border-right: none !important;
+        border-bottom: 1px solid #ded8cf;
+    }
+
+    .web-features > div:last-child {
+        border-bottom: none;
+    }
+}
