@@ -745,7 +745,9 @@ nav {
 .color-palette {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    min-height: 320px;
+    min-height: 360px;
+    margin-top: 40px;
+    border: 1px solid #e7e1d8;
 }
 
 .color-block {
@@ -753,8 +755,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+   transition: transform 0.3s ease;
 }
-
+.color-block:hover {
+    transform: translateY(-6px);
+}
 .color-block span {
     font-size: 0.7rem;
     letter-spacing: 2px;
