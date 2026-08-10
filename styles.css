@@ -1189,7 +1189,7 @@ border-top: 1px solid #ddd5c8;
 
 .contact-section h2 {
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(3rem, 5vw, 5rem);
+   font-size: clamp(3rem, 5vw, 4.3rem);
     font-weight: 500;
     line-height: 1;
     color: var(--negro);
