@@ -860,3 +860,96 @@ nav {
         padding: 8px;
     }
 }
+/* =========================================
+   TIPOGRAFÍA - DIGITAL UKHTI
+   ========================================= */
+
+.typography-showcase {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 110px 8%;
+}
+
+.typography-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.typography-heading h2 {
+    color: var(--negro);
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.typography-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.type-example {
+    border: 1px solid #e3ddd4;
+    padding: 42px 34px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.type-example > span {
+    color: var(--dorado-oscuro);
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    margin-bottom: auto;
+}
+
+.type-aa {
+    font-size: clamp(5rem, 9vw, 8rem);
+    line-height: 1;
+    margin-bottom: 28px;
+}
+
+.type-example h3 {
+    color: var(--negro);
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.type-example p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.type-serif .type-aa,
+.type-serif h3 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.type-sans .type-aa,
+.type-sans h3 {
+    font-family: "Inter", sans-serif;
+}
+
+.type-serif {
+    background: var(--marfil);
+}
+
+.type-sans {
+    background: var(--beige);
+}
+
+@media (max-width: 800px) {
+    .typography-showcase {
+        padding: 80px 7%;
+    }
+
+    .typography-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .type-example {
+        min-height: 330px;
+    }
+}
