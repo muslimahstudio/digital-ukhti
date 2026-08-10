@@ -670,16 +670,17 @@ nav {
 /* RESULTADO */
 
 .case-result {
-    background: var(--beige);
-    padding: 120px 8%;
-    text-align: center;
-}
+  background: var(--beige);
+padding: 140px 8%;
+text-align: center;
+border-top: 1px solid #ddd5c8;
 
 .case-result h2 {
     max-width: 850px;
     margin: 0 auto 25px;
     color: var(--negro);
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
+   font-family: "Cormorant Garamond", serif;
+   font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 500;
     line-height: 1.15;
 }
