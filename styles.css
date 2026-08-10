@@ -1266,6 +1266,10 @@ border-top: 1px solid #ddd5c8;
         font-size: clamp(2.5rem, 12vw, 3.8rem);
     }
 
+    .contact-intro {
+        padding-right: 0;
+    }
+
     .contact-form button {
         width: 100%;
     }
