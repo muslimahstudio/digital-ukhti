@@ -1163,3 +1163,8 @@ border-top: 1px solid #ddd5c8;
         border-bottom: none;
     }
 }
+/* TÍTULO RESULTADO - TIPOGRAFÍA */
+.case-result h2 {
+    font-family: "Cormorant Garamond", serif !important;
+    font-weight: 500 !important;
+}
