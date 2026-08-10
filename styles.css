@@ -837,6 +837,9 @@ nav {
     .brand-wordmark p {
         letter-spacing: 4px;
     }
+   .web-features {
+    grid-template-columns: 1fr;
+}
 }
 /* CAPTURA WEB - CASO DE ESTUDIO */
 
@@ -939,7 +942,108 @@ nav {
 .type-sans {
     background: var(--beige);
 }
+/* ========================================
+   EXPERIENCIA DIGITAL
+======================================== */
 
+.web-showcase {
+    padding: 100px 7%;
+    background: #FAF8F4;
+}
+
+.web-showcase-header {
+    max-width: 850px;
+    margin-bottom: 55px;
+}
+
+.web-showcase-header h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 15px;
+    color: #1C1A18;
+}
+
+.web-browser {
+    max-width: 1150px;
+    margin: 0 auto;
+    border: 1px solid #ded8cf;
+    background: #ffffff;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
+
+.browser-bar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    border-bottom: 1px solid #e7e1d8;
+    background: #f5f1eb;
+}
+
+.browser-dots {
+    display: flex;
+    gap: 7px;
+}
+
+.browser-dots span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #A98545;
+}
+
+.browser-address {
+    margin: 0 auto;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #77716a;
+}
+
+.browser-screen img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.web-features {
+    max-width: 1150px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ded8cf;
+}
+
+.web-features > div {
+    padding: 35px 30px;
+    border-right: 1px solid #ded8cf;
+}
+
+.web-features > div:last-child {
+    border-right: none;
+}
+
+.web-features span {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #A98545;
+    margin-bottom: 20px;
+}
+
+.web-features h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.web-features p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #68625c;
+}
 @media (max-width: 800px) {
     .typography-showcase {
         padding: 80px 7%;
