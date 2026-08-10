@@ -833,3 +833,25 @@ nav {
         letter-spacing: 4px;
     }
 }
+/* CAPTURA WEB - CASO DE ESTUDIO */
+
+.case-website-preview {
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #e5e0d8;
+    background: #f7f4ef;
+    padding: 18px;
+}
+
+.case-website-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .case-website-preview {
+        margin-top: 45px;
+        padding: 8px;
+    }
+}
