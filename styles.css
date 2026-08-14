@@ -1721,3 +1721,17 @@ body > footer {
     --prun-marron: #4A3A30;
     --prun-oscuro: #1F1E1A;
 }
+/* LA PRUN — DIRECCIÓN VISUAL */
+
+.la-prun-page .case-highlight {
+    background: var(--prun-crema);
+    color: var(--prun-oscuro);
+}
+
+.la-prun-page .case-highlight .portfolio-eyebrow {
+    color: var(--prun-terracota);
+}
+
+.la-prun-page .case-highlight h2 {
+    color: var(--prun-marron);
+}
