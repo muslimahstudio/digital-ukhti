@@ -1701,3 +1701,10 @@ body > footer {
     }
 
 }
+@media (min-width: 769px) {
+    .guides-grid {
+        max-width: 620px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
