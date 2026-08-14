@@ -72,6 +72,9 @@ nav {
     justify-content: center;
     gap: 28px;
 }
+.menu-toggle {
+    display: none;
+}
 
 .menu a {
     font-family: 'Montserrat', sans-serif;
