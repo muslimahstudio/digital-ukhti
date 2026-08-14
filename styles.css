@@ -1706,5 +1706,6 @@ body > footer {
         max-width: 620px;
         margin-left: 0;
         margin-right: auto;
+     margin-top: 45px;
     }
 }
