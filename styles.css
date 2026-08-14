@@ -1664,20 +1664,20 @@ border-top: 1px solid #ddd5c8;
     }
 }
 /* Footer página de guías */
-.guides-section + footer {
+body > footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
     border-top: 1px solid #e5e0d7;
 }
 
-.guides-section + footer p {
+body > footer {
     margin: 0;
     font-size: 14px;
 }
 
 @media (max-width: 768px) {
-    .guides-section + footer {
+   body > footer {
         padding: 28px 24px 36px;
     }
 }
