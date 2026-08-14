@@ -1352,8 +1352,12 @@ border-top: 1px solid #ddd5c8;
         margin-bottom: 30px;
     }
 
-    .start-section .button-primary {
-        width: 100%;
-        text-align: center;
-    }
+  .start-section .button-primary {
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
 }
+    }
+
