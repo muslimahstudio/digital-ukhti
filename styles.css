@@ -1709,3 +1709,15 @@ body > footer {
      margin-top: 45px;
     }
 }
+/* =========================================
+   LA PRUN — IDENTIDAD VISUAL
+   ========================================= */
+
+.la-prun-page {
+    --prun-crema: #F4EFE6;
+    --prun-beige: #D8C7B3;
+    --prun-terracota: #A66A4A;
+    --prun-verde: #6F7654;
+    --prun-marron: #4A3A30;
+    --prun-oscuro: #1F1E1A;
+}
