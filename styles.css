@@ -1415,6 +1415,17 @@ border-top: 1px solid #ddd5c8;
         padding: 26px 24px;
        min-height: auto;
     }
+   .resource-card span {
+    margin-bottom: 14px;
+}
+
+.resource-card h3 {
+    margin-bottom: 14px;
+}
+
+.resource-card p {
+    margin-bottom: 0;
+}
 }
 .resources-section h2 {
     font-family: 'Cormorant Garamond', serif;
