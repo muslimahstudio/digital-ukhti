@@ -1677,7 +1677,15 @@ body > footer {
 }
 
 @media (max-width: 768px) {
-   body > footer {
-        padding: 28px 24px 36px;
+    body > footer {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 28px 24px 36px !important;
+        box-sizing: border-box;
+    }
+
+    body > footer p {
+        margin: 0 !important;
     }
 }
