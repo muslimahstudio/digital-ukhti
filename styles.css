@@ -1360,4 +1360,58 @@ border-top: 1px solid #ddd5c8;
     padding-right: 28px;
 }
     }
+/* =========================
+   RECURSOS
+========================= */
 
+.resources-section {
+    padding: 110px 7%;
+    background: #f8f6f1;
+}
+
+.resources-header {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.resource-card {
+    background: #ffffff;
+    border: 1px solid #e4dfd5;
+    padding: 38px 32px;
+}
+
+.resource-card h3 {
+    margin-bottom: 16px;
+}
+
+.resource-card p {
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+/* RECURSOS - MÓVIL */
+
+@media (max-width: 768px) {
+
+    .resources-section {
+        padding: 70px 7%;
+    }
+
+    .resources-header {
+        margin-bottom: 35px;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .resource-card {
+        padding: 30px 24px;
+    }
+}
