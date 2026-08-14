@@ -1413,6 +1413,7 @@ border-top: 1px solid #ddd5c8;
 
     .resource-card {
         padding: 30px 24px;
+       min-height: auto;
     }
 }
 .resources-section h2 {
