@@ -1653,3 +1653,13 @@ border-top: 1px solid #ddd5c8;
         font-size: 34px;
     }
 }
+@media (min-width: 769px) {
+    .guides-grid {
+        max-width: 620px;
+        margin: 0 auto;
+    }
+
+    .guide-card {
+        width: 100%;
+    }
+}
