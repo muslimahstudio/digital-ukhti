@@ -1415,3 +1415,40 @@ border-top: 1px solid #ddd5c8;
         padding: 30px 24px;
     }
 }
+.resources-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(42px, 4.8vw, 62px);
+    font-weight: 500;
+    line-height: 1.08;
+    max-width: 760px;
+    margin-bottom: 20px;
+}
+
+.resources-intro {
+    max-width: 720px;
+    line-height: 1.8;
+    margin-bottom: 55px;
+}
+
+.resource-card {
+    min-height: 260px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.resource-card span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--dorado);
+    margin-bottom: 22px;
+}
+
+.resource-card h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--dorado);
+}
