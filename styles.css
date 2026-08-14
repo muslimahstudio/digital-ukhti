@@ -1689,3 +1689,15 @@ body > footer {
         margin: 0 !important;
     }
 }
+/* Alineación página Guías - escritorio */
+@media (min-width: 769px) {
+
+    .guides-hero {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+    }
+
+}
