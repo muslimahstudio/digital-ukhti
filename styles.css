@@ -1781,3 +1781,19 @@ body > footer {
         object-fit: cover;
     }
 }
+/* AJUSTE FINAL FOTO LA PRUN EN MÓVIL */
+@media (max-width: 768px) {
+
+    .la-prun-page .la-prun-hero-image {
+        width: 76% !important;
+        max-width: 330px !important;
+        margin: 22px auto 30px !important;
+    }
+
+    .la-prun-page .la-prun-hero-image img {
+        width: 100% !important;
+        height: 150px !important;
+        object-fit: cover !important;
+    }
+
+}
