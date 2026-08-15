@@ -1790,10 +1790,14 @@ body > footer {
         margin: 22px auto 30px !important;
     }
 
-    .la-prun-page .la-prun-hero-image img {
+      .la-prun-page .la-prun-hero-image img {
         width: 100% !important;
         height: 150px !important;
         object-fit: cover !important;
+    }
+
+    .la-prun-page .case-hero {
+        padding-top: 55px !important;
     }
 
 }
