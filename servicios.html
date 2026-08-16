@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicios | Digital Ukhti</title>
+
+    <meta name="description" content="Servicios digitales para emprendedores y pequeños negocios: diseño web, estudios de mercado, análisis digital y estrategia.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">
+            DIGITAL UKHTI
+        </a>
+
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#recursos">Recursos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">Sobre Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <a href="index.html#contacto" class="button-header">
+            Empezar
+        </a>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="services-page">
+
+        <p class="section-label">SERVICIOS DIGITALES</p>
+
+        <h1>
+            Soluciones para hacer crecer<br>
+            tu proyecto.
+        </h1>
+
+        <p class="services-intro">
+            Servicios pensados para emprendedores, profesionales y pequeños
+            negocios que quieren construir, mejorar y hacer crecer su presencia digital.
+        </p>
+
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <span>01</span>
+
+                <h2>Diseño y desarrollo web</h2>
+
+                <p>
+                    Páginas web profesionales, claras y adaptadas a tu negocio,
+                    diseñadas para ofrecer una presencia digital sólida.
+                </p>
+
+                <a href="portfolio.html">Ver proyectos →</a>
+            </article>
+
+
+            <article class="service-card">
+                <span>02</span>
+
+                <h2>Estudio de mercado y competencia</h2>
+
+                <p>
+                    Analizamos tu mercado, tus principales competidores,
+                    precios, posicionamiento y oportunidades para ayudarte
+                    a tomar decisiones con más información.
+                </p>
+
+                <a href="estudio-de-mercado.html">Ver servicio →</a>
+            </article>
+
+
+            <article class="service-card">
+                <span>03</span>
+
+                <h2>Análisis de presencia digital</h2>
+
+                <p>
+                    Revisamos tu página web, posicionamiento, redes y presencia
+                    online para detectar puntos de mejora y nuevas oportunidades.
+                </p>
+
+                <a href="index.html#contacto">Solicitar información →</a>
+            </article>
+
+
+            <article class="service-card">
+                <span>04</span>
+
+                <h2>SEO y optimización web</h2>
+
+                <p>
+                    Mejoramos la estructura, contenido y optimización básica
+                    de tu web para facilitar que tus clientes puedan encontrarte.
+                </p>
+
+                <a href="index.html#contacto">Solicitar información →</a>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="services-cta">
+
+        <p class="section-label">TU PROYECTO</p>
+
+        <h2>¿No sabes qué servicio necesitas?</h2>
+
+        <p>
+            Cuéntame tu proyecto y estudiaremos qué solución se adapta mejor
+            a tus objetivos.
+        </p>
+
+        <a href="index.html#contacto" class="button-primary">
+            Cuéntame tu proyecto
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    if (menuToggle && menu) {
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    }
+</script>
+
+</body>
+</html>
