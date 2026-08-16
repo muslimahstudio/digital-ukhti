@@ -2316,3 +2316,339 @@ body > footer {
         padding-left: 22px;
     }
 }
+/* ========================================
+   ANÁLISIS DE PRESENCIA DIGITAL
+======================================== */
+
+.digital-hero,
+.digital-section,
+.digital-deliverable,
+.digital-example,
+.digital-process,
+.digital-packages,
+.digital-cta {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.digital-hero {
+    padding: 110px 40px 100px;
+}
+
+.digital-hero .section-label,
+.digital-section .section-label,
+.digital-deliverable .section-label,
+.digital-example .section-label,
+.digital-process .section-label,
+.digital-packages .section-label,
+.digital-cta .section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9c7a3c;
+    margin-bottom: 24px;
+}
+
+.digital-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.05;
+    font-weight: 400;
+    max-width: 950px;
+    margin-bottom: 30px;
+}
+
+.digital-intro {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 38px;
+}
+
+
+/* QUÉ ANALIZAMOS */
+
+.digital-section {
+    padding: 90px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.digital-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.digital-heading h2,
+.digital-deliverable h2,
+.digital-example h2,
+.digital-process h2,
+.digital-packages h2,
+.digital-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.digital-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.digital-card {
+    padding: 38px 32px;
+    min-height: 260px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+.digital-card span,
+.digital-process-grid span {
+    display: block;
+    color: #9c7a3c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.digital-card h3,
+.digital-process-grid h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.digital-card p,
+.digital-process-grid p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* QUÉ RECIBES */
+
+.digital-deliverable {
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    background: #f3efe7;
+}
+
+.digital-deliverable-text p:last-child {
+    margin-top: 25px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+.digital-list {
+    border-top: 1px solid #cfc7b8;
+}
+
+.digital-list div {
+    padding: 17px 0;
+    border-bottom: 1px solid #cfc7b8;
+    font-size: 15px;
+}
+
+
+/* EJEMPLO */
+
+.digital-example {
+    padding: 100px 40px;
+}
+
+.digital-example-box {
+    margin-top: 45px;
+    max-width: 850px;
+    border-left: 2px solid #9c7a3c;
+    padding: 10px 0 10px 35px;
+}
+
+.digital-example-box p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+
+/* PROCESO */
+
+.digital-process {
+    padding: 100px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.digital-process > h2 {
+    margin-bottom: 55px;
+}
+
+.digital-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.digital-process-grid > div {
+    padding: 35px 28px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+
+/* PAQUETES */
+
+.digital-packages {
+    padding: 100px 40px;
+}
+
+.digital-packages > h2 {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.digital-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.digital-package {
+    border: 1px solid #ddd7cc;
+    padding: 38px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.digital-package.featured {
+    background: #f3efe7;
+    border-color: #c5b184;
+}
+
+.digital-package h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.digital-package ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px;
+}
+
+.digital-package li {
+    padding: 11px 0;
+    border-bottom: 1px solid #e1ddd5;
+    color: #555;
+    line-height: 1.5;
+}
+
+.digital-package a {
+    margin-top: auto;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.digital-package a:hover {
+    color: #9c7a3c;
+}
+
+
+/* CTA */
+
+.digital-cta {
+    margin-bottom: 100px;
+    padding: 90px 40px;
+    background: #f3efe7;
+    text-align: center;
+}
+
+.digital-cta h2 {
+    margin-bottom: 25px;
+}
+
+.digital-cta > p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .digital-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .digital-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .digital-packages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .digital-deliverable {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .digital-hero,
+    .digital-section,
+    .digital-deliverable,
+    .digital-example,
+    .digital-process,
+    .digital-packages {
+        padding: 70px 22px;
+    }
+
+    .digital-hero h1 {
+        font-size: 44px;
+    }
+
+    .digital-intro {
+        font-size: 16px;
+    }
+
+    .digital-grid,
+    .digital-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .digital-card {
+        min-height: auto;
+    }
+
+    .digital-cta {
+        margin: 20px 20px 70px;
+        padding: 65px 25px;
+    }
+
+    .digital-example-box {
+        padding-left: 22px;
+    }
+}
