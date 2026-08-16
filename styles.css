@@ -1963,3 +1963,356 @@ body > footer {
         padding: 60px 25px;
     }
 }
+/* ========================================
+   ESTUDIO DE MERCADO
+======================================== */
+
+.market-hero,
+.market-section,
+.market-deliverable,
+.market-example,
+.market-process,
+.market-packages,
+.market-cta {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.market-hero {
+    padding: 110px 40px 100px;
+}
+
+.market-hero .section-label,
+.market-section .section-label,
+.market-deliverable .section-label,
+.market-example .section-label,
+.market-process .section-label,
+.market-packages .section-label,
+.market-cta .section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9c7a3c;
+    margin-bottom: 24px;
+}
+
+.market-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.05;
+    font-weight: 400;
+    max-width: 950px;
+    margin-bottom: 30px;
+}
+
+.market-intro {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 38px;
+}
+
+
+/* QUÉ ANALIZAMOS */
+
+.market-section {
+    padding: 90px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.market-heading {
+    max-width: 750px;
+    margin-bottom: 55px;
+}
+
+.market-heading h2,
+.market-deliverable h2,
+.market-example h2,
+.market-process h2,
+.market-packages h2,
+.market-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.market-card {
+    padding: 38px 32px;
+    min-height: 260px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+.market-card span,
+.process-grid span {
+    display: block;
+    color: #9c7a3c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.market-card h3,
+.process-grid h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.market-card p,
+.process-grid p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* QUÉ RECIBES */
+
+.market-deliverable {
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    background: #f3efe7;
+}
+
+.market-deliverable-text p:last-child {
+    margin-top: 25px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+.market-list {
+    border-top: 1px solid #cfc7b8;
+}
+
+.market-list div {
+    padding: 17px 0;
+    border-bottom: 1px solid #cfc7b8;
+    font-size: 15px;
+}
+
+
+/* EJEMPLO */
+
+.market-example {
+    padding: 100px 40px;
+}
+
+.market-example-intro {
+    margin-top: 25px;
+    font-size: 19px;
+    color: #555;
+}
+
+.example-box {
+    margin-top: 45px;
+    max-width: 850px;
+    border-left: 2px solid #9c7a3c;
+    padding: 10px 0 10px 35px;
+}
+
+.example-box p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+
+/* PROCESO */
+
+.market-process {
+    padding: 100px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.market-process > h2 {
+    margin-bottom: 55px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.process-grid > div {
+    padding: 35px 28px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+
+/* PAQUETES */
+
+.market-packages {
+    padding: 100px 40px;
+}
+
+.market-packages > h2 {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.package-card {
+    border: 1px solid #ddd7cc;
+    padding: 38px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card.featured {
+    background: #f3efe7;
+    border-color: #c5b184;
+}
+
+.package-name {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: #9c7a3c;
+    margin-bottom: 30px;
+}
+
+.package-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.package-price {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px;
+}
+
+.package-card li {
+    padding: 11px 0;
+    border-bottom: 1px solid #e1ddd5;
+    color: #555;
+    line-height: 1.5;
+}
+
+.package-card a {
+    margin-top: auto;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.package-card a:hover {
+    color: #9c7a3c;
+}
+
+
+/* CTA */
+
+.market-cta {
+    margin-bottom: 100px;
+    padding: 90px 40px;
+    background: #f3efe7;
+    text-align: center;
+}
+
+.market-cta h2 {
+    margin-bottom: 25px;
+}
+
+.market-cta > p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* TABLET Y MÓVIL */
+
+@media (max-width: 900px) {
+
+    .market-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .market-deliverable {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .market-hero,
+    .market-section,
+    .market-deliverable,
+    .market-example,
+    .market-process,
+    .market-packages {
+        padding: 70px 22px;
+    }
+
+    .market-hero h1 {
+        font-size: 44px;
+    }
+
+    .market-intro {
+        font-size: 16px;
+    }
+
+    .market-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .market-card {
+        min-height: auto;
+    }
+
+    .market-cta {
+        margin: 20px 20px 70px;
+        padding: 65px 25px;
+    }
+
+    .example-box {
+        padding-left: 22px;
+    }
+}
