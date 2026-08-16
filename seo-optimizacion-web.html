@@ -12,6 +12,203 @@
   <link rel="stylesheet" href="styles.css">
 
 <style>
+    /* ===== SEO Y OPTIMIZACIÓN WEB ===== */
+
+body {
+    background: #f7f5f0;
+    color: #111111;
+}
+
+main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Secciones */
+main section {
+    padding: 90px 0;
+    border-bottom: 1px solid #dedbd4;
+}
+
+/* Etiquetas pequeñas */
+.eyebrow,
+.section-label {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #77736b;
+}
+
+/* Títulos principales */
+main h1 {
+    max-width: 1000px;
+    margin: 0 0 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 1.02;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+}
+
+main h2 {
+    max-width: 850px;
+    margin: 0 0 45px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+main h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+/* Textos */
+main p {
+    max-width: 760px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #57534d;
+}
+
+/* Botones y enlaces */
+main .button,
+main .btn,
+main a.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 17px 26px;
+    background: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+}
+
+/* Cuadrículas */
+.grid,
+.services-grid,
+.analysis-grid,
+.process-grid,
+.pricing-grid,
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #dedbd4;
+    border-left: 1px solid #dedbd4;
+}
+
+/* Tarjetas */
+.grid > *,
+.services-grid > *,
+.analysis-grid > *,
+.process-grid > *,
+.pricing-grid > *,
+.packages-grid > * {
+    padding: 38px;
+    border-right: 1px solid #dedbd4;
+    border-bottom: 1px solid #dedbd4;
+}
+
+/* Números */
+.number,
+.step-number {
+    display: block;
+    margin-bottom: 45px;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: #8a857d;
+}
+
+/* Listas */
+main ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+main li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2dfd8;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* CTA final */
+main section:last-child {
+    text-align: center;
+    padding: 110px 20px;
+}
+
+main section:last-child h2,
+main section:last-child p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    main {
+        padding: 0 24px;
+    }
+
+    .grid,
+    .services-grid,
+    .analysis-grid,
+    .process-grid,
+    .pricing-grid,
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 600px) {
+    main {
+        padding: 0 20px;
+    }
+
+    main section {
+        padding: 60px 0;
+    }
+
+    main h1 {
+        font-size: 45px;
+    }
+
+    main h2 {
+        font-size: 36px;
+    }
+
+    .grid,
+    .services-grid,
+    .analysis-grid,
+    .process-grid,
+    .pricing-grid,
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid > *,
+    .services-grid > *,
+    .analysis-grid > *,
+    .process-grid > *,
+    .pricing-grid > *,
+    .packages-grid > * {
+        padding: 28px 20px;
+    }
+
+    main section:last-child {
+        padding: 75px 20px;
+    }
+}
 
 </style>
 
