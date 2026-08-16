@@ -1822,19 +1822,19 @@ body > footer {
 
 .services-page h1 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(48px, 6vw, 82px);
+    font-size: clamp(46px, 5vw, 72px);
     line-height: 1.05;
     font-weight: 400;
-    max-width: 850px;
-    margin-bottom: 30px;
+    max-width: 760px;
+    margin-bottom: 28px;
 }
 
 .services-intro {
-    max-width: 760px;
-    font-size: 18px;
+    max-width: 720px;
+    font-size: 17px;
     line-height: 1.8;
     color: #555555;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
 }
 
 
@@ -1848,8 +1848,8 @@ body > footer {
 
 .service-card {
     border: 1px solid #ddd7cc;
-    padding: 42px;
-    min-height: 320px;
+    padding: 38px;
+    min-height: 285px;
     display: flex;
     flex-direction: column;
     background: #faf8f4;
@@ -1902,8 +1902,8 @@ body > footer {
 
 .services-cta {
     max-width: 1200px;
-    margin: 0 auto 100px;
-    padding: 80px 40px;
+    margin: 70px auto 100px;
+    padding: 75px 40px;
     text-align: center;
     background: #f3efe7;
 }
