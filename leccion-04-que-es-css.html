@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qué es CSS | Digital Ukhti</title>
+
+    <meta name="description"
+          content="Aprende qué es CSS y cómo utilizarlo para añadir colores, tipografías, tamaños, espacios y diseño a una página HTML.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="aprende.html">Aprende</a>
+            <a href="index.html#recursos">Recursos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">Sobre Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABECERA -->
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Diseño web desde cero
+        </a>
+
+        <p class="section-label">LECCIÓN 04 · CSS</p>
+
+        <h1>Qué es CSS.</h1>
+
+        <p class="lesson-intro">
+            Ya sabes utilizar HTML para crear la estructura de una página.
+            Ahora aprenderás a utilizar CSS para controlar su apariencia
+            y empezar a transformar esa estructura en un diseño.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Nivel · Principiante</span>
+            <span>Tiempo · 20–25 min</span>
+            <span>Ruta · Diseño web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+        <!-- 01 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>¿Qué es CSS?</h2>
+
+            <p>
+                CSS significa Cascading Style Sheets,
+                o Hojas de Estilo en Cascada.
+            </p>
+
+            <p>
+                Es el lenguaje que utilizamos para controlar
+                la apariencia visual de los elementos HTML.
+            </p>
+
+            <p>
+                Con CSS podemos cambiar colores, tipografías,
+                tamaños, espacios, fondos, bordes y la distribución
+                de los elementos dentro de una página.
+            </p>
+
+            <div class="lesson-note">
+                <strong>Una forma sencilla de entenderlo:</strong>
+                HTML crea la estructura de la página y CSS decide
+                cómo se verá esa estructura.
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>HTML y CSS trabajan juntos.</h2>
+
+            <p>
+                Imagina que tenemos este título en HTML:
+            </p>
+
+            <div class="lesson-code">
+                &lt;h1&gt;Bienvenido a mi web&lt;/h1&gt;
+            </div>
+
+            <p>
+                Sin CSS, el navegador utilizará sus estilos predeterminados.
+            </p>
+
+            <p>
+                Podemos utilizar CSS para modificarlo:
+            </p>
+
+            <div class="lesson-code">
+h1 {<br>
+&nbsp;&nbsp;font-size: 48px;<br>
+&nbsp;&nbsp;text-align: center;<br>
+}
+            </div>
+
+            <p>
+                El contenido sigue siendo el mismo.
+                Lo que cambia es su presentación.
+            </p>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>Cómo se escribe una regla CSS.</h2>
+
+            <p>
+                Una regla CSS básica contiene un selector,
+                una propiedad y un valor.
+            </p>
+
+            <div class="lesson-code">
+p {<br>
+&nbsp;&nbsp;font-size: 18px;<br>
+}
+            </div>
+
+            <div class="lesson-concepts">
+
+                <div>
+                    <span>01</span>
+                    <h3>Selector</h3>
+                    <p>
+                        <strong>p</strong> indica qué elemento HTML
+                        queremos modificar.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>Propiedad</h3>
+                    <p>
+                        <strong>font-size</strong> indica qué característica
+                        queremos cambiar.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>Valor</h3>
+                    <p>
+                        <strong>18px</strong> indica el valor
+                        que queremos aplicar.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>Crea tu archivo styles.css.</h2>
+
+            <p>
+                Vuelve a la carpeta que creaste en la lección anterior:
+            </p>
+
+            <div class="lesson-code">
+                mi-primera-web
+            </div>
+
+            <p>
+                Ya debería contener:
+            </p>
+
+            <div class="lesson-code">
+                index.html
+            </div>
+
+            <p>
+                Ahora crea un segundo archivo llamado:
+            </p>
+
+            <div class="lesson-code">
+                styles.css
+            </div>
+
+            <p>
+                Tu proyecto tendrá ahora dos archivos:
+            </p>
+
+            <div class="lesson-code">
+mi-primera-web/<br>
+├── index.html<br>
+└── styles.css
+            </div>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Conecta CSS con HTML.</h2>
+
+            <p>
+                Crear `styles.css` no es suficiente.
+                Tenemos que decirle al documento HTML que utilice
+                ese archivo.
+            </p>
+
+            <p>
+                Dentro de <strong>&lt;head&gt;</strong> de
+                `index.html`, añade:
+            </p>
+
+            <div class="lesson-code">
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            </div>
+
+            <p>
+                El inicio de tu documento quedará parecido a esto:
+            </p>
+
+            <div class="lesson-code">
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;Mi primera web&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+&lt;/head&gt;
+            </div>
+
+            <div class="lesson-note">
+                Si `index.html` y `styles.css` están en la misma carpeta,
+                `href="styles.css"` será suficiente.
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Cambia la tipografía y el tamaño del texto.</h2>
+
+            <p>
+                Abre `styles.css` y escribe:
+            </p>
+
+            <div class="lesson-code">
+body {<br>
+&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+}<br><br>
+
+h1 {<br>
+&nbsp;&nbsp;font-size: 48px;<br>
+}<br><br>
+
+p {<br>
+&nbsp;&nbsp;font-size: 18px;<br>
+&nbsp;&nbsp;line-height: 1.7;<br>
+}
+            </div>
+
+            <p>
+                Guarda el archivo y actualiza la página
+                en el navegador.
+            </p>
+
+            <p>
+                Ya deberías notar un cambio en la apariencia.
+            </p>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Añade colores.</h2>
+
+            <p>
+                CSS también permite controlar los colores.
+            </p>
+
+            <div class="lesson-code">
+body {<br>
+&nbsp;&nbsp;background: #f7f5f0;<br>
+&nbsp;&nbsp;color: #222222;<br>
+}
+            </div>
+
+            <p>
+                En este ejemplo:
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        <strong>background</strong> cambia
+                        el fondo de la página.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        <strong>color</strong> cambia
+                        el color del texto.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Entiende margin y padding.</h2>
+
+            <p>
+                Los espacios son una parte fundamental
+                del diseño web.
+            </p>
+
+            <div class="lesson-comparison">
+
+                <div>
+                    <p class="lesson-small">MARGIN</p>
+
+                    <h3>Espacio exterior.</h3>
+
+                    <p>
+                        Crea espacio alrededor de un elemento,
+                        separándolo de otros elementos.
+                    </p>
+                </div>
+
+                <div>
+                    <p class="lesson-small">PADDING</p>
+
+                    <h3>Espacio interior.</h3>
+
+                    <p>
+                        Crea espacio entre el contenido
+                        y los bordes del propio elemento.
+                    </p>
+                </div>
+
+            </div>
+
+            <p>
+                Por ejemplo:
+            </p>
+
+            <div class="lesson-code">
+section {<br>
+&nbsp;&nbsp;margin: 40px 0;<br>
+&nbsp;&nbsp;padding: 60px 30px;<br>
+}
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Diseña tu primera página.</h2>
+
+            <p>
+                Vamos a aplicar varios estilos juntos.
+            </p>
+
+            <p>
+                En `styles.css`, prueba:
+            </p>
+
+            <div class="lesson-code">
+body {<br>
+&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;padding: 60px 30px;<br>
+&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;background: #f7f5f0;<br>
+&nbsp;&nbsp;color: #222222;<br>
+}<br><br>
+
+h1 {<br>
+&nbsp;&nbsp;font-size: 48px;<br>
+&nbsp;&nbsp;margin-bottom: 20px;<br>
+}<br><br>
+
+h2 {<br>
+&nbsp;&nbsp;font-size: 30px;<br>
+&nbsp;&nbsp;margin-top: 50px;<br>
+}<br><br>
+
+p {<br>
+&nbsp;&nbsp;max-width: 650px;<br>
+&nbsp;&nbsp;font-size: 18px;<br>
+&nbsp;&nbsp;line-height: 1.7;<br>
+}
+            </div>
+
+            <p>
+                Guarda el archivo y vuelve a cargar `index.html`.
+            </p>
+
+            <p>
+                La misma estructura HTML que creaste en la lección anterior
+                debería tener ahora una apariencia mucho más cuidada.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>CSS no cambia el significado del contenido.</h2>
+
+            <p>
+                Este concepto es importante.
+            </p>
+
+            <p>
+                Si un elemento es un título principal,
+                seguirá siendo un <strong>h1</strong>
+                independientemente de que CSS lo haga grande,
+                pequeño, negro o de cualquier otro color.
+            </p>
+
+            <p>
+                Primero debemos construir una estructura HTML correcta.
+                Después utilizamos CSS para presentarla visualmente.
+            </p>
+
+            <div class="lesson-note">
+                No elijas las etiquetas HTML por cómo se ven.
+                Utilízalas según el significado y la estructura
+                del contenido.
+            </div>
+
+        </section>
+
+
+        <!-- RESUMEN -->
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RESUMEN</p>
+
+            <h2>Lo que has aprendido.</h2>
+
+            <ul>
+                <li>CSS controla la apariencia de los elementos HTML.</li>
+                <li>Una regla CSS contiene selector, propiedad y valor.</li>
+                <li>Los estilos pueden guardarse en `styles.css`.</li>
+                <li>HTML y CSS se conectan mediante la etiqueta link.</li>
+                <li>CSS permite modificar tipografías y tamaños.</li>
+                <li>También permite controlar colores y fondos.</li>
+                <li>Margin crea espacio exterior.</li>
+                <li>Padding crea espacio interior.</li>
+                <li>HTML define la estructura y CSS su presentación.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- EJERCICIO -->
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">PONLO EN PRÁCTICA</p>
+
+            <h2>Da estilo a tu primera web.</h2>
+
+            <p>
+                Abre el proyecto que empezaste en la lección anterior
+                y realiza estos cambios:
+            </p>
+
+            <ol>
+                <li>Crea `styles.css`.</li>
+                <li>Conéctalo con `index.html`.</li>
+                <li>Cambia la tipografía de la página.</li>
+                <li>Cambia el color del fondo.</li>
+                <li>Cambia el tamaño del h1.</li>
+                <li>Aumenta el interlineado de los párrafos.</li>
+                <li>Añade padding al body.</li>
+            </ol>
+
+            <p>
+                Después experimenta cambiando algunos valores.
+                La mejor forma de empezar a entender CSS es observar
+                qué ocurre cuando modificas cada propiedad.
+            </p>
+
+            <div class="lesson-note">
+                <strong>No busques todavía un diseño perfecto.</strong>
+                El objetivo es comprender la relación entre HTML y CSS.
+                En las próximas lecciones construiremos una estructura
+                mucho más completa.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <section class="lesson-navigation">
+
+        <div>
+            <p>LECCIÓN ANTERIOR</p>
+
+            <a href="leccion-03-que-es-html.html">
+                ← 03 · Qué es HTML
+            </a>
+        </div>
+
+        <div class="lesson-next">
+            <p>SIGUIENTE LECCIÓN</p>
+
+            <span>
+                05 · Crea la estructura de tu primera página
+            </span>
+
+            <small>Próximamente</small>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+</body>
+</html>
