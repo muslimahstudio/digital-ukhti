@@ -3567,3 +3567,176 @@ body > footer {
         line-height: 1.75;
     }
 }
+/* ========================================
+   PÁGINA DE PLANTILLAS
+======================================== */
+
+.templates-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 60px 80px;
+}
+
+.templates-hero h1 {
+    max-width: 900px;
+    margin: 20px 0 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+}
+
+.templates-intro {
+    max-width: 720px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* TARJETAS */
+
+.templates-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 60px 100px;
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.template-card {
+    min-height: 390px;
+    padding: 45px 35px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.template-card > span {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    color: #888;
+    margin-bottom: 55px;
+}
+
+.template-category {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.template-card h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.template-card p {
+    line-height: 1.7;
+}
+
+.template-status {
+    margin-top: auto;
+    padding-top: 35px;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+
+/* BLOQUE FINAL */
+
+.templates-cta {
+    padding: 100px 60px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.templates-cta h2 {
+    max-width: 750px;
+    margin: 20px auto;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.templates-cta > p:not(.contact-eyebrow) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.templates-cta .button {
+    display: inline-block;
+    padding: 16px 28px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .templates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .template-card {
+        min-height: 320px;
+    }
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .templates-hero {
+        padding: 80px 24px 55px;
+    }
+
+    .templates-hero h1 {
+        font-size: 3rem;
+    }
+
+    .templates-section {
+        padding: 10px 24px 70px;
+    }
+
+    .template-card {
+        padding: 35px 28px;
+        min-height: 300px;
+    }
+
+    .template-card > span {
+        margin-bottom: 35px;
+    }
+
+    .template-card h2 {
+        font-size: 1.7rem;
+    }
+
+    .templates-cta {
+        padding: 70px 24px;
+    }
+
+    .templates-cta h2 {
+        font-size: 2.5rem;
+    }
+}
