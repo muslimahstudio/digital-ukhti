@@ -3370,3 +3370,132 @@ body > footer {
         padding-left: 22px;
     }
 }
+/* ========================================
+   SERVICIOS EN HOME
+======================================== */
+
+.home-services {
+    max-width: 1200px;
+    margin: 90px auto 0;
+    padding-top: 70px;
+    border-top: 1px solid #e3ded5;
+}
+
+.home-services-heading {
+    max-width: 720px;
+    margin-bottom: 50px;
+}
+
+.home-services-heading .section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9c7a3c;
+    margin-bottom: 20px;
+}
+
+.home-services-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.home-services-heading > p:not(.section-label) {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.home-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.home-service-item {
+    min-height: 250px;
+    padding: 30px 26px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+    text-decoration: none;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.25s ease;
+}
+
+.home-service-item:hover {
+    background: #f3efe7;
+}
+
+.home-service-item span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #9c7a3c;
+    margin-bottom: 42px;
+}
+
+.home-service-item h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.home-service-item p {
+    margin-top: auto;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #111;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .home-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .home-services {
+        margin-top: 65px;
+        padding-top: 55px;
+    }
+
+    .home-services-heading {
+        margin-bottom: 35px;
+    }
+
+    .home-services-heading h2 {
+        font-size: 38px;
+    }
+
+    .home-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-service-item {
+        min-height: auto;
+        padding: 28px 22px;
+    }
+
+    .home-service-item span {
+        margin-bottom: 28px;
+    }
+
+    .home-service-item h3 {
+        font-size: 26px;
+    }
+}
