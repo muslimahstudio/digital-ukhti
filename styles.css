@@ -3011,3 +3011,362 @@ body > footer {
         padding-left: 22px;
     }
 }
+/* ========================================
+   DISEÑO Y DESARROLLO WEB
+======================================== */
+
+.web-hero,
+.web-section,
+.web-deliverable,
+.web-example,
+.web-process,
+.web-packages,
+.web-note,
+.web-cta {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.web-hero {
+    padding: 110px 40px 100px;
+}
+
+.web-hero .section-label,
+.web-section .section-label,
+.web-deliverable .section-label,
+.web-example .section-label,
+.web-process .section-label,
+.web-packages .section-label,
+.web-cta .section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9c7a3c;
+    margin-bottom: 24px;
+}
+
+.web-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.05;
+    font-weight: 400;
+    max-width: 950px;
+    margin-bottom: 30px;
+}
+
+.web-intro {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 38px;
+}
+
+
+/* QUÉ INCLUYE */
+
+.web-section {
+    padding: 90px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.web-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.web-heading h2,
+.web-deliverable h2,
+.web-example h2,
+.web-process h2,
+.web-packages h2,
+.web-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.web-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.web-card {
+    padding: 38px 32px;
+    min-height: 260px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+.web-card span,
+.web-process-grid span {
+    display: block;
+    color: #9c7a3c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.web-card h3,
+.web-process-grid h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.web-card p,
+.web-process-grid p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* QUÉ RECIBES */
+
+.web-deliverable {
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    background: #f3efe7;
+}
+
+.web-deliverable-text p:last-child {
+    margin-top: 25px;
+    color: #555;
+    line-height: 1.8;
+    max-width: 520px;
+}
+
+.web-list {
+    border-top: 1px solid #cfc7b8;
+}
+
+.web-list div {
+    padding: 17px 0;
+    border-bottom: 1px solid #cfc7b8;
+    font-size: 15px;
+}
+
+
+/* EJEMPLO */
+
+.web-example {
+    padding: 100px 40px;
+}
+
+.web-example-box {
+    margin-top: 45px;
+    max-width: 850px;
+    border-left: 2px solid #9c7a3c;
+    padding: 10px 0 10px 35px;
+}
+
+.web-example-box p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+
+/* PROCESO */
+
+.web-process {
+    padding: 100px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.web-process > h2 {
+    margin-bottom: 55px;
+}
+
+.web-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.web-process-grid > div {
+    padding: 35px 28px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+
+/* PAQUETES */
+
+.web-packages {
+    padding: 100px 40px;
+}
+
+.web-packages > h2 {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.web-packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.web-package {
+    border: 1px solid #ddd7cc;
+    padding: 38px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.web-package.featured {
+    background: #f3efe7;
+    border-color: #c5b184;
+}
+
+.web-package h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.web-package ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 35px;
+}
+
+.web-package li {
+    padding: 11px 0;
+    border-bottom: 1px solid #e1ddd5;
+    color: #555;
+    line-height: 1.5;
+}
+
+.web-package a {
+    margin-top: auto;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.web-package a:hover {
+    color: #9c7a3c;
+}
+
+
+/* NOTA */
+
+.web-note {
+    padding: 35px 40px;
+    border-top: 1px solid #e3ded5;
+    border-bottom: 1px solid #e3ded5;
+}
+
+.web-note p {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* CTA */
+
+.web-cta {
+    margin-bottom: 100px;
+    padding: 90px 40px;
+    background: #f3efe7;
+    text-align: center;
+}
+
+.web-cta h2 {
+    margin-bottom: 25px;
+}
+
+.web-cta > p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .web-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .web-process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .web-packages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .web-deliverable {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .web-hero,
+    .web-section,
+    .web-deliverable,
+    .web-example,
+    .web-process,
+    .web-packages {
+        padding: 70px 22px;
+    }
+
+    .web-hero h1 {
+        font-size: 44px;
+    }
+
+    .web-intro {
+        font-size: 16px;
+    }
+
+    .web-grid,
+    .web-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .web-card {
+        min-height: auto;
+    }
+
+    .web-note {
+        padding: 30px 22px;
+    }
+
+    .web-cta {
+        margin: 20px 20px 70px;
+        padding: 65px 25px;
+    }
+
+    .web-example-box {
+        padding-left: 22px;
+    }
+}
