@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diseña tu página con CSS | Digital Ukhti</title>
+
+    <meta name="description"
+          content="Aprende a diseñar una página web con CSS: navegación, hero, secciones, tarjetas, botones, espacios y footer.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="aprende.html">Aprende</a>
+            <a href="index.html#recursos">Recursos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">Sobre Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABECERA -->
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Diseño web desde cero
+        </a>
+
+        <p class="section-label">LECCIÓN 06 · DISEÑO CON CSS</p>
+
+        <h1>Diseña tu página con CSS.</h1>
+
+        <p class="lesson-intro">
+            Ya tienes la estructura de tu primera web. Ahora vamos a
+            convertir ese esqueleto HTML en una página más clara,
+            ordenada y visualmente profesional.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Nivel · Principiante</span>
+            <span>Tiempo · 30–40 min</span>
+            <span>Ruta · Diseño web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+
+        <!-- 01 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>Empieza por los estilos generales.</h2>
+
+            <p>
+                Antes de diseñar cada sección, estableceremos unas reglas
+                básicas para toda la página.
+            </p>
+
+            <p>
+                Abre el archivo <strong>styles.css</strong> de tu proyecto
+                y empieza con:
+            </p>
+
+            <div class="lesson-code">
+* {<br>
+&nbsp;&nbsp;box-sizing: border-box;<br>
+}<br><br>
+
+body {<br>
+&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+&nbsp;&nbsp;color: #222222;<br>
+&nbsp;&nbsp;background: #ffffff;<br>
+&nbsp;&nbsp;line-height: 1.6;<br>
+}
+            </div>
+
+            <p>
+                Con esto eliminamos el margen predeterminado del navegador
+                y establecemos una base común para la página.
+            </p>
+
+            <div class="lesson-note">
+                <strong>box-sizing: border-box</strong> facilita el control
+                de tamaños porque hace que padding y bordes formen parte
+                del ancho total de los elementos.
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>Diseña la navegación.</h2>
+
+            <p>
+                Empezaremos dando estructura al menú que creamos
+                en la lección anterior.
+            </p>
+
+            <div class="lesson-code">
+nav {<br>
+&nbsp;&nbsp;max-width: 1200px;<br>
+&nbsp;&nbsp;margin: 0 auto;<br>
+&nbsp;&nbsp;padding: 25px 30px;<br>
+&nbsp;&nbsp;display: flex;<br>
+&nbsp;&nbsp;justify-content: space-between;<br>
+&nbsp;&nbsp;align-items: center;<br>
+}
+            </div>
+
+            <p>
+                Aquí aparecen varias propiedades nuevas.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        <strong>max-width</strong> limita el ancho máximo
+                        del contenido.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        <strong>margin: 0 auto</strong> centra el bloque
+                        horizontalmente.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>
+                        <strong>display: flex</strong> permite distribuir
+                        los elementos de forma flexible.
+                    </p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>
+                        <strong>justify-content: space-between</strong>
+                        separa los elementos hacia los extremos.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>Da estilo a los enlaces.</h2>
+
+            <p>
+                Por defecto, los navegadores muestran los enlaces
+                subrayados. Podemos cambiar su apariencia.
+            </p>
+
+            <div class="lesson-code">
+nav a {<br>
+&nbsp;&nbsp;color: #222222;<br>
+&nbsp;&nbsp;text-decoration: none;<br>
+&nbsp;&nbsp;margin-left: 20px;<br>
+}
+            </div>
+
+            <p>
+                También podemos indicar qué ocurre al pasar el cursor:
+            </p>
+
+            <div class="lesson-code">
+nav a:hover {<br>
+&nbsp;&nbsp;opacity: 0.6;<br>
+}
+            </div>
+
+            <p>
+                Este pequeño cambio ya aporta interacción visual.
+            </p>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>Diseña la sección principal.</h2>
+
+            <p>
+                La primera sección de la página debe tener suficiente
+                espacio para que el mensaje principal destaque.
+            </p>
+
+            <div class="lesson-code">
+main &gt; section:first-child {<br>
+&nbsp;&nbsp;max-width: 1200px;<br>
+&nbsp;&nbsp;margin: 0 auto;<br>
+&nbsp;&nbsp;padding: 120px 30px;<br>
+}
+            </div>
+
+            <p>
+                Ahora podemos diseñar el título:
+            </p>
+
+            <div class="lesson-code">
+h1 {<br>
+&nbsp;&nbsp;max-width: 850px;<br>
+&nbsp;&nbsp;margin: 0 0 30px;<br>
+&nbsp;&nbsp;font-size: 64px;<br>
+&nbsp;&nbsp;line-height: 1.05;<br>
+&nbsp;&nbsp;font-weight: 400;<br>
+}
+            </div>
+
+            <div class="lesson-note">
+                El espacio en blanco también forma parte del diseño.
+                No intentes llenar cada zona de la pantalla con contenido.
+            </div>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Crea un botón.</h2>
+
+            <p>
+                Podemos convertir el enlace de la sección principal
+                en una llamada a la acción visual.
+            </p>
+
+            <p>
+                En HTML podemos añadirle una clase:
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="#servicios" class="button"&gt;<br>
+&nbsp;&nbsp;Ver servicios<br>
+&lt;/a&gt;
+            </div>
+
+            <p>
+                Y en CSS:
+            </p>
+
+            <div class="lesson-code">
+.button {<br>
+&nbsp;&nbsp;display: inline-block;<br>
+&nbsp;&nbsp;margin-top: 20px;<br>
+&nbsp;&nbsp;padding: 15px 25px;<br>
+&nbsp;&nbsp;background: #222222;<br>
+&nbsp;&nbsp;color: #ffffff;<br>
+&nbsp;&nbsp;text-decoration: none;<br>
+}
+            </div>
+
+            <p>
+                La clase nos permite aplicar estilos únicamente
+                a los elementos que la utilicen.
+            </p>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Da espacio a las secciones.</h2>
+
+            <p>
+                Una web suele resultar más fácil de leer cuando
+                las secciones tienen suficiente separación.
+            </p>
+
+            <div class="lesson-code">
+section {<br>
+&nbsp;&nbsp;padding: 90px 30px;<br>
+}<br><br>
+
+section &gt; h2,<br>
+section &gt; p,<br>
+section &gt; article {<br>
+&nbsp;&nbsp;max-width: 1200px;<br>
+&nbsp;&nbsp;margin-left: auto;<br>
+&nbsp;&nbsp;margin-right: auto;<br>
+}
+            </div>
+
+            <p>
+                Podemos diferenciar alguna sección utilizando
+                un fondo distinto:
+            </p>
+
+            <div class="lesson-code">
+#sobre {<br>
+&nbsp;&nbsp;background: #f5f2ec;<br>
+}
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Convierte los servicios en tarjetas.</h2>
+
+            <p>
+                En la lección anterior creamos elementos
+                <strong>article</strong> para los servicios.
+            </p>
+
+            <p>
+                Podemos diseñarlos como tarjetas:
+            </p>
+
+            <div class="lesson-code">
+#servicios article {<br>
+&nbsp;&nbsp;margin-top: 20px;<br>
+&nbsp;&nbsp;padding: 30px;<br>
+&nbsp;&nbsp;border: 1px solid #dddddd;<br>
+}
+            </div>
+
+            <p>
+                También podemos mejorar sus títulos:
+            </p>
+
+            <div class="lesson-code">
+#servicios h3 {<br>
+&nbsp;&nbsp;margin-top: 0;<br>
+&nbsp;&nbsp;font-size: 26px;<br>
+&nbsp;&nbsp;font-weight: 400;<br>
+}
+            </div>
+
+            <p>
+                Incluso un diseño sencillo puede verse profesional
+                cuando existe una buena jerarquía y suficiente espacio.
+            </p>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Diseña la sección de contacto.</h2>
+
+            <p>
+                Queremos que la llamada a la acción final destaque
+                del resto del contenido.
+            </p>
+
+            <div class="lesson-code">
+#contacto {<br>
+&nbsp;&nbsp;text-align: center;<br>
+&nbsp;&nbsp;background: #222222;<br>
+&nbsp;&nbsp;color: #ffffff;<br>
+}
+            </div>
+
+            <p>
+                Podemos adaptar también su enlace:
+            </p>
+
+            <div class="lesson-code">
+#contacto a {<br>
+&nbsp;&nbsp;display: inline-block;<br>
+&nbsp;&nbsp;margin-top: 20px;<br>
+&nbsp;&nbsp;padding: 15px 25px;<br>
+&nbsp;&nbsp;background: #ffffff;<br>
+&nbsp;&nbsp;color: #222222;<br>
+&nbsp;&nbsp;text-decoration: none;<br>
+}
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Termina el diseño con el footer.</h2>
+
+            <p>
+                Mantendremos el pie de página sencillo.
+            </p>
+
+            <div class="lesson-code">
+footer {<br>
+&nbsp;&nbsp;padding: 35px 30px;<br>
+&nbsp;&nbsp;text-align: center;<br>
+&nbsp;&nbsp;border-top: 1px solid #dddddd;<br>
+}<br><br>
+
+footer p {<br>
+&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;font-size: 14px;<br>
+}
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>La coherencia importa más que decorar.</h2>
+
+            <p>
+                Cuando empiezas con CSS es fácil intentar añadir muchos
+                colores, sombras, bordes y efectos.
+            </p>
+
+            <p>
+                Sin embargo, un buen diseño suele depender más de mantener
+                decisiones consistentes.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Utiliza una paleta de colores limitada.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Mantén tamaños de títulos coherentes.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Repite los mismos espacios entre secciones.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Utiliza el mismo estilo para botones similares.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Prioriza siempre la legibilidad.</p>
+                </div>
+
+            </div>
+
+            <div class="lesson-note">
+                Un diseño profesional no necesita ser complicado.
+                Necesita tener intención, jerarquía y consistencia.
+            </div>
+
+        </section>
+
+
+        <!-- RESUMEN -->
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RESUMEN</p>
+
+            <h2>Lo que has aprendido.</h2>
+
+            <ul>
+                <li>Cómo establecer estilos generales para una web.</li>
+                <li>Cómo utilizar max-width para controlar el contenido.</li>
+                <li>Cómo centrar bloques con margin auto.</li>
+                <li>Cómo utilizar Flexbox en una navegación.</li>
+                <li>Cómo diseñar títulos y secciones.</li>
+                <li>Cómo crear botones utilizando clases.</li>
+                <li>Cómo convertir contenido en tarjetas.</li>
+                <li>Cómo diferenciar secciones mediante fondos.</li>
+                <li>Cómo diseñar un footer sencillo.</li>
+                <li>Por qué la coherencia visual es fundamental.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- EJERCICIO -->
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">PONLO EN PRÁCTICA</p>
+
+            <h2>Diseña la web que construiste.</h2>
+
+            <p>
+                Abre tu proyecto <strong>mi-primera-web</strong>
+                y trabaja sobre la estructura creada en la Lección 05.
+            </p>
+
+            <ol>
+                <li>Aplica estilos generales al body.</li>
+                <li>Diseña la navegación.</li>
+                <li>Limita el ancho del contenido.</li>
+                <li>Añade espacio a la sección principal.</li>
+                <li>Diseña el h1.</li>
+                <li>Convierte un enlace en botón.</li>
+                <li>Añade un fondo diferente a una sección.</li>
+                <li>Diseña los servicios como tarjetas.</li>
+                <li>Da estilo a la sección de contacto.</li>
+                <li>Diseña el footer.</li>
+            </ol>
+
+            <p>
+                Después modifica algunos tamaños, espacios y colores
+                para crear una versión propia.
+            </p>
+
+            <div class="lesson-note">
+                <strong>Comprueba también qué ocurre al hacer pequeña
+                la ventana del navegador.</strong> Probablemente descubrirás
+                que algunos elementos dejan de verse bien. Eso nos lleva
+                directamente a la siguiente lección: diseño responsive.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <section class="lesson-navigation">
+
+        <div>
+
+            <p>LECCIÓN ANTERIOR</p>
+
+            <a href="leccion-05-estructura-primera-pagina.html">
+                ← 05 · Crea la estructura de tu primera página
+            </a>
+
+        </div>
+
+        <div class="lesson-next">
+
+            <p>SIGUIENTE LECCIÓN</p>
+
+            <span>
+                07 · Haz que tu web se adapte al móvil
+            </span>
+
+            <small>Próximamente</small>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+</body>
+</html>
