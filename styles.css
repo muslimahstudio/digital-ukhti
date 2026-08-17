@@ -4008,3 +4008,316 @@ body > footer {
         text-align: center;
     }
 }
+/* ========================================
+   PÁGINA APRENDE
+======================================== */
+
+.learn-hero,
+.learn-section,
+.learn-method,
+.learn-resources {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HERO */
+
+.learn-hero {
+    padding: 120px 40px 110px;
+}
+
+.learn-hero .section-label,
+.learn-section .section-label,
+.learn-method .section-label,
+.learn-resources .section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9c7a3c;
+    margin-bottom: 24px;
+}
+
+.learn-hero h1 {
+    max-width: 950px;
+    margin-bottom: 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.05;
+    font-weight: 400;
+}
+
+.learn-intro {
+    max-width: 720px;
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* RUTAS */
+
+.learn-section {
+    padding: 100px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.learn-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.learn-heading h2,
+.learn-method-intro h2,
+.learn-resources h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.learn-heading > p:not(.section-label),
+.learn-method-intro > p:not(.section-label),
+.learn-resources > p:not(.section-label) {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.learn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.learn-card {
+    min-height: 360px;
+    padding: 40px 35px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-card > span {
+    display: block;
+    margin-bottom: 45px;
+    color: #9c7a3c;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.learn-category {
+    margin-bottom: 14px;
+    color: #9c7a3c;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.learn-card h3 {
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 31px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.learn-card > p:not(.learn-category) {
+    max-width: 480px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.learn-card a {
+    margin-top: auto;
+    padding-top: 30px;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.learn-card a:hover {
+    color: #9c7a3c;
+}
+
+
+/* CÓMO APRENDERÁS */
+
+.learn-method {
+    padding: 100px 40px;
+    background: #f3efe7;
+}
+
+.learn-method-intro {
+    max-width: 760px;
+    margin-bottom: 60px;
+}
+
+.learn-method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #cfc7b8;
+    border-left: 1px solid #cfc7b8;
+}
+
+.learn-method-grid > div {
+    min-height: 240px;
+    padding: 35px 30px;
+    border-right: 1px solid #cfc7b8;
+    border-bottom: 1px solid #cfc7b8;
+}
+
+.learn-method-grid span {
+    display: block;
+    margin-bottom: 40px;
+    color: #9c7a3c;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.learn-method-grid h3 {
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.learn-method-grid p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* RECURSOS */
+
+.learn-resources {
+    padding: 110px 40px;
+    text-align: center;
+}
+
+.learn-resources h2 {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-resources > p:not(.section-label) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.learn-resource-links {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+.learn-resource-links a {
+    min-width: 220px;
+    padding: 25px 35px;
+    border-right: 1px solid #ddd7cc;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+}
+
+.learn-resource-links a:first-child {
+    border-left: 1px solid #ddd7cc;
+}
+
+.learn-resource-links a:hover {
+    background: #f3efe7;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .learn-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learn-method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learn-card {
+        min-height: 310px;
+    }
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .learn-hero,
+    .learn-section,
+    .learn-method,
+    .learn-resources {
+        padding: 70px 22px;
+    }
+
+    .learn-hero h1 {
+        font-size: 44px;
+    }
+
+    .learn-intro {
+        font-size: 16px;
+    }
+
+    .learn-heading h2,
+    .learn-method-intro h2,
+    .learn-resources h2 {
+        font-size: 38px;
+    }
+
+    .learn-card {
+        min-height: auto;
+        padding: 32px 25px;
+    }
+
+    .learn-card > span {
+        margin-bottom: 30px;
+    }
+
+    .learn-card h3 {
+        font-size: 28px;
+    }
+
+    .learn-method-grid > div {
+        min-height: auto;
+        padding: 30px 25px;
+    }
+
+    .learn-resource-links {
+        display: block;
+    }
+
+    .learn-resource-links a,
+    .learn-resource-links a:first-child {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        border-left: 1px solid #ddd7cc;
+        border-right: 1px solid #ddd7cc;
+        border-bottom: 1px solid #ddd7cc;
+    }
+
+    .learn-resource-links a:last-child {
+        border-bottom: 0;
+    }
+}
