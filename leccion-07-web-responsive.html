@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haz que tu web se adapte al móvil | Digital Ukhti</title>
+
+    <meta name="description"
+          content="Aprende diseño responsive desde cero: viewport, media queries, unidades flexibles y cómo adaptar una web a móvil, tablet y ordenador.">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="aprende.html">Aprende</a>
+            <a href="index.html#recursos">Recursos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">Sobre Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Diseño web desde cero
+        </a>
+
+        <p class="section-label">LECCIÓN 07 · RESPONSIVE DESIGN</p>
+
+        <h1>Haz que tu web se adapte al móvil.</h1>
+
+        <p class="lesson-intro">
+            Una página web debe funcionar correctamente en pantallas grandes
+            y pequeñas. En esta lección aprenderás los fundamentos del diseño
+            responsive y adaptarás la web que ya has construido.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Nivel · Principiante</span>
+            <span>Tiempo · 30–40 min</span>
+            <span>Ruta · Diseño web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>¿Qué significa responsive?</h2>
+
+            <p>
+                Una web responsive es una página capaz de adaptar su diseño
+                al tamaño de la pantalla donde se está visualizando.
+            </p>
+
+            <p>
+                El mismo contenido puede mostrarse de forma diferente
+                en ordenador, tablet y móvil.
+            </p>
+
+            <div class="lesson-note">
+                El objetivo no es crear tres webs distintas, sino una sola web
+                flexible que responda correctamente a diferentes tamaños.
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>La etiqueta viewport.</h2>
+
+            <p>
+                En tus documentos HTML ya hemos utilizado esta línea:
+            </p>
+
+            <div class="lesson-code">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            </div>
+
+            <p>
+                Esta etiqueta indica al navegador que el ancho de la página
+                debe adaptarse al ancho real del dispositivo.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        <strong>width=device-width</strong> utiliza el ancho
+                        del dispositivo.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        <strong>initial-scale=1.0</strong> establece
+                        el nivel inicial de zoom.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>Evita anchuras rígidas.</h2>
+
+            <p>
+                Imagina que escribes:
+            </p>
+
+            <div class="lesson-code">
+section {<br>
+&nbsp;&nbsp;width: 1200px;<br>
+}
+            </div>
+
+            <p>
+                En una pantalla de móvil esa sección podría ser mucho
+                más ancha que la pantalla.
+            </p>
+
+            <p>
+                Una opción más flexible sería:
+            </p>
+
+            <div class="lesson-code">
+section {<br>
+&nbsp;&nbsp;width: 100%;<br>
+&nbsp;&nbsp;max-width: 1200px;<br>
+&nbsp;&nbsp;margin: 0 auto;<br>
+}
+            </div>
+
+            <p>
+                La sección podrá reducirse cuando la pantalla sea pequeña,
+                pero no superará los 1200 píxeles en pantallas grandes.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>Las imágenes también deben ser flexibles.</h2>
+
+            <p>
+                Una imagen muy grande puede desbordarse fuera de la pantalla.
+            </p>
+
+            <p>
+                Una regla muy útil es:
+            </p>
+
+            <div class="lesson-code">
+img {<br>
+&nbsp;&nbsp;max-width: 100%;<br>
+&nbsp;&nbsp;height: auto;<br>
+}
+            </div>
+
+            <p>
+                Así la imagen nunca será más ancha que su contenedor
+                y mantendrá sus proporciones.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Qué son las media queries.</h2>
+
+            <p>
+                Las media queries permiten aplicar reglas CSS solamente
+                cuando se cumplen determinadas condiciones.
+            </p>
+
+            <p>
+                Por ejemplo:
+            </p>
+
+            <div class="lesson-code">
+@media (max-width: 768px) {<br><br>
+
+&nbsp;&nbsp;h1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 40px;<br>
+&nbsp;&nbsp;}<br><br>
+
+}
+            </div>
+
+            <p>
+                Esto significa:
+            </p>
+
+            <div class="lesson-note">
+                Cuando la pantalla tenga un ancho de 768 píxeles o menos,
+                el h1 tendrá un tamaño de 40 píxeles.
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Adapta tu título principal.</h2>
+
+            <p>
+                En la lección anterior utilizamos un título grande:
+            </p>
+
+            <div class="lesson-code">
+h1 {<br>
+&nbsp;&nbsp;font-size: 64px;<br>
+}
+            </div>
+
+            <p>
+                Ese tamaño puede resultar excesivo en móvil.
+            </p>
+
+            <p>
+                Podemos añadir:
+            </p>
+
+            <div class="lesson-code">
+@media (max-width: 768px) {<br><br>
+
+&nbsp;&nbsp;h1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 42px;<br>
+&nbsp;&nbsp;}<br><br>
+
+}
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Reduce los espacios en móvil.</h2>
+
+            <p>
+                En ordenador podemos utilizar bastante espacio entre
+                secciones, pero en una pantalla pequeña puede ser demasiado.
+            </p>
+
+            <p>
+                Si teníamos:
+            </p>
+
+            <div class="lesson-code">
+section {<br>
+&nbsp;&nbsp;padding: 90px 30px;<br>
+}
+            </div>
+
+            <p>
+                podemos adaptar:
+            </p>
+
+            <div class="lesson-code">
+@media (max-width: 768px) {<br><br>
+
+&nbsp;&nbsp;section {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 60px 20px;<br>
+&nbsp;&nbsp;}<br><br>
+
+}
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Convierte columnas en una sola columna.</h2>
+
+            <p>
+                Imagina una sección de servicios con tres columnas:
+            </p>
+
+            <div class="lesson-code">
+.services-grid {<br>
+&nbsp;&nbsp;display: grid;<br>
+&nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br>
+&nbsp;&nbsp;gap: 20px;<br>
+}
+            </div>
+
+            <p>
+                En móvil podemos cambiarla a una sola:
+            </p>
+
+            <div class="lesson-code">
+@media (max-width: 768px) {<br><br>
+
+&nbsp;&nbsp;.services-grid {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: 1fr;<br>
+&nbsp;&nbsp;}<br><br>
+
+}
+            </div>
+
+            <p>
+                Las tarjetas aparecerán una debajo de otra.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Adapta una navegación sencilla.</h2>
+
+            <p>
+                Si tu navegación horizontal deja de caber,
+                puedes reorganizarla temporalmente en columna.
+            </p>
+
+            <div class="lesson-code">
+@media (max-width: 768px) {<br><br>
+
+&nbsp;&nbsp;nav {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;align-items: flex-start;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;gap: 20px;<br>
+&nbsp;&nbsp;}<br><br>
+
+}
+            </div>
+
+            <p>
+                Más adelante podrías crear un menú hamburguesa con JavaScript,
+                como el que utilizamos en Digital Ukhti.
+            </p>
+
+            <div class="lesson-note">
+                Para empezar, una navegación sencilla y usable es mejor
+                que un menú complejo que no funcione correctamente.
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>Utiliza tamaños fluidos cuando tenga sentido.</h2>
+
+            <p>
+                CSS dispone de una función muy útil llamada
+                <strong>clamp()</strong>.
+            </p>
+
+            <p>
+                Por ejemplo:
+            </p>
+
+            <div class="lesson-code">
+h1 {<br>
+&nbsp;&nbsp;font-size: clamp(40px, 6vw, 72px);<br>
+}
+            </div>
+
+            <p>
+                Esto permite que el texto cambie progresivamente de tamaño.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>40px es el tamaño mínimo.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>6vw es el tamaño flexible.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>72px es el tamaño máximo.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">11</p>
+
+            <h2>Prueba tu web en diferentes tamaños.</h2>
+
+            <p>
+                No necesitas tener muchos dispositivos físicos.
+            </p>
+
+            <p>
+                Los navegadores incluyen herramientas de desarrollo
+                que permiten simular diferentes tamaños de pantalla.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Abre tu página en Chrome o Edge.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Haz clic derecho y selecciona Inspeccionar.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Activa la vista de dispositivos.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Prueba varios anchos de pantalla.</p>
+                </div>
+
+            </div>
+
+            <p>
+                No te limites a comprobar un único modelo de teléfono.
+                Arrastra el ancho de la ventana y observa cómo responde
+                el diseño.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">12</p>
+
+            <h2>Qué debes comprobar en móvil.</h2>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Que ningún contenido salga de la pantalla.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Que el texto sea suficientemente grande.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Que los botones sean fáciles de pulsar.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Que las imágenes no se deformen.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Que las columnas se reorganicen correctamente.</p>
+                </div>
+
+                <div>
+                    <span>06</span>
+                    <p>Que la navegación siga siendo usable.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RESUMEN</p>
+
+            <h2>Lo que has aprendido.</h2>
+
+            <ul>
+                <li>Una web responsive se adapta al tamaño de la pantalla.</li>
+                <li>La etiqueta viewport es esencial en dispositivos móviles.</li>
+                <li>Conviene evitar anchuras rígidas innecesarias.</li>
+                <li>Las imágenes pueden utilizar max-width: 100%.</li>
+                <li>Las media queries permiten aplicar estilos según el ancho.</li>
+                <li>Los títulos deben adaptarse a pantallas pequeñas.</li>
+                <li>Los espacios también pueden reducirse.</li>
+                <li>Las cuadrículas pueden pasar de varias columnas a una.</li>
+                <li>La navegación debe seguir siendo usable.</li>
+                <li>clamp() permite crear tamaños fluidos.</li>
+                <li>Debes probar la web en varios tamaños.</li>
+            </ul>
+
+        </section>
+
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">PONLO EN PRÁCTICA</p>
+
+            <h2>Convierte tu web en responsive.</h2>
+
+            <p>
+                Abre el proyecto que has construido durante las últimas
+                lecciones y adapta su CSS.
+            </p>
+
+            <ol>
+                <li>Comprueba que tienes la etiqueta viewport.</li>
+                <li>Añade max-width: 100% a las imágenes.</li>
+                <li>Crea una media query para 768px.</li>
+                <li>Reduce el tamaño del h1 en móvil.</li>
+                <li>Reduce el padding de las secciones.</li>
+                <li>Convierte las columnas en una sola columna.</li>
+                <li>Adapta la navegación.</li>
+                <li>Comprueba los botones.</li>
+                <li>Prueba la página en varios anchos.</li>
+            </ol>
+
+            <div class="lesson-note">
+                <strong>No diseñes únicamente para un teléfono concreto.</strong>
+                Una buena web debe responder de forma natural a muchos
+                tamaños de pantalla diferentes.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <section class="lesson-navigation">
+
+        <div>
+
+            <p>LECCIÓN ANTERIOR</p>
+
+            <a href="leccion-06-disena-tu-pagina-con-css.html">
+                ← 06 · Diseña tu página con CSS
+            </a>
+
+        </div>
+
+        <div class="lesson-next">
+
+            <p>SIGUIENTE LECCIÓN</p>
+
+            <span>
+                08 · Añade imágenes, botones y enlaces
+            </span>
+
+            <small>Próximamente</small>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+</body>
+</html>
