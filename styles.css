@@ -4321,3 +4321,335 @@ body > footer {
         border-bottom: 0;
     }
 }
+/* ========================================
+   RUTA · DISEÑO WEB DESDE CERO
+======================================== */
+
+.webcourse-hero,
+.webcourse-about,
+.webcourse-lessons,
+.webcourse-method,
+.webcourse-cta {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HERO */
+
+.webcourse-hero {
+    padding: 120px 40px 100px;
+}
+
+.webcourse-hero .section-label,
+.webcourse-about .section-label,
+.webcourse-lessons .section-label,
+.webcourse-method .section-label,
+.webcourse-cta .section-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9c7a3c;
+    margin-bottom: 24px;
+}
+
+.webcourse-hero h1 {
+    max-width: 950px;
+    margin-bottom: 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(50px, 7vw, 82px);
+    line-height: 1.04;
+    font-weight: 400;
+}
+
+.webcourse-intro {
+    max-width: 720px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* INFORMACIÓN DE LA RUTA */
+
+.webcourse-meta {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 45px;
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.webcourse-meta > div {
+    padding: 25px 22px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+.webcourse-meta span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #9c7a3c;
+}
+
+.webcourse-meta strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+
+/* QUÉ APRENDERÁS */
+
+.webcourse-about {
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    background: #f3efe7;
+}
+
+.webcourse-about h2,
+.webcourse-lessons h2,
+.webcourse-method h2,
+.webcourse-cta h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.webcourse-about-text {
+    padding-top: 40px;
+}
+
+.webcourse-about-text p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* LECCIONES */
+
+.webcourse-lessons {
+    padding: 110px 40px;
+}
+
+.webcourse-lessons-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.webcourse-lessons-list {
+    border-top: 1px solid #ddd7cc;
+}
+
+.webcourse-lesson {
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 80px 1fr 150px;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ddd7cc;
+    color: #111;
+    text-decoration: none;
+}
+
+a.webcourse-lesson {
+    transition: background 0.2s ease;
+}
+
+a.webcourse-lesson:hover {
+    background: #f3efe7;
+}
+
+.webcourse-lesson > span {
+    color: #9c7a3c;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.webcourse-lesson h3 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.webcourse-lesson > p {
+    margin: 0;
+    text-align: right;
+    color: #777;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+a.webcourse-lesson > p {
+    color: #111;
+}
+
+
+/* MÉTODO */
+
+.webcourse-method {
+    padding: 100px 40px;
+    border-top: 1px solid #e3ded5;
+}
+
+.webcourse-method > h2 {
+    margin-bottom: 55px;
+}
+
+.webcourse-method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd7cc;
+    border-left: 1px solid #ddd7cc;
+}
+
+.webcourse-method-grid > div {
+    min-height: 250px;
+    padding: 35px 30px;
+    border-right: 1px solid #ddd7cc;
+    border-bottom: 1px solid #ddd7cc;
+}
+
+.webcourse-method-grid span {
+    display: block;
+    margin-bottom: 45px;
+    color: #9c7a3c;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.webcourse-method-grid h3 {
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.webcourse-method-grid p {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* CTA FINAL */
+
+.webcourse-cta {
+    margin-bottom: 100px;
+    padding: 90px 40px;
+    background: #f3efe7;
+    text-align: center;
+}
+
+.webcourse-cta h2 {
+    max-width: 760px;
+    margin: 0 auto 25px;
+}
+
+.webcourse-cta > p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .webcourse-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .webcourse-about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .webcourse-about-text {
+        padding-top: 0;
+    }
+
+    .webcourse-method-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+    .webcourse-hero,
+    .webcourse-about,
+    .webcourse-lessons,
+    .webcourse-method {
+        padding: 70px 22px;
+    }
+
+    .webcourse-hero h1 {
+        font-size: 46px;
+    }
+
+    .webcourse-intro {
+        font-size: 16px;
+    }
+
+    .webcourse-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .webcourse-meta > div {
+        padding: 20px 15px;
+    }
+
+    .webcourse-about h2,
+    .webcourse-lessons h2,
+    .webcourse-method h2,
+    .webcourse-cta h2 {
+        font-size: 38px;
+    }
+
+    .webcourse-lesson {
+        grid-template-columns: 45px 1fr;
+        gap: 15px;
+        padding: 22px 10px;
+    }
+
+    .webcourse-lesson h3 {
+        font-size: 19px;
+    }
+
+    .webcourse-lesson > p {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .webcourse-method-grid > div {
+        min-height: auto;
+        padding: 30px 25px;
+    }
+
+    .webcourse-method-grid span {
+        margin-bottom: 28px;
+    }
+
+    .webcourse-cta {
+        margin: 20px 20px 70px;
+        padding: 65px 25px;
+    }
+}
