@@ -5865,3 +5865,20 @@ a.businesscourse-lesson > p {
         margin-top: 30px;
     }
 }
+/* LA PRUN — Mostrar imágenes completas solo en ordenador */
+@media (min-width: 901px) {
+
+    .la-prun-site .prun-section-image,
+    .la-prun-site .prun-products-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .la-prun-site .prun-section-image img,
+    .la-prun-site .prun-products-image img {
+        width: 82%;
+        max-width: 950px;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+}
