@@ -5773,3 +5773,12 @@ a.businesscourse-lesson > p {
         z-index: 1000;
     }
 }
+/* FOOTER LA PRUN — CORRECCIÓN */
+
+.la-prun-site .prun-footer {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    padding: 40px 7%;
+}
