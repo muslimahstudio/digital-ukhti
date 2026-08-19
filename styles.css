@@ -5719,3 +5719,57 @@ a.businesscourse-lesson > p {
         flex-direction: column;
     }
 }
+/* MENÚ MÓVIL LA PRUN */
+
+.prun-menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.prun-menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 6px 0;
+    background: var(--prun-carbon);
+}
+
+@media (max-width: 900px) {
+
+    .prun-nav {
+        grid-template-columns: 1fr auto auto;
+        gap: 18px;
+    }
+
+    .prun-menu-toggle {
+        display: block;
+    }
+
+    .prun-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--prun-crema);
+        padding: 30px 6%;
+        border-top: 1px solid #ded5c8;
+        border-bottom: 1px solid #ded5c8;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        z-index: 1000;
+    }
+
+    .prun-menu.active {
+        display: flex;
+    }
+
+    .prun-header {
+        position: relative;
+        z-index: 1000;
+    }
+}
