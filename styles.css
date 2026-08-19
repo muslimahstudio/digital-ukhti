@@ -5884,28 +5884,32 @@ a.businesscourse-lesson > p {
         object-fit: contain !important;
     }
 }
-/* LA PRUN — Galería horizontal grande en ordenador */
+/* LA PRUN — 2 imágenes iguales a todo el ancho */
 @media (min-width: 901px) {
 
     .la-prun-site .prun-gallery-grid {
-        width: 94vw !important;
-        max-width: 1400px !important;
+        width: 96vw !important;
+        max-width: 1500px !important;
         margin: 50px 0 0 !important;
+
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+        display: flex !important;
         gap: 24px;
     }
 
     .la-prun-site .prun-gallery-grid img {
-        width: 100% !important;
-        max-width: none !important;
+        flex: 1 1 0 !important;
+        width: 0 !important;
         min-width: 0 !important;
+        max-width: none !important;
+
         height: 300px !important;
         object-fit: cover !important;
         object-position: center !important;
+
         display: block;
     }
 }
