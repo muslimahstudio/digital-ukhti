@@ -5884,23 +5884,32 @@ a.businesscourse-lesson > p {
         object-fit: contain !important;
     }
 }
-/* LA PRUN — Galería horizontal en ordenador */
-@media (min-width: 901px) {
+/* LA PRUN — Galería con 2 imágenes horizontales iguales */
+.la-prun-site .prun-gallery-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
 
+.la-prun-site .prun-gallery-grid img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
     .la-prun-site .prun-gallery-grid {
-        width: 92%;
-        max-width: 1250px;
-        margin: 50px auto 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 22px;
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 
     .la-prun-site .prun-gallery-grid img {
-        width: 100%;
-        height: 280px;
-        object-fit: cover;
-        object-position: center;
-        display: block;
+        height: 220px;
     }
 }
