@@ -5304,3 +5304,418 @@ a.businesscourse-lesson > p {
         padding: 65px 25px;
     }
 }
+/* =========================================
+   LA PRUN — WEB
+   ========================================= */
+
+.la-prun-site {
+    --prun-crema: #F4EFE6;
+    --prun-beige: #D8C7B3;
+    --prun-arcilla: #C9A27E;
+    --prun-oliva: #7C8060;
+    --prun-marron: #4A3A30;
+    --prun-carbon: #25231F;
+
+    background: var(--prun-crema);
+    color: var(--prun-carbon);
+}
+
+
+/* HEADER */
+
+.prun-header {
+    background: var(--prun-crema);
+    border-bottom: 1px solid rgba(74, 58, 48, 0.15);
+}
+
+.prun-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 5%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.prun-logo {
+    color: var(--prun-carbon);
+    text-decoration: none;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.prun-menu {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.prun-menu a {
+    color: var(--prun-carbon);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.prun-reserva {
+    background: var(--prun-carbon);
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* HERO */
+
+.prun-hero {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 45px 5% 100px;
+}
+
+.prun-hero-image {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.prun-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.prun-hero-content {
+    max-width: 900px;
+    padding-top: 55px;
+}
+
+.prun-eyebrow {
+    color: var(--prun-oliva);
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.prun-hero h1,
+.prun-story h2,
+.prun-cafe h2,
+.prun-products h2,
+.prun-gallery h2,
+.prun-reservations h2,
+.prun-contact h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--prun-marron);
+}
+
+.prun-hero h1 {
+    font-size: clamp(58px, 7vw, 96px);
+    line-height: 0.98;
+    margin-bottom: 28px;
+}
+
+.prun-intro {
+    max-width: 680px;
+    font-size: 19px;
+    line-height: 1.8;
+    color: #5d554f;
+}
+
+.prun-hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.prun-button-dark,
+.prun-button-light {
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 24px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.prun-button-dark {
+    background: var(--prun-carbon);
+    color: white;
+}
+
+.prun-button-light {
+    border: 1px solid var(--prun-marron);
+    color: var(--prun-marron);
+}
+
+
+/* HISTORIA */
+
+.prun-story {
+    background: #fffaf3;
+    padding: 110px 7%;
+}
+
+.prun-two-columns {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.prun-two-columns h2 {
+    font-size: clamp(42px, 5vw, 66px);
+    line-height: 1.05;
+}
+
+.prun-two-columns p {
+    line-height: 1.9;
+    color: #5d554f;
+    margin-bottom: 20px;
+}
+
+
+/* CAFETERÍA */
+
+.prun-cafe {
+    padding: 110px 7%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.prun-cafe h2 {
+    font-size: clamp(42px, 5vw, 64px);
+    margin-bottom: 50px;
+}
+
+.prun-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.prun-cards article {
+    background: #fff;
+    border: 1px solid #ded5c8;
+    padding: 40px 32px;
+    min-height: 280px;
+}
+
+.prun-cards span {
+    color: var(--prun-oliva);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.prun-cards h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 35px 0 15px;
+}
+
+.prun-cards p {
+    line-height: 1.8;
+    color: #5d554f;
+}
+
+
+/* PRODUCTOS */
+
+.prun-products {
+    background: var(--prun-carbon);
+    color: white;
+    padding: 110px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+}
+
+.prun-products h2 {
+    color: white;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1;
+}
+
+.prun-product-list > div {
+    padding: 28px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+}
+
+.prun-product-list span {
+    color: var(--prun-arcilla);
+    font-size: 12px;
+}
+
+.prun-product-list h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* GALERÍA */
+
+.prun-gallery {
+    padding: 110px 7%;
+    text-align: center;
+}
+
+.prun-gallery h2 {
+    font-size: clamp(48px, 6vw, 72px);
+    margin-bottom: 50px;
+}
+
+.prun-gallery img {
+    width: 100%;
+    max-width: 1200px;
+    height: 560px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* RESERVAS */
+
+.prun-reservations {
+    background: var(--prun-arcilla);
+    text-align: center;
+    padding: 110px 7%;
+}
+
+.prun-reservations h2 {
+    font-size: clamp(48px, 6vw, 76px);
+    margin-bottom: 20px;
+}
+
+.prun-reservations p {
+    margin-bottom: 35px;
+}
+
+
+/* CONTACTO */
+
+.prun-contact {
+    padding: 100px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.prun-contact h2 {
+    font-size: 60px;
+}
+
+.prun-contact-info p {
+    padding: 14px 0;
+    border-bottom: 1px solid #ded5c8;
+}
+
+
+/* FOOTER */
+
+.prun-footer {
+    background: var(--prun-carbon);
+    color: white;
+    padding: 40px 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.prun-footer p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+}
+
+.prun-footer span {
+    color: #d6cfc6;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 900px) {
+
+    .prun-nav {
+        grid-template-columns: 1fr auto;
+    }
+
+    .prun-menu {
+        display: none;
+    }
+
+    .prun-hero {
+        padding: 25px 6% 70px;
+    }
+
+    .prun-hero-image {
+        height: 330px;
+    }
+
+    .prun-hero-content {
+        padding-top: 40px;
+    }
+
+    .prun-hero h1 {
+        font-size: 52px;
+    }
+
+    .prun-hero-buttons {
+        flex-direction: column;
+    }
+
+    .prun-button-dark,
+    .prun-button-light {
+        width: 100%;
+        text-align: center;
+    }
+
+    .prun-two-columns,
+    .prun-products,
+    .prun-contact {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .prun-story,
+    .prun-cafe,
+    .prun-products,
+    .prun-gallery,
+    .prun-reservations,
+    .prun-contact {
+        padding: 70px 6%;
+    }
+
+    .prun-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .prun-cards article {
+        min-height: auto;
+    }
+
+    .prun-gallery img {
+        height: 330px;
+    }
+
+    .prun-footer {
+        flex-direction: column;
+    }
+}
