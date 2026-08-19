@@ -5820,17 +5820,19 @@ a.businesscourse-lesson > p {
 
 /* Galería de La Prun */
 .prun-gallery-grid {
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 50px auto 0;
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
 }
 
 .prun-gallery-grid img {
     width: 100%;
-    height: 430px;
+    aspect-ratio: 4 / 3;
+    height: auto;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
 
