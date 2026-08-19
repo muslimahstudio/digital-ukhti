@@ -5807,6 +5807,7 @@ a.businesscourse-lesson > p {
 .prun-section-image {
     width: 100%;
     overflow: hidden;
+    margin-top: 45px;
 }
 
 .prun-section-image img {
