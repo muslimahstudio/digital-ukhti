@@ -5860,3 +5860,8 @@ a.businesscourse-lesson > p {
         height: 280px;
     }
 }
+@media (max-width: 900px) {
+    .la-prun-site .prun-section-image {
+        margin-top: 30px;
+    }
+}
