@@ -6058,3 +6058,13 @@ a.businesscourse-lesson > p {
 .la-prun-page .top-link a:hover {
     background: #7C8060;
 }
+/* CASO DE ESTUDIO 01 — Footer a todo el ancho */
+.digital-ukhti-case-page footer {
+    width: 100vw !important;
+    max-width: none !important;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    box-sizing: border-box;
+}
