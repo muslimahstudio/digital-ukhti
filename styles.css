@@ -5924,3 +5924,34 @@ a.businesscourse-lesson > p {
         height: 220px;
     }
 }
+/* LA PRUN — Imágenes Café · Dulces · Productos locales */
+.la-prun-site .prun-cafe-gallery {
+    width: 100%;
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.la-prun-site .prun-cafe-gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* MÓVIL */
+@media (max-width: 900px) {
+
+    .la-prun-site .prun-cafe-gallery {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 30px;
+    }
+
+    .la-prun-site .prun-cafe-gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
