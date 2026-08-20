@@ -5978,3 +5978,21 @@ a.businesscourse-lesson > p {
   display: block;
   margin: 0 auto;
 }
+/* LA PRUN — Recorte header + portada en Experiencia digital */
+
+.la-prun-experience-crop {
+    width: 100%;
+    max-width: 1100px;
+    height: 360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.la-prun-experience-crop img {
+    width: 100% !important;
+    max-width: none !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+    display: block;
+}
