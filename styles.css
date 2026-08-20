@@ -5955,3 +5955,17 @@ a.businesscourse-lesson > p {
         height: auto;
     }
 }
+/* LA PRUN — Acentos verde oliva */
+
+.la-prun-site .prun-cards article span,
+.la-prun-site .prun-product-list span {
+    color: var(--prun-oliva);
+}
+
+.la-prun-site .prun-menu a:hover {
+    color: var(--prun-oliva);
+}
+
+.la-prun-site .prun-reserva:hover {
+    background: var(--prun-oliva);
+}
