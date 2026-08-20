@@ -5998,3 +5998,13 @@ a.businesscourse-lesson > p {
     left: 50%;
     transform: translateX(-50%);
 }
+/* LA PRUN — Footer a todo el ancho */
+.la-prun-page footer {
+    width: 100vw !important;
+    max-width: none !important;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    box-sizing: border-box;
+}
