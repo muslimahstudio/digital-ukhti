@@ -6090,3 +6090,26 @@ a.businesscourse-lesson > p {
 .prun-back-portfolio a:hover {
   opacity: 0.65;
 }
+/* CORRECCIÓN FINAL PORTFOLIO CTA Y FOOTER */
+
+body.portfolio-page {
+  overflow-x: hidden;
+}
+
+.portfolio-cta,
+.portfolio-footer {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  left: auto;
+  right: auto;
+}
+
+.portfolio-cta::before,
+.portfolio-cta::after,
+.portfolio-footer::before,
+.portfolio-footer::after {
+  content: none !important;
+  display: none !important;
+}
