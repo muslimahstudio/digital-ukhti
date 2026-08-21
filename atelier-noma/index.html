@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Atelier Noma | Interiorismo y decoración</title>
+
+  <meta name="description" content="Atelier Noma crea espacios serenos, funcionales y atemporales mediante un interiorismo cálido y personalizado.">
+
+  <link rel="icon" type="image/png" href="atelier-noma-monograma-negro.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --marfil: #f6f2ea;
+      --arena: #d8c7b2;
+      --piedra: #b59a73;
+      --taupe: #6b6258;
+      --oscuro: #292621;
+      --blanco: #fffdf9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: var(--marfil);
+      color: var(--oscuro);
+      line-height: 1.7;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1200px, 88%);
+      margin: auto;
+    }
+
+    .section-label {
+      margin-bottom: 18px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin-bottom: 28px;
+      font-size: clamp(42px, 6vw, 76px);
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 28px;
+      border: 1px solid var(--oscuro);
+      background: var(--oscuro);
+      color: var(--blanco);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background: transparent;
+      color: var(--oscuro);
+    }
+
+    /* HEADER */
+
+    .header {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: var(--blanco);
+    }
+
+    .navbar {
+      width: min(1400px, 92%);
+      min-height: 105px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      width: 245px;
+      max-height: 75px;
+      object-fit: contain;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .menu-button {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--blanco);
+      font-size: 27px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(25, 22, 19, 0.62), rgba(25, 22, 19, 0.05)),
+        url("atelier-noma-hero.png") center/cover no-repeat;
+      color: var(--blanco);
+    }
+
+    .hero-content {
+      width: min(1400px, 88%);
+      margin: auto;
+      padding-top: 100px;
+    }
+
+    .hero-label {
+      margin-bottom: 25px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      max-width: 680px;
+      margin-bottom: 30px;
+      font-size: clamp(62px, 8vw, 118px);
+    }
+
+    .hero-text {
+      max-width: 520px;
+      margin-bottom: 38px;
+      font-size: 16px;
+    }
+
+    .hero .button {
+      border-color: var(--blanco);
+      background: var(--blanco);
+      color: var(--oscuro);
+    }
+
+    .hero .button:hover {
+      background: transparent;
+      color: var(--blanco);
+    }
+
+    /* INTRODUCCIÓN */
+
+    .intro {
+      padding: 140px 0;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 100px;
+      align-items: start;
+    }
+
+    .intro-text {
+      max-width: 610px;
+    }
+
+    .intro-text p {
+      margin-bottom: 22px;
+    }
+
+    /* PROYECTOS */
+
+    .projects {
+      padding: 30px 0 140px;
+    }
+
+    .projects-heading {
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 40px;
+    }
+
+    .projects-heading h2 {
+      margin: 0;
+    }
+
+    .projects-heading p {
+      max-width: 380px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 70px 30px;
+    }
+
+    .project-card:last-child {
+      grid-column: 1 / -1;
+      width: 72%;
+      margin: auto;
+    }
+
+    .project-image {
+      height: 580px;
+      overflow: hidden;
+    }
+
+    .project-card:last-child .project-image {
+      height: 620px;
+    }
+
+    .project-image img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.025);
+    }
+
+    .project-info {
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      border-top: 1px solid var(--arena);
+    }
+
+    .project-info h3 {
+      font-size: 32px;
+    }
+
+    .project-info span {
+      padding-top: 8px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* SERVICIOS */
+
+    .services {
+      padding: 140px 0;
+      background: var(--oscuro);
+      color: var(--blanco);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 100px;
+    }
+
+    .service {
+      padding: 32px 0;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .service:last-child {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .service-number {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    .service h3 {
+      margin-bottom: 12px;
+      font-size: 36px;
+    }
+
+    .service p {
+      max-width: 590px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* MÉTODO */
+
+    .method {
+      padding: 140px 0;
+    }
+
+    .method-intro {
+      max-width: 700px;
+      margin-bottom: 75px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 45px;
+    }
+
+    .step {
+      padding-top: 25px;
+      border-top: 1px solid var(--taupe);
+    }
+
+    .step span {
+      display: block;
+      margin-bottom: 35px;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    .step h3 {
+      margin-bottom: 18px;
+      font-size: 36px;
+    }
+
+    /* TESTIMONIO */
+
+    .testimonial {
+      padding: 140px 0;
+      background: var(--arena);
+      text-align: center;
+    }
+
+    .quote {
+      max-width: 920px;
+      margin: 0 auto 35px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(36px, 5vw, 66px);
+      line-height: 1.15;
+    }
+
+    .testimonial-name {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* CONTACTO */
+
+    .contact {
+      padding: 150px 0;
+      text-align: center;
+    }
+
+    .contact-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .contact p {
+      max-width: 560px;
+      margin: 0 auto 38px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 80px 0 35px;
+      background: var(--oscuro);
+      color: var(--blanco);
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 60px;
+      padding-bottom: 65px;
+    }
+
+    .footer-logo {
+      width: 260px;
+      margin-bottom: 20px;
+    }
+
+    .footer-column h3 {
+      margin-bottom: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .footer-column a,
+    .footer-column p {
+      display: block;
+      margin-bottom: 10px;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 13px;
+    }
+
+    .footer-bottom {
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-bottom p {
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .navbar {
+        min-height: 85px;
+      }
+
+      .logo img {
+        width: 190px;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        padding: 35px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        background: var(--oscuro);
+      }
+
+      .nav-menu.open {
+        display: flex;
+      }
+
+      .intro-grid,
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-card:last-child {
+        grid-column: auto;
+        width: 100%;
+      }
+
+      .project-image,
+      .project-card:last-child .project-image {
+        height: 500px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 90%;
+      }
+
+      .hero {
+        min-height: 780px;
+        background-position: 58% center;
+      }
+
+      .hero h1 {
+        font-size: 58px;
+      }
+
+      .hero-text {
+        font-size: 14px;
+      }
+
+      .intro,
+      .services,
+      .method,
+      .testimonial,
+      .contact {
+        padding: 95px 0;
+      }
+
+      .projects {
+        padding-bottom: 95px;
+      }
+
+      .projects-heading {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .project-image,
+      .project-card:last-child .project-image {
+        height: 410px;
+      }
+
+      .project-info h3 {
+        font-size: 27px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#inicio" class="logo">
+        <img src="atelier-noma-logo-blanco.png" alt="Atelier Noma">
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#estudio">El estudio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="hero-label">Interiorismo · Decoración · Espacios</p>
+
+        <h1>Espacios que se sienten como hogar</h1>
+
+        <p class="hero-text">
+          Diseñamos interiores serenos, funcionales y atemporales que reflejan
+          la forma de vivir de cada persona.
+        </p>
+
+        <a href="#contacto" class="button">Cuéntanos tu proyecto</a>
+      </div>
+    </section>
+
+    <section class="intro" id="estudio">
+      <div class="container intro-grid">
+        <div>
+          <p class="section-label">Atelier Noma</p>
+        </div>
+
+        <div class="intro-text">
+          <h2>Diseñamos espacios para vivirlos</h2>
+
+          <p>
+            Atelier Noma es un estudio de interiorismo que combina sensibilidad,
+            funcionalidad y materiales naturales para crear hogares llenos de calma.
+          </p>
+
+          <p>
+            Cada proyecto nace de una escucha atenta. Analizamos el espacio,
+            las necesidades y el estilo de vida de quienes lo habitan para
+            desarrollar una propuesta personal, coherente y duradera.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="proyectos">
+      <div class="container">
+        <div class="projects-heading">
+          <div>
+            <p class="section-label">Proyectos seleccionados</p>
+            <h2>Interiores con identidad</h2>
+          </div>
+
+          <p>
+            Espacios donde la arquitectura, la luz y los materiales encuentran
+            un equilibrio natural.
+          </p>
+        </div>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="atelier-noma-dormitorio.png" alt="Dormitorio Casa Serena">
+            </div>
+
+            <div class="project-info">
+              <h3>Casa Serena</h3>
+              <span>Dormitorio · 2026</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="atelier-noma-comedor.png" alt="Comedor Residencia Alba">
+            </div>
+
+            <div class="project-info">
+              <h3>Residencia Alba</h3>
+              <span>Comedor · 2026</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="atelier-noma-estudio.png" alt="Estudio Refugio Noma">
+            </div>
+
+            <div class="project-info">
+              <h3>Refugio Noma</h3>
+              <span>Estudio privado · 2026</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicios">
+      <div class="container services-grid">
+        <div>
+          <p class="section-label">Nuestros servicios</p>
+          <h2>Creamos contigo</h2>
+        </div>
+
+        <div>
+          <article class="service">
+            <span class="service-number">01</span>
+            <div>
+              <h3>Diseño integral</h3>
+              <p>
+                Concepto, distribución, materiales, mobiliario, iluminación y
+                seguimiento para transformar completamente tu espacio.
+              </p>
+            </div>
+          </article>
+
+          <article class="service">
+            <span class="service-number">02</span>
+            <div>
+              <h3>Decoración</h3>
+              <p>
+                Una propuesta cuidada de mobiliario, textiles, color y piezas
+                decorativas para dar coherencia y personalidad a tu hogar.
+              </p>
+            </div>
+          </article>
+
+          <article class="service">
+            <span class="service-number">03</span>
+            <div>
+              <h3>Asesoría online</h3>
+              <p>
+                Una solución flexible para resolver dudas, reorganizar una estancia
+                o definir una dirección estética desde cualquier lugar.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" id="metodo">
+      <div class="container">
+        <div class="method-intro">
+          <p class="section-label">Nuestro método</p>
+          <h2>Un proceso claro y cercano</h2>
+
+          <p>
+            Te acompañamos desde la primera idea hasta los últimos detalles,
+            manteniendo una comunicación sencilla durante todo el proyecto.
+          </p>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <span>01</span>
+            <h3>Escuchamos</h3>
+            <p>
+              Conocemos tus necesidades, tu forma de vivir y aquello que deseas
+              sentir en el espacio.
+            </p>
+          </article>
+
+          <article class="step">
+            <span>02</span>
+            <h3>Diseñamos</h3>
+            <p>
+              Creamos una propuesta visual y funcional con materiales, colores,
+              mobiliario y distribución.
+            </p>
+          </article>
+
+          <article class="step">
+            <span>03</span>
+            <h3>Transformamos</h3>
+            <p>
+              Coordinamos cada elemento para convertir el concepto en un espacio
+              real, equilibrado y personal.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container">
+        <p class="section-label">Experiencias</p>
+
+        <blockquote class="quote">
+          “Atelier Noma entendió cómo queríamos sentir nuestro hogar y lo
+          transformó en un espacio sereno, cálido y completamente nuestro.”
+        </blockquote>
+
+        <p class="testimonial-name">Clara y Daniel · Casa Serena</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container contact-content">
+        <p class="section-label">Hablemos</p>
+
+        <h2>Tu espacio puede comenzar aquí</h2>
+
+        <p>
+          Cuéntanos qué deseas transformar y te contactaremos para conocer
+          tu proyecto y valorar cómo podemos ayudarte.
+        </p>
+
+        <a href="mailto:hola@ateliernoma.com" class="button">
+          Solicitar una consulta
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <img
+            src="atelier-noma-logo-blanco.png"
+            alt="Atelier Noma"
+            class="footer-logo"
+          >
+
+          <p>Espacios serenos, funcionales y atemporales.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Navegación</h3>
+          <a href="#estudio">El estudio</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <a href="mailto:hola@ateliernoma.com">hola@ateliernoma.com</a>
+          <a href="#">Instagram</a>
+          <p>España · Proyectos online</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Atelier Noma</p>
+        <p>Interiorismo · Diseño · Decoración</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const navMenu = document.getElementById("navMenu");
+
+    menuButton.addEventListener("click", function () {
+      navMenu.classList.toggle("open");
+
+      if (navMenu.classList.contains("open")) {
+        menuButton.textContent = "×";
+      } else {
+        menuButton.textContent = "☰";
+      }
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navMenu.classList.remove("open");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
+
+</body>
+</html>
