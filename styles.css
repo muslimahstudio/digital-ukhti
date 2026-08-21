@@ -6068,3 +6068,25 @@ a.businesscourse-lesson > p {
     margin-right: -50vw !important;
     box-sizing: border-box;
 }
+.prun-back-portfolio {
+  padding: 80px 6%;
+  background: #1f1d1a;
+  text-align: center;
+}
+
+.prun-back-portfolio a {
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f4efe7;
+  color: #f4efe7;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.prun-back-portfolio a:hover {
+  opacity: 0.65;
+}
