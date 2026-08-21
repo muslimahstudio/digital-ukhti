@@ -518,12 +518,18 @@
 
     /* FOOTER */
 
-    .nurea-footer {
-      width: 100%;
-      padding: 38px 0;
-      background: #111111;
-      color: #ffffff;
-    }
+ .nurea-footer {
+  width: 100vw !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 38px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111111;
+  color: #ffffff;
+  box-sizing: border-box;
+}
 
     .nurea-footer-inner {
       display: flex;
