@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NURÉA | Caso de estudio 03 · Digital Ukhti</title>
+
+  <meta
+    name="description"
+    content="Caso de estudio de NURÉA: branding, packaging y diseño UX/UI para una marca ficticia de cosmética botánica."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    :root {
+      --nurea-ivory: #f6f2ea;
+      --nurea-sage: #a8ae9c;
+      --nurea-sand: #d8cbbb;
+      --nurea-brown: #302a25;
+      --nurea-white: #ffffff;
+      --nurea-gold: #c7a84f;
+      --nurea-line: rgba(48, 42, 37, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: var(--nurea-white);
+      color: var(--nurea-brown);
+      font-family: "Open Sans", sans-serif;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .nurea-container {
+      width: min(1180px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    /* CABECERA DIGITAL UKHTI */
+
+    .nurea-header {
+      width: 100%;
+      background: #ffffff;
+      border-bottom: 1px solid #e8e4de;
+      position: relative;
+      z-index: 100;
+    }
+
+    .nurea-header-inner {
+      min-height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .nurea-brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .nurea-brand img {
+      width: 145px;
+      max-height: 58px;
+      object-fit: contain;
+    }
+
+    .nurea-menu-button {
+      display: none;
+      border: 0;
+      background: transparent;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .nurea-menu-button span {
+      display: block;
+      width: 25px;
+      height: 1.5px;
+      margin: 6px 0;
+      background: #111111;
+    }
+
+    .nurea-navigation {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .nurea-navigation a {
+      color: #151515;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nurea-navigation a:hover,
+    .nurea-navigation a[aria-current="page"] {
+      color: #a07c39;
+    }
+
+    /* PORTADA */
+
+    .nurea-hero {
+      background: var(--nurea-ivory);
+      padding: 100px 0 72px;
+    }
+
+    .nurea-eyebrow,
+    .nurea-section-number {
+      margin: 0 0 18px;
+      color: #756f68;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .nurea-hero h1 {
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(4.8rem, 12vw, 10rem);
+      font-weight: 400;
+      letter-spacing: -0.04em;
+      line-height: 0.82;
+    }
+
+    .nurea-hero-subtitle {
+      max-width: 720px;
+      margin: 34px 0 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.5rem, 3vw, 2.35rem);
+      font-weight: 400;
+      line-height: 1.22;
+    }
+
+    .nurea-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 72px;
+      border-top: 1px solid var(--nurea-line);
+      border-bottom: 1px solid var(--nurea-line);
+    }
+
+    .nurea-meta-item {
+      min-height: 120px;
+      padding: 26px 22px;
+      border-right: 1px solid var(--nurea-line);
+    }
+
+    .nurea-meta-item:last-child {
+      border-right: 0;
+    }
+
+    .nurea-meta-label {
+      display: block;
+      margin-bottom: 12px;
+      color: #77716a;
+      font-size: 0.67rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .nurea-meta-value {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
+
+    .nurea-hero-image {
+      padding: 0 0 105px;
+      background: var(--nurea-ivory);
+    }
+
+    .nurea-hero-image img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    /* SECCIONES */
+
+    .nurea-section {
+      padding: 110px 0;
+    }
+
+    .nurea-section-soft {
+      background: var(--nurea-ivory);
+    }
+
+    .nurea-section-sage {
+      background: var(--nurea-sage);
+    }
+
+    .nurea-section-dark {
+      background: var(--nurea-brown);
+      color: var(--nurea-ivory);
+    }
+
+    .nurea-heading {
+      max-width: 850px;
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.7rem, 6vw, 5.3rem);
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 0.98;
+    }
+
+    .nurea-heading-small {
+      font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+    }
+
+    .nurea-intro-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 90px;
+      align-items: start;
+    }
+
+    .nurea-copy {
+      max-width: 700px;
+      margin: 0;
+      color: #5f5953;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.9;
+    }
+
+    .nurea-copy + .nurea-copy {
+      margin-top: 20px;
+    }
+
+    .nurea-section-dark .nurea-copy {
+      color: rgba(246, 242, 234, 0.76);
+    }
+
+    .nurea-highlight {
+      margin-top: 70px;
+      padding: 42px;
+      border-left: 2px solid var(--nurea-gold);
+      background: rgba(216, 203, 187, 0.24);
+    }
+
+    .nurea-highlight p {
+      max-width: 900px;
+      margin: 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.8rem, 4vw, 3.25rem);
+      line-height: 1.2;
+    }
+
+    /* ESTRATEGIA */
+
+    .nurea-strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      margin-top: 65px;
+      background: var(--nurea-line);
+      border: 1px solid var(--nurea-line);
+    }
+
+    .nurea-strategy-card {
+      min-height: 310px;
+      padding: 42px 34px;
+      background: var(--nurea-white);
+    }
+
+    .nurea-card-number {
+      display: block;
+      margin-bottom: 68px;
+      color: #8c857c;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.2rem;
+    }
+
+    .nurea-strategy-card h3 {
+      margin: 0 0 18px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .nurea-strategy-card p {
+      margin: 0;
+      color: #69625b;
+      font-size: 0.92rem;
+      line-height: 1.75;
+    }
+
+    /* IDENTIDAD */
+
+    .nurea-image-block {
+      margin-top: 62px;
+    }
+
+    .nurea-image-block img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .nurea-image-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 14px;
+      color: #746e67;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .nurea-identity-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-top: 32px;
+    }
+
+    .nurea-identity-grid img {
+      height: 100%;
+      min-height: 380px;
+      object-fit: cover;
+    }
+
+    .nurea-logo-showcase {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      min-height: 460px;
+      margin-top: 65px;
+      border: 1px solid rgba(246, 242, 234, 0.18);
+    }
+
+    .nurea-logo-panel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 55px;
+      background: var(--nurea-ivory);
+    }
+
+    .nurea-logo-panel img {
+      max-width: 650px;
+      max-height: 260px;
+      object-fit: contain;
+    }
+
+    .nurea-monogram-panel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 55px;
+      background: var(--nurea-sand);
+    }
+
+    .nurea-monogram-panel img {
+      max-width: 240px;
+      max-height: 260px;
+      object-fit: contain;
+    }
+
+    /* PRODUCTOS */
+
+    .nurea-products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 65px;
+    }
+
+    .nurea-product {
+      background: var(--nurea-ivory);
+    }
+
+    .nurea-product img {
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .nurea-product-info {
+      min-height: 150px;
+      padding: 25px 24px 30px;
+    }
+
+    .nurea-product-info span {
+      color: #817a72;
+      font-size: 0.67rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .nurea-product-info h3 {
+      margin: 10px 0 0;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.65rem;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    /* PACKAGING Y UX/UI */
+
+    .nurea-visual-stack {
+      display: grid;
+      gap: 34px;
+      margin-top: 65px;
+    }
+
+    .nurea-visual-stack img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .nurea-ui-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 35px;
+      margin-top: 65px;
+    }
+
+    .nurea-ui-card {
+      overflow: hidden;
+      background: var(--nurea-ivory);
+    }
+
+    .nurea-ui-card img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .nurea-ui-caption {
+      padding: 23px 28px 28px;
+    }
+
+    .nurea-ui-caption h3 {
+      margin: 0 0 8px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    .nurea-ui-caption p {
+      margin: 0;
+      color: #69625b;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* RESULTADO */
+
+    .nurea-result {
+      text-align: center;
+    }
+
+    .nurea-result .nurea-heading {
+      margin-inline: auto;
+    }
+
+    .nurea-result .nurea-copy {
+      max-width: 760px;
+      margin: 34px auto 0;
+    }
+
+    .nurea-result-image {
+      margin-top: 65px;
+    }
+
+    .nurea-result-image img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .nurea-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 55px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid currentColor;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    /* FOOTER */
+
+    .nurea-footer {
+      width: 100%;
+      padding: 38px 0;
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .nurea-footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .nurea-footer p,
+    .nurea-footer a {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 0.76rem;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .nurea-header-inner {
+        min-height: 76px;
+      }
+
+      .nurea-menu-button {
+        display: block;
+      }
+
+      .nurea-navigation {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        padding: 25px 24px 32px;
+        background: #ffffff;
+        border-top: 1px solid #e8e4de;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.07);
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nurea-navigation.is-open {
+        display: flex;
+      }
+
+      .nurea-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nurea-meta-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .nurea-meta-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--nurea-line);
+      }
+
+      .nurea-intro-grid,
+      .nurea-logo-showcase {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .nurea-strategy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nurea-products-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nurea-logo-showcase {
+        gap: 0;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .nurea-container {
+        width: min(100% - 30px, 1180px);
+      }
+
+      .nurea-brand img {
+        width: 120px;
+      }
+
+      .nurea-hero {
+        padding: 72px 0 48px;
+      }
+
+      .nurea-hero h1 {
+        font-size: clamp(4rem, 24vw, 6.5rem);
+      }
+
+      .nurea-hero-subtitle {
+        margin-top: 26px;
+      }
+
+      .nurea-meta {
+        grid-template-columns: 1fr;
+        margin-top: 48px;
+      }
+
+      .nurea-meta-item {
+        min-height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--nurea-line);
+      }
+
+      .nurea-meta-item:last-child {
+        border-bottom: 0;
+      }
+
+      .nurea-hero-image {
+        padding-bottom: 72px;
+      }
+
+      .nurea-section {
+        padding: 76px 0;
+      }
+
+      .nurea-highlight {
+        padding: 30px 24px;
+      }
+
+      .nurea-strategy-card {
+        min-height: auto;
+      }
+
+      .nurea-card-number {
+        margin-bottom: 38px;
+      }
+
+      .nurea-identity-grid,
+      .nurea-products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nurea-identity-grid img {
+        min-height: 0;
+      }
+
+      .nurea-logo-panel,
+      .nurea-monogram-panel {
+        min-height: 280px;
+        padding: 35px;
+      }
+
+      .nurea-image-caption,
+      .nurea-footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nurea-ui-caption {
+        padding-inline: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+
+  <header class="nurea-header">
+    <div class="nurea-container nurea-header-inner">
+
+      <a class="nurea-brand" href="index.html" aria-label="Ir al inicio de Digital Ukhti">
+        <img src="logo-digital-ukhti.png" alt="Digital Ukhti">
+      </a>
+
+      <button
+        class="nurea-menu-button"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nurea-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nurea-navigation" id="nurea-navigation" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="aprende.html">Aprende</a>
+        <a href="guias.html">Recursos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+
+    <section class="nurea-hero">
+      <div class="nurea-container">
+
+        <p class="nurea-eyebrow">Caso de estudio · 03</p>
+
+        <h1>NURÉA</h1>
+
+        <p class="nurea-hero-subtitle">
+          Una identidad botánica y una experiencia e-commerce
+          diseñadas para convertir el cuidado diario en un ritual consciente.
+        </p>
+
+        <div class="nurea-meta">
+
+          <div class="nurea-meta-item">
+            <span class="nurea-meta-label">Proyecto</span>
+            <span class="nurea-meta-value">NURÉA</span>
+          </div>
+
+          <div class="nurea-meta-item">
+            <span class="nurea-meta-label">Sector</span>
+            <span class="nurea-meta-value">Cosmética botánica</span>
+          </div>
+
+          <div class="nurea-meta-item">
+            <span class="nurea-meta-label">Servicios</span>
+            <span class="nurea-meta-value">Branding · E-commerce · UX/UI</span>
+          </div>
+
+          <div class="nurea-meta-item">
+            <span class="nurea-meta-label">Año</span>
+            <span class="nurea-meta-value">2026</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="nurea-hero-image">
+      <div class="nurea-container">
+        <img
+          src="nurea-packaging-coleccion.png"
+          alt="Colección completa de productos NURÉA"
+        >
+      </div>
+    </div>
+
+    <!-- PRESENTACIÓN -->
+
+    <section class="nurea-section">
+      <div class="nurea-container nurea-intro-grid">
+
+        <div>
+          <p class="nurea-section-number">01 · El proyecto</p>
+          <h2 class="nurea-heading nurea-heading-small">
+            Belleza botánica con una identidad serena
+          </h2>
+        </div>
+
+        <div>
+          <p class="nurea-copy">
+            NURÉA es una marca ficticia de cosmética botánica creada para
+            personas que buscan fórmulas sencillas, ingredientes reconocibles
+            y una experiencia de cuidado más consciente.
+          </p>
+
+          <p class="nurea-copy">
+            El proyecto abarca la estrategia visual, el sistema de identidad,
+            la colección de productos, el packaging y el diseño de una
+            experiencia de compra digital coherente en ordenador y móvil.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="nurea-container">
+        <div class="nurea-highlight">
+          <p>
+            Construir una marca capaz de transmitir naturaleza, confianza y
+            sofisticación sin recurrir a los códigos visuales habituales de
+            la cosmética natural.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RETO Y ESTRATEGIA -->
+
+    <section class="nurea-section nurea-section-soft">
+      <div class="nurea-container">
+
+        <p class="nurea-section-number">02 · Reto y estrategia</p>
+
+        <h2 class="nurea-heading">
+          Una experiencia tranquila, clara y cercana
+        </h2>
+
+        <div class="nurea-strategy-grid">
+
+          <article class="nurea-strategy-card">
+            <span class="nurea-card-number">01</span>
+            <h3>Diferenciación</h3>
+            <p>
+              Crear una identidad reconocible que combinara sensibilidad
+              botánica, elegancia editorial y una estética contemporánea.
+            </p>
+          </article>
+
+          <article class="nurea-strategy-card">
+            <span class="nurea-card-number">02</span>
+            <h3>Coherencia</h3>
+            <p>
+              Desarrollar un sistema visual flexible para productos,
+              packaging, comunicación y plataformas digitales.
+            </p>
+          </article>
+
+          <article class="nurea-strategy-card">
+            <span class="nurea-card-number">03</span>
+            <h3>Conversión</h3>
+            <p>
+              Diseñar un recorrido de compra sencillo, responsive y centrado
+              en la información esencial de cada producto.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECCIÓN VISUAL -->
+
+    <section class="nurea-section">
+      <div class="nurea-container">
+
+        <p class="nurea-section-number">03 · Dirección visual</p>
+
+        <h2 class="nurea-heading">
+          Calma, materia y naturaleza
+        </h2>
+
+        <div class="nurea-image-block">
+          <img
+            src="moodboard-nurea-final.png"
+            alt="Moodboard de identidad visual de NURÉA"
+            loading="lazy"
+          >
+
+          <div class="nurea-image-caption">
+            <span>Moodboard</span>
+            <span>Texturas · Luz natural · Botánica</span>
+          </div>
+        </div>
+
+        <div class="nurea-identity-grid">
+
+          <img
+            src="paleta-colores-nurea.png"
+            alt="Paleta de colores de NURÉA"
+            loading="lazy"
+          >
+
+          <img
+            src="tipografias-nurea.png"
+            alt="Sistema tipográfico de NURÉA"
+            loading="lazy"
+          >
+
+        </div>
+      </div>
+    </section>
+
+    <!-- IDENTIDAD -->
+
+    <section class="nurea-section nurea-section-dark">
+      <div class="nurea-container">
+
+        <p class="nurea-section-number">04 · Identidad</p>
+
+        <h2 class="nurea-heading">
+          Un sistema visual delicado y reconocible
+        </h2>
+
+        <p class="nurea-copy" style="margin-top: 32px;">
+          El logotipo combina una tipografía editorial de gran contraste con
+          una línea dorada orgánica. El monograma N permite identificar la marca
+          en formatos pequeños, etiquetas, sellos y elementos digitales.
+        </p>
+
+        <div class="nurea-logo-showcase">
+
+          <div class="nurea-logo-panel">
+            <img
+              src="logo-nurea-principal-transparente.png"
+              alt="Logotipo principal de NURÉA"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="nurea-monogram-panel">
+            <img
+              src="monograma-nurea-transparente.png"
+              alt="Monograma N de NURÉA"
+              loading="lazy"
+            >
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLECCIÓN -->
+
+    <section class="nurea-section">
+      <div class="nurea-container">
+
+        <p class="nurea-section-number">05 · Colección</p>
+
+        <h2 class="nurea-heading">
+          Seis fórmulas, una misma experiencia
+        </h2>
+
+        <div class="nurea-products-grid">
+
+          <article class="nurea-product">
+            <img
+              src="nurea-serum-botanico-renovador.png"
+              alt="Sérum Botánico Renovador de NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-product-info">
+              <span>01 · Tratamiento facial</span>
+              <h3>Sérum Botánico Renovador</h3>
+            </div>
+          </article>
+
+          <article class="nurea-product">
+            <img
+              src="nurea-crema-facial-equilibrante.png"
+              alt="Crema Facial Equilibrante de NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-product-info">
+              <span>02 · Hidratación</span>
+              <h3>Crema Facial Equilibrante</h3>
+            </div>
+          </article>
+
+          <article class="nurea-product">
+            <img
+              src="nurea-aceite-facial-luminosidad.png"
+              alt="Aceite Facial Luminosidad de NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-product-info">
+              <span>03 · Nutrición</span>
+              <h3>Aceite Facial Luminosidad</h3>
+            </div>
+          </article>
+
+          <article class="nurea-product">
+            <img
+              src="nurea-limpiador-facial-suave.png"
+              alt="Limpiador Facial Suave de NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-product-info">
+              <span>04 · Limpieza</span>
+              <h3>Limpiador Facial Suave</h3>
+            </div>
+          </article>
+
+          <article class="nurea-product">
+            <img
+              src="nurea-mascarilla-mineral-purificante.png"
+              alt="Mascarilla Mineral Purificante de NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-product-info">
+              <span>05 · Purificación</span>
+              <h3>Mascarilla Mineral Purificante</h3>
+            </div>
+          </article>
+
+          <article class="nurea-product">
+            <img
+              src="nurea-balsamo-corporal-restaurador.png"
+              alt="Bálsamo Corporal Restaurador de NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-product-info">
+              <span>06 · Cuidado corporal</span>
+              <h3>Bálsamo Corporal Restaurador</h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGING -->
+
+    <section class="nurea-section nurea-section-soft">
+      <div class="nurea-container">
+
+        <p class="nurea-section-number">06 · Packaging</p>
+
+        <h2 class="nurea-heading">
+          Una identidad coherente en cada detalle
+        </h2>
+
+        <div class="nurea-visual-stack">
+
+          <img
+            src="nurea-packaging-coleccion.png"
+            alt="Sistema de packaging de la colección NURÉA"
+            loading="lazy"
+          >
+
+          <img
+            src="nurea-packaging-envio-ecommerce.png"
+            alt="Packaging para los pedidos online de NURÉA"
+            loading="lazy"
+          >
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA DIGITAL -->
+
+    <section class="nurea-section">
+      <div class="nurea-container">
+
+        <p class="nurea-section-number">07 · Experiencia digital</p>
+
+        <h2 class="nurea-heading">
+          Un e-commerce pensado para acompañar la decisión
+        </h2>
+
+        <p class="nurea-copy" style="margin-top: 32px;">
+          La interfaz prioriza la fotografía de producto, la información
+          esencial y una navegación sencilla. El sistema responsive conserva
+          la misma jerarquía y personalidad en todas las pantallas.
+        </p>
+
+        <div class="nurea-ui-grid">
+
+          <article class="nurea-ui-card">
+            <img
+              src="nurea-ecommerce-responsive-mockup.png"
+              alt="Página principal responsive del e-commerce NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-ui-caption">
+              <h3>Página principal</h3>
+              <p>
+                Una portada editorial con acceso directo a la colección y
+                adaptación completa para ordenador y móvil.
+              </p>
+            </div>
+          </article>
+
+          <article class="nurea-ui-card">
+            <img
+              src="nurea-ficha-producto-responsive.png"
+              alt="Ficha de producto responsive del e-commerce NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-ui-caption">
+              <h3>Ficha de producto</h3>
+              <p>
+                Beneficios, ingredientes, valoración, precio y compra
+                organizados en una estructura clara.
+              </p>
+            </div>
+          </article>
+
+          <article class="nurea-ui-card">
+            <img
+              src="nurea-carrito-checkout-responsive.png"
+              alt="Carrito y checkout responsive del e-commerce NURÉA"
+              loading="lazy"
+            >
+            <div class="nurea-ui-caption">
+              <h3>Carrito y checkout</h3>
+              <p>
+                Un proceso de compra sencillo, seguro y sin distracciones
+                innecesarias.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- APLICACIONES -->
+
+    <section class="nurea-section nurea-section-sage">
+      <div class="nurea-container">
+
+        <p class="nurea-section-number">08 · Aplicaciones de marca</p>
+
+        <h2 class="nurea-heading">
+          Una comunicación digital reconocible
+        </h2>
+
+        <div class="nurea-image-block">
+          <img
+            src="nurea-campana-redes-sociales.png"
+            alt="Campaña para redes sociales de NURÉA"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADO -->
+
+    <section class="nurea-section nurea-section-dark">
+      <div class="nurea-container nurea-result">
+
+        <p class="nurea-section-number">09 · Resultado</p>
+
+        <h2 class="nurea-heading">
+          Una marca preparada para crecer dentro y fuera de la pantalla
+        </h2>
+
+        <p class="nurea-copy">
+          NURÉA reúne identidad visual, producto, packaging y experiencia
+          digital en un único sistema coherente. El resultado es una marca
+          serena, reconocible y preparada para construir confianza desde el
+          primer contacto hasta la recepción del pedido.
+        </p>
+
+        <div class="nurea-result-image">
+          <img
+            src="nurea-packaging-coleccion.png"
+            alt="Resultado final de la colección NURÉA"
+            loading="lazy"
+          >
+        </div>
+
+        <a class="nurea-back" href="portfolio.html">
+          ← Volver al portfolio
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="nurea-footer">
+    <div class="nurea-container nurea-footer-inner">
+      <p>© 2026 Digital Ukhti</p>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".nurea-menu-button");
+    const navigation = document.querySelector(".nurea-navigation");
+
+    if (menuButton && navigation) {
+      menuButton.addEventListener("click", function () {
+        const isOpen = navigation.classList.toggle("is-open");
+        menuButton.setAttribute("aria-expanded", isOpen);
+      });
+
+      navigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          navigation.classList.remove("is-open");
+          menuButton.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
