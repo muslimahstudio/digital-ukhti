@@ -3362,12 +3362,29 @@ body > footer {
     margin-bottom: 25px;
 }
 
-.home-service-item p {
+.home-service-item > p {
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #555;
+    margin-bottom: 22px;
+}
+
+/* Solo el último texto de las tarjetas de servicios funciona como CTA */
+a.home-service-item > p:last-child {
     margin-top: auto;
+    margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #111;
+}
+
+/* Los pasos de "Cómo trabajo" mantienen texto normal */
+div.home-service-item > p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -6028,4 +6045,54 @@ body.portfolio-page {
 .portfolio-footer::after {
   content: none !important;
   display: none !important;
+}
+/* ========================================
+   HOME COMERCIAL - AJUSTES 2026
+======================================== */
+
+/* Servicios principales de la nueva Home */
+.start-section > .home-services:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+/* Botones dentro de secciones */
+.resources-section > .hero-buttons {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Evita que el botón de cabecera sea demasiado grande */
+.button-header {
+    white-space: nowrap;
+}
+
+/* Cinco pasos de Cómo trabajo */
+#proceso .home-services-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    #proceso .home-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+
+    #proceso .home-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button-header {
+        display: none;
+    }
+
+    nav {
+        gap: 15px;
+    }
 }
