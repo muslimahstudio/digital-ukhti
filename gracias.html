@@ -91,5 +91,14 @@
     </main>
 
 <script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (sessionStorage.getItem("du-lead-submitted") !== "1") return;
+    sessionStorage.removeItem("du-lead-submitted");
+    if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted" && typeof window.gtag === "function") {
+        window.gtag("event", "generate_lead");
+    }
+});
+</script>
 </body>
 </html>
