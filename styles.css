@@ -1552,16 +1552,14 @@ border-top: 1px solid #ddd5c8;
 
 .guides-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
-    max-width: 680px;
-    margin: 0 auto;
 }
 
 .guide-card {
     border: 1px solid #ddd8ce;
     background: #fff;
-    padding: 26px 30px;
+    padding: 22px 24px;
     min-height: 0;
 }
 
@@ -1575,7 +1573,7 @@ border-top: 1px solid #ddd5c8;
 
 .guide-card h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 31px;
+    font-size: 27px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -1625,11 +1623,6 @@ border-top: 1px solid #ddd5c8;
     }
 }
 @media (min-width: 769px) {
-    .guides-grid {
-        max-width: 680px;
-        margin: 0 auto;
-    }
-
     .guide-card {
         width: 100%;
     }
@@ -1674,10 +1667,7 @@ body > footer {
 }
 @media (min-width: 769px) {
     .guides-grid {
-        max-width: 620px;
-        margin-left: 0;
-        margin-right: auto;
-     margin-top: 45px;
+        margin-top: 45px;
     }
 }
 /* =========================================
