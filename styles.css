@@ -1552,15 +1552,17 @@ border-top: 1px solid #ddd5c8;
 
 .guides-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 24px;
+    max-width: 680px;
+    margin: 0 auto;
 }
 
 .guide-card {
     border: 1px solid #ddd8ce;
     background: #fff;
-    padding: 45px 38px;
-    min-height: 300px;
+    padding: 26px 30px;
+    min-height: 0;
 }
 
 .guide-card span {
@@ -1568,19 +1570,19 @@ border-top: 1px solid #ddd5c8;
     color: #a68b52;
     font-size: 14px;
     letter-spacing: 0.18em;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 .guide-card h2 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 38px;
+    font-size: 31px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .guide-card p {
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.55;
     color: #444;
 }
 
@@ -1610,21 +1612,21 @@ border-top: 1px solid #ddd5c8;
     }
 
     .guide-card {
-        padding: 32px 28px;
-        min-height: 240px;
+        padding: 22px 24px;
+        min-height: 0;
     }
 
     .guide-card span {
-        margin-bottom: 24px;
+        margin-bottom: 8px;
     }
 
     .guide-card h2 {
-        font-size: 34px;
+        font-size: 29px;
     }
 }
 @media (min-width: 769px) {
     .guides-grid {
-        max-width: 620px;
+        max-width: 680px;
         margin: 0 auto;
     }
 
@@ -6153,7 +6155,7 @@ body.portfolio-page {
 /* Recursos disponibles y rutas en preparación */
 .guide-card > a {
     display: inline-block;
-    margin-top: 24px;
+    margin-top: 14px;
     color: var(--dorado-oscuro);
     text-decoration: underline;
     text-underline-offset: 4px;
