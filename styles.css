@@ -1490,6 +1490,7 @@ border-top: 1px solid #ddd5c8;
 }
 
 .project-preview-content span {
+    letter-spacing: .06em;
     margin-bottom: 4px;
 }
 
@@ -6147,4 +6148,32 @@ body.portfolio-page {
     nav {
         gap: 15px;
     }
+}
+
+/* Recursos disponibles y rutas en preparación */
+.guide-card > a {
+    display: inline-block;
+    margin-top: 24px;
+    color: var(--dorado-oscuro);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.learn-card > .learn-coming-soon {
+    margin-top: auto;
+    padding-top: 24px;
+    color: var(--dorado-oscuro);
+    font-size: 13px;
+}
+
+.learn-card .learn-coming-soon a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    letter-spacing: normal;
+    text-transform: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
