@@ -835,7 +835,24 @@ form.addEventListener("submit", async function(event) {
 
     if (response.ok) {
 
-        window.location.href = "gracias.html";
+        const showThanks = () => { window.location.href = "gracias.html"; };
+
+        // Solo contar consultas recibidas cuando se aceptaron las estadísticas.
+        if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted" && typeof window.gtag === "function") {
+            let navigating = false;
+            const finish = () => {
+                if (navigating) return;
+                navigating = true;
+                showThanks();
+            };
+            window.gtag("event", "generate_lead", {
+                event_callback: finish,
+                event_timeout: 1200
+            });
+            setTimeout(finish, 1300);
+        } else {
+            showThanks();
+        }
 
     } else {
 
