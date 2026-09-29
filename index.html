@@ -815,6 +815,20 @@
 
 const form = document.querySelector(".contact-form");
 
+// Mantener el servicio elegido al venir de una página de detalle.
+const selectedService = new URLSearchParams(window.location.search).get("servicio");
+const serviceLabels = {
+    web: "Diseño y desarrollo web",
+    analisis: "Análisis de presencia digital",
+    seo: "SEO y optimización web",
+    mercado: "Estudio de mercado"
+};
+if (Object.prototype.hasOwnProperty.call(serviceLabels, selectedService)) {
+    const select = form.querySelector("#proyecto");
+    const option = Array.from(select.options).find(item => item.textContent.trim() === serviceLabels[selectedService]);
+    if (option) select.value = option.value;
+}
+
 form.addEventListener("submit", async function(event) {
 
     event.preventDefault();
