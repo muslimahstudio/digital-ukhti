@@ -835,24 +835,11 @@ form.addEventListener("submit", async function(event) {
 
     if (response.ok) {
 
-        const showThanks = () => { window.location.href = "gracias.html"; };
-
-        // Solo contar consultas recibidas cuando se aceptaron las estadísticas.
-        if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted" && typeof window.gtag === "function") {
-            let navigating = false;
-            const finish = () => {
-                if (navigating) return;
-                navigating = true;
-                showThanks();
-            };
-            window.gtag("event", "generate_lead", {
-                event_callback: finish,
-                event_timeout: 1200
-            });
-            setTimeout(finish, 1300);
-        } else {
-            showThanks();
+        // La página de agradecimiento envía el evento tras la navegación.
+        if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted") {
+            sessionStorage.setItem("du-lead-submitted", "1");
         }
+        window.location.href = "gracias.html";
 
     } else {
 
