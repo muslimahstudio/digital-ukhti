@@ -1465,6 +1465,47 @@ border-top: 1px solid #ddd5c8;
     border-color: var(--dorado);
 }
 
+/* Vista previa de los proyectos seleccionados */
+.resource-card.project-preview {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-preview-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.project-preview-image--contain {
+    object-fit: contain;
+    background: #e9e2d7;
+}
+
+.project-preview-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 28px 30px 32px;
+}
+
+.project-preview-content a {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .project-preview-content {
+        padding: 24px;
+    }
+
+    .project-preview-content p {
+        margin-bottom: 24px;
+    }
+}
+
 /* =========================
    PÁGINA GUÍAS
 ========================= */
