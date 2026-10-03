@@ -1,0 +1,19 @@
+/* Accessibility only: keep each independent portfolio demo's brand and layout. */
+:where(p,li,label,a,button,input,select,textarea,small,span) {font-size:max(1em,16px)!important}
+a,button,input,select {min-height:44px}
+a {display:inline-flex;align-items:center;max-width:100%}
+:where(a,button,input,select,textarea):focus-visible {outline:3px solid currentColor;outline-offset:4px}
+img {max-width:100%}
+@media (prefers-reduced-motion:reduce) {
+ html {scroll-behavior:auto}
+ *,*::before,*::after {animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+.la-prun-site .prun-eyebrow,
+.la-prun-site .prun-cards article span,
+.la-prun-site .prun-product-list span {color:#4D5139}
+.la-prun-site :where(.prun-products) .prun-eyebrow,
+.la-prun-site .prun-product-list span {color:#F4EFE6}
+.la-prun-site .prun-reservations .prun-eyebrow {color:#25231F}
+.demo-noma .header {background:#292621}
+.demo-noma .hero {background-color:#292621;background-image:linear-gradient(90deg,rgba(25,22,19,.68),rgba(25,22,19,.62)),url('atelier-noma/atelier-noma-hero.webp')}
+.open-tip {color:#80632F}

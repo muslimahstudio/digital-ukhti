@@ -162,7 +162,7 @@
       align-items: center;
       background:
         linear-gradient(90deg, rgba(25, 22, 19, 0.62), rgba(25, 22, 19, 0.05)),
-        url("atelier-noma-hero.png") center/cover no-repeat;
+        url("atelier-noma-hero.webp") center/cover no-repeat;
       color: var(--blanco);
     }
 
@@ -574,14 +574,15 @@
       }
     }
   </style>
+<link rel="stylesheet" href="../demo-accessibility.css">
 </head>
 
-<body>
+<body class="demo-noma">
 
   <header class="header">
     <nav class="navbar">
       <a href="#inicio" class="logo">
-        <img src="atelier-noma-logo-blanco.png" alt="Atelier Noma">
+        <img src="atelier-noma-logo-blanco.webp" alt="Atelier Noma" width="1600" height="600" decoding="async">
       </a>
 
       <button class="menu-button" id="menuButton" aria-label="Abrir menú">
@@ -657,7 +658,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="atelier-noma-dormitorio.png" alt="Dormitorio Casa Serena">
+              <img src="atelier-noma-dormitorio.webp" alt="Dormitorio Casa Serena" width="1536" height="1024" decoding="async" loading="lazy" srcset="atelier-noma-dormitorio-640.webp 640w, atelier-noma-dormitorio-960.webp 960w, atelier-noma-dormitorio.webp 1536w" sizes="(min-width: 1000px) 40vw, 90vw">
             </div>
 
             <div class="project-info">
@@ -668,7 +669,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="atelier-noma-comedor.png" alt="Comedor Residencia Alba">
+              <img src="atelier-noma-comedor.webp" alt="Comedor Residencia Alba" width="1536" height="1024" decoding="async" loading="lazy" srcset="atelier-noma-comedor-640.webp 640w, atelier-noma-comedor-960.webp 960w, atelier-noma-comedor.webp 1536w" sizes="(min-width: 1000px) 40vw, 90vw">
             </div>
 
             <div class="project-info">
@@ -679,7 +680,7 @@
 
           <article class="project-card">
             <div class="project-image">
-              <img src="atelier-noma-estudio.png" alt="Estudio Refugio Noma">
+              <img src="atelier-noma-estudio.webp" alt="Estudio Refugio Noma" width="1536" height="1024" decoding="async" loading="lazy" srcset="atelier-noma-estudio-640.webp 640w, atelier-noma-estudio-960.webp 960w, atelier-noma-estudio.webp 1536w" sizes="(min-width: 1000px) 40vw, 90vw">
             </div>
 
             <div class="project-info">
@@ -816,10 +817,10 @@
       <div class="footer-top">
         <div class="footer-column">
           <img
-            src="atelier-noma-logo-blanco.png"
+            src="atelier-noma-logo-blanco.webp"
             alt="Atelier Noma"
             class="footer-logo"
-          >
+           width="1600" height="600" decoding="async">
 
           <p>Espacios serenos, funcionales y atemporales.</p>
         </div>

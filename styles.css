@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
 
 /* =========================
    DIGITAL UKHTI
@@ -7,11 +7,36 @@
 
 :root {
     --marfil: #FAF8F4;
-    --beige: #E7D5C1;
+    --beige: #EFEBE5;
     --negro: #1C1A18;
-    --dorado: #A98545;
-    --dorado-oscuro: #80632F;
+    --dorado: #80632F;
+    --dorado-oscuro: #634B23;
     --blanco: #FFFFFF;
+    --text-muted: #514B45;
+    --border: #D8D1C7;
+    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Cormorant Garamond', serif;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.5rem;
+    --text-h3: 1.75rem;
+    --text-h2: clamp(2rem, 3.4vw, 3.25rem);
+    --text-h1: clamp(2.5rem, 4.5vw, 4rem);
+    --space-1: .25rem;
+    --space-2: .5rem;
+    --space-3: .75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --section-space: clamp(3rem, 6vw, 5rem);
+    --gutter: clamp(1.25rem, 5vw, 4rem);
+    --content-width: 1200px;
+    --radius-sm: 4px;
+    --radius-card: 8px;
+    --duration: 180ms;
+    --shadow: 0 12px 32px rgb(28 26 24 / 8%);
 }
 
 * {
@@ -27,7 +52,7 @@ html {
 body {
     background: var(--marfil);
     color: var(--negro);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     line-height: 1.6;
 }
 
@@ -59,7 +84,7 @@ nav {
 }
 
 .logo {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-heading);
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -77,7 +102,7 @@ nav {
 }
 
 .menu a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.7px;
@@ -93,7 +118,7 @@ nav {
     background: var(--negro);
     color: var(--blanco);
     padding: 13px 23px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
     font-size: 11px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -131,16 +156,16 @@ nav {
 
 .eyebrow {
     color: var(--dorado-oscuro);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 24px;
+    margin-bottom: var(--space-5);
 }
 
 .hero h1 {
     max-width: 760px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-heading);
     font-size: clamp(52px, 6vw, 82px);
     font-weight: 500;
     line-height: 0.98;
@@ -159,7 +184,7 @@ nav {
     margin-top: 30px;
     font-size: 16px;
     line-height: 1.8;
-    color: #514B45;
+    color: var(--text-muted);
 }
 
 .hero-buttons {
@@ -173,7 +198,7 @@ nav {
 .button-secondary {
     display: inline-block;
     padding: 15px 25px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-body);
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -202,7 +227,7 @@ nav {
 
 .hero-note {
     margin-top: 25px;
-    color: #777069;
+    color: var(--text-muted);
     font-size: 12px;
     letter-spacing: 0.4px;
 }
@@ -229,7 +254,7 @@ nav {
     align-items: center;
     gap: 0;
     padding: 20px 0;
-    border-top: 1px solid #ddd5c8;
+    border-top: 1px solid var(--border);
     z-index: 1000;
 }
 .menu.active {
@@ -308,7 +333,7 @@ nav {
 
 .portfolio-header {
     background: var(--negro);
-    padding: 24px 8%;
+    padding: var(--space-5) 8%;
 }
 
 .portfolio-nav {
@@ -376,7 +401,7 @@ nav {
 
 .portfolio-intro {
     max-width: 650px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 1.05rem;
     line-height: 1.8;
 }
@@ -395,11 +420,11 @@ nav {
     grid-template-columns: 100px 1fr;
     gap: 40px;
     padding: 65px 0;
-    border-top: 1px solid #ddd5c8;
+    border-top: 1px solid var(--border);
 }
 
 .project-card:last-child {
-    border-bottom: 1px solid #ddd5c8;
+    border-bottom: 1px solid var(--border);
 }
 
 .project-number {
@@ -425,7 +450,7 @@ nav {
 
 .project-content > p:not(.project-category) {
     max-width: 650px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
     margin-bottom: 28px;
 }
@@ -484,7 +509,7 @@ nav {
 
 .portfolio-footer {
     background: var(--negro);
-    color: #999;
+    color: var(--text-muted);
     text-align: center;
     padding: 25px;
     border-top: 1px solid #333;
@@ -548,7 +573,7 @@ nav {
 .case-subtitle {
     max-width: 700px;
     margin: 0 auto;
-    color: #555;
+    color: var(--text-muted);
     font-size: 1.1rem;
     line-height: 1.8;
 }
@@ -560,7 +585,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding-top: 35px;
-    border-top: 1px solid #ddd5c8;
+    border-top: 1px solid var(--border);
 }
 
 .case-meta span {
@@ -600,7 +625,7 @@ nav {
 }
 
 .case-two-columns p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.9;
     font-size: 1rem;
 }
@@ -626,7 +651,7 @@ nav {
 .case-highlight > p:not(.portfolio-eyebrow) {
     max-width: 650px;
     margin: 0 auto;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
 }
 
@@ -641,8 +666,8 @@ nav {
 }
 
 .case-info-card {
-    border: 1px solid #ddd5c8;
-    padding: 48px 34px;
+    border: 1px solid var(--border);
+    padding: var(--space-7) 34px;
     background: var(--marfil);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -667,7 +692,7 @@ nav {
 }
 
 .case-info-card p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
 }
 
@@ -700,13 +725,13 @@ nav {
   background: var(--beige);
 padding: 140px 8%;
 text-align: center;
-border-top: 1px solid #ddd5c8;
+border-top: 1px solid var(--border);
 }
 .case-result h2 {
     max-width: 850px;
     margin: 0 auto 25px;
     color: var(--negro);
-   font-family: "Cormorant Garamond", serif;
+   font-family: var(--font-heading);
    font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 500;
     line-height: 1.15;
@@ -715,7 +740,7 @@ border-top: 1px solid #ddd5c8;
 .case-result > p:not(.portfolio-eyebrow) {
     max-width: 700px;
     margin: 0 auto 40px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
 }
 
@@ -796,7 +821,7 @@ border-top: 1px solid #ddd5c8;
 .color-block span {
     font-size: 0.7rem;
     letter-spacing: 2px;
-    margin-bottom: 8px;
+    margin-bottom: var(--space-2);
 }
 
 .color-block p {
@@ -805,28 +830,28 @@ border-top: 1px solid #ddd5c8;
 
 .color-black {
     background: #25231F;
-    color: #FFFFFF;
+    color: var(--blanco);
 }
 
 .color-ivory {
     background:  #F4EFE6;
-    color: #1C1A18;
+    color: var(--negro);
     border: 1px solid #eee8df;
 }
 
 .color-beige {
     background:  #C9A27E;
-    color: #1C1A18;
+    color: var(--negro);
 }
 
 .color-gold {
     background: #7C8060;
-    color: #FFFFFF;
+    color: var(--blanco);
 }
 
 .brand-wordmark {
     background: #25231F;
-    color: #FFFFFF;
+    color: var(--blanco);
     min-height: 330px;
     display: flex;
     flex-direction: column;
@@ -843,7 +868,7 @@ border-top: 1px solid #ddd5c8;
 }
 
 .brand-wordmark span {
-    color: #A98545;
+    color: var(--dorado);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 0.7rem;
@@ -893,7 +918,7 @@ border-top: 1px solid #ddd5c8;
 @media (max-width: 768px) {
     .case-website-preview {
         margin-top: 45px;
-        padding: 8px;
+        padding: var(--space-2);
     }
 }
 /* =========================================
@@ -949,7 +974,7 @@ border-top: 1px solid #ddd5c8;
 .type-example h3 {
     color: var(--negro);
     font-size: 1.5rem;
-    margin-bottom: 12px;
+    margin-bottom: var(--space-3);
     font-weight: 500;
 }
 
@@ -960,12 +985,12 @@ border-top: 1px solid #ddd5c8;
 
 .type-serif .type-aa,
 .type-serif h3 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
 }
 
 .type-sans .type-aa,
 .type-sans h3 {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-body);
 }
 
 .type-serif {
@@ -981,7 +1006,7 @@ border-top: 1px solid #ddd5c8;
 
 .web-showcase {
     padding: 100px 7%;
-    background: #FAF8F4;
+    background: var(--marfil);
 }
 
 .web-showcase-header {
@@ -990,19 +1015,19 @@ border-top: 1px solid #ddd5c8;
 }
 
 .web-showcase-header h2 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
    font-size: clamp(2.4rem, 4vw, 4rem);
     font-weight: 500;
     line-height: 1;
     margin-top: 15px;
-    color: #1C1A18;
+    color: var(--negro);
 }
 
 .web-browser {
     max-width: 1150px;
     margin: 0 auto;
     border: 1px solid #ded8cf;
-    background: #ffffff;
+    background: var(--blanco);
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
 }
 
@@ -1024,7 +1049,7 @@ border-top: 1px solid #ddd5c8;
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #A98545;
+    background: var(--dorado);
 }
 
 .browser-address {
@@ -1061,15 +1086,15 @@ border-top: 1px solid #ddd5c8;
     display: block;
     font-size: 0.7rem;
     letter-spacing: 2px;
-    color: #A98545;
+    color: var(--dorado);
     margin-bottom: 20px;
 }
 
 .web-features h3 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
     font-size: 1.7rem;
     font-weight: 500;
-    margin-bottom: 12px;
+    margin-bottom: var(--space-3);
 }
 
 .web-features p {
@@ -1197,7 +1222,7 @@ border-top: 1px solid #ddd5c8;
 .contact-section {
     background: var(--marfil);
     padding: 120px 8%;
-    border-top: 1px solid #ddd5c8;
+    border-top: 1px solid var(--border);
 }
 
 .contact-section > * {
@@ -1215,7 +1240,7 @@ border-top: 1px solid #ddd5c8;
 }
 
 .contact-section h2 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
    font-size: clamp(3rem, 5vw, 4.3rem);
     font-weight: 500;
     line-height: 1;
@@ -1224,7 +1249,7 @@ border-top: 1px solid #ddd5c8;
 }
 
 .contact-intro {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
     max-width: 850px;
     padding-right: 200px;
@@ -1251,8 +1276,8 @@ border-top: 1px solid #ddd5c8;
     width: 100%;
     border: 1px solid #d8d1c7;
     background: transparent;
-    padding: 16px 18px;
-    font-family: "Inter", sans-serif;
+    padding: var(--space-4) 18px;
+    font-family: var(--font-body);
     font-size: 1rem;
     color: var(--negro);
     outline: none;
@@ -1308,8 +1333,8 @@ border-top: 1px solid #ddd5c8;
 .start-section {
     padding: 100px 8%;
     background: var(--marfil);
-    border-top: 1px solid #ddd5c8;
-    border-bottom: 1px solid #ddd5c8;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .start-section .contact-eyebrow {
@@ -1317,7 +1342,7 @@ border-top: 1px solid #ddd5c8;
 }
 
 .start-section h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-heading);
     font-size: clamp(42px, 5vw, 64px);
     font-weight: 500;
     line-height: 1.05;
@@ -1366,7 +1391,7 @@ border-top: 1px solid #ddd5c8;
 
 .resources-section {
     padding: 110px 7%;
-    background: #f8f6f1;
+    background: var(--beige);
 }
 
 .resources-header {
@@ -1377,22 +1402,22 @@ border-top: 1px solid #ddd5c8;
 .resources-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: var(--space-5);
 }
 
 .resource-card {
-    background: #ffffff;
-    border: 1px solid #e4dfd5;
-    padding: 38px 32px;
+    background: var(--blanco);
+    border: 1px solid var(--border);
+    padding: 38px var(--space-6);
 }
 
 .resource-card h3 {
-    margin-bottom: 16px;
+    margin-bottom: var(--space-4);
 }
 
 .resource-card p {
     line-height: 1.8;
-    margin-bottom: 24px;
+    margin-bottom: var(--space-5);
 }
 /* RECURSOS - MÓVIL */
 
@@ -1412,11 +1437,11 @@ border-top: 1px solid #ddd5c8;
     }
 
     .resource-card {
-        padding: 26px 24px;
+        padding: 26px var(--space-5);
        min-height: auto;
     }
    .resource-card span {
-    margin-bottom: 8px;
+    margin-bottom: var(--space-2);
 }
 
 .resource-card h3 {
@@ -1428,7 +1453,7 @@ border-top: 1px solid #ddd5c8;
 }
 }
 .resources-section h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-heading);
     font-size: clamp(42px, 4.8vw, 62px);
     font-weight: 500;
     line-height: 1.08;
@@ -1491,7 +1516,7 @@ border-top: 1px solid #ddd5c8;
 
 .project-preview-content span {
     letter-spacing: .06em;
-    margin-bottom: 4px;
+    margin-bottom: var(--space-1);
 }
 
 .project-preview-content h3 {
@@ -1529,7 +1554,7 @@ border-top: 1px solid #ddd5c8;
 }
 
 .guides-hero h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-heading);
     font-size: clamp(48px, 6vw, 78px);
     font-weight: 500;
     line-height: 1.05;
@@ -1553,13 +1578,13 @@ border-top: 1px solid #ddd5c8;
 .guides-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+    gap: var(--space-5);
 }
 
 .guide-card {
     border: 1px solid #ddd8ce;
-    background: #fff;
-    padding: 22px 24px;
+    background: var(--blanco);
+    padding: 22px var(--space-5);
     min-height: 0;
 }
 
@@ -1572,7 +1597,7 @@ border-top: 1px solid #ddd5c8;
 }
 
 .guide-card h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: var(--font-heading);
     font-size: 27px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -1590,7 +1615,7 @@ border-top: 1px solid #ddd5c8;
 @media (max-width: 768px) {
 
     .guides-hero {
-        padding: 65px 24px 45px;
+        padding: 65px var(--space-5) 45px;
     }
 
     .guides-hero h1 {
@@ -1602,7 +1627,7 @@ border-top: 1px solid #ddd5c8;
     }
 
     .guides-section {
-        padding: 10px 24px 70px;
+        padding: 10px var(--space-5) 70px;
     }
 
     .guides-grid {
@@ -1610,12 +1635,12 @@ border-top: 1px solid #ddd5c8;
     }
 
     .guide-card {
-        padding: 22px 24px;
+        padding: 22px var(--space-5);
         min-height: 0;
     }
 
     .guide-card span {
-        margin-bottom: 8px;
+        margin-bottom: var(--space-2);
     }
 
     .guide-card h2 {
@@ -1645,7 +1670,7 @@ body > footer {
         width: 100%;
         max-width: none;
         margin: 0;
-        padding: 28px 24px 36px !important;
+        padding: 28px var(--space-5) 36px !important;
         box-sizing: border-box;
     }
 
@@ -1777,12 +1802,12 @@ body > footer {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .services-page h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(46px, 5vw, 72px);
     line-height: 1.05;
     font-weight: 400;
@@ -1794,7 +1819,7 @@ body > footer {
     max-width: 720px;
     font-size: 17px;
     line-height: 1.8;
-    color: #555555;
+    color: var(--text-muted);
     margin-bottom: 55px;
 }
 
@@ -1804,16 +1829,16 @@ body > footer {
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: var(--space-5);
 }
 
 .service-card {
-    border: 1px solid #ddd7cc;
+    border: 1px solid var(--border);
     padding: 38px;
     min-height: 285px;
     display: flex;
     flex-direction: column;
-    background: #faf8f4;
+    background: var(--marfil);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -1825,12 +1850,12 @@ body > footer {
 .service-card span {
     font-size: 13px;
     letter-spacing: 2px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     margin-bottom: 45px;
 }
 
 .service-card h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 31px;
     line-height: 1.2;
     font-weight: 400;
@@ -1840,7 +1865,7 @@ body > footer {
 .service-card p {
     font-size: 16px;
     line-height: 1.7;
-    color: #555555;
+    color: var(--text-muted);
     margin-bottom: 30px;
 }
 
@@ -1855,7 +1880,7 @@ body > footer {
 }
 
 .service-card a:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 
@@ -1870,7 +1895,7 @@ body > footer {
 }
 
 .services-cta h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(36px, 5vw, 56px);
     font-weight: 400;
     margin-bottom: 20px;
@@ -1881,7 +1906,7 @@ body > footer {
     margin: 0 auto 35px;
     font-size: 17px;
     line-height: 1.7;
-    color: #555555;
+    color: var(--text-muted);
 }
 
 
@@ -1954,12 +1979,12 @@ body > footer {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .market-hero h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(48px, 6vw, 78px);
     line-height: 1.05;
     font-weight: 400;
@@ -1971,7 +1996,7 @@ body > footer {
     max-width: 760px;
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 38px;
 }
 
@@ -1980,7 +2005,7 @@ body > footer {
 
 .market-section {
     padding: 90px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .market-heading {
@@ -1994,7 +2019,7 @@ body > footer {
 .market-process h2,
 .market-packages h2,
 .market-cta h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -2003,21 +2028,21 @@ body > footer {
 .market-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .market-card {
-    padding: 38px 32px;
+    padding: 38px var(--space-6);
     min-height: 260px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .market-card span,
 .process-grid span {
     display: block;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
     margin-bottom: 35px;
@@ -2025,15 +2050,15 @@ body > footer {
 
 .market-card h3,
 .process-grid h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 27px;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: var(--space-4);
 }
 
 .market-card p,
 .process-grid p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -2050,7 +2075,7 @@ body > footer {
 
 .market-deliverable-text p:last-child {
     margin-top: 25px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
     max-width: 520px;
 }
@@ -2075,20 +2100,20 @@ body > footer {
 .market-example-intro {
     margin-top: 25px;
     font-size: 19px;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .example-box {
     margin-top: 45px;
     max-width: 850px;
-    border-left: 2px solid #9c7a3c;
+    border-left: 2px solid var(--text-muted);
     padding: 10px 0 10px 35px;
 }
 
 .example-box p {
     font-size: 17px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 18px;
 }
 
@@ -2097,7 +2122,7 @@ body > footer {
 
 .market-process {
     padding: 100px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .market-process > h2 {
@@ -2107,14 +2132,14 @@ body > footer {
 .process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .process-grid > div {
     padding: 35px 28px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 
@@ -2137,8 +2162,8 @@ body > footer {
 }
 
 .package-card {
-    border: 1px solid #ddd7cc;
-    padding: 38px 32px;
+    border: 1px solid var(--border);
+    padding: 38px var(--space-6);
     display: flex;
     flex-direction: column;
 }
@@ -2151,19 +2176,19 @@ body > footer {
 .package-name {
     font-size: 12px;
     letter-spacing: 2.5px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     margin-bottom: 30px;
 }
 
 .package-card h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
 .package-price {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 25px;
     margin-bottom: 30px;
 }
@@ -2177,13 +2202,13 @@ body > footer {
 .package-card li {
     padding: 11px 0;
     border-bottom: 1px solid #e1ddd5;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
 .package-card a {
     margin-top: auto;
-    color: #111;
+    color: var(--negro);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -2191,7 +2216,7 @@ body > footer {
 }
 
 .package-card a:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 
@@ -2211,7 +2236,7 @@ body > footer {
 .market-cta > p:not(.section-label) {
     max-width: 650px;
     margin: 0 auto 35px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -2307,12 +2332,12 @@ body > footer {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .digital-hero h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(48px, 6vw, 78px);
     line-height: 1.05;
     font-weight: 400;
@@ -2324,7 +2349,7 @@ body > footer {
     max-width: 760px;
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 38px;
 }
 
@@ -2333,7 +2358,7 @@ body > footer {
 
 .digital-section {
     padding: 90px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .digital-heading {
@@ -2347,7 +2372,7 @@ body > footer {
 .digital-process h2,
 .digital-packages h2,
 .digital-cta h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -2356,21 +2381,21 @@ body > footer {
 .digital-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .digital-card {
-    padding: 38px 32px;
+    padding: 38px var(--space-6);
     min-height: 260px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .digital-card span,
 .digital-process-grid span {
     display: block;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
     margin-bottom: 35px;
@@ -2378,15 +2403,15 @@ body > footer {
 
 .digital-card h3,
 .digital-process-grid h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 27px;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: var(--space-4);
 }
 
 .digital-card p,
 .digital-process-grid p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -2403,7 +2428,7 @@ body > footer {
 
 .digital-deliverable-text p:last-child {
     margin-top: 25px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
     max-width: 520px;
 }
@@ -2428,14 +2453,14 @@ body > footer {
 .digital-example-box {
     margin-top: 45px;
     max-width: 850px;
-    border-left: 2px solid #9c7a3c;
+    border-left: 2px solid var(--text-muted);
     padding: 10px 0 10px 35px;
 }
 
 .digital-example-box p {
     font-size: 17px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 18px;
 }
 
@@ -2444,7 +2469,7 @@ body > footer {
 
 .digital-process {
     padding: 100px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .digital-process > h2 {
@@ -2454,14 +2479,14 @@ body > footer {
 .digital-process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .digital-process-grid > div {
     padding: 35px 28px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 
@@ -2484,8 +2509,8 @@ body > footer {
 }
 
 .digital-package {
-    border: 1px solid #ddd7cc;
-    padding: 38px 32px;
+    border: 1px solid var(--border);
+    padding: 38px var(--space-6);
     display: flex;
     flex-direction: column;
 }
@@ -2496,7 +2521,7 @@ body > footer {
 }
 
 .digital-package h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -2511,13 +2536,13 @@ body > footer {
 .digital-package li {
     padding: 11px 0;
     border-bottom: 1px solid #e1ddd5;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
 .digital-package a {
     margin-top: auto;
-    color: #111;
+    color: var(--negro);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -2525,7 +2550,7 @@ body > footer {
 }
 
 .digital-package a:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 
@@ -2545,7 +2570,7 @@ body > footer {
 .digital-cta > p:not(.section-label) {
     max-width: 650px;
     margin: 0 auto 35px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -2644,12 +2669,12 @@ body > footer {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .seo-hero h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(48px, 6vw, 78px);
     line-height: 1.05;
     font-weight: 400;
@@ -2661,7 +2686,7 @@ body > footer {
     max-width: 760px;
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 38px;
 }
 
@@ -2670,7 +2695,7 @@ body > footer {
 
 .seo-section {
     padding: 90px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .seo-heading {
@@ -2684,7 +2709,7 @@ body > footer {
 .seo-process h2,
 .seo-packages h2,
 .seo-cta h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -2693,21 +2718,21 @@ body > footer {
 .seo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .seo-card {
-    padding: 38px 32px;
+    padding: 38px var(--space-6);
     min-height: 260px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .seo-card span,
 .seo-process-grid span {
     display: block;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
     margin-bottom: 35px;
@@ -2715,15 +2740,15 @@ body > footer {
 
 .seo-card h3,
 .seo-process-grid h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 27px;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: var(--space-4);
 }
 
 .seo-card p,
 .seo-process-grid p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -2740,7 +2765,7 @@ body > footer {
 
 .seo-deliverable-text p:last-child {
     margin-top: 25px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
     max-width: 520px;
 }
@@ -2765,14 +2790,14 @@ body > footer {
 .seo-example-box {
     margin-top: 45px;
     max-width: 850px;
-    border-left: 2px solid #9c7a3c;
+    border-left: 2px solid var(--text-muted);
     padding: 10px 0 10px 35px;
 }
 
 .seo-example-box p {
     font-size: 17px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 18px;
 }
 
@@ -2781,7 +2806,7 @@ body > footer {
 
 .seo-process {
     padding: 100px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .seo-process > h2 {
@@ -2791,14 +2816,14 @@ body > footer {
 .seo-process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .seo-process-grid > div {
     padding: 35px 28px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 
@@ -2821,8 +2846,8 @@ body > footer {
 }
 
 .seo-package {
-    border: 1px solid #ddd7cc;
-    padding: 38px 32px;
+    border: 1px solid var(--border);
+    padding: 38px var(--space-6);
     display: flex;
     flex-direction: column;
 }
@@ -2833,7 +2858,7 @@ body > footer {
 }
 
 .seo-package h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -2848,13 +2873,13 @@ body > footer {
 .seo-package li {
     padding: 11px 0;
     border-bottom: 1px solid #e1ddd5;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
 .seo-package a {
     margin-top: auto;
-    color: #111;
+    color: var(--negro);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -2862,7 +2887,7 @@ body > footer {
 }
 
 .seo-package a:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 
@@ -2870,8 +2895,8 @@ body > footer {
 
 .seo-note {
     padding: 35px 40px;
-    border-top: 1px solid #e3ded5;
-    border-bottom: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .seo-note p {
@@ -2900,7 +2925,7 @@ body > footer {
 .seo-cta > p:not(.section-label) {
     max-width: 650px;
     margin: 0 auto 35px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -3003,12 +3028,12 @@ body > footer {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .web-hero h1 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(48px, 6vw, 78px);
     line-height: 1.05;
     font-weight: 400;
@@ -3020,7 +3045,7 @@ body > footer {
     max-width: 760px;
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 38px;
 }
 
@@ -3029,7 +3054,7 @@ body > footer {
 
 .web-section {
     padding: 90px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .web-heading {
@@ -3043,7 +3068,7 @@ body > footer {
 .web-process h2,
 .web-packages h2,
 .web-cta h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -3052,21 +3077,21 @@ body > footer {
 .web-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .web-card {
-    padding: 38px 32px;
+    padding: 38px var(--space-6);
     min-height: 260px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .web-card span,
 .web-process-grid span {
     display: block;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
     margin-bottom: 35px;
@@ -3074,15 +3099,15 @@ body > footer {
 
 .web-card h3,
 .web-process-grid h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 27px;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: var(--space-4);
 }
 
 .web-card p,
 .web-process-grid p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -3099,7 +3124,7 @@ body > footer {
 
 .web-deliverable-text p:last-child {
     margin-top: 25px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.8;
     max-width: 520px;
 }
@@ -3124,14 +3149,14 @@ body > footer {
 .web-example-box {
     margin-top: 45px;
     max-width: 850px;
-    border-left: 2px solid #9c7a3c;
+    border-left: 2px solid var(--text-muted);
     padding: 10px 0 10px 35px;
 }
 
 .web-example-box p {
     font-size: 17px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 18px;
 }
 
@@ -3140,7 +3165,7 @@ body > footer {
 
 .web-process {
     padding: 100px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .web-process > h2 {
@@ -3150,14 +3175,14 @@ body > footer {
 .web-process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .web-process-grid > div {
     padding: 35px 28px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 
@@ -3180,8 +3205,8 @@ body > footer {
 }
 
 .web-package {
-    border: 1px solid #ddd7cc;
-    padding: 38px 32px;
+    border: 1px solid var(--border);
+    padding: 38px var(--space-6);
     display: flex;
     flex-direction: column;
 }
@@ -3192,7 +3217,7 @@ body > footer {
 }
 
 .web-package h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -3207,13 +3232,13 @@ body > footer {
 .web-package li {
     padding: 11px 0;
     border-bottom: 1px solid #e1ddd5;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.5;
 }
 
 .web-package a {
     margin-top: auto;
-    color: #111;
+    color: var(--negro);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -3221,7 +3246,7 @@ body > footer {
 }
 
 .web-package a:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 
@@ -3229,8 +3254,8 @@ body > footer {
 
 .web-note {
     padding: 35px 40px;
-    border-top: 1px solid #e3ded5;
-    border-bottom: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .web-note p {
@@ -3259,7 +3284,7 @@ body > footer {
 .web-cta > p:not(.section-label) {
     max-width: 650px;
     margin: 0 auto 35px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -3339,7 +3364,7 @@ body > footer {
     max-width: 1200px;
     margin: 90px auto 0;
     padding-top: 70px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .home-services-heading {
@@ -3351,12 +3376,12 @@ body > footer {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
+    color: var(--text-muted);
     margin-bottom: 20px;
 }
 
 .home-services-heading h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -3366,23 +3391,23 @@ body > footer {
 .home-services-heading > p:not(.section-label) {
     font-size: 17px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .home-services-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .home-service-item {
     min-height: 250px;
     padding: 30px 26px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     text-decoration: none;
-    color: #111;
+    color: var(--negro);
     display: flex;
     flex-direction: column;
     transition: background 0.25s ease;
@@ -3395,12 +3420,12 @@ body > footer {
 .home-service-item span {
     font-size: 12px;
     letter-spacing: 2px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     margin-bottom: 42px;
 }
 
 .home-service-item h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 25px;
     line-height: 1.2;
     font-weight: 400;
@@ -3412,7 +3437,7 @@ body > footer {
     line-height: 1.7;
     letter-spacing: 0;
     text-transform: none;
-    color: #555;
+    color: var(--text-muted);
     margin-bottom: 22px;
 }
 
@@ -3423,7 +3448,7 @@ a.home-service-item > p:last-child {
     font-size: 12px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #111;
+    color: var(--negro);
 }
 
 /* Los pasos de "Cómo trabajo" mantienen texto normal */
@@ -3485,7 +3510,7 @@ div.home-service-item > p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 110px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .about-container {
@@ -3496,13 +3521,13 @@ div.home-service-item > p {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .about-section h2 {
     max-width: 850px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(42px, 5vw, 64px);
     line-height: 1.08;
     font-weight: 400;
@@ -3517,13 +3542,13 @@ div.home-service-item > p {
 .about-content p {
     font-size: 17px;
     line-height: 1.85;
-    color: #555555;
+    color: var(--text-muted);
     margin-bottom: 20px;
 }
 
 .about-section .button-primary {
     display: inline-block;
-    margin-top: 8px;
+    margin-top: var(--space-2);
 }
 
 
@@ -3558,7 +3583,7 @@ div.home-service-item > p {
 .templates-hero h1 {
     max-width: 900px;
     margin: 20px 0 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 400;
     line-height: 1.05;
@@ -3569,7 +3594,7 @@ div.home-service-item > p {
     max-width: 720px;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 
@@ -3612,7 +3637,7 @@ div.home-service-item > p {
 }
 
 .template-card h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
@@ -3643,7 +3668,7 @@ div.home-service-item > p {
 .templates-cta h2 {
     max-width: 750px;
     margin: 20px auto;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 400;
     line-height: 1.1;
@@ -3653,14 +3678,14 @@ div.home-service-item > p {
     max-width: 650px;
     margin: 0 auto 35px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .templates-cta .button {
     display: inline-block;
-    padding: 16px 28px;
-    background: #111;
-    color: #fff;
+    padding: var(--space-4) 28px;
+    background: var(--negro);
+    color: var(--blanco);
     text-decoration: none;
     font-size: 0.75rem;
     letter-spacing: 0.12em;
@@ -3686,7 +3711,7 @@ div.home-service-item > p {
 @media (max-width: 600px) {
 
     .templates-hero {
-        padding: 80px 24px 55px;
+        padding: 80px var(--space-5) 55px;
     }
 
     .templates-hero h1 {
@@ -3694,7 +3719,7 @@ div.home-service-item > p {
     }
 
     .templates-section {
-        padding: 10px 24px 70px;
+        padding: 10px var(--space-5) 70px;
     }
 
     .template-card {
@@ -3711,7 +3736,7 @@ div.home-service-item > p {
     }
 
     .templates-cta {
-        padding: 70px 24px;
+        padding: 70px var(--space-5);
     }
 
     .templates-cta h2 {
@@ -3731,7 +3756,7 @@ div.home-service-item > p {
 .courses-hero h1 {
     max-width: 900px;
     margin: 20px 0 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 400;
     line-height: 1.05;
@@ -3742,7 +3767,7 @@ div.home-service-item > p {
     max-width: 720px;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 
@@ -3781,12 +3806,12 @@ div.home-service-item > p {
     font-size: 0.72rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: #9c7a3c;
+    color: var(--text-muted);
     margin-bottom: 15px;
 }
 
 .course-card h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
@@ -3795,7 +3820,7 @@ div.home-service-item > p {
 
 .course-card p {
     line-height: 1.7;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .course-status {
@@ -3804,7 +3829,7 @@ div.home-service-item > p {
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #111;
+    color: var(--negro);
 }
 
 
@@ -3821,7 +3846,7 @@ div.home-service-item > p {
 }
 
 .courses-path-content h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 400;
     line-height: 1.1;
@@ -3831,7 +3856,7 @@ div.home-service-item > p {
 .courses-path-content > p:not(.contact-eyebrow) {
     max-width: 560px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .courses-benefits {
@@ -3849,12 +3874,12 @@ div.home-service-item > p {
 .courses-benefits span {
     font-size: 0.75rem;
     letter-spacing: 0.15em;
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 .courses-benefits p {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 1.25rem;
 }
 
@@ -3871,7 +3896,7 @@ div.home-service-item > p {
 .courses-cta h2 {
     max-width: 750px;
     margin: 20px auto;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 400;
     line-height: 1.1;
@@ -3881,21 +3906,21 @@ div.home-service-item > p {
     max-width: 650px;
     margin: 0 auto 35px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .courses-buttons {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: var(--space-4);
     flex-wrap: wrap;
 }
 
 .courses-buttons .button {
     display: inline-block;
-    padding: 16px 28px;
-    background: #111;
-    color: #fff;
+    padding: var(--space-4) 28px;
+    background: var(--negro);
+    color: var(--blanco);
     text-decoration: none;
     font-size: 0.75rem;
     letter-spacing: 0.12em;
@@ -3903,9 +3928,9 @@ div.home-service-item > p {
 
 .courses-buttons .button-secondary {
     display: inline-block;
-    padding: 16px 28px;
+    padding: var(--space-4) 28px;
     border: 1px solid #c5b184;
-    color: #111;
+    color: var(--negro);
     text-decoration: none;
     font-size: 0.75rem;
     letter-spacing: 0.12em;
@@ -3936,7 +3961,7 @@ div.home-service-item > p {
 @media (max-width: 600px) {
 
     .courses-hero {
-        padding: 80px 24px 55px;
+        padding: 80px var(--space-5) 55px;
     }
 
     .courses-hero h1 {
@@ -3944,7 +3969,7 @@ div.home-service-item > p {
     }
 
     .courses-section {
-        padding: 10px 24px 70px;
+        padding: 10px var(--space-5) 70px;
     }
 
     .course-card {
@@ -3961,7 +3986,7 @@ div.home-service-item > p {
     }
 
     .courses-path {
-        padding: 70px 24px;
+        padding: 70px var(--space-5);
     }
 
     .courses-path-content h2 {
@@ -3969,7 +3994,7 @@ div.home-service-item > p {
     }
 
     .courses-cta {
-        padding: 70px 24px;
+        padding: 70px var(--space-5);
         margin-bottom: 70px;
     }
 
@@ -4012,14 +4037,14 @@ div.home-service-item > p {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .learn-hero h1 {
     max-width: 950px;
     margin-bottom: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(48px, 6vw, 78px);
     line-height: 1.05;
     font-weight: 400;
@@ -4030,7 +4055,7 @@ div.home-service-item > p {
     margin-bottom: 38px;
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 
@@ -4038,7 +4063,7 @@ div.home-service-item > p {
 
 .learn-section {
     padding: 100px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .learn-heading {
@@ -4049,7 +4074,7 @@ div.home-service-item > p {
 .learn-heading h2,
 .learn-method-intro h2,
 .learn-resources h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -4062,21 +4087,21 @@ div.home-service-item > p {
     max-width: 650px;
     font-size: 17px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 .learn-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .learn-card {
     min-height: 360px;
     padding: 40px 35px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     display: flex;
     flex-direction: column;
 }
@@ -4084,14 +4109,14 @@ div.home-service-item > p {
 .learn-card > span {
     display: block;
     margin-bottom: 45px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
 }
 
 .learn-category {
     margin-bottom: 14px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 12px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
@@ -4099,7 +4124,7 @@ div.home-service-item > p {
 
 .learn-card h3 {
     margin-bottom: 20px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 31px;
     line-height: 1.2;
     font-weight: 400;
@@ -4107,14 +4132,14 @@ div.home-service-item > p {
 
 .learn-card > p:not(.learn-category) {
     max-width: 480px;
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
 .learn-card a {
     margin-top: auto;
     padding-top: 30px;
-    color: #111;
+    color: var(--negro);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -4122,7 +4147,7 @@ div.home-service-item > p {
 }
 
 .learn-card a:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 
@@ -4155,20 +4180,20 @@ div.home-service-item > p {
 .learn-method-grid span {
     display: block;
     margin-bottom: 40px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
 }
 
 .learn-method-grid h3 {
     margin-bottom: 15px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 28px;
     font-weight: 400;
 }
 
 .learn-method-grid p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -4196,15 +4221,15 @@ div.home-service-item > p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-top: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .learn-resource-links a {
     min-width: 220px;
     padding: 25px 35px;
-    border-right: 1px solid #ddd7cc;
-    color: #111;
+    border-right: 1px solid var(--border);
+    color: var(--negro);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -4212,7 +4237,7 @@ div.home-service-item > p {
 }
 
 .learn-resource-links a:first-child {
-    border-left: 1px solid #ddd7cc;
+    border-left: 1px solid var(--border);
 }
 
 .learn-resource-links a:hover {
@@ -4265,7 +4290,7 @@ div.home-service-item > p {
 
     .learn-card {
         min-height: auto;
-        padding: 32px 25px;
+        padding: var(--space-6) 25px;
     }
 
     .learn-card > span {
@@ -4290,9 +4315,9 @@ div.home-service-item > p {
         display: block;
         width: 100%;
         min-width: 0;
-        border-left: 1px solid #ddd7cc;
-        border-right: 1px solid #ddd7cc;
-        border-bottom: 1px solid #ddd7cc;
+        border-left: 1px solid var(--border);
+        border-right: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
     }
 
     .learn-resource-links a:last-child {
@@ -4327,14 +4352,14 @@ div.home-service-item > p {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .webcourse-hero h1 {
     max-width: 950px;
     margin-bottom: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(50px, 7vw, 82px);
     line-height: 1.04;
     font-weight: 400;
@@ -4345,7 +4370,7 @@ div.home-service-item > p {
     margin-bottom: 50px;
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 
@@ -4356,14 +4381,14 @@ div.home-service-item > p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 45px;
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .webcourse-meta > div {
     padding: 25px 22px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .webcourse-meta span {
@@ -4371,11 +4396,11 @@ div.home-service-item > p {
     margin-bottom: 10px;
     font-size: 10px;
     letter-spacing: 2px;
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 .webcourse-meta strong {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 19px;
     font-weight: 400;
 }
@@ -4395,7 +4420,7 @@ div.home-service-item > p {
 .webcourse-lessons h2,
 .webcourse-method h2,
 .webcourse-cta h2 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -4407,7 +4432,7 @@ div.home-service-item > p {
 
 .webcourse-about-text p {
     margin-bottom: 20px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -4425,7 +4450,7 @@ div.home-service-item > p {
 }
 
 .webcourse-lessons-list {
-    border-top: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
 }
 
 .webcourse-lesson {
@@ -4435,8 +4460,8 @@ div.home-service-item > p {
     align-items: center;
     gap: 25px;
     padding: 20px 25px;
-    border-bottom: 1px solid #ddd7cc;
-    color: #111;
+    border-bottom: 1px solid var(--border);
+    color: var(--negro);
     text-decoration: none;
 }
 
@@ -4449,14 +4474,14 @@ a.webcourse-lesson:hover {
 }
 
 .webcourse-lesson > span {
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
 }
 
 .webcourse-lesson h3 {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 23px;
     line-height: 1.3;
     font-weight: 400;
@@ -4472,7 +4497,7 @@ a.webcourse-lesson:hover {
 }
 
 a.webcourse-lesson > p {
-    color: #111;
+    color: var(--negro);
 }
 
 
@@ -4480,7 +4505,7 @@ a.webcourse-lesson > p {
 
 .webcourse-method {
     padding: 100px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .webcourse-method > h2 {
@@ -4490,34 +4515,34 @@ a.webcourse-lesson > p {
 .webcourse-method-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .webcourse-method-grid > div {
     min-height: 250px;
     padding: 35px 30px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .webcourse-method-grid span {
     display: block;
     margin-bottom: 45px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
 }
 
 .webcourse-method-grid h3 {
     margin-bottom: 15px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 28px;
     font-weight: 400;
 }
 
 .webcourse-method-grid p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -4539,7 +4564,7 @@ a.webcourse-lesson > p {
 .webcourse-cta > p:not(.section-label) {
     max-width: 650px;
     margin: 0 auto 35px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -4659,7 +4684,7 @@ a.webcourse-lesson > p {
 }
 
 .lesson-back:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 .lesson-hero .section-label,
@@ -4668,14 +4693,14 @@ a.webcourse-lesson > p {
     font-size: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
+    color: var(--text-muted);
     margin-bottom: 22px;
 }
 
 .lesson-hero h1 {
     max-width: 850px;
     margin-bottom: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(48px, 6vw, 76px);
     line-height: 1.05;
     font-weight: 400;
@@ -4684,7 +4709,7 @@ a.webcourse-lesson > p {
 .lesson-intro {
     max-width: 720px;
     margin-bottom: 40px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 18px;
     line-height: 1.8;
 }
@@ -4694,7 +4719,7 @@ a.webcourse-lesson > p {
     flex-wrap: wrap;
     gap: 15px 35px;
     padding-top: 25px;
-    border-top: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
 }
 
 .lesson-meta span {
@@ -4714,12 +4739,12 @@ a.webcourse-lesson > p {
 .lesson-block {
     max-width: 820px;
     padding: 80px 0;
-    border-top: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
 }
 
 .lesson-number {
     margin-bottom: 25px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 12px;
     letter-spacing: 3px;
 }
@@ -4727,7 +4752,7 @@ a.webcourse-lesson > p {
 .lesson-block h2,
 .lesson-exercise h2 {
     margin-bottom: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(34px, 4vw, 48px);
     line-height: 1.15;
     font-weight: 400;
@@ -4747,33 +4772,33 @@ a.webcourse-lesson > p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 45px;
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .lesson-concepts > div {
     padding: 30px 25px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .lesson-concepts span {
     display: block;
     margin-bottom: 35px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 11px;
     letter-spacing: 2px;
 }
 
 .lesson-concepts h3 {
     margin-bottom: 15px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 27px;
     font-weight: 400;
 }
 
 .lesson-concepts p {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -4783,8 +4808,8 @@ a.webcourse-lesson > p {
 .lesson-code {
     margin: 35px 0;
     padding: 25px 30px;
-    background: #111;
-    color: #fff;
+    background: var(--negro);
+    color: var(--blanco);
     font-family: monospace;
     font-size: 17px;
     letter-spacing: 1px;
@@ -4795,7 +4820,7 @@ a.webcourse-lesson > p {
 
 .lesson-steps {
     margin-top: 40px;
-    border-top: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
 }
 
 .lesson-steps > div {
@@ -4803,11 +4828,11 @@ a.webcourse-lesson > p {
     grid-template-columns: 60px 1fr;
     gap: 20px;
     padding: 22px 0;
-    border-bottom: 1px solid #ddd7cc;
+    border-bottom: 1px solid var(--border);
 }
 
 .lesson-steps span {
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 12px;
     letter-spacing: 2px;
 }
@@ -4825,32 +4850,32 @@ a.webcourse-lesson > p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .lesson-comparison > div {
     padding: 35px 30px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .lesson-small {
     margin-bottom: 15px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 11px;
     letter-spacing: 2px;
 }
 
 .lesson-comparison h3 {
     margin-bottom: 18px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 28px;
     font-weight: 400;
 }
 
 .lesson-comparison div > p:last-child {
-    color: #555;
+    color: var(--text-muted);
     line-height: 1.7;
 }
 
@@ -4888,7 +4913,7 @@ a.webcourse-lesson > p {
 .lesson-summary li::before {
     content: "✓";
     margin-right: 15px;
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 
@@ -4912,7 +4937,7 @@ a.webcourse-lesson > p {
 }
 
 .lesson-exercise li {
-    padding: 10px 0 10px 8px;
+    padding: 10px 0 10px var(--space-2);
     color: #444;
     line-height: 1.6;
 }
@@ -4924,20 +4949,20 @@ a.webcourse-lesson > p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .lesson-navigation > div {
     min-height: 180px;
     padding: 35px 30px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .lesson-navigation p {
     margin-bottom: 25px;
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 10px;
     letter-spacing: 2px;
 }
@@ -4945,15 +4970,15 @@ a.webcourse-lesson > p {
 .lesson-navigation a,
 .lesson-navigation span {
     display: block;
-    color: #111;
-    font-family: Georgia, "Times New Roman", serif;
+    color: var(--negro);
+    font-family: var(--font-heading);
     font-size: 22px;
     line-height: 1.3;
     text-decoration: none;
 }
 
 .lesson-navigation a:hover {
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 .lesson-next small {
@@ -5068,14 +5093,14 @@ a.webcourse-lesson > p {
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #9c7a3c;
-    margin-bottom: 24px;
+    color: var(--text-muted);
+    margin-bottom: var(--space-5);
 }
 
 .businesscourse-hero h1 {
     max-width: 900px;
     margin-bottom: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(50px, 7vw, 82px);
     line-height: 1.04;
     font-weight: 400;
@@ -5086,7 +5111,7 @@ a.webcourse-lesson > p {
     margin-bottom: 50px;
     font-size: 18px;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 /* META */
@@ -5096,14 +5121,14 @@ a.webcourse-lesson > p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: 45px;
-    border-top: 1px solid #ddd7cc;
-    border-left: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
 }
 
 .businesscourse-meta > div {
     padding: 25px 22px;
-    border-right: 1px solid #ddd7cc;
-    border-bottom: 1px solid #ddd7cc;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .businesscourse-meta span {
@@ -5111,11 +5136,11 @@ a.webcourse-lesson > p {
     margin-bottom: 10px;
     font-size: 10px;
     letter-spacing: 2px;
-    color: #9c7a3c;
+    color: var(--text-muted);
 }
 
 .businesscourse-meta strong {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 19px;
     font-weight: 400;
 }
@@ -5124,13 +5149,13 @@ a.webcourse-lesson > p {
 
 .businesscourse-content {
     padding: 100px 40px;
-    border-top: 1px solid #e3ded5;
+    border-top: 1px solid var(--border);
 }
 
 .businesscourse-content > h2 {
     max-width: 760px;
     margin-bottom: 25px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -5139,7 +5164,7 @@ a.webcourse-lesson > p {
 .businesscourse-content > p:not(.section-label) {
     max-width: 680px;
     margin-bottom: 55px;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -5147,7 +5172,7 @@ a.webcourse-lesson > p {
 /* LECCIONES */
 
 .businesscourse-lessons {
-    border-top: 1px solid #ddd7cc;
+    border-top: 1px solid var(--border);
 }
 
 .businesscourse-lesson {
@@ -5157,8 +5182,8 @@ a.webcourse-lesson > p {
     align-items: center;
     gap: 25px;
     padding: 20px 25px;
-    border-bottom: 1px solid #ddd7cc;
-    color: #111;
+    border-bottom: 1px solid var(--border);
+    color: var(--negro);
     text-decoration: none;
 }
 
@@ -5171,14 +5196,14 @@ a.businesscourse-lesson:hover {
 }
 
 .businesscourse-lesson > span {
-    color: #9c7a3c;
+    color: var(--text-muted);
     font-size: 13px;
     letter-spacing: 2px;
 }
 
 .businesscourse-lesson h3 {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: 23px;
     line-height: 1.3;
     font-weight: 400;
@@ -5194,7 +5219,7 @@ a.businesscourse-lesson:hover {
 }
 
 a.businesscourse-lesson > p {
-    color: #111;
+    color: var(--negro);
 }
 
 /* OBJETIVO FINAL */
@@ -5209,7 +5234,7 @@ a.businesscourse-lesson > p {
 .businesscourse-goal h2 {
     max-width: 780px;
     margin: 0 auto 25px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-heading);
     font-size: clamp(38px, 5vw, 58px);
     line-height: 1.1;
     font-weight: 400;
@@ -5218,7 +5243,7 @@ a.businesscourse-lesson > p {
 .businesscourse-goal > p:not(.section-label) {
     max-width: 680px;
     margin: 0 auto;
-    color: #555;
+    color: var(--text-muted);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -5309,7 +5334,7 @@ a.businesscourse-lesson > p {
 .prun-nav {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 24px 5%;
+    padding: var(--space-5) 5%;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -5319,7 +5344,7 @@ a.businesscourse-lesson > p {
 .prun-logo {
     color: var(--prun-carbon);
     text-decoration: none;
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -5392,7 +5417,7 @@ a.businesscourse-lesson > p {
 .prun-gallery h2,
 .prun-reservations h2,
 .prun-contact h2 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
     font-weight: 500;
     color: var(--prun-marron);
 }
@@ -5420,7 +5445,7 @@ a.businesscourse-lesson > p {
 .prun-button-light {
     display: inline-block;
     text-decoration: none;
-    padding: 16px 24px;
+    padding: var(--space-4) var(--space-5);
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -5480,13 +5505,13 @@ a.businesscourse-lesson > p {
 .prun-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: var(--space-5);
 }
 
 .prun-cards article {
-    background: #fff;
+    background: var(--blanco);
     border: 1px solid #ded5c8;
-    padding: 40px 32px;
+    padding: 40px var(--space-6);
     min-height: 280px;
 }
 
@@ -5497,7 +5522,7 @@ a.businesscourse-lesson > p {
 }
 
 .prun-cards h3 {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
     font-size: 34px;
     font-weight: 500;
     margin: 35px 0 15px;
@@ -5616,7 +5641,7 @@ a.businesscourse-lesson > p {
 }
 
 .prun-footer p {
-    font-family: "Cormorant Garamond", serif;
+    font-family: var(--font-heading);
     font-size: 24px;
 }
 
@@ -5703,7 +5728,7 @@ a.businesscourse-lesson > p {
     display: none;
     background: none;
     border: 0;
-    padding: 8px;
+    padding: var(--space-2);
     cursor: pointer;
 }
 
@@ -5875,7 +5900,7 @@ a.businesscourse-lesson > p {
         transform: translateX(-50%);
 
         display: flex !important;
-        gap: 24px;
+        gap: var(--space-5);
     }
 
     .la-prun-site .prun-gallery-grid img {
@@ -5924,7 +5949,7 @@ a.businesscourse-lesson > p {
 
     .la-prun-site .prun-cafe-gallery {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: var(--space-4);
         margin-top: 30px;
     }
 
@@ -5994,9 +6019,9 @@ a.businesscourse-lesson > p {
 
 .la-prun-live-link a {
     display: inline-block;
-    padding: 16px 30px;
+    padding: var(--space-4) 30px;
     background: #25231F;
-    color: #ffffff;
+    color: var(--blanco);
     text-decoration: none;
     font-size: 13px;
     letter-spacing: 1.5px;
@@ -6026,7 +6051,7 @@ a.businesscourse-lesson > p {
     display: inline-block;
     padding: 15px 28px;
     background: #25231F;
-    color: #ffffff;
+    color: var(--blanco);
     text-decoration: none;
     font-size: 12px;
     letter-spacing: 1.5px;
@@ -6054,7 +6079,7 @@ a.businesscourse-lesson > p {
 
 .prun-back-portfolio a {
   display: inline-block;
-  padding-bottom: 8px;
+  padding-bottom: var(--space-2);
   border-bottom: 1px solid #f4efe7;
   color: #f4efe7;
   font-size: 13px;
@@ -6153,7 +6178,7 @@ body.portfolio-page {
 
 .learn-card > .learn-coming-soon {
     margin-top: auto;
-    padding-top: 24px;
+    padding-top: var(--space-5);
     color: var(--dorado-oscuro);
     font-size: 13px;
 }

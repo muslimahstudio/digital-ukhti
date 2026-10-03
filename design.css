@@ -1,0 +1,185 @@
+/* Digital Ukhti: shared design system. Independent project demos retain their identity. */
+body.du-site {font-family:var(--font-body);font-size:var(--text-base);color:var(--negro);background:var(--marfil)}
+body.du-site :where(h1,h2,h3) {font-family:var(--font-heading);font-weight:500;text-wrap:balance}
+body.du-site h1 {font-size:var(--text-h1);line-height:1.08}
+body.du-site h2 {font-size:var(--text-h2);line-height:1.15}
+body.du-site h3 {font-size:var(--text-h3);line-height:1.2}
+body.du-site :where(p,li,label,input,select,textarea,button,a,small,span) {font-size:max(1em,16px)}
+body.du-site :where(.eyebrow,.contact-eyebrow,.section-label,.portfolio-eyebrow,.project-category,.hero-note,.resource-card span,.home-service-item span) {color:var(--text-muted);font-size:var(--text-base);letter-spacing:.08em}
+body.du-site :where(.hero h1 span) {color:var(--negro);font-size:inherit}
+body.du-site img {max-width:100%}
+body.du-site :where(.menu a,.legal-links a,.resource-card a,.project-link,.guide-card a) {display:inline-flex;align-items:center;min-height:44px}
+body.du-site :where(button,input,select) {min-height:44px}
+body.du-site :where(a,button,input,select,textarea):focus-visible {outline:3px solid var(--dorado);outline-offset:4px}
+body.du-site :where(.portfolio-header,.portfolio-cta,.case-dark,.market-cta,.digital-cta,.seo-cta,.web-cta,.services-cta) :focus-visible {outline-color:var(--blanco)}
+body.du-site :where(.button-primary,.button-header,.portfolio-button,.contact-form button) {display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:var(--space-3) var(--space-5);background:var(--dorado);color:var(--blanco);border:1px solid var(--dorado);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:var(--text-base);letter-spacing:.02em;line-height:1.4;transition:background-color var(--duration),transform var(--duration)}
+body.du-site :where(.button-primary,.button-header,.portfolio-button,.contact-form button):hover {background:var(--dorado-oscuro);color:var(--blanco);border-color:var(--dorado-oscuro)}
+body.du-site .button-secondary {display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:var(--space-3) var(--space-5);border:1px solid var(--dorado);color:var(--dorado);background:transparent;border-radius:var(--radius-sm);font-family:var(--font-body);font-size:var(--text-base);letter-spacing:.02em;line-height:1.4;transition:background-color var(--duration),color var(--duration)}
+body.du-site .button-secondary:hover {background:var(--dorado);color:var(--blanco)}
+body.du-site :where(.resource-card a,.project-link,.guide-card a,.legal-links a) {color:var(--dorado);text-underline-offset:4px}
+body.du-site :where(.resource-card a,.project-link,.guide-card a,.legal-links a):hover {text-decoration:underline}
+body.du-site .portfolio-header :where(a),body.du-site .portfolio-footer a {color:var(--blanco)}
+body.du-site .portfolio-footer {color:var(--blanco)}
+body.du-site .portfolio-cta .portfolio-eyebrow {color:var(--blanco)}
+body.du-site .menu a {font-family:var(--font-body);font-size:var(--text-base);letter-spacing:0;text-transform:none}
+body.du-site header > nav {max-width:var(--content-width);padding-inline:var(--gutter);gap:var(--space-5)}
+body.du-site .menu {gap:var(--space-4)}
+body.du-site .menu-toggle {width:44px;height:44px;flex-shrink:0}
+body.du-site .logo {font-size:var(--text-xl);letter-spacing:.06em}
+body.du-site :where(.portfolio-hero,.case-hero,.guides-hero,.templates-hero,.courses-hero,.services-page) {padding-block:var(--section-space)}
+body.du-site :where(.resource-card,.guide-card,.template-card,.course-card,.service-card,.web-card,.digital-card,.seo-card,.market-card,.web-package,.digital-package,.seo-package,.package-card) {border-radius:var(--radius-card);border-color:var(--border)}
+body.du-site :where(.resource-card,.guide-card,.service-card) {min-height:0;padding:var(--space-5);background:var(--blanco)}
+body.du-site :where(.resource-card:hover,.case-info-card:hover,.color-block:hover) {transform:none;border-color:var(--border)}
+body.du-site .contact-form label {font-size:var(--text-base);letter-spacing:0;text-transform:none}
+body.du-site .contact-form :where(input,select,textarea) {background:var(--blanco);border-radius:var(--radius-sm);font:inherit;line-height:1.6}
+body.du-site .privacy-note {font-size:var(--text-base)!important;overflow-wrap:anywhere}
+body.du-site .contact-intro {padding-right:0}
+/* Homepage: clear hierarchy and compact rhythm. */
+.du-home .hero {min-height:0;background:var(--marfil)}
+.du-home .hero-content {width:100%;max-width:var(--content-width);padding:var(--section-space) var(--gutter);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:var(--space-7);align-items:center}
+.du-home .hero-copy {min-width:0}
+.du-home .hero h1 {max-width:19ch;font-size:var(--text-h1);line-height:1.08;letter-spacing:-.025em}
+.du-home .hero-text {margin-top:var(--space-5);font-size:var(--text-lg);line-height:1.7;color:var(--text-muted)}
+.du-home .hero-buttons {flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6)}
+.du-home .hero-note {margin-top:var(--space-5);color:var(--text-muted)}
+.du-home .hero-project {margin:0;overflow:hidden;border:1px solid var(--border);border-radius:var(--radius-card);background:var(--blanco);box-shadow:var(--shadow)}
+.hero-project-bar {display:flex;gap:var(--space-2);padding:var(--space-3) var(--space-4);background:var(--beige);border-bottom:1px solid var(--border)}
+.hero-project-bar i {width:8px;height:8px;border-radius:50%;background:var(--text-muted)}
+.du-home .hero-project-image {display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.du-home :where(.resources-section,.start-section,.about-section,.contact-section) {padding:var(--section-space) max(var(--gutter),calc((100% - var(--content-width))/2 + var(--gutter)));max-width:none;margin:0;border:0}
+.du-home :where(.resources-section,.start-section) {background:var(--marfil)}
+.du-home :where(.home-portfolio,#recursos) {background:var(--beige)}
+.du-home :where(.resources-intro,.contact-intro) {max-width:65ch;margin-bottom:var(--space-6);font-size:var(--text-base);color:var(--text-muted)}
+.du-home :where(.resources-section h2,.start-section h2,.about-section h2,.contact-section h2) {font-size:var(--text-h2);max-width:25ch;margin-bottom:var(--space-5)}
+.du-home .resources-grid {gap:var(--space-5);grid-template-columns:repeat(3,minmax(0,1fr))}
+.du-home .resource-card {padding:var(--space-5);min-width:0;min-height:0}
+.du-home .resource-card h3 {font-size:var(--text-xl);margin-bottom:var(--space-3)}
+.du-home .resource-card p {margin-bottom:var(--space-3);line-height:1.6;color:var(--text-muted)}
+.du-home .resource-card.project-preview {display:grid;grid-template-columns:100px minmax(0,1fr);padding:0;transition:box-shadow var(--duration),border-color var(--duration),transform var(--duration)}
+.du-home .project-preview-image {aspect-ratio:3/4;width:100%;height:100%;min-height:0;object-fit:cover}
+.du-home .project-preview-content {padding:var(--space-4);min-width:0}
+.du-home .project-preview-content span {margin-bottom:var(--space-2);color:var(--text-muted);letter-spacing:0}
+.du-home .project-preview-content h3 {margin-bottom:var(--space-2)}
+.du-home .project-preview-content p {margin-bottom:var(--space-2)}
+.du-home .project-preview-content a {margin-top:auto}
+.du-home .project-preview:is(:hover,:focus-within) {transform:translateY(-3px);border-color:var(--text-muted);box-shadow:var(--shadow)}
+.du-home .home-services {margin:0;padding:0;border:0}
+.du-home .home-offer .home-services {display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);gap:var(--space-7)}
+.du-home .home-services-heading {margin:0;max-width:none}
+.du-home .home-services-heading h2 {font-family:var(--font-heading);font-size:var(--text-h2)}
+.du-home .home-services-grid {grid-template-columns:repeat(2,minmax(0,1fr));border:0;gap:var(--space-4)}
+.du-home .home-service-item {min-height:0;padding:var(--space-5);border:1px solid var(--border);border-radius:var(--radius-card);color:var(--negro)}
+.du-home .home-service-item h3 {font-family:var(--font-heading);font-size:var(--text-h3);margin-bottom:var(--space-3)}
+.du-home .home-service-item > p {font-size:var(--text-base);margin-bottom:var(--space-4);color:var(--text-muted)}
+.du-home a.home-service-item > p:last-child {font-size:var(--text-base);text-transform:none;letter-spacing:0;color:var(--dorado)}
+.du-home .home-price {display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:var(--space-7);background:var(--negro);color:var(--blanco)}
+.du-home .home-price :where(.contact-eyebrow,.contact-intro) {color:var(--blanco)}
+.du-home .home-price > :not(a) {grid-column:1}
+.du-home .home-price > a {grid-column:2;grid-row:2/4;align-self:center}
+.du-home .home-price .contact-intro {margin-bottom:0}
+.du-home .home-benefits .resources-grid {grid-template-columns:repeat(4,minmax(0,1fr))}
+.du-home .home-benefits .resource-card {border:0;border-left:1px solid var(--border);border-radius:0;background:transparent;padding:0 var(--space-5)}
+.du-home #proceso {background:var(--beige)}
+.du-home #proceso .home-services-grid {grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--space-4)}
+.du-home #proceso .home-service-item {padding:var(--space-4);background:var(--marfil)}
+.du-home #proceso .home-service-item span {margin-bottom:var(--space-4);color:var(--text-muted)}
+.du-home #proceso .home-service-item h3 {font-size:var(--text-xl)}
+.du-home #proceso > a {margin-top:var(--space-6)}
+.du-home .home-audit .resource-card {background:var(--beige)}
+.du-home .about-container {max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 var(--space-7)}
+.du-home .about-container > :where(.eyebrow,h2,a) {grid-column:1}
+.du-home .about-content {grid-column:2;grid-row:1/4;margin:0}
+.du-home .about-content p {font-size:var(--text-base);color:var(--text-muted)}
+.du-home .about-container > a {justify-self:start;align-self:start;margin:0}
+.du-home .contact-section {background:var(--beige)}
+.du-home .contact-form {grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-5)}
+.du-home .contact-form > :nth-child(n+3) {grid-column:1/-1}
+.du-home .contact-section > * {max-width:850px}
+/* Portfolio: matching image proportions and clear interactive cards. */
+body.du-site .portfolio-projects {max-width:var(--content-width);padding:var(--section-space) var(--gutter);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-5)}
+body.du-site .project-card {display:flex;flex-direction:column;gap:0;padding:0;border:1px solid var(--border);border-radius:var(--radius-card);overflow:hidden;background:var(--blanco);transition:transform var(--duration),box-shadow var(--duration),border-color var(--duration)}
+body.du-site .portfolio-card-image {display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
+body.du-site .project-content {display:flex;flex-direction:column;flex:1;padding:var(--space-5)}
+body.du-site .project-content h2 {font-size:var(--text-h2);margin-bottom:var(--space-3)}
+body.du-site .project-content > p:not(.project-category) {margin-bottom:var(--space-4)}
+body.du-site .project-link {align-self:start;margin-top:auto}
+body.du-site .project-card:is(:hover,:focus-within) {transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--text-muted)}
+.du-mobile-contact {display:none}
+@media (max-width:1100px) {
+ body.du-site header > nav {position:relative}
+ body.du-site .menu {display:none;position:absolute;top:100%;left:0;width:100%;background:var(--marfil);flex-direction:column;align-items:stretch;padding:var(--space-4) var(--gutter);z-index:1000}
+ body.du-site .menu.active {display:flex}
+ body.du-site .menu-toggle {display:block}
+ body.du-site .menu a {justify-content:center}
+ .du-home #proceso .home-services-grid {grid-template-columns:repeat(3,minmax(0,1fr))}
+ .du-home .home-benefits .resources-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+ .du-home .home-offer .home-services {grid-template-columns:1fr}
+ .du-home .hero-content {gap:var(--space-5)}
+ .du-home .resources-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:768px) {
+ body.du-site {padding-bottom:calc(76px + env(safe-area-inset-bottom));overflow-wrap:break-word}
+ body.du-site :where(p,li,label,a,button,input,select,textarea,small,span) {font-size: max(1em,16px)!important}
+ body.du-site :where(.web-features,.case-two-columns,.case-grid,.case-meta,.typography-grid,.services-grid,.web-grid,.digital-grid,.seo-grid,.market-grid,.web-packages-grid,.digital-packages-grid,.seo-packages-grid,.packages-grid) {grid-template-columns:minmax(0,1fr)}
+ body.du-site :where(.portfolio-nav nav,.legal-links) {flex-wrap:wrap;gap:var(--space-3)}
+ body.du-site :where(.portfolio-cta,.portfolio-hero,.case-hero,.case-highlight,.case-dark,.case-result) {padding-inline:var(--gutter)}
+ body.du-site .portfolio-nav nav {padding:0;min-height:44px}
+ body.du-site .portfolio-projects {grid-template-columns:minmax(0,1fr)}
+ .du-home .hero-content {grid-template-columns:minmax(0,1fr)}
+ .du-home .hero h1 {max-width:20ch}
+ .du-home .hero-buttons {flex-direction:row;align-items:stretch}
+ .du-home .hero-buttons a {flex:1 1 220px}
+ .du-home .hero-project {max-width:600px;width:100%}
+ .du-home .resources-grid,.du-home .home-benefits .resources-grid,.du-home .home-services-grid,.du-home #proceso .home-services-grid {grid-template-columns:minmax(0,1fr)}
+ .du-home .home-price,.du-home .about-container {display:block}
+ .du-home .home-price > a {margin-top:var(--space-5)}
+ .du-home .home-benefits .resource-card {padding:var(--space-4) 0;border-left:0;border-top:1px solid var(--border)}
+ .du-home .about-content {margin-bottom:var(--space-5)}
+ .du-home .contact-form {grid-template-columns:minmax(0,1fr)}
+ .du-home .contact-form > * {grid-column:1}
+ body.du-site .du-mobile-contact {position:fixed;display:flex;align-items:center;justify-content:center;left:var(--space-4);right:var(--space-4);bottom:calc(var(--space-3) + env(safe-area-inset-bottom));z-index:900;min-height:48px;background:var(--dorado);color:var(--blanco);border-radius:var(--radius-sm);box-shadow:var(--shadow);padding:var(--space-3) var(--space-4);font-size:var(--text-base);text-decoration:none}
+ body.du-site .du-mobile-contact:focus-visible {outline-color:var(--negro)}
+ body.du-site .du-consent-settings {bottom:calc(76px + env(safe-area-inset-bottom));font:var(--text-base) var(--font-body);min-height:44px}
+ body.du-site .du-consent {font:var(--text-base)/1.6 var(--font-body);max-height:85svh;overflow:auto}
+ body.du-site .du-consent button {min-height:44px}
+ body.du-site .du-consent :focus-visible {outline:3px solid var(--dorado);outline-offset:3px}
+ body.du-site .lesson-code {max-width:100%;overflow-x:auto;white-space:pre}
+ body.du-site :where(.lesson-navigation,.webcourse-lesson,.businesscourse-lesson) {min-width:0}
+}
+@media (max-width:600px) {body.du-site .button-header {display:none} body.du-site header > nav {gap:var(--space-3)} body.du-site .logo {font-size:var(--text-lg)}}
+@media (prefers-reduced-motion:reduce) {
+ html {scroll-behavior:auto}
+ *,*::before,*::after {animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important;scroll-behavior:auto!important}
+ body.du-site :where(.project-preview,.project-card):is(:hover,:focus-within) {transform:none}
+}
+
+/* Action targets and neutral labels across resource/service pages. */
+body.du-site :where(.web-package a,.digital-package a,.seo-package a,.package-card a,.service-card a,.learn-card a,.lesson-navigation a,.learn-resource-links a,.courses-buttons a) {min-height:44px;display:inline-flex;align-items:center;font-size:var(--text-base);border-radius:var(--radius-sm)}
+body.du-site :where(.web-card span,.digital-card span,.seo-card span,.market-card span,.service-card span,.guide-card span,.template-category,.course-category,.learn-category,.lesson-meta span,.case-meta span,.web-features span,.case-info-card span) {color:var(--text-muted)}
+body.du-site :where(.web-package a,.digital-package a,.seo-package a,.package-card a) {background:var(--dorado);color:var(--blanco);padding:var(--space-3) var(--space-4)}
+body.du-site :where(.web-package a,.digital-package a,.seo-package a,.package-card a):hover {background:var(--dorado-oscuro);color:var(--blanco)}
+body.du-site :where(.web-deliverable,.digital-deliverable,.seo-deliverable,.market-deliverable) {background:var(--beige)}
+body.du-site :where(.web-cta,.digital-cta,.seo-cta,.market-cta,.services-cta) .section-label {color:var(--blanco)}
+/* Keep the accent exclusively on actions, including the hero's italic line. */
+.du-home .hero h1 span {color:var(--negro);font-size:inherit}
+body.du-site :where(p,li,label,a,button,input,select,textarea,small,span) {font-size:max(1em,16px)!important}
+.du-home .hero h1 {font-size:clamp(2.5rem,4vw,3.5rem);max-width:22ch}
+body.du-site header > nav {max-width:1400px}
+/* Contrast corrections found in the rendered-page audit. */
+body.du-site :where(.web-cta,.digital-cta,.seo-cta,.market-cta,.services-cta) .section-label {color:var(--text-muted)}
+body.du-site :where(.web-note p,.seo-note p,.businesscourse-lesson p,.legal-kicker) {color:var(--text-muted)}
+body.du-site .color-gold {color:#000}
+body.du-site .brand-wordmark span {color:var(--blanco)}
+body.du-site .case-dark .portfolio-eyebrow {color:var(--blanco)}
+body.du-site.la-prun-page .case-highlight .portfolio-eyebrow {color:var(--text-muted)}
+body.du-site :where(.nurea-eyebrow,.nurea-meta-label,.nurea-section-number,.nurea-card-number,.nurea-mockup-caption span) {color:var(--text-muted)}
+body.du-site .nurea-section-dark .nurea-section-number {color:var(--blanco)}
+body.du-site .nurea-section-sage .nurea-section-number {color:var(--negro)}
+body.du-site .nurea-product-info span {color:var(--text-muted)}
+body.du-site a {min-height:44px;display:inline-flex;align-items:center;max-width:100%}
+body.du-site :where(p,li) a {overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:3px}
+body.du-site .du-consent,body.du-site .du-consent-settings {font-family:var(--font-body);font-size:var(--text-base)}
+body.du-site .du-consent :where(button,a),body.du-site .du-consent-settings {min-height:44px}
+/* Card headings remain compact, independently of section titles. */
+body.du-site :is(.guide-card,.template-card,.course-card,.service-card) h2 {font-size:var(--text-h3)}
+.du-home .home-portfolio .resources-grid,body.du-site .portfolio-projects {grid-auto-rows:1fr}
