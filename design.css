@@ -183,3 +183,4 @@ body.du-site .du-consent :where(button,a),body.du-site .du-consent-settings {min
 /* Card headings remain compact, independently of section titles. */
 body.du-site :is(.guide-card,.template-card,.course-card,.service-card) h2 {font-size:var(--text-h3)}
 .du-home .home-portfolio .resources-grid,body.du-site .portfolio-projects {grid-auto-rows:1fr}
+body.du-site :where(a,button) {min-width:44px}
