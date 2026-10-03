@@ -13,3 +13,9 @@ html[lang="fr"] .button-header {white-space:normal;text-align:center}
 
 html[lang="fr"] header .menu a {white-space:nowrap}
 html[lang="fr"] .hero-buttons a {padding-left:20px;padding-right:20px}
+/* Independent portfolio demos keep their own palette. */
+.demo-noma .language-switch {font-family:inherit}
+.demo-noma .language-switch a,.demo-noma .language-switch span,.demo-noma .language-switch a[aria-current="true"] {color:var(--blanco)}
+.demo-noma .language-switch a:hover {background:var(--taupe)}
+.nurea-header-inner>.language-switch {margin-right:16px}
+@media(max-width:768px) {.prun-nav {flex-wrap:wrap;gap:8px}.prun-nav>.language-switch {margin-left:auto!important}.demo-noma .navbar {gap:8px;flex-wrap:wrap}.demo-noma .language-switch {margin-left:auto!important}}
