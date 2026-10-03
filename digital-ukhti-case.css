@@ -1,0 +1,8 @@
+.digital-ukhti-case-page .color-black {background:var(--negro);color:var(--blanco)}
+.digital-ukhti-case-page .color-ivory {background:var(--marfil);color:var(--negro)}
+.digital-ukhti-case-page .color-beige {background:var(--beige);color:var(--negro)}
+body.digital-ukhti-case-page .color-gold {background:var(--dorado);color:var(--blanco)}
+.digital-ukhti-case-page .case-website-preview img,.digital-ukhti-case-page .browser-screen img {display:block;width:100%;height:auto;object-fit:contain}
+.case-mobile-preview {max-width:290px;margin:var(--space-7) auto 0;text-align:center}
+.case-mobile-preview img {display:block;width:100%;height:auto;border:1px solid var(--border);border-radius:var(--radius-card);box-shadow:var(--shadow)}
+.case-mobile-preview figcaption {font-family:var(--font-body);font-size:var(--text-base);color:var(--text-muted);margin-top:var(--space-4)}
