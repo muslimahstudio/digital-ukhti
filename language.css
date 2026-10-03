@@ -19,3 +19,5 @@ html[lang="fr"] .hero-buttons a {padding-left:20px;padding-right:20px}
 .demo-noma .language-switch a:hover {background:var(--taupe)}
 .nurea-header-inner>.language-switch {margin-right:16px}
 @media(max-width:768px) {.prun-nav {flex-wrap:wrap;gap:8px}.prun-nav>.language-switch {margin-left:auto!important}.demo-noma .navbar {gap:8px;flex-wrap:wrap}.demo-noma .language-switch {margin-left:auto!important}}
+
+@media print {.language-switch,.language-standalone,.du-mobile-contact,.du-consent-settings,.du-consent {display:none!important}}
