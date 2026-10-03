@@ -6,6 +6,7 @@
   const measurementId = script && script.dataset.gaId;
   if (!measurementId || !/^G-[A-Z0-9]+$/.test(measurementId)) return;
 
+  const french = document.documentElement.lang === 'fr';
   const key = 'digital-ukhti-analytics-consent';
   const stored = localStorage.getItem(key);
   let loaded = false;
@@ -38,8 +39,8 @@
   const settings = document.createElement('button');
   settings.type = 'button';
   settings.className = 'du-consent-settings';
-  settings.textContent = 'Privacidad';
-  settings.setAttribute('aria-label', 'Cambiar preferencias de cookies');
+  settings.textContent = french ? 'Confidentialité' : 'Privacidad';
+  settings.setAttribute('aria-label', french ? 'Modifier les préférences de cookies' : 'Cambiar preferencias de cookies');
   document.body.appendChild(settings);
 
   function showChoice() {
@@ -48,8 +49,8 @@
     const panel = document.createElement('section');
     panel.className = 'du-consent';
     panel.setAttribute('role', 'dialog');
-    panel.setAttribute('aria-label', 'Preferencias de cookies');
-    panel.innerHTML = '<p>Usamos Google Analytics para conocer las visitas a esta web solo si aceptas. Puedes rechazarlo o cambiar tu elección cuando quieras. <a href="/privacidad.html">Política de privacidad</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Rechazar estadísticas</button><button type="button" data-accept>Aceptar estadísticas</button></div>';
+    panel.setAttribute('aria-label', french ? 'Préférences de cookies' : 'Preferencias de cookies');
+    panel.innerHTML = french ? '<p>Nous utilisons Google Analytics pour mesurer les visites uniquement si vous acceptez. Vous pouvez refuser ou modifier votre choix à tout moment. <a href="/privacidad.html" lang="es">Politique de confidentialité (en espagnol)</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Refuser les statistiques</button><button type="button" data-accept>Accepter les statistiques</button></div>' : '<p>Usamos Google Analytics para conocer las visitas a esta web solo si aceptas. Puedes rechazarlo o cambiar tu elección cuando quieras. <a href="/privacidad.html">Política de privacidad</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Rechazar estadísticas</button><button type="button" data-accept>Aceptar estadísticas</button></div>';
     document.body.appendChild(panel);
     function choose(value) {
       localStorage.setItem(key, value);
