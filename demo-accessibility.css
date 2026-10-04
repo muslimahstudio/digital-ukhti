@@ -18,3 +18,5 @@ img {max-width:100%}
 .demo-noma .hero {background-color:#292621;background-image:linear-gradient(90deg,rgba(25,22,19,.68),rgba(25,22,19,.62)),url('atelier-noma/atelier-noma-hero.webp')}
 .open-tip {color:#80632F}
 a,button {min-width:44px}
+
+.demo-noma .footer-column h3 {font-size:16px}

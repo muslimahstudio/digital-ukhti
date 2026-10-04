@@ -8,7 +8,7 @@
 .source-language {font-size:16px;font-weight:400;letter-spacing:0;text-transform:none;color:inherit}
 html[lang="fr"] .hero-buttons {flex-wrap:wrap}
 html[lang="fr"] .button-header {white-space:normal;text-align:center}
-@media(max-width:1500px) {html[lang="fr"] header .menu {display:none;position:absolute;top:85px;left:0;right:0;padding:20px;background:var(--marfil);flex-direction:column;align-items:flex-start;gap:8px;z-index:1100}html[lang="fr"] header .menu.active {display:flex}html[lang="fr"] .menu-toggle {display:block}}
+@media(max-width:1500px) {html[lang="fr"] header .menu {display:none;position:absolute;top:100%;left:0;right:0;padding:20px;background:var(--marfil);flex-direction:column;align-items:flex-start;gap:8px;z-index:1100}html[lang="fr"] header .menu.active {display:flex}html[lang="fr"] .menu-toggle {display:block}}
 @media(max-width:768px) {header .language-switch {margin-left:auto!important}header .language-switch a {min-width:44px}html[lang="fr"] .hero h1 {font-size:clamp(2.25rem,9vw,3rem)}.portfolio-nav {flex-wrap:wrap;gap:8px}.portfolio-nav>.language-switch {margin-left:auto!important}}
 
 html[lang="fr"] header .menu a {white-space:nowrap}
@@ -21,3 +21,6 @@ html[lang="fr"] .hero-buttons a {padding-left:20px;padding-right:20px}
 @media(max-width:768px) {.prun-nav {flex-wrap:wrap;gap:8px}.prun-nav>.language-switch {margin-left:auto!important}.demo-noma .navbar {gap:8px;flex-wrap:wrap}.demo-noma .language-switch {margin-left:auto!important}}
 
 @media print {.language-switch,.language-standalone,.du-mobile-contact,.du-consent-settings,.du-consent {display:none!important}}
+
+body.du-site .portfolio-header .language-switch :is(a,span,a[aria-current="true"]) {color:var(--blanco)}
+body.du-site .portfolio-header .language-switch a:hover {background:var(--text-muted)}

@@ -104,7 +104,7 @@ body.du-site .project-content h2 {font-size:var(--text-h2);margin-bottom:var(--s
 body.du-site .project-content > p:not(.project-category) {margin-bottom:var(--space-4)}
 body.du-site .project-link {align-self:start;margin-top:auto}
 body.du-site .project-card:is(:hover,:focus-within) {transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--text-muted)}
-.du-mobile-contact {display:none}
+body.du-site .du-mobile-contact {display:none}
 @media (max-width:1100px) {
  body.du-site header > nav {position:relative}
  body.du-site .menu {display:none;position:absolute;top:100%;left:0;width:100%;background:var(--marfil);flex-direction:column;align-items:stretch;padding:var(--space-4) var(--gutter);z-index:1000}
@@ -184,3 +184,18 @@ body.du-site .du-consent :where(button,a),body.du-site .du-consent-settings {min
 body.du-site :is(.guide-card,.template-card,.course-card,.service-card) h2 {font-size:var(--text-h3)}
 .du-home .home-portfolio .resources-grid,body.du-site .portfolio-projects {grid-auto-rows:1fr}
 body.du-site :where(a,button) {min-width:44px}
+
+/* Small refinements verified across Spanish and French pages. */
+body.du-site :where(button,input,select,textarea) {font-family:var(--font-body)}
+body.du-site .learn-card .learn-coming-soon a {display:inline-flex;min-height:44px;align-items:center}
+body.du-site .lesson-next small {color:var(--text-muted)}
+body.du-site .nurea-navigation a:is(:hover,[aria-current="page"]) {color:var(--dorado)}
+body.du-site :where(.web-cta,.digital-cta,.seo-cta,.market-cta,.services-cta) :focus-visible {outline-color:var(--dorado)}
+
+@media (min-width:1101px) and (max-width:1500px) {
+ body.du-site header > nav {position:relative}
+ body.du-site header .menu {display:none;position:absolute;top:100%;left:0;width:100%;background:var(--marfil);flex-direction:column;align-items:stretch;padding:var(--space-4) var(--gutter);z-index:1000}
+ body.du-site header .menu.active {display:flex}
+ body.du-site header .menu-toggle {display:block}
+ body.du-site header .menu a {justify-content:center;white-space:nowrap}
+}
