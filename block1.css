@@ -1,0 +1,24 @@
+/* Block 1 content layout; existing design tokens and visual identity. */
+.du-home .du-packages .resource-card {display:flex;flex-direction:column;gap:var(--space-3)}
+.du-home .du-packages .resource-card ul {padding-left:var(--space-5);margin:0}
+.du-home .du-packages .package-price {font-size:var(--text-xl)!important;color:var(--negro)}
+.du-home .du-pending {font-size:var(--text-base);line-height:1.6;padding:var(--space-3);border:1px dashed var(--border);border-radius:var(--radius-sm);color:var(--text-muted);overflow-wrap:anywhere}
+.du-home .du-packages > .du-pending,.du-home .du-testimonials {margin-block:var(--space-5)}
+.du-home .du-diagnostic {padding-block:var(--space-6)}
+.du-home .du-diagnostic h2 {font-size:var(--text-h3);max-width:none}
+.du-home .du-diagnostic .resources-intro {margin-bottom:var(--space-3)}
+.du-home .du-method-materials {margin-top:var(--space-5);padding:var(--space-5);background:var(--marfil);border:1px solid var(--border);border-radius:var(--radius-card)}
+.du-home .du-method-materials h3 {margin-bottom:var(--space-3)}
+.du-home .du-faq {max-width:850px}
+.du-home .du-faq details {border-top:1px solid var(--border);padding-block:var(--space-3)}
+.du-home .du-faq summary {cursor:pointer;min-height:44px;padding:var(--space-3) 0;font-size:var(--text-base);font-weight:500}
+.du-home .du-faq details p {padding-block:var(--space-3);color:var(--text-muted);line-height:1.7}
+.du-case-summary {max-width:1200px;margin-inline:auto;padding-inline:var(--gutter)}
+.du-case-summary :where(p,figcaption) {font-size:var(--text-base);line-height:1.7;color:var(--text-muted)}
+.du-case-summary h2 {font-size:var(--text-h2);margin-bottom:var(--space-5)}
+.du-case-summary-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-5);margin-block:var(--space-6)}
+.du-case-summary-grid h3 {margin-bottom:var(--space-3)}
+.du-case-summary figure {margin:0;max-width:900px}
+.du-case-summary img {display:block;width:100%;height:auto}
+.du-case-summary figcaption {padding-block:var(--space-3)}
+@media(max-width:768px){.du-case-summary-grid{grid-template-columns:minmax(0,1fr)}}
