@@ -1,0 +1,189 @@
+.clarity-check-page {
+  max-width:980px;
+  margin:auto;
+  padding:clamp(42px,8vw,88px) 6%}
+.clarity-check-intro {
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 36px}
+.clarity-check-intro h1 {
+  max-width:740px;
+  margin:0 auto 18px}
+.clarity-check-intro>p:last-child {
+  max-width:650px;
+  margin:0 auto;
+  color:var(--text-muted);
+  line-height:1.75}
+.clarity-card {
+  max-width:760px;
+  margin:auto;
+  background:var(--blanco,#fff);
+  border:1px solid var(--border,#e7e3dc);
+  border-radius:18px;
+  padding:clamp(22px,5vw,42px);
+  box-shadow:0 14px 45px #25231f0f}
+.clarity-progress-top {
+  display:flex;
+  justify-content:space-between;
+  color:var(--text-muted);
+  margin-bottom:12px}
+.clarity-progress {
+  height:5px;
+  background:var(--beige,#eeeae3);
+  border-radius:99px;
+  overflow:hidden;
+  margin-bottom:28px}
+.clarity-progress-fill {
+  height:100%;
+  width:0;
+  background:var(--dorado,#b78b45);
+  transition:width .2s}
+.clarity-question {
+  font-size:clamp(24px,4vw,32px);
+  line-height:1.25;
+  margin:0 0 10px}
+.clarity-hint {
+  color:var(--text-muted);
+  line-height:1.65;
+  margin:0 0 22px}
+.clarity-answers {
+  display:grid;
+  gap:10px}
+.clarity-answer {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  min-height:54px;
+  padding:14px 17px;
+  text-align:left;
+  color:var(--negro);
+  background:#fff;
+  border:1px solid var(--border,#e7e3dc);
+  border-radius:8px;
+  cursor:pointer}
+.clarity-answer:hover,.clarity-answer[aria-pressed=true] {
+  border-color:var(--dorado,#b78b45);
+  background:var(--marfil,#f7f5f1)}
+.clarity-answer span:first-child {
+  font-weight:600}
+.clarity-answer .check {
+  color:var(--dorado-oscuro,#805d25);
+  opacity:0}
+.clarity-answer[aria-pressed=true] .check {
+  opacity:1}
+.clarity-controls {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:24px}
+.clarity-controls button,.clarity-restart {
+  min-height:48px;
+  padding:12px 18px;
+  border-radius:8px;
+  font:inherit;
+  font-weight:650;
+  cursor:pointer}
+.clarity-back {
+  border:0;
+  background:transparent;
+  color:var(--text-muted)}
+.clarity-back:disabled {
+  visibility:hidden}
+.clarity-next {
+  border:1px solid var(--negro);
+  background:var(--negro);
+  color:#fff}
+.clarity-next:disabled {
+  background:#c7c4be;
+  border-color:#c7c4be;
+  cursor:not-allowed}
+.clarity-note {
+  font-size:13px;
+  color:var(--text-muted);
+  line-height:1.6;
+  text-align:center;
+  margin:18px 0 0}
+.clarity-result {
+  display:none}
+.clarity-result.is-visible {
+  display:block}
+.clarity-quiz.is-hidden {
+  display:none}
+.clarity-score {
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:99px;
+  background:var(--beige,#f4eee3);
+  color:var(--dorado-oscuro,#805d25);
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.05em;
+  text-transform:uppercase}
+.clarity-result h2 {
+  font-size:clamp(28px,5vw,40px);
+  line-height:1.16;
+  margin:18px 0 12px}
+.clarity-result-copy {
+  color:var(--text-muted);
+  line-height:1.75}
+.clarity-recommendation {
+  margin:22px 0;
+  padding:17px 19px;
+  border-left:3px solid var(--dorado,#b78b45);
+  background:var(--marfil,#f7f5f1);
+  line-height:1.65}
+.clarity-recommendation strong {
+  display:block;
+  margin-bottom:6px}
+.clarity-result-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:24px}
+.clarity-result-actions .button-primary {
+  min-height:48px;
+  text-decoration:none}
+.clarity-restart {
+  background:transparent;
+  border:1px solid var(--border,#e7e3dc);
+  color:var(--negro)}
+.clarity-utility-footer {
+  text-align:center;
+  color:var(--text-muted);
+  padding:0 20px 40px}
+.clarity-utility-footer a {
+  color:var(--dorado-oscuro,#805d25)}
+.clarity-check-page :where(button,a):focus-visible {
+  outline:3px solid var(--dorado,#b78b45);
+  outline-offset:3px}
+@media(max-width:600px) {
+  .clarity-check-page {
+  padding-top:46px}
+.clarity-card {
+  border-radius:14px}
+.clarity-controls button {
+  padding-inline:13px}
+.clarity-result-actions {
+  flex-direction:column}
+.clarity-result-actions>* {
+  width:100%;
+  text-align:center;
+  justify-content:center}
+}
+@media(prefers-reduced-motion:reduce) {
+  .clarity-check-page * {
+  transition-duration:.01ms!important}
+}
+
+/* Keep the four resource cards balanced on the homepage. */
+#recursos .resources-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+@media (max-width: 900px) {
+  #recursos .resources-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  #recursos .resources-grid { grid-template-columns: 1fr; }
+}

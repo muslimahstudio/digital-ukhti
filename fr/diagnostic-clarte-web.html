@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Évaluez la clarté de votre site en deux minutes et découvrez quoi améliorer en priorité.">
+<link rel="canonical" href="https://digitalukhti.com/fr/diagnostic-clarte-web.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/diagnostico-claridad-web.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/diagnostic-clarte-web.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/diagnostico-claridad-web.html">
+<title>Diagnostic gratuit de clarté de votre site | Digital Ukhti</title>
+<link rel="stylesheet" href="../styles.css?v=20261003">
+<link rel="stylesheet" href="../design.css">
+<link rel="stylesheet" href="../language.css">
+<link rel="stylesheet" href="../clarity-check.css">
+<script defer src="../design.js">
+</script>
+<script defer src="../language.js">
+</script>
+</head>
+<body class="du-site">
+<header>
+<nav>
+<a href="index.html" class="brand">DIGITAL UKHTI</a>
+<div role="group" class="language-switch" aria-label="Choisir la langue">
+<a href="../diagnostico-claridad-web.html" lang="es" hreflang="es">ES</a>
+<span aria-hidden="true">|</span>
+<a href="./diagnostic-clarte-web.html" lang="fr" hreflang="fr" aria-current="true">FR</a>
+</div>
+<div class="menu">
+<a href="index.html">Accueil</a>
+<a href="index.html#recursos">Ressources</a>
+<a href="servicios.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="index.html#sobre">À propos</a>
+</div>
+<button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+<a href="analisis-presencia-digital.html" class="button-header">Parlons de votre projet</a>
+</nav>
+</header>
+<main class="clarity-check-page">
+<section class="clarity-check-intro">
+<p class="section-label">OUTIL GRATUIT · 2 MINUTES</p>
+<h1>Votre site explique-t-il clairement ce que propose votre activité ?</h1>
+<p>Répondez à six questions pour découvrir quel aspect améliorer en priorité afin que vos visiteurs comprennent votre offre et trouvent la prochaine étape.</p>
+</section>
+<section class="clarity-card" aria-live="polite">
+<div class="clarity-quiz" id="quiz">
+<div class="clarity-progress-top">
+<span id="step-label">
+</span>
+<span id="progress-label">0 %</span>
+</div>
+<div class="clarity-progress" role="progressbar" aria-label="Progression du diagnostic" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0">
+<div class="clarity-progress-fill" id="progress-fill">
+</div>
+</div>
+<h2 class="clarity-question" id="question">
+</h2>
+<p class="clarity-hint" id="hint">
+</p>
+<div class="clarity-answers" id="answers">
+</div>
+<div class="clarity-controls">
+<button class="clarity-back" id="back" type="button">← Précédent</button>
+<button class="clarity-next" id="next" type="button" disabled>Suivant →</button>
+</div>
+<p class="clarity-note">Cette autoévaluation est indicative : elle n’analyse pas votre site automatiquement et ne conserve pas vos réponses.</p>
+</div>
+<div class="clarity-result" id="result" tabindex="-1">
+<span class="clarity-score" id="score">
+</span>
+<h2 id="result-title">
+</h2>
+<p class="clarity-result-copy" id="result-copy">
+</p>
+<div class="clarity-recommendation">
+<strong>Votre première action recommandée</strong>
+<span id="recommendation">
+</span>
+</div>
+<div class="clarity-result-actions">
+<a class="button-primary" href="analisis-presencia-digital.html">Découvrir l’analyse de présence digitale →</a>
+<button class="clarity-restart" id="restart" type="button">Recommencer</button>
+</div>
+<p class="clarity-note">Votre résultat est calculé sur cet appareil. Aucune information n’est envoyée ni enregistrée.</p>
+</div>
+</section>
+</main>
+<footer class="clarity-utility-footer">Un outil de <a href="index.html">Digital Ukhti</a>
+</footer>
+<script>
+const questions=[["En quelques secondes, comprend-on ce que vous proposez et à qui ?","Pensez au premier écran qui s’affiche à l’ouverture de votre site.","Clarifiez votre message principal : expliquez ce que vous proposez, à qui vous vous adressez et quel résultat attendre."],["Chaque page importante indique-t-elle clairement la prochaine étape ?","Par exemple : demander un devis, réserver, acheter ou vous contacter.","Ajoutez un appel à l’action visible et concret, qui précise ce qui se passera après le clic."],["Est-il facile de trouver vos services et les informations utiles pour décider ?","Une nouvelle personne devrait les trouver sans devoir deviner.","Organisez la navigation et présentez vos services avec des titres simples, une brève explication et les informations essentielles."],["Votre site est-il facile à lire et à utiliser sur mobile ?","Vérifiez la taille du texte, les boutons et le défilement.","Vérifiez la version mobile : espacez les éléments et rendez les textes et boutons faciles à utiliser."],["Vos visiteurs trouvent-ils facilement comment vous contacter ?","Essayez de trouver le contact depuis l’accueil et depuis vos services.","Rendez un moyen de contact visible aux endroits où la personne décide si elle souhaite travailler avec vous."],["Votre site inspire-t-il confiance grâce à des exemples et des informations claires ?","Des exemples, des témoignages et une présentation de votre activité peuvent aider.","Renforcez la confiance avec des exemples réels, une présentation claire et des coordonnées cohérentes."]],labels=["Oui, c’est clair","En partie, c’est à améliorer","Non, pas encore"],copy={"step":"Question","of":"sur","next":"Suivant →","see":"Voir mon résultat →","titles":["Votre site dispose déjà de bases claires.","Votre site a de bonnes bases et quelques points à préciser.","Commencez par clarifier le parcours."],"copies":["Bravo. Examinez le point le plus faible pour rendre l’expérience cohérente sur toutes vos pages.","Votre site communique déjà une partie de votre offre. Améliorer un ou deux aspects peut faciliter le parcours de vos visiteurs.","Vous n’avez pas besoin de tout changer à la fois. Choisissez un point prioritaire et améliorez d’abord l’information ou l’action recherchée par vos visiteurs."],"score":"points"};
+let current=0;
+const answers=Array(questions.length).fill(null),$=id=>document.getElementById(id);
+function render(){const q=questions[current];
+$("step-label").textContent=copy.step+" "+(current+1)+" "+copy.of+" "+questions.length;
+$("progress-label").textContent=Math.round(current/questions.length*100)+" %";
+$("progress-fill").style.width=(current/questions.length*100)+"%";
+document.querySelector('[role=progressbar]').setAttribute("aria-valuenow",current);
+$("question").textContent=q[0];
+$("hint").textContent=q[1];
+$("back").disabled=current===0;
+$("next").disabled=answers[current]===null;
+$("next").textContent=current===questions.length-1?copy.see:copy.next;
+const box=$("answers");
+box.replaceChildren();
+labels.forEach((label,i)=>{const b=document.createElement("button");
+b.type="button";
+b.className="clarity-answer";
+b.setAttribute("aria-pressed",String(answers[current]===i));
+const t=document.createElement("span");
+t.textContent=label;
+const mark=document.createElement("span");
+mark.className="check";
+mark.setAttribute("aria-hidden","true");
+mark.textContent="✓";
+b.append(t,mark);
+b.onclick=()=>{answers[current]=i;
+render();
+$("next").focus()};
+box.append(b)})}function finish(){const total=answers.reduce((s,a)=>s+2-a,0);
+let weak=0;
+answers.forEach((a,i)=>{if(2-a>2-answers[weak])weak=i});
+$("quiz").classList.add("is-hidden");
+$("result").classList.add("is-visible");
+$("score").textContent=total+" / 12 "+copy.score;
+const tier=total>=10?0:total>=6?1:2;
+$("result-title").textContent=copy.titles[tier];
+$("result-copy").textContent=copy.copies[tier];
+$("recommendation").textContent=questions[weak][2];
+$("progress-label").textContent="100 %";
+$("progress-fill").style.width="100%";
+document.querySelector('[role=progressbar]').setAttribute("aria-valuenow",questions.length);
+$("result").focus()}$("next").onclick=()=>{if(answers[current]===null)return;
+if(current<questions.length-1){current++;
+render();
+$("question").scrollIntoView({behavior:"smooth",block:"center"})}else finish()};
+$("back").onclick=()=>{if(current>0){current--;
+render()}};
+$("restart").onclick=()=>{current=0;
+answers.fill(null);
+$("result").classList.remove("is-visible");
+$("quiz").classList.remove("is-hidden");
+render()};
+render();
+
+</script>
+</body>
+</html>
