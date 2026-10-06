@@ -24,10 +24,15 @@
 @media(max-width:768px){.du-case-summary-grid{grid-template-columns:minmax(0,1fr)}}
 
 /* Compact method cards and single-line desktop navigation. */
-.du-home #proceso .home-services-grid {grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
-.du-home #proceso .home-service-item {min-height:0;height:auto;padding:var(--space-5)}
+.du-home #proceso .home-services-grid {grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;grid-auto-rows:1fr}
+.du-home #proceso .home-service-item {min-height:0;height:100%;padding:var(--space-5)}
 .du-home #proceso .home-service-item h3 {margin-block:var(--space-3);font-size:var(--text-h3)}
 .du-home #proceso .home-service-item p {max-width:none;margin:0;line-height:1.6}
-.du-home #proceso .home-service-item:last-child {grid-column:1/-1}
+.du-home #proceso .home-service-item:last-child {grid-column:auto}
 .du-home header .menu a {white-space:nowrap}
 @media(max-width:768px){.du-home #proceso .home-services-grid{grid-template-columns:minmax(0,1fr)}}
+
+.du-method-details {margin-top:var(--space-4);padding:var(--space-4);border:1px solid var(--border);border-radius:var(--radius-card)}
+.du-method-details summary {cursor:pointer;min-height:44px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:4px}
+.du-method-details h3 {margin-top:var(--space-4)}
+.du-method-details p {font-size:var(--text-base);line-height:1.6}
