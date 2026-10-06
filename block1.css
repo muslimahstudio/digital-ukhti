@@ -22,3 +22,12 @@
 .du-case-summary img {display:block;width:100%;height:auto}
 .du-case-summary figcaption {padding-block:var(--space-3)}
 @media(max-width:768px){.du-case-summary-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Compact method cards and single-line desktop navigation. */
+.du-home #proceso .home-services-grid {grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.du-home #proceso .home-service-item {min-height:0;height:auto;padding:var(--space-5)}
+.du-home #proceso .home-service-item h3 {margin-block:var(--space-3);font-size:var(--text-h3)}
+.du-home #proceso .home-service-item p {max-width:none;margin:0;line-height:1.6}
+.du-home #proceso .home-service-item:last-child {grid-column:1/-1}
+.du-home header .menu a {white-space:nowrap}
+@media(max-width:768px){.du-home #proceso .home-services-grid{grid-template-columns:minmax(0,1fr)}}
