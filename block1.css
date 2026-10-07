@@ -36,3 +36,10 @@
 .du-method-details summary {cursor:pointer;min-height:44px;display:flex;align-items:center;text-decoration:underline;text-underline-offset:4px}
 .du-method-details h3 {margin-top:var(--space-4)}
 .du-method-details p {font-size:var(--text-base);line-height:1.6}
+
+/* Package information stays available behind a compact disclosure. */
+.du-package-details {margin-top:auto;width:100%}
+.du-package-details summary {cursor:pointer;min-height:44px;padding:var(--space-3);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--negro);font-size:var(--text-base);line-height:1.5}
+.du-package-details summary:hover {background:var(--marfil)}
+.du-package-details[open] summary {margin-bottom:var(--space-4)}
+.du-package-details .du-pending {margin-top:var(--space-4)}
