@@ -199,3 +199,11 @@ body.du-site :where(.web-cta,.digital-cta,.seo-cta,.market-cta,.services-cta) :f
  body.du-site header .menu-toggle {display:block}
  body.du-site header .menu a {justify-content:center;white-space:nowrap}
 }
+
+/* Ordered course index: one full-width lesson per row. */
+body.du-site .webcourse-lessons-list {display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+body.du-site a.webcourse-lesson {display:grid;width:100%;box-sizing:border-box;grid-template-columns:2.5rem minmax(0,1fr) auto;align-items:center;gap:var(--space-4);min-height:72px;padding:var(--space-4);font-size:var(--text-base)}
+body.du-site .webcourse-lesson > span,body.du-site .webcourse-lesson > p {font-size:var(--text-base)}
+body.du-site .webcourse-lesson h3 {min-width:0;overflow-wrap:anywhere}
+body.du-site .webcourse-lesson > p {white-space:nowrap;text-align:right}
+@media(max-width:600px){body.du-site a.webcourse-lesson {grid-template-columns:2rem minmax(0,1fr);gap:var(--space-3)}body.du-site .webcourse-lesson > p {grid-column:2;text-align:left}}
