@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connectez votre propre domaine | Digital Ukhti</title>
+
+    <meta name="description" content="Votre site possède une structure, un design et plusieurs pages. Vous allez maintenant apprendre ce qu’est un domaine et comment utiliser une adresse professionnelle pour accéder à votre projet.">
+
+    <link rel="stylesheet" href="../styles.css?v=20261003">
+    <link rel="stylesheet" href="../design.css">
+    <script defer src="../design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/fr/leccion-10-conecta-tu-dominio.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-10-conecta-tu-dominio.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-10-conecta-tu-dominio.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-10-conecta-tu-dominio.html">
+<link rel="stylesheet" href="../language.css">
+<script defer src="../language.js"></script>
+</head>
+
+<body class="du-site">
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div role="group" class="language-switch" aria-label="Choisir la langue"><a href="../leccion-10-conecta-tu-dominio.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="leccion-10-conecta-tu-dominio.html" lang="fr" hreflang="fr" aria-current="true">FR</a></div><div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="aprende-diseno-web.html">Apprendre</a>
+            <a href="guias.html">Ressources</a>
+            <a href="servicios.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">À propos de Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABECERA -->
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Création web à partir de zéro
+        </a>
+
+        <p class="section-label">LEÇON 10 · DOMAINE ET DNS</p>
+
+        <h1>Connectez votre propre domaine.</h1>
+
+        <p class="lesson-intro">
+            Votre site possède une structure, un design et plusieurs pages. Vous allez maintenant apprendre ce qu’est un domaine et comment utiliser une adresse professionnelle pour accéder à votre projet.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Niveau · Débutant</span>
+            <span>Durée · 25–35 min</span>
+            <span>Parcours · Création web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+
+        <!-- 01 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>Qu’est-ce qu’un domaine ?</h2>
+
+            <p>
+                Un domaine est le nom que l’on saisit dans le navigateur pour accéder à un site web.
+            </p>
+
+            <p>Par exemple :</p>
+
+            <div class="lesson-code">
+www.miproyecto.com
+            </div>
+
+            <p>
+                Au lieu de retenir une adresse technique, nous utilisons un nom facile à reconnaître.
+            </p>
+
+            <div class="lesson-note">
+                Le domaine est l’adresse de votre site, mais ce n’est pas le site lui-même.
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>Le domaine et l’hébergement sont deux choses différentes.</h2>
+
+            <p>
+                Il est important de distinguer ces deux concepts.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        <strong>Domaine :</strong> c’est l’adresse utilisée pour trouver un site.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        <strong>Hébergement :</strong> c’est le service où sont stockés et servis les fichiers du site.
+                    </p>
+                </div>
+
+            </div>
+
+            <p>
+                Dans un projet hébergé avec GitHub Pages, GitHub peut servir les fichiers de notre site.
+            </p>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>Que sont les DNS ?</h2>
+
+            <p>
+                DNS signifie <strong>Domain Name System</strong>.
+            </p>
+
+            <p>
+                Pour simplifier, les enregistrements DNS indiquent vers quel service un domaine doit être dirigé.
+            </p>
+
+            <p>Nous pouvons imaginer ce processus :</p>
+
+            <div class="lesson-code">
+miproyecto.com<br>
+↓<br>
+DNS<br>
+↓<br>
+serveur ou service où le site est publié
+            </div>
+
+            <div class="lesson-note">
+                Pour connecter un domaine, vous devrez généralement modifier certains enregistrements DNS auprès du fournisseur qui gère ce domaine.
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>Le domaine principal et www.</h2>
+
+            <p>
+                Ces deux adresses sont liées, mais peuvent techniquement être configurées avec des enregistrements différents :
+            </p>
+
+            <div class="lesson-code">
+miproyecto.com<br>
+www.miproyecto.com
+            </div>
+
+            <p>
+                La première est généralement appelée domaine racine ou domaine apex.
+            </p>
+
+            <p>
+                <strong>www</strong> est un sous-domaine.
+            </p>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Configurez le domaine dans GitHub Pages.</h2>
+
+            <p>
+                Si votre projet est publié avec GitHub Pages, le domaine personnalisé se configure depuis le dépôt correspondant.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Ouvrez le dépôt de votre projet.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Allez dans <strong>Settings</strong>.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Ouvrez la section <strong>Pages</strong>.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Recherchez <strong>Custom domain</strong>.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Saisissez le domaine à utiliser.</p>
+                </div>
+
+            </div>
+
+            <p>
+                GitHub vérifiera ensuite si la configuration DNS du domaine est correcte.
+            </p>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Configurez les enregistrements DNS.</h2>
+
+            <p>
+                L’étape suivante se déroule chez le fournisseur qui gère votre domaine.
+            </p>
+
+            <p>
+                Les enregistrements nécessaires peuvent varier selon que vous utilisez le domaine racine ou un sous-domaine comme `www`.
+            </p>
+
+            <div class="lesson-note">
+                Ne copiez pas les adresses IP ou les valeurs DNS d’un ancien tutoriel. Consultez toujours la documentation actuelle du service où vous publiez le site.
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Qu’est-ce qu’un enregistrement CNAME ?</h2>
+
+            <p>
+                Un enregistrement <strong>CNAME</strong> permet à un nom, comme un sous-domaine, de pointer vers un autre nom de domaine.
+            </p>
+
+            <p>
+                Par exemple, dans une configuration GitHub Pages, vous pourriez devoir associer :
+            </p>
+
+            <div class="lesson-code">
+www
+            </div>
+
+            <p>à une adresse comme :</p>
+
+            <div class="lesson-code">
+usuario.github.io
+            </div>
+
+            <p>
+                La valeur exacte dépendra de votre compte et de la configuration du projet.
+            </p>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Les modifications DNS peuvent prendre du temps.</h2>
+
+            <p>
+                Après une modification, le changement peut ne pas être visible immédiatement partout.
+            </p>
+
+            <p>
+                Ce processus est généralement appelé
+                <strong>propagation DNS</strong>.
+            </p>
+
+            <div class="lesson-note">
+                Si vous venez d’effectuer correctement une modification DNS et qu’elle ne fonctionne pas encore, ne modifiez pas les enregistrements sans arrêt. Vérifiez d’abord la configuration et laissez le changement se propager.
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Activez HTTPS.</h2>
+
+            <p>
+                HTTPS permet de chiffrer la connexion entre le navigateur et la page.
+            </p>
+
+            <p>
+                Lorsque GitHub Pages a vérifié le domaine, cherchez dans les paramètres de Pages l’option relative à HTTPS.
+            </p>
+
+            <p>L’adresse devrait utiliser :</p>
+
+            <div class="lesson-code">
+https://miproyecto.com
+            </div>
+
+            <p>au lieu de :</p>
+
+            <div class="lesson-code">
+http://miproyecto.com
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>Vérifiez les différentes versions.</h2>
+
+            <p>
+                Une fois la configuration terminée, vérifiez les adresses correspondant à votre configuration.
+            </p>
+
+            <div class="lesson-code">
+https://miproyecto.com<br>
+https://www.miproyecto.com
+            </div>
+
+            <p>
+                L’objectif est que le visiteur accède correctement à la version principale que vous avez configurée.
+            </p>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">11</p>
+
+            <h2>Erreurs fréquentes.</h2>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Mal écrire le domaine.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Configurer un mauvais enregistrement DNS.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Conserver des enregistrements incompatibles ou en double.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Ne pas attendre la propagation des changements DNS.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Oublier de vérifier HTTPS.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">12</p>
+
+            <h2>Ne modifiez pas les enregistrements sans comprendre leur rôle.</h2>
+
+            <p>
+                Le panneau DNS peut contenir des enregistrements utilisés par d’autres services.
+            </p>
+
+            <p>
+                Certains enregistrements peuvent, par exemple, être liés à l’adresse e-mail de votre domaine.
+            </p>
+
+            <div class="lesson-note">
+                Avant de supprimer un enregistrement existant, cherchez à quoi il sert. Connecter un site ne signifie pas qu’il faut supprimer tous les enregistrements DNS existants.
+            </div>
+
+        </section>
+
+
+        <!-- RESUMEN -->
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RÉSUMÉ</p>
+
+            <h2>Ce que vous avez appris.</h2>
+
+            <ul>
+                <li>Ce qu’est un domaine.</li>
+                <li>La différence entre domaine et hébergement.</li>
+                <li>Le rôle du système DNS.</li>
+                <li>La différence entre le domaine racine et www.</li>
+                <li>Où configurer un domaine dans GitHub Pages.</li>
+                <li>Le rôle possible d’un enregistrement CNAME.</li>
+                <li>Pourquoi les changements DNS peuvent prendre du temps.</li>
+                <li>L’importance d’utiliser HTTPS.</li>
+                <li>Pourquoi vérifier différentes versions du domaine.</li>
+                <li>Pourquoi ne pas supprimer des enregistrements DNS sans les examiner.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- EJERCICIO -->
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">MISE EN PRATIQUE</p>
+
+            <h2>Préparez la connexion de votre domaine.</h2>
+
+            <p>
+                Même si vous ne souhaitez pas encore acheter ou connecter un domaine, assurez-vous de comprendre le processus.
+            </p>
+
+            <ol>
+                <li>Identifiez où votre site est publié.</li>
+                <li>Identifiez où vous géreriez votre domaine.</li>
+                <li>Repérez la section DNS du fournisseur.</li>
+                <li>Repérez Settings → Pages dans GitHub.</li>
+                <li>Identifiez le champ Custom domain.</li>
+                <li>Consultez la documentation actuelle de GitHub Pages.</li>
+                <li>Vérifiez comment HTTPS serait configuré.</li>
+            </ol>
+
+            <div class="lesson-note">
+                <strong>Vous n’avez pas besoin d’acheter un domaine pour terminer ce parcours.</strong> L’essentiel est de comprendre comment le connecter lorsque vous souhaiterez en utiliser un.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <section class="lesson-navigation">
+
+        <div>
+
+            <p>LEÇON PRÉCÉDENTE</p>
+
+            <a href="leccion-09-varias-paginas-y-enlaces.html">
+                ← 09 · Créez plusieurs pages et reliez-les
+            </a>
+
+        </div>
+
+      <div class="lesson-next">
+
+    <p>LEÇON SUIVANTE</p>
+
+    <a href="leccion-11-seo-basico.html">
+        11 · Les bases du SEO avant la publication →
+    </a>
+
+</div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+</body>
+</html>

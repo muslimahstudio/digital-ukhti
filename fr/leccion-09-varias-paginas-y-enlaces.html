@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Créez plusieurs pages et reliez-les | Digital Ukhti</title>
+
+    <meta name="description" content="Jusqu’ici, vous avez surtout travaillé avec une seule page. Dans cette leçon, vous apprendrez à transformer votre projet en un site composé de plusieurs pages reliées entre elles.">
+
+    <link rel="stylesheet" href="../styles.css?v=20261003">
+    <link rel="stylesheet" href="../design.css">
+    <script defer src="../design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/fr/leccion-09-varias-paginas-y-enlaces.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-09-varias-paginas-y-enlaces.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-09-varias-paginas-y-enlaces.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-09-varias-paginas-y-enlaces.html">
+<link rel="stylesheet" href="../language.css">
+<script defer src="../language.js"></script>
+</head>
+
+<body class="du-site">
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div role="group" class="language-switch" aria-label="Choisir la langue"><a href="../leccion-09-varias-paginas-y-enlaces.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="leccion-09-varias-paginas-y-enlaces.html" lang="fr" hreflang="fr" aria-current="true">FR</a></div><div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="aprende-diseno-web.html">Apprendre</a>
+            <a href="guias.html">Ressources</a>
+            <a href="servicios.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">À propos de Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Création web à partir de zéro
+        </a>
+
+        <p class="section-label">LEÇON 09 · SITE MULTIPAGE</p>
+
+        <h1>Créez plusieurs pages et reliez-les.</h1>
+
+        <p class="lesson-intro">
+            Jusqu’ici, vous avez surtout travaillé avec une seule page. Dans cette leçon, vous apprendrez à transformer votre projet en un site composé de plusieurs pages reliées entre elles.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Niveau · Débutant</span>
+            <span>Durée · 30–35 min</span>
+            <span>Parcours · Création web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>Un site peut avoir de nombreuses pages.</h2>
+
+            <p>
+                Une page simple peut fonctionner avec un seul fichier HTML, mais de nombreux projets doivent répartir le contenu.
+            </p>
+
+            <p>
+                Par exemple, un site professionnel pourrait avoir :
+            </p>
+
+            <div class="lesson-code">
+index.html<br>
+sobre.html<br>
+servicios.html<br>
+contacto.html
+            </div>
+
+            <p>
+                Chaque fichier représente une page différente au sein du même site.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>Organisez votre projet.</h2>
+
+            <p>
+                Votre dossier pourrait se présenter ainsi :
+            </p>
+
+            <div class="lesson-code">
+mi-primera-web/<br>
+├── index.html<br>
+├── sobre.html<br>
+├── servicios.html<br>
+├── contacto.html<br>
+├── styles.css<br>
+└── images/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── proyecto.jpg
+            </div>
+
+            <p>
+                Tous les fichiers HTML peuvent utiliser le même
+                <strong>styles.css</strong>.
+            </p>
+
+            <div class="lesson-note">
+                Une structure organisée évite de nombreuses erreurs lorsque le projet se développe.
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>Créez la page À propos.</h2>
+
+            <p>
+                Créez un nouveau fichier nommé :
+            </p>
+
+            <div class="lesson-code">
+sobre.html
+            </div>
+
+            <p>
+                Vous pouvez commencer par une structure comme celle-ci :
+            </p>
+
+            <div class="lesson-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="fr"&gt;<br><br>
+
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;À propos | Mon projet&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;link rel="stylesheet" href="styles.css"&gt;<br>
+&lt;/head&gt;<br><br>
+
+&lt;body&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h1&gt;À propos du projet&lt;/h1&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Vous pouvez présenter votre projet ici.<br>
+&nbsp;&nbsp;&lt;/p&gt;<br><br>
+
+&lt;/body&gt;<br><br>
+
+&lt;/html&gt;
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>Reliez l’Accueil à la page À propos.</h2>
+
+            <p>
+                Depuis `index.html`, nous pouvons créer :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="sobre.html"&gt;À propos&lt;/a&gt;
+            </div>
+
+            <p>
+                En cliquant sur le lien, le navigateur recherchera `sobre.html` dans le même dossier.
+            </p>
+
+            <p>
+                Pour revenir à l’Accueil depuis `sobre.html` :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="index.html"&gt;Accueil&lt;/a&gt;
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Réutilisez le même menu.</h2>
+
+            <p>
+                Chaque page doit permettre au visiteur de parcourir le site sans rester bloqué.
+            </p>
+
+            <p>
+                Nous pouvons réutiliser ce menu :
+            </p>
+
+            <div class="lesson-code">
+&lt;nav&gt;<br>
+&nbsp;&nbsp;&lt;a href="index.html"&gt;Accueil&lt;/a&gt;<br>
+&nbsp;&nbsp;&lt;a href="sobre.html"&gt;À propos&lt;/a&gt;<br>
+&nbsp;&nbsp;&lt;a href="servicios.html"&gt;Services&lt;/a&gt;<br>
+&nbsp;&nbsp;&lt;a href="contacto.html"&gt;Contact&lt;/a&gt;<br>
+&lt;/nav&gt;
+            </div>
+
+            <div class="lesson-note">
+                Lorsque vous modifiez manuellement le menu d’un site statique, pensez à le mettre à jour sur toutes les pages où il apparaît.
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Qu’est-ce qu’un chemin relatif ?</h2>
+
+            <p>
+                Un chemin indique où se trouve un fichier.
+            </p>
+
+            <p>
+                Lorsque vous écrivez :
+            </p>
+
+            <div class="lesson-code">
+href="servicios.html"
+            </div>
+
+            <p>
+                vous utilisez un <strong>chemin relatif</strong>.
+            </p>
+
+            <p>
+                Cela signifie : cherchez `servicios.html` en prenant comme référence l’emplacement du document actuel.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Que se passe-t-il avec les sous-dossiers ?</h2>
+
+            <p>
+                Imaginez cette structure :
+            </p>
+
+            <div class="lesson-code">
+mi-primera-web/<br>
+├── index.html<br>
+├── styles.css<br>
+└── paginas/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── servicios.html
+            </div>
+
+            <p>
+                Depuis `index.html`, nous utiliserions ceci pour ouvrir Services :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="paginas/servicios.html"&gt;Services&lt;/a&gt;
+            </div>
+
+            <p>
+                Mais depuis `servicios.html`, nous devons remonter d’un niveau pour revenir à l’Accueil :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="../index.html"&gt;Accueil&lt;/a&gt;
+            </div>
+
+            <p>
+                Les deux points :
+            </p>
+
+            <div class="lesson-code">
+../
+            </div>
+
+            <p>
+                signifient remonter au dossier précédent.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Pourquoi une erreur 404 apparaît-elle ?</h2>
+
+            <p>
+                Une erreur 404 signifie que le navigateur ou le serveur n’a pas trouvé la ressource demandée.
+            </p>
+
+            <p>
+                Cela peut avoir plusieurs causes :
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Le fichier n’existe pas.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Le nom est mal écrit.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Le chemin pointe vers le mauvais dossier.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Les majuscules et les minuscules ne correspondent pas.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Les noms de fichiers doivent être cohérents.</h2>
+
+            <p>
+                Il est recommandé d’utiliser des noms simples et descriptifs.
+            </p>
+
+            <p>Par exemple :</p>
+
+            <div class="lesson-code">
+diseno-web.html<br>
+sobre-nosotros.html<br>
+contacto.html
+            </div>
+
+            <p>
+                Évitez les espaces :
+            </p>
+
+            <div class="lesson-code">
+Mi Pagina Servicios.html
+            </div>
+
+            <p>
+                Une meilleure solution serait :
+            </p>
+
+            <div class="lesson-code">
+servicios.html
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>Conservez l’identité visuelle entre les pages.</h2>
+
+            <p>
+                Même si chaque page a un contenu différent, le site doit constituer une expérience cohérente.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Utilisez la même navigation.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Conservez les mêmes polices.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Reprenez la palette de couleurs.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Gardez des styles de boutons cohérents.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Utilisez des espacements et des largeurs similaires.</p>
+                </div>
+
+            </div>
+
+            <p>
+                En partageant `styles.css`, il est plus facile de conserver cette cohérence.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">11</p>
+
+            <h2>Créez une structure multipage simple.</h2>
+
+            <p>
+                Pour vous entraîner, créez quatre pages :
+            </p>
+
+            <div class="lesson-code">
+index.html<br>
+sobre.html<br>
+servicios.html<br>
+contacto.html
+            </div>
+
+            <p>
+                Dans chacune, ajoutez :
+            </p>
+
+            <div class="lesson-code">
+&lt;link rel="stylesheet" href="styles.css"&gt;
+            </div>
+
+            <p>
+                et le même menu de navigation.
+            </p>
+
+            <p>
+                Vous aurez ainsi un véritable petit site web et non une simple page isolée.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">12</p>
+
+            <h2>Vérifiez tous les liens.</h2>
+
+            <p>
+                Avant de publier, parcourez votre site comme si vous étiez un visiteur.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Accueil → À propos.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>À propos → Services.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Services → Contact.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Contact → Accueil.</p>
+                </div>
+
+            </div>
+
+            <p>
+                Vérifiez aussi les boutons, les images et les liens internes.
+            </p>
+
+            <div class="lesson-note">
+                La navigation doit être vérifiée après chaque modification importante de la structure des fichiers.
+            </div>
+
+        </section>
+
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RÉSUMÉ</p>
+
+            <h2>Ce que vous avez appris.</h2>
+
+            <ul>
+                <li>Un site peut être composé de plusieurs fichiers HTML.</li>
+                <li>index.html représente généralement la page principale.</li>
+                <li>Les liens permettent de relier différentes pages.</li>
+                <li>Les chemins relatifs dépendent de l’emplacement du fichier.</li>
+                <li>../ permet de remonter d’un niveau de dossier.</li>
+                <li>Un chemin incorrect peut provoquer une erreur 404.</li>
+                <li>Les noms de fichiers doivent être clairs et cohérents.</li>
+                <li>Plusieurs pages peuvent partager le même styles.css.</li>
+                <li>La navigation doit rester cohérente.</li>
+                <li>Tous les liens doivent être testés avant publication.</li>
+            </ul>
+
+        </section>
+
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">MISE EN PRATIQUE</p>
+
+            <h2>Transformez votre projet en site multipage.</h2>
+
+            <p>
+                Utilisez le projet construit durant ce parcours.
+            </p>
+
+            <ol>
+                <li>Conservez `index.html` comme page d’Accueil.</li>
+                <li>Créez `sobre.html`.</li>
+                <li>Créez `servicios.html`.</li>
+                <li>Créez `contacto.html`.</li>
+                <li>Reliez `styles.css` aux quatre pages.</li>
+                <li>Ajoutez le même menu partout.</li>
+                <li>Vérifiez tous les chemins.</li>
+                <li>Consultez toutes les pages dans le navigateur.</li>
+            </ol>
+
+            <div class="lesson-note">
+                <strong>Si une erreur 404 apparaît, ne commencez pas par modifier tout le code.</strong> Vérifiez d’abord le nom exact du fichier et le chemin écrit dans `href`.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <section class="lesson-navigation">
+
+        <div>
+
+            <p>LEÇON PRÉCÉDENTE</p>
+
+            <a href="leccion-08-imagenes-botones-enlaces.html">
+                ← 08 · Ajoutez des images, des boutons et des liens
+            </a>
+
+        </div>
+
+    <div class="lesson-next">
+
+    <p>LEÇON SUIVANTE</p>
+
+    <a href="leccion-10-conecta-tu-dominio.html">
+        10 · Connectez votre propre domaine →
+    </a>
+
+</div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+</body>
+</html>

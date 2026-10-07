@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Créez la structure de votre première page | Digital Ukhti</title>
+
+    <meta name="description" content="Vous connaissez déjà HTML et CSS. Nous allons maintenant organiser ces connaissances pour construire la structure complète d’une page web avec des éléments HTML sémantiques.">
+
+    <link rel="stylesheet" href="../styles.css?v=20261003">
+    <link rel="stylesheet" href="../design.css">
+    <script defer src="../design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/fr/leccion-05-estructura-primera-pagina.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-05-estructura-primera-pagina.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-05-estructura-primera-pagina.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-05-estructura-primera-pagina.html">
+<link rel="stylesheet" href="../language.css">
+<script defer src="../language.js"></script>
+</head>
+
+<body class="du-site">
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div role="group" class="language-switch" aria-label="Choisir la langue"><a href="../leccion-05-estructura-primera-pagina.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="leccion-05-estructura-primera-pagina.html" lang="fr" hreflang="fr" aria-current="true">FR</a></div><div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="aprende-diseno-web.html">Apprendre</a>
+            <a href="guias.html">Ressources</a>
+            <a href="servicios.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">À propos de Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABECERA DE LA LECCIÓN -->
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Création web à partir de zéro
+        </a>
+
+        <p class="section-label">LEÇON 05 · STRUCTURE HTML</p>
+
+        <h1>Créez la structure de votre première page.</h1>
+
+        <p class="lesson-intro">
+            Vous connaissez déjà HTML et CSS. Nous allons maintenant organiser ces connaissances pour construire la structure complète d’une page web avec des éléments HTML sémantiques.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Niveau · Débutant</span>
+            <span>Durée · 25–30 min</span>
+            <span>Parcours · Création web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+
+        <!-- 01 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>Un site est composé de sections.</h2>
+
+            <p>
+                Lorsque vous regardez une page professionnelle, vous pouvez généralement la diviser mentalement en plusieurs blocs.
+            </p>
+
+            <p>
+                Par exemple :
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>En-tête et navigation.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Présentation principale.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Informations sur le projet.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Services ou contenu.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Appel à l’action.</p>
+                </div>
+
+                <div>
+                    <span>06</span>
+                    <p>Pied de page.</p>
+                </div>
+
+            </div>
+
+            <p>
+                HTML permet de représenter cette organisation avec des éléments sémantiques.
+            </p>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>Que signifie HTML sémantique ?</h2>
+
+            <p>
+                Le HTML sémantique consiste à utiliser des éléments dont le nom décrit leur fonction dans la page.
+            </p>
+
+            <p>
+                Voici quelques-uns des plus importants :
+            </p>
+
+            <div class="lesson-concepts">
+
+                <div>
+                    <span>01</span>
+                    <h3>&lt;header&gt;</h3>
+                    <p>
+                        Représente l’en-tête d’une page ou d’une section.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>&lt;main&gt;</h3>
+                    <p>
+                        Contient le contenu principal de la page.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>&lt;footer&gt;</h3>
+                    <p>
+                        Représente le pied d’une page ou d’une section.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="lesson-note">
+                Une structure claire rend le code plus facile à comprendre et aide à décrire correctement le contenu de la page.
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>L’en-tête du site.</h2>
+
+            <p>
+                Nous commencerons par créer l’en-tête et le menu de navigation.
+            </p>
+
+            <div class="lesson-code">
+&lt;header&gt;<br><br>
+
+&nbsp;&nbsp;&lt;nav&gt;<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="index.html"&gt;Mon projet&lt;/a&gt;<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#sobre"&gt;À propos&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#servicios"&gt;Services&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#contacto"&gt;Contact&lt;/a&gt;<br><br>
+
+&nbsp;&nbsp;&lt;/nav&gt;<br><br>
+
+&lt;/header&gt;
+            </div>
+
+            <p>
+                L’élément <strong>nav</strong> indique que ce bloc contient des liens de navigation.
+            </p>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>Créez le contenu principal.</h2>
+
+            <p>
+                Après le header, nous ajouterons :
+            </p>
+
+            <div class="lesson-code">
+&lt;main&gt;<br><br>
+
+&lt;/main&gt;
+            </div>
+
+            <p>
+                Dans <strong>main</strong> nous placerons les différentes sections de notre page.
+            </p>
+
+            <div class="lesson-note">
+                Une page doit normalement contenir un seul élément
+                <strong>main</strong>, car il représente le contenu principal.
+            </div>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Construisez la présentation principale.</h2>
+
+            <p>
+                La première section sert généralement à expliquer rapidement ce que propose le site.
+            </p>
+
+            <div class="lesson-code">
+&lt;section&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h1&gt;Design numérique pour des projets porteurs de sens&lt;/h1&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nous créons des solutions numériques claires,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fonctionnelles et professionnelles.<br>
+&nbsp;&nbsp;&lt;/p&gt;<br><br>
+
+&nbsp;&nbsp;&lt;a href="#servicios"&gt;Voir les services&lt;/a&gt;<br><br>
+
+&lt;/section&gt;
+            </div>
+
+            <p>
+                Nous avons ici trois éléments essentiels : un titre, une explication et un appel à l’action.
+            </p>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Ajoutez une section À propos.</h2>
+
+            <p>
+                Nous pouvons maintenant créer une deuxième section.
+            </p>
+
+            <div class="lesson-code">
+&lt;section id="sobre"&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h2&gt;À propos du projet&lt;/h2&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Nous aidons à transformer les idées en<br>
+&nbsp;&nbsp;&nbsp;&nbsp;expériences numériques claires et professionnelles.<br>
+&nbsp;&nbsp;&lt;/p&gt;<br><br>
+
+&lt;/section&gt;
+            </div>
+
+            <p>
+                Nous avons ajouté :
+            </p>
+
+            <div class="lesson-code">
+id="sobre"
+            </div>
+
+            <p>
+                Cet identifiant permet de créer un lien qui mène directement à cette section.
+            </p>
+
+            <p>
+                C’est pourquoi nous pouvons utiliser dans le menu :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="#sobre"&gt;À propos&lt;/a&gt;
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Ajoutez une section de services.</h2>
+
+            <p>
+                Nous pouvons utiliser plusieurs éléments <strong>article</strong>
+                pour représenter des contenus indépendants dans une section.
+            </p>
+
+            <div class="lesson-code">
+&lt;section id="servicios"&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h2&gt;Services&lt;/h2&gt;<br><br>
+
+&nbsp;&nbsp;&lt;article&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Création web&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Des pages claires et professionnelles.&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/article&gt;<br><br>
+
+&nbsp;&nbsp;&lt;article&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;SEO&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Optimisation pour les moteurs de recherche.&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/article&gt;<br><br>
+
+&lt;/section&gt;
+            </div>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Ajoutez un appel à l’action.</h2>
+
+            <p>
+                Une page professionnelle doit guider le visiteur vers une étape suivante.
+            </p>
+
+            <p>
+                Nous pouvons ajouter une section de contact :
+            </p>
+
+            <div class="lesson-code">
+&lt;section id="contacto"&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h2&gt;Vous avez un projet ?&lt;/h2&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Présentez-nous vos besoins et discutons-en.<br>
+&nbsp;&nbsp;&lt;/p&gt;<br><br>
+
+&nbsp;&nbsp;&lt;a href="mailto:hola@ejemplo.com"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Contacter<br>
+&nbsp;&nbsp;&lt;/a&gt;<br><br>
+
+&lt;/section&gt;
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Terminez par le footer.</h2>
+
+            <p>
+                Le footer apparaît généralement à la fin de la page.
+            </p>
+
+            <div class="lesson-code">
+&lt;footer&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;© 2026 Mon projet&lt;/p&gt;<br><br>
+
+&lt;/footer&gt;
+            </div>
+
+            <p>
+                Nous pourrons ensuite ajouter des liens juridiques, des réseaux sociaux, des coordonnées ou d’autres éléments.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>Votre page complète.</h2>
+
+            <p>
+                En réunissant tout ce que nous avons appris, voici la structure générale :
+            </p>
+
+            <div class="lesson-code">
+&lt;body&gt;<br><br>
+
+&nbsp;&nbsp;&lt;header&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;...&lt;/nav&gt;<br>
+&nbsp;&nbsp;&lt;/header&gt;<br><br>
+
+&nbsp;&nbsp;&lt;main&gt;<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Présentation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;section id="sobre"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;À propos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;section id="servicios"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Services<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;section id="contacto"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt;<br><br>
+
+&nbsp;&nbsp;&lt;/main&gt;<br><br>
+
+&nbsp;&nbsp;&lt;footer&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Pied de page<br>
+&nbsp;&nbsp;&lt;/footer&gt;<br><br>
+
+&lt;/body&gt;
+            </div>
+
+            <p>
+                Nous avons maintenant le squelette d’une page web complète.
+            </p>
+
+            <div class="lesson-note">
+                Elle peut encore sembler très simple. C’est normal : nous construisons d’abord une structure correcte, puis nous travaillons le design.
+            </div>
+
+        </section>
+
+
+        <!-- RESUMEN -->
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RÉSUMÉ</p>
+
+            <h2>Ce que vous avez appris.</h2>
+
+            <ul>
+                <li>Une page web peut être divisée en plusieurs sections.</li>
+                <li>Le HTML sémantique décrit la fonction du contenu.</li>
+                <li>header représente l’en-tête.</li>
+                <li>nav contient la navigation.</li>
+                <li>main contient le contenu principal.</li>
+                <li>section organise les grands blocs de contenu.</li>
+                <li>article peut représenter un contenu indépendant.</li>
+                <li>footer représente le pied de page.</li>
+                <li>Les attributs id permettent de créer des liens vers des sections.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- EJERCICIO -->
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">MISE EN PRATIQUE</p>
+
+            <h2>Construisez le squelette de votre site.</h2>
+
+            <p>
+                Ouvrez le projet <strong>mi-primera-web</strong>
+                que nous avons commencé dans les leçons précédentes.
+            </p>
+
+            <p>
+                Remplacez le contenu de votre <strong>body</strong>
+                par une structure contenant :
+            </p>
+
+            <ol>
+                <li>Un header.</li>
+                <li>Un menu nav.</li>
+                <li>Un main.</li>
+                <li>Une section principale avec un h1.</li>
+                <li>Une section À propos.</li>
+                <li>Une section Services.</li>
+                <li>Une section Contact.</li>
+                <li>Un footer.</li>
+            </ol>
+
+            <p>
+                Vous pouvez utiliser vos propres textes. L’essentiel pour le moment est de construire une structure claire.
+            </p>
+
+            <div class="lesson-note">
+                <strong>Conservez ce projet.</strong>
+                Dans la leçon suivante, nous utiliserons CSS pour transformer cette structure en une page mise en forme.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <section class="lesson-navigation">
+
+        <div>
+
+            <p>LEÇON PRÉCÉDENTE</p>
+
+            <a href="leccion-04-que-es-css.html">
+                ← 04 · Qu’est-ce que le CSS
+            </a>
+
+        </div>
+
+     <div class="lesson-next">
+
+    <p>LEÇON SUIVANTE</p>
+
+    <a href="leccion-06-disena-tu-pagina-con-css.html">
+        06 · Donnez du style à votre page avec CSS →
+    </a>
+
+</div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+</body>
+</html>

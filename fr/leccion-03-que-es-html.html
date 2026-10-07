@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Qu’est-ce que le HTML | Digital Ukhti</title>
+
+    <meta name="description" content="Il est temps de commencer à écrire du code. Dans cette leçon, vous apprendrez ce qu’est le HTML, comment fonctionnent ses balises et comment créer votre premier document web.">
+
+    <link rel="stylesheet" href="../styles.css?v=20261003">
+    <link rel="stylesheet" href="../design.css">
+    <script defer src="../design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/fr/leccion-03-que-es-html.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-03-que-es-html.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-03-que-es-html.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-03-que-es-html.html">
+<link rel="stylesheet" href="../language.css">
+<script defer src="../language.js"></script>
+</head>
+
+<body class="du-site">
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div role="group" class="language-switch" aria-label="Choisir la langue"><a href="../leccion-03-que-es-html.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="leccion-03-que-es-html.html" lang="fr" hreflang="fr" aria-current="true">FR</a></div><div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="aprende-diseno-web.html">Apprendre</a>
+            <a href="guias.html">Ressources</a>
+            <a href="servicios.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">À propos de Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABECERA -->
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Création web à partir de zéro
+        </a>
+
+        <p class="section-label">LEÇON 03 · HTML</p>
+
+        <h1>Qu’est-ce que le HTML.</h1>
+
+        <p class="lesson-intro">
+            Il est temps de commencer à écrire du code. Dans cette leçon, vous apprendrez ce qu’est le HTML, comment fonctionnent ses balises et comment créer votre premier document web.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Niveau · Débutant</span>
+            <span>Durée · 20–25 min</span>
+            <span>Parcours · Création web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+        <!-- 01 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>Que signifie HTML ?</h2>
+
+            <p>
+                HTML signifie HyperText Markup Language, soit langage de balisage hypertexte.
+            </p>
+
+            <p>
+                C’est le langage utilisé pour définir la structure et le contenu d’une page web.
+            </p>
+
+            <p>
+                Avec HTML, nous pouvons indiquer au navigateur quel élément est un titre ou un paragraphe, où placer une image et quel texte doit devenir un lien.
+            </p>
+
+            <div class="lesson-note">
+                <strong>Important :</strong>
+                HTML définit principalement la structure. Nous utiliserons ensuite CSS pour contrôler l’apparence visuelle de cette structure.
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>HTML utilise des balises.</h2>
+
+            <p>
+                La plupart des éléments HTML s’écrivent avec une balise ouvrante et une balise fermante.
+            </p>
+
+            <p>Par exemple, un paragraphe :</p>
+
+            <div class="lesson-code">
+                &lt;p&gt;Ceci est mon premier paragraphe.&lt;/p&gt;
+            </div>
+
+            <p>
+                La première balise ouvre l’élément :
+            </p>
+
+            <div class="lesson-code">
+                &lt;p&gt;
+            </div>
+
+            <p>
+                La seconde le ferme :
+            </p>
+
+            <div class="lesson-code">
+                &lt;/p&gt;
+            </div>
+
+            <p>
+                Entre les deux, nous écrivons le contenu à afficher sur la page.
+            </p>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>Quelques balises de base.</h2>
+
+            <p>
+                Inutile de mémoriser des centaines de balises. Nous commencerons par quelques-unes que vous utiliserez régulièrement.
+            </p>
+
+            <div class="lesson-concepts">
+
+                <div>
+                    <span>01</span>
+                    <h3>&lt;h1&gt;</h3>
+                    <p>
+                        Définit le titre principal d’une page.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>&lt;p&gt;</h3>
+                    <p>
+                        Définit un paragraphe de texte.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>&lt;a&gt;</h3>
+                    <p>
+                        Permet de créer un lien.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>La structure de base d’un document HTML.</h2>
+
+            <p>
+                Une page HTML commence par une structure de base que nous utiliserons presque toujours.
+            </p>
+
+            <div class="lesson-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="fr"&gt;<br><br>
+
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;Mon premier site&lt;/title&gt;<br>
+&lt;/head&gt;<br><br>
+
+&lt;body&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h1&gt;Ma première page web&lt;/h1&gt;<br>
+&nbsp;&nbsp;&lt;p&gt;J’apprends le HTML.&lt;/p&gt;<br><br>
+
+&lt;/body&gt;<br><br>
+
+&lt;/html&gt;
+            </div>
+
+            <p>
+                Cela peut sembler beaucoup au début, mais nous allons comprendre chaque partie.
+            </p>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>HTML, HEAD et BODY.</h2>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        <strong>&lt;html&gt;</strong> contient l’ensemble du document HTML.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        <strong>&lt;head&gt;</strong> contient les informations sur la page qui ne s’affichent généralement pas directement dans le contenu.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>
+                        <strong>&lt;body&gt;</strong> contient tout ce que le visiteur verra : titres, textes, images, boutons et autres contenus.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Les titres ont une hiérarchie.</h2>
+
+            <p>
+                HTML propose six niveaux de titres :
+            </p>
+
+            <div class="lesson-code">
+&lt;h1&gt;Titre principal&lt;/h1&gt;<br>
+&lt;h2&gt;Titre de section&lt;/h2&gt;<br>
+&lt;h3&gt;Sous-titre&lt;/h3&gt;<br>
+&lt;h4&gt;Niveau 4&lt;/h4&gt;<br>
+&lt;h5&gt;Niveau 5&lt;/h5&gt;<br>
+&lt;h6&gt;Niveau 6&lt;/h6&gt;
+            </div>
+
+            <p>
+                Ne les choisissez pas uniquement selon leur taille visuelle. Les titres représentent l’organisation et la hiérarchie du contenu.
+            </p>
+
+            <div class="lesson-note">
+                Nous utiliserons généralement un <strong>h1</strong>
+                pour le titre principal de chaque page et des
+                <strong>h2</strong> pour ses grandes sections.
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Comment créer un lien.</h2>
+
+            <p>
+                Les liens permettent de relier les pages entre elles.
+            </p>
+
+            <p>Nous utilisons la balise :</p>
+
+            <div class="lesson-code">
+                &lt;a&gt;
+            </div>
+
+            <p>
+                Par exemple :
+            </p>
+
+            <div class="lesson-code">
+                &lt;a href="contacto.html"&gt;Contact&lt;/a&gt;
+            </div>
+
+            <p>
+                L’attribut <strong>href</strong> indique vers quelle page le lien doit mener.
+            </p>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Créez votre premier fichier HTML.</h2>
+
+            <p>
+                Nous allons maintenant créer quelque chose de concret.
+            </p>
+
+            <p>
+                Créez sur votre ordinateur un dossier nommé :
+            </p>
+
+            <div class="lesson-code">
+                mi-primera-web
+            </div>
+
+            <p>
+                À l’intérieur, créez un fichier nommé :
+            </p>
+
+            <div class="lesson-code">
+                index.html
+            </div>
+
+            <p>
+                Le nom <strong>index.html</strong> est important, car il est généralement utilisé pour la page principale d’un site web.
+            </p>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Écrivez votre première page.</h2>
+
+            <p>
+                Dans <strong>index.html</strong>, écrivez :
+            </p>
+
+            <div class="lesson-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="fr"&gt;<br><br>
+
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;Mon premier site&lt;/title&gt;<br>
+&lt;/head&gt;<br><br>
+
+&lt;body&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ceci est ma première page créée avec HTML.<br>
+&nbsp;&nbsp;&lt;/p&gt;<br><br>
+
+&lt;/body&gt;<br><br>
+
+&lt;/html&gt;
+            </div>
+
+            <p>
+                Enregistrez le fichier et ouvrez-le dans votre navigateur.
+            </p>
+
+            <p>
+                Si tout est correct, vous verrez votre titre et votre premier paragraphe.
+            </p>
+
+        </section>
+
+
+        <!-- RESUMEN -->
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RÉSUMÉ</p>
+
+            <h2>Ce que vous avez appris.</h2>
+
+            <ul>
+                <li>HTML définit la structure d’une page web.</li>
+                <li>HTML utilise des balises.</li>
+                <li>De nombreuses balises ont une ouverture et une fermeture.</li>
+                <li>HEAD contient les informations sur la page.</li>
+                <li>BODY contient le contenu visible.</li>
+                <li>Les titres organisent le contenu.</li>
+                <li>Les liens sont créés avec la balise &lt;a&gt;.</li>
+                <li>La page principale s’appelle généralement index.html.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- EJERCICIO -->
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">MISE EN PRATIQUE</p>
+
+            <h2>Construisez votre première page HTML.</h2>
+
+            <p>
+                Utilisez votre fichier <strong>index.html</strong>
+                et ajoutez :
+            </p>
+
+            <ol>
+                <li>Un titre principal avec h1.</li>
+                <li>Un sous-titre avec h2.</li>
+                <li>Deux paragraphes.</li>
+                <li>Un lien.</li>
+            </ol>
+
+            <p>
+                Enregistrez ensuite le fichier et ouvrez-le à nouveau dans le navigateur pour vérifier les modifications.
+            </p>
+
+            <div class="lesson-note">
+                <strong>Ne vous préoccupez pas du design.</strong>
+                Pour le moment, la page sera très simple. Dans la leçon suivante, nous verrons comment CSS transforme son apparence.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <section class="lesson-navigation">
+
+        <div>
+            <p>LEÇON PRÉCÉDENTE</p>
+
+            <a href="leccion-02-antes-de-crear-tu-web.html">
+                ← 02 · Ce dont vous avez besoin avant de créer votre site
+            </a>
+        </div>
+
+      <div class="lesson-next">
+    <p>LEÇON SUIVANTE</p>
+
+    <a href="leccion-04-que-es-css.html">
+        04 · Qu’est-ce que le CSS →
+    </a>
+</div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+</body>
+</html>

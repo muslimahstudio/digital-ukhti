@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Images, boutons et liens | Digital Ukhti</title>
+
+    <meta name="description" content="Un site a besoin de plus que des titres et des paragraphes. Dans cette leçon, vous apprendrez à ajouter des images, créer différents types de liens et concevoir des appels à l’action qui facilitent la navigation.">
+
+    <link rel="stylesheet" href="../styles.css?v=20261003">
+    <link rel="stylesheet" href="../design.css">
+    <script defer src="../design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/fr/leccion-08-imagenes-botones-enlaces.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-08-imagenes-botones-enlaces.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-08-imagenes-botones-enlaces.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-08-imagenes-botones-enlaces.html">
+<link rel="stylesheet" href="../language.css">
+<script defer src="../language.js"></script>
+</head>
+
+<body class="du-site">
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div role="group" class="language-switch" aria-label="Choisir la langue"><a href="../leccion-08-imagenes-botones-enlaces.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="leccion-08-imagenes-botones-enlaces.html" lang="fr" hreflang="fr" aria-current="true">FR</a></div><div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="aprende-diseno-web.html">Apprendre</a>
+            <a href="guias.html">Ressources</a>
+            <a href="servicios.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#sobre">À propos de Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABECERA -->
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Création web à partir de zéro
+        </a>
+
+        <p class="section-label">LEÇON 08 · CONTENU</p>
+
+        <h1>Ajoutez des images, des boutons et des liens.</h1>
+
+        <p class="lesson-intro">
+            Un site a besoin de plus que des titres et des paragraphes. Dans cette leçon, vous apprendrez à ajouter des images, créer différents types de liens et concevoir des appels à l’action qui facilitent la navigation.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Niveau · Débutant</span>
+            <span>Durée · 25–30 min</span>
+            <span>Parcours · Création web</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+
+        <!-- 01 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>Ajoutez une image avec HTML.</h2>
+
+            <p>
+                Les images sont ajoutées avec la balise
+                <strong>img</strong>.
+            </p>
+
+            <div class="lesson-code">
+&lt;img src="../imagen.jpg" alt="Description de l’image"&gt;
+            </div>
+
+            <p>
+                Contrairement à de nombreuses autres balises HTML,
+                <strong>img</strong> n’a pas besoin de balise fermante.
+            </p>
+
+            <p>
+                Nous trouvons ici deux attributs importants :
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        <strong>src</strong> indique l’emplacement du fichier image.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        <strong>alt</strong> fournit une alternative textuelle adaptée lorsque l’image transmet une information.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>Organisez vos images.</h2>
+
+            <p>
+                Lorsqu’un site se développe, il est utile d’organiser les fichiers dans des dossiers.
+            </p>
+
+            <p>
+                Nous pouvons créer un dossier nommé :
+            </p>
+
+            <div class="lesson-code">
+images
+            </div>
+
+            <p>
+                La structure du projet pourrait être la suivante :
+            </p>
+
+            <div class="lesson-code">
+mi-primera-web/<br>
+├── index.html<br>
+├── styles.css<br>
+└── images/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;└── escritorio.jpg
+            </div>
+
+            <p>
+                Depuis `index.html`, l’image serait alors chargée avec :
+            </p>
+
+            <div class="lesson-code">
+&lt;img src="images/escritorio.jpg" alt="Bureau de travail"&gt;
+            </div>
+
+            <div class="lesson-note">
+                Les chemins doivent correspondre exactement au nom et à l’emplacement des fichiers.
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>L’attribut alt.</h2>
+
+            <p>
+                L’attribut <strong>alt</strong> ne doit pas être utilisé comme une liste de mots-clés.
+            </p>
+
+            <p>
+                Sa fonction principale est de fournir une alternative textuelle lorsqu’une image apporte une information et ne peut pas être perçue visuellement.
+            </p>
+
+            <p>Par exemple :</p>
+
+            <div class="lesson-code">
+&lt;img<br>
+&nbsp;&nbsp;src="images/proyecto-web.jpg"<br>
+&nbsp;&nbsp;alt="Page d’accueil d’un studio de création web"<br>
+&gt;
+            </div>
+
+            <p>
+                Si une image est purement décorative et n’apporte aucune information, vous pouvez utiliser un alt vide :
+            </p>
+
+            <div class="lesson-code">
+&lt;img src="images/decoracion.jpg" alt=""&gt;
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>Rendez les images responsive.</h2>
+
+            <p>
+                Nous avons vu cette règle dans la leçon précédente :
+            </p>
+
+            <div class="lesson-code">
+img {<br>
+&nbsp;&nbsp;max-width: 100%;<br>
+&nbsp;&nbsp;height: auto;<br>
+}
+            </div>
+
+            <p>
+                Elle évite qu’une image soit plus large que l’espace disponible.
+            </p>
+
+            <p>
+                Nous pouvons aussi contrôler la façon dont elle occupe un conteneur :
+            </p>
+
+            <div class="lesson-code">
+.project-image {<br>
+&nbsp;&nbsp;width: 100%;<br>
+&nbsp;&nbsp;height: 400px;<br>
+&nbsp;&nbsp;object-fit: cover;<br>
+}
+            </div>
+
+            <p>
+                <strong>object-fit: cover</strong> permet de remplir l’espace en conservant les proportions, même si une partie de l’image est recadrée.
+            </p>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Créez des liens entre vos pages.</h2>
+
+            <p>
+                Nous connaissons déjà la balise <strong>a</strong>.
+            </p>
+
+            <p>
+                Pour ouvrir une autre page de notre propre site, nous pouvons écrire :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="servicios.html"&gt;Voir les services&lt;/a&gt;
+            </div>
+
+            <p>
+                Et pour revenir à l’accueil :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="index.html"&gt;Accueil&lt;/a&gt;
+            </div>
+
+            <div class="lesson-note">
+                Lorsque vous créez plusieurs pages, vérifiez toujours que le nom écrit dans `href` correspond exactement au fichier réel. Un nom incorrect peut provoquer une erreur 404 après publication.
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Créez des liens vers une section.</h2>
+
+            <p>
+                Nous pouvons aussi naviguer à l’intérieur de la même page.
+            </p>
+
+            <p>
+                Nous ajoutons d’abord un identifiant :
+            </p>
+
+            <div class="lesson-code">
+&lt;section id="servicios"&gt;<br>
+&nbsp;&nbsp;&lt;h2&gt;Services&lt;/h2&gt;<br>
+&lt;/section&gt;
+            </div>
+
+            <p>
+                Nous pouvons ensuite créer un lien vers celui-ci :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="#servicios"&gt;Voir les services&lt;/a&gt;
+            </div>
+
+            <p>
+                En cliquant sur le lien, le navigateur amènera le visiteur à cette section.
+            </p>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>Liens vers d’autres sites.</h2>
+
+            <p>
+                Nous pouvons aussi créer un lien vers une page externe :
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="https://ejemplo.com"&gt;<br>
+&nbsp;&nbsp;Consulter la page<br>
+&lt;/a&gt;
+            </div>
+
+            <p>
+                Si vous devez l’ouvrir dans un autre onglet :
+            </p>
+
+            <div class="lesson-code">
+&lt;a<br>
+&nbsp;&nbsp;href="https://ejemplo.com"<br>
+&nbsp;&nbsp;target="_blank"<br>
+&nbsp;&nbsp;rel="noopener noreferrer"<br>
+&gt;<br>
+&nbsp;&nbsp;Consulter la page<br>
+&lt;/a&gt;
+            </div>
+
+            <p>
+                Tous les liens externes ne doivent pas ouvrir un nouvel onglet. Utilisez cette option lorsque cela convient à l’expérience du visiteur.
+            </p>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Un bouton peut être un lien.</h2>
+
+            <p>
+                Sur de nombreuses pages, des éléments ressemblent visuellement à des boutons, mais sont en réalité des liens.
+            </p>
+
+            <div class="lesson-code">
+&lt;a href="contacto.html" class="button"&gt;<br>
+&nbsp;&nbsp;Présentez-moi votre projet<br>
+&lt;/a&gt;
+            </div>
+
+            <p>
+                CSS contrôle leur apparence :
+            </p>
+
+            <div class="lesson-code">
+.button {<br>
+&nbsp;&nbsp;display: inline-block;<br>
+&nbsp;&nbsp;padding: 14px 24px;<br>
+&nbsp;&nbsp;background: #222222;<br>
+&nbsp;&nbsp;color: #ffffff;<br>
+&nbsp;&nbsp;text-decoration: none;<br>
+}
+            </div>
+
+            <div class="lesson-note">
+                Si l’élément mène à une autre page ou un autre emplacement, nous utilisons généralement un lien. L’élément
+                <strong>button</strong> sert aux actions, comme envoyer un formulaire ou activer une fonction.
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Ajoutez des états hover et focus.</h2>
+
+            <p>
+                Il est utile d’indiquer visuellement qu’un élément peut être utilisé.
+            </p>
+
+            <div class="lesson-code">
+.button:hover {<br>
+&nbsp;&nbsp;opacity: 0.8;<br>
+}
+            </div>
+
+            <p>
+                Nous devons aussi prendre en compte la navigation au clavier :
+            </p>
+
+            <div class="lesson-code">
+.button:focus-visible {<br>
+&nbsp;&nbsp;outline: 2px solid currentColor;<br>
+&nbsp;&nbsp;outline-offset: 4px;<br>
+}
+            </div>
+
+            <p>
+                L’état <strong>focus-visible</strong> permet d’indiquer quel élément interactif est sélectionné lors de la navigation au clavier.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>Utilisez des textes de lien clairs.</h2>
+
+            <p>
+                Le texte d’un lien doit aider à comprendre ce qui se passera après le clic.
+            </p>
+
+            <div class="lesson-comparison">
+
+                <div>
+
+                    <p class="lesson-small">MOINS CLAIR</p>
+
+                    <h3>Cliquez ici</h3>
+
+                    <p>
+                        N’explique pas à lui seul la destination du lien.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <p class="lesson-small">PLUS CLAIR</p>
+
+                    <h3>Voir les services</h3>
+
+                    <p>
+                        Indique directement ce que le visiteur trouvera.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">11</p>
+
+            <h2>Créez une section visuelle complète.</h2>
+
+            <p>
+                Nous pouvons associer une image, du contenu et un appel à l’action :
+            </p>
+
+            <div class="lesson-code">
+&lt;section class="project"&gt;<br><br>
+
+&nbsp;&nbsp;&lt;img<br>
+&nbsp;&nbsp;&nbsp;&nbsp;src="images/proyecto-web.jpg"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alt="Vue d’un projet de création web"<br>
+&nbsp;&nbsp;&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h2&gt;Projet à la une&lt;/h2&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Une page simple, claire et responsive.<br>
+&nbsp;&nbsp;&lt;/p&gt;<br><br>
+
+&nbsp;&nbsp;&lt;a href="#" class="button"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Voir le projet<br>
+&nbsp;&nbsp;&lt;/a&gt;<br><br>
+
+&lt;/section&gt;
+            </div>
+
+            <p>
+                Cette combinaison revient régulièrement sur les pages professionnelles : un visuel, du contexte et une action claire.
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">12</p>
+
+            <h2>Optimisez vos images avant de les ajouter.</h2>
+
+            <p>
+                Une image peut être parfaitement affichée et malgré tout ralentir une page si son fichier est inutilement lourd.
+            </p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Utilisez des dimensions adaptées à l’usage réel.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Compressez les images avant de les publier.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Utilisez des formats modernes lorsque c’est pertinent.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Donnez des noms descriptifs aux fichiers.</p>
+                </div>
+
+            </div>
+
+            <p>
+                Par exemple, il vaut mieux :
+            </p>
+
+            <div class="lesson-code">
+proyecto-diseno-web.jpg
+            </div>
+
+            <p>
+                que :
+            </p>
+
+            <div class="lesson-code">
+IMG_847293.jpg
+            </div>
+
+        </section>
+
+
+        <!-- RESUMEN -->
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">RÉSUMÉ</p>
+
+            <h2>Ce que vous avez appris.</h2>
+
+            <ul>
+                <li>Les images sont ajoutées avec la balise img.</li>
+                <li>src indique l’emplacement du fichier.</li>
+                <li>alt fournit une alternative textuelle lorsque cela est nécessaire.</li>
+                <li>Les images doivent s’adapter aux différents écrans.</li>
+                <li>Les liens internes relient les pages d’un même site.</li>
+                <li>Les identifiants permettent de créer des liens vers les sections.</li>
+                <li>Nous pouvons aussi créer des liens externes.</li>
+                <li>Un lien peut être présenté visuellement comme un bouton.</li>
+                <li>Les boutons et les liens ont des fonctions différentes.</li>
+                <li>Les états hover et focus améliorent l’interaction.</li>
+                <li>Le texte des liens doit être descriptif.</li>
+                <li>Les images doivent être optimisées avant la publication.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- EJERCICIO -->
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">MISE EN PRATIQUE</p>
+
+            <h2>Complétez le contenu de votre site.</h2>
+
+            <p>
+                Ouvrez le projet construit dans les leçons précédentes.
+            </p>
+
+            <ol>
+                <li>Créez un dossier nommé images.</li>
+                <li>Ajoutez au moins une image.</li>
+                <li>Écrivez un alt adapté.</li>
+                <li>Vérifiez que l’image est responsive.</li>
+                <li>Ajoutez un lien vers une section de votre page.</li>
+                <li>Ajoutez un lien vers une autre page HTML.</li>
+                <li>Transformez un appel à l’action en bouton visuel.</li>
+                <li>Ajoutez un état hover.</li>
+                <li>Vérifiez la navigation au clavier.</li>
+                <li>Vérifiez que tous les chemins fonctionnent.</li>
+            </ol>
+
+            <div class="lesson-note">
+                <strong>Testez tous vos liens avant de continuer.</strong>
+                Un site peut être très beau, mais un lien cassé nuit immédiatement à l’expérience du visiteur.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <section class="lesson-navigation">
+
+        <div>
+
+            <p>LEÇON PRÉCÉDENTE</p>
+
+            <a href="leccion-07-web-responsive.html">
+                ← 07 · Adaptez votre site aux mobiles
+            </a>
+
+        </div>
+
+      <div class="lesson-next">
+    <p>LEÇON SUIVANTE</p>
+
+    <a href="leccion-09-varias-paginas-y-enlaces.html">
+        09 · Créez plusieurs pages et reliez-les →
+    </a>
+</div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+</body>
+</html>

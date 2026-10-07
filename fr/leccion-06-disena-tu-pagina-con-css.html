@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diseña tu página con CSS | Digital Ukhti</title>
+    <title>Donnez du style à votre page avec CSS | Digital Ukhti</title>
 
-    <meta name="description"
-          content="Aprende a diseñar una página web con CSS: navegación, hero, secciones, tarjetas, botones, espacios y footer.">
+    <meta name="description" content="Vous avez la structure de votre premier site. Nous allons transformer ce squelette HTML en une page plus claire, organisée et visuellement professionnelle.">
 
-    <link rel="stylesheet" href="styles.css?v=20261003">
-    <link rel="stylesheet" href="design.css">
-    <script defer src="design.js"></script>
-<link rel="canonical" href="https://digitalukhti.com/leccion-06-disena-tu-pagina-con-css.html">
+    <link rel="stylesheet" href="../styles.css?v=20261003">
+    <link rel="stylesheet" href="../design.css">
+    <script defer src="../design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/fr/leccion-06-disena-tu-pagina-con-css.html">
 <link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-06-disena-tu-pagina-con-css.html">
 <link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-06-disena-tu-pagina-con-css.html">
 <link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-06-disena-tu-pagina-con-css.html">
-<link rel="stylesheet" href="language.css">
-<script defer src="language.js"></script>
+<link rel="stylesheet" href="../language.css">
+<script defer src="../language.js"></script>
 </head>
 
 <body class="du-site">
@@ -28,16 +27,16 @@
 
         <a href="index.html" class="brand">DIGITAL UKHTI</a>
 
-        <div role="group" class="language-switch" aria-label="Elegir idioma"><a href="leccion-06-disena-tu-pagina-con-css.html" lang="es" hreflang="es" aria-current="true">ES</a><span aria-hidden="true">|</span><a href="fr/leccion-06-disena-tu-pagina-con-css.html" lang="fr" hreflang="fr">FR</a></div><div class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="aprende.html">Aprende</a>
-            <a href="guias.html">Recursos</a>
-            <a href="servicios.html">Servicios</a>
+        <div role="group" class="language-switch" aria-label="Choisir la langue"><a href="../leccion-06-disena-tu-pagina-con-css.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="leccion-06-disena-tu-pagina-con-css.html" lang="fr" hreflang="fr" aria-current="true">FR</a></div><div class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="aprende-diseno-web.html">Apprendre</a>
+            <a href="guias.html">Ressources</a>
+            <a href="servicios.html">Services</a>
             <a href="portfolio.html">Portfolio</a>
-            <a href="index.html#sobre">Sobre Digital Ukhti</a>
+            <a href="index.html#sobre">À propos de Digital Ukhti</a>
         </div>
 
-        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
 
     </nav>
 </header>
@@ -50,23 +49,21 @@
     <section class="lesson-hero">
 
         <a href="aprende-diseno-web.html" class="lesson-back">
-            ← Diseño web desde cero
+            ← Création web à partir de zéro
         </a>
 
-        <p class="section-label">LECCIÓN 06 · DISEÑO CON CSS</p>
+        <p class="section-label">LEÇON 06 · DESIGN AVEC CSS</p>
 
-        <h1>Diseña tu página con CSS.</h1>
+        <h1>Donnez du style à votre page avec CSS.</h1>
 
         <p class="lesson-intro">
-            Ya tienes la estructura de tu primera web. Ahora vamos a
-            convertir ese esqueleto HTML en una página más clara,
-            ordenada y visualmente profesional.
+            Vous avez la structure de votre premier site. Nous allons transformer ce squelette HTML en une page plus claire, organisée et visuellement professionnelle.
         </p>
 
         <div class="lesson-meta">
-            <span>Nivel · Principiante</span>
-            <span>Tiempo · 30–40 min</span>
-            <span>Ruta · Diseño web</span>
+            <span>Niveau · Débutant</span>
+            <span>Durée · 30–40 min</span>
+            <span>Parcours · Création web</span>
         </div>
 
     </section>
@@ -81,16 +78,14 @@
 
             <p class="lesson-number">01</p>
 
-            <h2>Empieza por los estilos generales.</h2>
+            <h2>Commencez par les styles généraux.</h2>
 
             <p>
-                Antes de diseñar cada sección, estableceremos unas reglas
-                básicas para toda la página.
+                Avant de concevoir chaque section, nous définirons quelques règles de base pour toute la page.
             </p>
 
             <p>
-                Abre el archivo <strong>styles.css</strong> de tu proyecto
-                y empieza con:
+                Ouvrez le fichier <strong>styles.css</strong> de votre projet et commencez par :
             </p>
 
             <div class="lesson-code">
@@ -108,14 +103,11 @@ body {<br>
             </div>
 
             <p>
-                Con esto eliminamos el margen predeterminado del navegador
-                y establecemos una base común para la página.
+                Nous supprimons ainsi la marge par défaut du navigateur et définissons une base commune pour la page.
             </p>
 
             <div class="lesson-note">
-                <strong>box-sizing: border-box</strong> facilita el control
-                de tamaños porque hace que padding y bordes formen parte
-                del ancho total de los elementos.
+                <strong>box-sizing: border-box</strong> facilite la gestion des dimensions en incluant le padding et les bordures dans la largeur totale des éléments.
             </div>
 
         </section>
@@ -127,11 +119,10 @@ body {<br>
 
             <p class="lesson-number">02</p>
 
-            <h2>Diseña la navegación.</h2>
+            <h2>Concevez la navigation.</h2>
 
             <p>
-                Empezaremos dando estructura al menú que creamos
-                en la lección anterior.
+                Nous commencerons par donner une structure au menu créé dans la leçon précédente.
             </p>
 
             <div class="lesson-code">
@@ -146,7 +137,7 @@ nav {<br>
             </div>
 
             <p>
-                Aquí aparecen varias propiedades nuevas.
+                Plusieurs nouvelles propriétés apparaissent ici.
             </p>
 
             <div class="lesson-steps">
@@ -154,24 +145,21 @@ nav {<br>
                 <div>
                     <span>01</span>
                     <p>
-                        <strong>max-width</strong> limita el ancho máximo
-                        del contenido.
+                        <strong>max-width</strong> limite la largeur maximale du contenu.
                     </p>
                 </div>
 
                 <div>
                     <span>02</span>
                     <p>
-                        <strong>margin: 0 auto</strong> centra el bloque
-                        horizontalmente.
+                        <strong>margin: 0 auto</strong> centre le bloc horizontalement.
                     </p>
                 </div>
 
                 <div>
                     <span>03</span>
                     <p>
-                        <strong>display: flex</strong> permite distribuir
-                        los elementos de forma flexible.
+                        <strong>display: flex</strong> permet de répartir les éléments de manière flexible.
                     </p>
                 </div>
 
@@ -179,7 +167,7 @@ nav {<br>
                     <span>04</span>
                     <p>
                         <strong>justify-content: space-between</strong>
-                        separa los elementos hacia los extremos.
+                        sépare les éléments vers les extrémités.
                     </p>
                 </div>
 
@@ -194,11 +182,10 @@ nav {<br>
 
             <p class="lesson-number">03</p>
 
-            <h2>Da estilo a los enlaces.</h2>
+            <h2>Donnez du style aux liens.</h2>
 
             <p>
-                Por defecto, los navegadores muestran los enlaces
-                subrayados. Podemos cambiar su apariencia.
+                Par défaut, les navigateurs affichent les liens soulignés. Nous pouvons modifier leur apparence.
             </p>
 
             <div class="lesson-code">
@@ -210,7 +197,7 @@ nav a {<br>
             </div>
 
             <p>
-                También podemos indicar qué ocurre al pasar el cursor:
+                Nous pouvons aussi définir ce qui se passe au survol du curseur :
             </p>
 
             <div class="lesson-code">
@@ -220,7 +207,7 @@ nav a:hover {<br>
             </div>
 
             <p>
-                Este pequeño cambio ya aporta interacción visual.
+                Ce petit changement apporte déjà une interaction visuelle.
             </p>
 
         </section>
@@ -232,11 +219,10 @@ nav a:hover {<br>
 
             <p class="lesson-number">04</p>
 
-            <h2>Diseña la sección principal.</h2>
+            <h2>Concevez la section principale.</h2>
 
             <p>
-                La primera sección de la página debe tener suficiente
-                espacio para que el mensaje principal destaque.
+                La première section doit avoir assez d’espace pour mettre en valeur le message principal.
             </p>
 
             <div class="lesson-code">
@@ -248,7 +234,7 @@ main &gt; section:first-child {<br>
             </div>
 
             <p>
-                Ahora podemos diseñar el título:
+                Nous pouvons maintenant mettre en forme le titre :
             </p>
 
             <div class="lesson-code">
@@ -262,8 +248,7 @@ h1 {<br>
             </div>
 
             <div class="lesson-note">
-                El espacio en blanco también forma parte del diseño.
-                No intentes llenar cada zona de la pantalla con contenido.
+                L’espace blanc fait aussi partie du design. N’essayez pas de remplir chaque zone de l’écran avec du contenu.
             </div>
 
         </section>
@@ -275,25 +260,24 @@ h1 {<br>
 
             <p class="lesson-number">05</p>
 
-            <h2>Crea un botón.</h2>
+            <h2>Créez un bouton.</h2>
 
             <p>
-                Podemos convertir el enlace de la sección principal
-                en una llamada a la acción visual.
+                Nous pouvons transformer le lien de la section principale en un appel à l’action visuel.
             </p>
 
             <p>
-                En HTML podemos añadirle una clase:
+                En HTML, nous pouvons lui ajouter une classe :
             </p>
 
             <div class="lesson-code">
 &lt;a href="#servicios" class="button"&gt;<br>
-&nbsp;&nbsp;Ver servicios<br>
+&nbsp;&nbsp;Voir les services<br>
 &lt;/a&gt;
             </div>
 
             <p>
-                Y en CSS:
+                Et en CSS :
             </p>
 
             <div class="lesson-code">
@@ -308,8 +292,7 @@ h1 {<br>
             </div>
 
             <p>
-                La clase nos permite aplicar estilos únicamente
-                a los elementos que la utilicen.
+                La classe permet d’appliquer des styles uniquement aux éléments qui l’utilisent.
             </p>
 
         </section>
@@ -321,11 +304,10 @@ h1 {<br>
 
             <p class="lesson-number">06</p>
 
-            <h2>Da espacio a las secciones.</h2>
+            <h2>Espacez les sections.</h2>
 
             <p>
-                Una web suele resultar más fácil de leer cuando
-                las secciones tienen suficiente separación.
+                Un site est généralement plus facile à lire lorsque les sections sont suffisamment espacées.
             </p>
 
             <div class="lesson-code">
@@ -343,8 +325,7 @@ section &gt; article {<br>
             </div>
 
             <p>
-                Podemos diferenciar alguna sección utilizando
-                un fondo distinto:
+                Nous pouvons distinguer une section en utilisant un autre fond :
             </p>
 
             <div class="lesson-code">
@@ -362,15 +343,15 @@ section &gt; article {<br>
 
             <p class="lesson-number">07</p>
 
-            <h2>Convierte los servicios en tarjetas.</h2>
+            <h2>Transformez les services en cartes.</h2>
 
             <p>
-                En la lección anterior creamos elementos
-                <strong>article</strong> para los servicios.
+                Dans la leçon précédente, nous avons créé des éléments
+                <strong>article</strong> pour les services.
             </p>
 
             <p>
-                Podemos diseñarlos como tarjetas:
+                Nous pouvons les présenter sous forme de cartes :
             </p>
 
             <div class="lesson-code">
@@ -382,7 +363,7 @@ section &gt; article {<br>
             </div>
 
             <p>
-                También podemos mejorar sus títulos:
+                Nous pouvons aussi améliorer leurs titres :
             </p>
 
             <div class="lesson-code">
@@ -394,8 +375,7 @@ section &gt; article {<br>
             </div>
 
             <p>
-                Incluso un diseño sencillo puede verse profesional
-                cuando existe una buena jerarquía y suficiente espacio.
+                Même un design simple peut paraître professionnel avec une bonne hiérarchie et suffisamment d’espace.
             </p>
 
         </section>
@@ -407,11 +387,10 @@ section &gt; article {<br>
 
             <p class="lesson-number">08</p>
 
-            <h2>Diseña la sección de contacto.</h2>
+            <h2>Concevez la section de contact.</h2>
 
             <p>
-                Queremos que la llamada a la acción final destaque
-                del resto del contenido.
+                Nous souhaitons que l’appel à l’action final se distingue du reste du contenu.
             </p>
 
             <div class="lesson-code">
@@ -423,7 +402,7 @@ section &gt; article {<br>
             </div>
 
             <p>
-                Podemos adaptar también su enlace:
+                Nous pouvons aussi adapter son lien :
             </p>
 
             <div class="lesson-code">
@@ -446,10 +425,10 @@ section &gt; article {<br>
 
             <p class="lesson-number">09</p>
 
-            <h2>Termina el diseño con el footer.</h2>
+            <h2>Terminez le design avec le footer.</h2>
 
             <p>
-                Mantendremos el pie de página sencillo.
+                Nous garderons un pied de page simple.
             </p>
 
             <div class="lesson-code">
@@ -474,50 +453,47 @@ footer p {<br>
 
             <p class="lesson-number">10</p>
 
-            <h2>La coherencia importa más que decorar.</h2>
+            <h2>La cohérence compte plus que la décoration.</h2>
 
             <p>
-                Cuando empiezas con CSS es fácil intentar añadir muchos
-                colores, sombras, bordes y efectos.
+                Quand on débute avec CSS, il est facile de vouloir ajouter beaucoup de couleurs, d’ombres, de bordures et d’effets.
             </p>
 
             <p>
-                Sin embargo, un buen diseño suele depender más de mantener
-                decisiones consistentes.
+                Pourtant, un bon design repose souvent davantage sur des choix cohérents.
             </p>
 
             <div class="lesson-steps">
 
                 <div>
                     <span>01</span>
-                    <p>Utiliza una paleta de colores limitada.</p>
+                    <p>Utilisez une palette de couleurs limitée.</p>
                 </div>
 
                 <div>
                     <span>02</span>
-                    <p>Mantén tamaños de títulos coherentes.</p>
+                    <p>Gardez des tailles de titres cohérentes.</p>
                 </div>
 
                 <div>
                     <span>03</span>
-                    <p>Repite los mismos espacios entre secciones.</p>
+                    <p>Répétez les mêmes espacements entre les sections.</p>
                 </div>
 
                 <div>
                     <span>04</span>
-                    <p>Utiliza el mismo estilo para botones similares.</p>
+                    <p>Utilisez le même style pour les boutons similaires.</p>
                 </div>
 
                 <div>
                     <span>05</span>
-                    <p>Prioriza siempre la legibilidad.</p>
+                    <p>Privilégiez toujours la lisibilité.</p>
                 </div>
 
             </div>
 
             <div class="lesson-note">
-                Un diseño profesional no necesita ser complicado.
-                Necesita tener intención, jerarquía y consistencia.
+                Un design professionnel n’a pas besoin d’être compliqué. Il doit avoir une intention, une hiérarchie et une cohérence.
             </div>
 
         </section>
@@ -527,21 +503,21 @@ footer p {<br>
 
         <section class="lesson-block lesson-summary">
 
-            <p class="section-label">RESUMEN</p>
+            <p class="section-label">RÉSUMÉ</p>
 
-            <h2>Lo que has aprendido.</h2>
+            <h2>Ce que vous avez appris.</h2>
 
             <ul>
-                <li>Cómo establecer estilos generales para una web.</li>
-                <li>Cómo utilizar max-width para controlar el contenido.</li>
-                <li>Cómo centrar bloques con margin auto.</li>
-                <li>Cómo utilizar Flexbox en una navegación.</li>
-                <li>Cómo diseñar títulos y secciones.</li>
-                <li>Cómo crear botones utilizando clases.</li>
-                <li>Cómo convertir contenido en tarjetas.</li>
-                <li>Cómo diferenciar secciones mediante fondos.</li>
-                <li>Cómo diseñar un footer sencillo.</li>
-                <li>Por qué la coherencia visual es fundamental.</li>
+                <li>Comment définir les styles généraux d’un site.</li>
+                <li>Comment utiliser max-width pour contrôler le contenu.</li>
+                <li>Comment centrer des blocs avec margin auto.</li>
+                <li>Comment utiliser Flexbox dans une navigation.</li>
+                <li>Comment concevoir les titres et les sections.</li>
+                <li>Comment créer des boutons avec des classes.</li>
+                <li>Comment transformer le contenu en cartes.</li>
+                <li>Comment distinguer les sections avec des fonds.</li>
+                <li>Comment concevoir un footer simple.</li>
+                <li>Pourquoi la cohérence visuelle est essentielle.</li>
             </ul>
 
         </section>
@@ -551,38 +527,34 @@ footer p {<br>
 
         <section class="lesson-exercise">
 
-            <p class="section-label">PONLO EN PRÁCTICA</p>
+            <p class="section-label">MISE EN PRATIQUE</p>
 
-            <h2>Diseña la web que construiste.</h2>
+            <h2>Donnez du style au site que vous avez construit.</h2>
 
             <p>
-                Abre tu proyecto <strong>mi-primera-web</strong>
-                y trabaja sobre la estructura creada en la Lección 05.
+                Ouvrez votre projet <strong>mi-primera-web</strong>
+                et travaillez sur la structure créée dans la leçon 05.
             </p>
 
             <ol>
-                <li>Aplica estilos generales al body.</li>
-                <li>Diseña la navegación.</li>
-                <li>Limita el ancho del contenido.</li>
-                <li>Añade espacio a la sección principal.</li>
-                <li>Diseña el h1.</li>
-                <li>Convierte un enlace en botón.</li>
-                <li>Añade un fondo diferente a una sección.</li>
-                <li>Diseña los servicios como tarjetas.</li>
-                <li>Da estilo a la sección de contacto.</li>
-                <li>Diseña el footer.</li>
+                <li>Appliquez des styles généraux au body.</li>
+                <li>Concevez la navigation.</li>
+                <li>Limitez la largeur du contenu.</li>
+                <li>Ajoutez de l’espace à la section principale.</li>
+                <li>Mettez en forme le h1.</li>
+                <li>Transformez un lien en bouton.</li>
+                <li>Ajoutez un fond différent à une section.</li>
+                <li>Présentez les services sous forme de cartes.</li>
+                <li>Donnez du style à la section de contact.</li>
+                <li>Concevez le footer.</li>
             </ol>
 
             <p>
-                Después modifica algunos tamaños, espacios y colores
-                para crear una versión propia.
+                Modifiez ensuite certaines tailles, espacements et couleurs pour créer votre propre version.
             </p>
 
             <div class="lesson-note">
-                <strong>Comprueba también qué ocurre al hacer pequeña
-                la ventana del navegador.</strong> Probablemente descubrirás
-                que algunos elementos dejan de verse bien. Eso nos lleva
-                directamente a la siguiente lección: diseño responsive.
+                <strong>Vérifiez aussi ce qui se passe lorsque vous réduisez la fenêtre du navigateur.</strong> Vous découvrirez probablement que certains éléments s’affichent moins bien. Cela nous mène directement à la prochaine leçon : le design responsive.
             </div>
 
         </section>
@@ -596,20 +568,20 @@ footer p {<br>
 
         <div>
 
-            <p>LECCIÓN ANTERIOR</p>
+            <p>LEÇON PRÉCÉDENTE</p>
 
             <a href="leccion-05-estructura-primera-pagina.html">
-                ← 05 · Crea la estructura de tu primera página
+                ← 05 · Créez la structure de votre première page
             </a>
 
         </div>
 
       <div class="lesson-next">
 
-    <p>SIGUIENTE LECCIÓN</p>
+    <p>LEÇON SUIVANTE</p>
 
     <a href="leccion-07-web-responsive.html">
-        07 · Haz que tu web se adapte al móvil →
+        07 · Adaptez votre site aux mobiles →
     </a>
 
 </div>
