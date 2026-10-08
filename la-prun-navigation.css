@@ -1,0 +1,37 @@
+/* La Prun: keep the logo, languages, navigation and booking in one row. */
+.la-prun-site .prun-nav {
+  grid-template-columns: auto auto minmax(0, 1fr) auto;
+  gap: 20px;
+}
+.la-prun-site .prun-logo,
+.la-prun-site .prun-menu a,
+.la-prun-site .prun-reserva {
+  white-space: nowrap;
+}
+.la-prun-site .prun-menu {
+  align-items: center;
+  gap: clamp(12px, 1.5vw, 22px);
+}
+.la-prun-site .prun-menu a { flex-shrink: 0; }
+@media (max-width: 1350px) {
+  .la-prun-site .prun-header { position: relative; z-index: 1000; }
+  .la-prun-site .prun-nav { grid-template-columns: minmax(0, 1fr) auto auto auto; gap: 12px; }
+  .la-prun-site .prun-menu-toggle { display: block; min-width: 44px; min-height: 44px; }
+  .la-prun-site .prun-menu {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; width: 100%;
+    box-sizing: border-box;
+    background: var(--prun-crema);
+    padding: 24px 6%;
+    border-block: 1px solid #ded5c8;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+  }
+  .la-prun-site .prun-menu.active { display: flex; }
+}
+@media (max-width: 480px) {
+  .la-prun-site .prun-nav { grid-template-columns: minmax(0, 1fr) auto auto; gap: 8px; }
+  .la-prun-site .prun-reserva { grid-column: 1 / -1; justify-content: center; }
+}
