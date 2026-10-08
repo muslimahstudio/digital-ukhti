@@ -1,0 +1,5 @@
+body.du-site .guides-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+body.du-site .guide-card { display: flex; flex-direction: column; min-width: 0; }
+body.du-site .guide-card .resource-visual { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: contain; margin-bottom: var(--space-5); border-radius: var(--radius-sm); }
+body.du-site .guide-card > a { align-self: flex-start; margin-top: auto; padding-top: var(--space-4); }
+@media (max-width: 768px) { body.du-site .guides-grid { grid-template-columns: minmax(0, 1fr); } }
