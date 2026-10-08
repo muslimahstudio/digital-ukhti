@@ -1,0 +1,4 @@
+body.du-site .services-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;grid-auto-rows:1fr}
+body.du-site .services-page .service-card{min-width:0}
+.service-photo{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:cover;border-radius:var(--radius-sm);margin:0 0 var(--space-4)}
+@media(max-width:768px){body.du-site .services-grid{grid-template-columns:minmax(0,1fr);grid-auto-rows:auto}}
