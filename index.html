@@ -201,7 +201,7 @@
 
     </div>
 
-<div class="du-testimonials"><h3>Testimonios reales</h3><p class="du-pending">[PENDIENTE: testimonios reales y autorización para publicarlos].</p></div></section>
+</section>
 
 
 <!-- SERVICIOS -->
@@ -381,7 +381,7 @@
 
         <h2>Una forma de trabajar clara, sin promesas de resultados que no se pueden garantizar.</h2>
 
-        <div class="about-content"><p>Digital Ukhti parte de una pregunta concreta: ¿qué necesita entender tu visitante para decidir si tu servicio le encaja? El diseño se organiza alrededor de tus servicios, tu mensaje y el contacto.</p><p>El compromiso es trabajar con pocos proyectos a la vez, comunicar los pasos con claridad y acordar las revisiones antes de comenzar. Trabajo con pocos proyectos a la vez para dedicar atención a cada uno. Las fechas se confirman antes de aceptar cada encargo.</p><p>La web se prepara para tu negocio y debe entregarse para que puedas disponer de ella. Al entregar, el cliente recibe los archivos de la web y los accesos correspondientes. Los recursos de terceros conservan sus licencias. No se prometen ventas ni posiciones garantizadas en Google.</p></div>
+        <div class="about-content"><p>Digital Ukhti parte de una pregunta concreta: ¿qué necesita entender tu visitante para decidir si tu servicio le encaja? El diseño se organiza alrededor de tus servicios, tu mensaje y el contacto.</p><p>El compromiso es trabajar con pocos proyectos a la vez, comunicar los pasos con claridad y acordar las revisiones antes de comenzar. Las fechas se confirman antes de aceptar cada encargo.</p><p>La web se prepara para tu negocio y debe entregarse para que puedas disponer de ella. Al entregar, el cliente recibe los archivos de la web y los accesos correspondientes. Los recursos de terceros conservan sus licencias. No se prometen ventas ni posiciones garantizadas en Google.</p></div>
 
         <a href="#contacto" class="button-primary">
             CUÉNTAME TU PROYECTO
@@ -537,32 +537,37 @@ form.addEventListener("submit", async function(event) {
 
     const data = new FormData(form);
 
-    const response = await fetch(form.action, {
-
-        method: "POST",
-
-        body: data,
-
-        headers: {
-            "Accept": "application/json"
+    try {
+        const response = await fetch(form.action, {
+    
+            method: "POST",
+    
+            body: data,
+    
+            headers: {
+                "Accept": "application/json"
+            }
+    
+        });
+    
+        if (response.ok) {
+    
+            // La página de agradecimiento envía el evento tras la navegación.
+            if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted") {
+                sessionStorage.setItem("du-lead-submitted", "1");
+            }
+            window.location.href = "gracias.html";
+    
+        } else {
+    
+            alert(
+                "Ha ocurrido un error al enviar tu mensaje. Inténtalo de nuevo."
+            );
+    
         }
-
-    });
-
-    if (response.ok) {
-
-        // La página de agradecimiento envía el evento tras la navegación.
-        if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted") {
-            sessionStorage.setItem("du-lead-submitted", "1");
-        }
-        window.location.href = "gracias.html";
-
-    } else {
-
-        alert(
-            "Ha ocurrido un error al enviar tu mensaje. Inténtalo de nuevo."
-        );
-
+    
+    } catch (error) {
+        alert("No se ha podido enviar tu mensaje. Comprueba tu conexión y vuelve a intentarlo. Los datos que has escrito se conservan.");
     }
 
 });
