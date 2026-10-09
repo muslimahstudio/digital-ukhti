@@ -500,7 +500,7 @@
         </div>
 
 
-        <p class="privacy-note" style="font-size:14px;line-height:1.6;margin:8px 0 18px">Usaré los datos que compartas para responder a tu consulta o preparar el presupuesto que solicites. El formulario se envía mediante Formspree. Consulta la <a href="privacidad.html">Política de privacidad</a> o escribe a <span class="du-contact-email-placeholder">[PENDIENTE: correo con dominio]</span>.</p>
+        <p class="privacy-note" style="font-size:14px;line-height:1.6;margin:8px 0 18px">Usaré los datos que compartas para responder a tu consulta o preparar el presupuesto que solicites. El formulario se envía mediante Formspree. Consulta la <a href="privacidad.html">Política de privacidad</a> o escribe a <a class="du-contact-email-placeholder" href="mailto:holadigitalukhti@gmail.com">holadigitalukhti@gmail.com</a>.</p>
 
         <button type="submit">
             ENVIAR CONSULTA
@@ -524,9 +524,9 @@
 <script>
 
 const form = document.querySelector(".contact-form");
-const DU_CONTACT = { email: "[PENDIENTE: correo con dominio]", whatsappUrl: "", bookingUrl: "" };
+const DU_CONTACT = { email: "holadigitalukhti@gmail.com", whatsappUrl: "", bookingUrl: "" };
 const contactEmail = document.querySelector(".du-contact-email-placeholder");
-if (contactEmail) contactEmail.textContent = DU_CONTACT.email;
+if (contactEmail) { contactEmail.textContent = DU_CONTACT.email; contactEmail.href = "mailto:" + DU_CONTACT.email; }
 const formStatus = document.getElementById("du-form-status");
 
 // Mantener el servicio elegido al venir de una página de detalle.
