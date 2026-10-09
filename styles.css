@@ -6227,3 +6227,35 @@ body.portfolio-page {
         min-width: 0;
     }
 }
+
+/* Contacto ES/FR — controles cómodos y mensajes accesibles */
+#contacto .contact-form input,
+#contacto .contact-form select,
+#contacto .contact-form textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+#du-form-status:not([hidden]) {
+    max-width: 680px;
+    margin: 18px auto 0;
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+    #contacto .contact-form input,
+    #contacto .contact-form select,
+    #contacto .contact-form textarea {
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    #contacto .contact-form button[type="submit"] {
+        max-width: 100%;
+        min-height: 44px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+}
