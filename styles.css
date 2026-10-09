@@ -6194,3 +6194,36 @@ body.portfolio-page {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
+/* Digital Ukhti — legibilidad móvil: portada y paquetes ES/FR */
+@media (max-width: 600px) {
+    #inicio .hero-copy h1 {
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 1.18;
+        overflow-wrap: break-word;
+    }
+    #inicio .hero-text {
+        font-size: 16px;
+        line-height: 1.65;
+        margin-top: 20px;
+    }
+    #inicio .hero-buttons {
+        gap: 12px;
+        margin-top: 26px;
+    }
+    #inicio .hero-buttons a {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        line-height: 1.45;
+        padding: 15px 18px;
+    }
+    .package-audience {
+        font-size: 15px;
+        line-height: 1.6;
+        overflow-wrap: break-word;
+    }
+    .web-packages-grid .web-package,
+    #paquetes .resource-card {
+        min-width: 0;
+    }
+}
