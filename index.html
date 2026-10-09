@@ -415,6 +415,10 @@
     </p>
 
 
+    <p class="contact-response-time" hidden>Te respondo en 24-48 horas laborables.</p>
+    <p id="du-contact-email" class="contact-email" aria-live="polite"></p>
+    <div id="du-contact-options" hidden><!-- WhatsApp / llamada de 15 minutos: activar al disponer de enlace confirmado. --></div>
+
     <form
         class="contact-form"
         action="https://formspree.io/f/mrpzprnq"
@@ -496,13 +500,14 @@
         </div>
 
 
-        <p class="privacy-note" style="font-size:14px;line-height:1.6;margin:8px 0 18px">Usaré los datos que compartas para responder a tu consulta o preparar el presupuesto que solicites. El formulario se envía mediante Formspree. Consulta la <a href="privacidad.html">Política de privacidad</a> o escribe a <a href="mailto:holadigitalukhti@gmail.com">holadigitalukhti@gmail.com</a>.</p>
+        <p class="privacy-note" style="font-size:14px;line-height:1.6;margin:8px 0 18px">Usaré los datos que compartas para responder a tu consulta o preparar el presupuesto que solicites. El formulario se envía mediante Formspree. Consulta la <a href="privacidad.html">Política de privacidad</a> o escribe a <span class="du-contact-email-placeholder">[PENDIENTE: correo con dominio]</span>.</p>
 
         <button type="submit">
             ENVIAR CONSULTA
         </button>
 
     </form>
+    <p id="du-form-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
 
 </section>
 
@@ -519,6 +524,10 @@
 <script>
 
 const form = document.querySelector(".contact-form");
+const DU_CONTACT = { email: "[PENDIENTE: correo con dominio]", whatsappUrl: "", bookingUrl: "" };
+const contactEmail = document.querySelector(".du-contact-email-placeholder");
+if (contactEmail) contactEmail.textContent = DU_CONTACT.email;
+const formStatus = document.getElementById("du-form-status");
 
 // Mantener el servicio elegido al venir de una página de detalle.
 const selectedService = new URLSearchParams(window.location.search).get("servicio");
@@ -538,6 +547,7 @@ form.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
+    formStatus.hidden = true;
     const data = new FormData(form);
 
     try {
@@ -559,18 +569,21 @@ form.addEventListener("submit", async function(event) {
             if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted") {
                 sessionStorage.setItem("du-lead-submitted", "1");
             }
-            window.location.href = "gracias.html";
+            form.reset();
+            formStatus.textContent = "Tu mensaje se ha enviado correctamente. Gracias por contactar con Digital Ukhti. Te responderé lo antes posible.";
+            formStatus.hidden = false;
+            formStatus.focus();
     
         } else {
     
-            alert(
-                "Ha ocurrido un error al enviar tu mensaje. Inténtalo de nuevo."
-            );
+            formStatus.textContent = "No se ha podido confirmar el envío. Inténtalo de nuevo; tu mensaje sigue escrito en el formulario.";
+            formStatus.hidden = false;
     
         }
     
     } catch (error) {
-        alert("No se ha podido enviar tu mensaje. Comprueba tu conexión y vuelve a intentarlo. Los datos que has escrito se conservan.");
+        formStatus.textContent = "No se ha podido enviar tu mensaje. Comprueba tu conexión y vuelve a intentarlo. Los datos escritos se conservan.";
+        formStatus.hidden = false;
     }
 
 });
