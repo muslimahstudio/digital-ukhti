@@ -46,7 +46,7 @@
             <a href="#contacto">Contacto</a>
         </div>
 
-        <button class="menu-toggle" aria-label="Abrir menú">
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">
             ☰
         </button>
 
@@ -605,13 +605,15 @@ const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', function () {
-    menu.classList.toggle('active');
+    const isOpen = menu.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
 document.querySelectorAll('.menu a').forEach(function (link) {
 
     link.addEventListener('click', function () {
         menu.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
     });
 
 });
