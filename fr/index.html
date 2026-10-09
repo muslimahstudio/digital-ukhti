@@ -13,7 +13,7 @@
         content="Création de sites web, SEO, analyse et stratégie digitale pour les entrepreneurs, professionnels et petites entreprises qui souhaitent améliorer leur présence en ligne."
     >
 
-    <link rel="stylesheet" href="../styles.css?v=20261009">
+    <link rel="stylesheet" href="../styles.css?v=20261009-contacto">
     <link rel="stylesheet" href="../design.css">
     <script defer src="../design.js"></script>
 
@@ -500,6 +500,7 @@
         </button>
 
     </form>
+    <p id="du-form-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
 
 </section>
 
@@ -516,6 +517,7 @@
 <script>
 
 const form = document.querySelector(".contact-form");
+const formStatus = document.getElementById("du-form-status");
 
 // Mantener el servicio elegido al venir de una página de detalle.
 const selectedService = new URLSearchParams(window.location.search).get("servicio");
@@ -535,6 +537,7 @@ form.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
+    formStatus.hidden = true;
     const data = new FormData(form);
 
     try {
@@ -556,18 +559,21 @@ form.addEventListener("submit", async function(event) {
             if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted") {
                 sessionStorage.setItem("du-lead-submitted", "1");
             }
-            window.location.href = "gracias.html";
+            form.reset();
+            formStatus.textContent = "Votre message a bien été envoyé. Merci d’avoir contacté Digital Ukhti. Je vous répondrai dès que possible.";
+            formStatus.hidden = false;
+            formStatus.focus();
     
         } else {
     
-            alert(
-                "Une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer."
-            );
+            formStatus.textContent = "L’envoi n’a pas pu être confirmé. Veuillez réessayer : votre message est conservé dans le formulaire.";
+            formStatus.hidden = false;
     
         }
     
     } catch (error) {
-        alert("Impossible d’envoyer votre message. Vérifiez votre connexion et réessayez. Les informations saisies sont conservées.");
+        formStatus.textContent = "Impossible d’envoyer votre message. Vérifiez votre connexion et réessayez. Les informations saisies sont conservées.";
+        formStatus.hidden = false;
     }
 
 });
