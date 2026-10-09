@@ -13,7 +13,7 @@
         content="Création de sites web, SEO, analyse et stratégie digitale pour les entrepreneurs, professionnels et petites entreprises qui souhaitent améliorer leur présence en ligne."
     >
 
-    <link rel="stylesheet" href="../styles.css?v=20261009-contacto">
+    <link rel="stylesheet" href="../styles.css?v=20261009-accesibilidad">
     <link rel="stylesheet" href="../design.css">
     <script defer src="../design.js"></script>
 
@@ -46,7 +46,7 @@
             <a href="#contacto">Contact</a>
         </div>
 
-        <button class="menu-toggle" aria-label="Ouvrir le menu">
+        <button class="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
             ☰
         </button>
 
@@ -589,13 +589,15 @@ const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
 menuToggle.addEventListener('click', function () {
-    menu.classList.toggle('active');
+    const isOpen = menu.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
 document.querySelectorAll('.menu a').forEach(function (link) {
 
     link.addEventListener('click', function () {
         menu.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
     });
 
 });
