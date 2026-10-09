@@ -6259,3 +6259,14 @@ body.portfolio-page {
         overflow-wrap: anywhere;
     }
 }
+
+/* Accesibilidad: foco visible al navegar con teclado */
+:where(a, button, input, select, textarea, summary):focus-visible {
+    outline: 3px solid #8a6127;
+    outline-offset: 3px;
+}
+#contacto .contact-form :where(input, select, textarea):focus-visible {
+    outline: 3px solid #8a6127;
+    outline-offset: 2px;
+    border-color: #8a6127;
+}
