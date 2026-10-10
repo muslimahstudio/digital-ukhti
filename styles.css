@@ -6290,3 +6290,20 @@ body.portfolio-page {
  .du-mobile-quote.is-hidden{display:none}
 }
 @media(min-width:768px){.du-mobile-quote{display:none!important}}
+
+/* Pie compacto: enlaces agrupados y ancho controlado */
+.du-footer{box-sizing:border-box;width:100%;padding:30px 24px 22px}
+.du-footer-inner{width:100%;max-width:940px;margin-inline:auto}
+.du-footer-inner>p:first-child{margin:0 0 8px;font-size:16px}
+.du-footer-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:18px;row-gap:0;margin:6px 0 12px}
+.du-footer-links a{min-width:0;min-height:44px;line-height:1.35}
+.du-footer-language{margin-top:4px;gap:8px 14px}
+.du-footer-inner>p:last-child{margin-top:8px}
+@media(max-width:767px){
+ .du-footer{padding:26px 20px 22px}
+ .du-footer-links{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px}
+}
+@media(max-width:380px){
+ .du-footer{padding-inline:16px}
+ .du-footer-links{column-gap:8px}
+}
