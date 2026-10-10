@@ -42,6 +42,19 @@
   settings.textContent = french ? 'Confidentialité' : 'Privacidad';
   settings.setAttribute('aria-label', french ? 'Modifier les préférences de cookies' : 'Cambiar preferencias de cookies');
   document.body.appendChild(settings);
+  // Mantener el acceso a privacidad fuera de la franja del presupuesto.
+  function syncPrivacyPosition(){
+    const quote=document.getElementById('du-mobile-quote');
+    const quoteVisible=quote && getComputedStyle(quote).display!=='none' && !quote.hidden;
+    settings.style.setProperty('bottom',quoteVisible?'calc(94px + env(safe-area-inset-bottom, 0px))':'12px','important');
+    settings.style.setProperty('right','12px','important');
+    settings.style.setProperty('min-height','44px','important');
+  }
+  window.addEventListener('scroll',syncPrivacyPosition,{passive:true});
+  window.addEventListener('resize',syncPrivacyPosition);
+  window.addEventListener('load',syncPrivacyPosition);
+  syncPrivacyPosition();
+
 
   function showChoice() {
     const existing = document.querySelector('.du-consent');

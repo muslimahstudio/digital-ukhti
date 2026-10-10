@@ -6334,3 +6334,10 @@ body.portfolio-page {
  .du-consent-settings{bottom:12px!important;right:12px!important;min-height:44px;z-index:9999}
  body.du-quote-visible .du-consent-settings{bottom:calc(92px + env(safe-area-inset-bottom,0px))!important}
 }
+
+/* Los controles flotantes nunca deben taparse */
+.du-mobile-quote[hidden],.du-mobile-quote.is-hidden{display:none!important}
+@media(max-width:767px){
+ .du-consent-settings{bottom:12px!important;right:12px!important;min-height:44px}
+ body.du-quote-visible .du-consent-settings{bottom:calc(94px + env(safe-area-inset-bottom,0px))!important}
+}
