@@ -13,7 +13,7 @@
 
     <meta name="description" content="Servicios digitales para emprendedores y pequeños negocios: diseño web, estudios de mercado, análisis digital y estrategia.">
 
-    <link rel="stylesheet" href="styles.css?v=20261010-floating-fix">
+    <link rel="stylesheet" href="styles.css?v=20261010-floating-fix2">
     <link rel="stylesheet" href="design.css">
     <script defer src="design.js"></script>
 
@@ -209,18 +209,22 @@
   if(!bar||!footer)return;
   function updateQuoteVisibility(){
     var rect=footer.getBoundingClientRect();
-    var nearFooter=rect.top<window.innerHeight+96 && rect.bottom>0;
-    var mobile=window.matchMedia('(max-width:767px)').matches;
-    var showBar=mobile&&!nearFooter;
-    bar.classList.toggle('is-hidden',!showBar);
+    var pageBottom=document.documentElement.scrollHeight-(window.scrollY+window.innerHeight);
+    var nearFooter=rect.top<window.innerHeight+140 || pageBottom<Math.max(140,footer.offsetHeight+80);
+    var showBar=window.matchMedia('(max-width:767px)').matches&&!nearFooter;
+    bar.hidden=!showBar;
     bar.style.setProperty('display',showBar?'flex':'none','important');
     document.body.classList.toggle('du-quote-visible',showBar);
+    var privacy=document.querySelector('.du-consent-settings');
+    if(privacy){
+      privacy.style.setProperty('bottom',showBar?'calc(94px + env(safe-area-inset-bottom, 0px))':'12px','important');
+      privacy.style.setProperty('right','12px','important');
+    }
   }
   window.addEventListener('scroll',updateQuoteVisibility,{passive:true});
   window.addEventListener('resize',updateQuoteVisibility);
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(updateQuoteVisibility,{rootMargin:'0px 0px 96px 0px'}).observe(footer);
-  }
+  window.addEventListener('load',updateQuoteVisibility);
+  new MutationObserver(updateQuoteVisibility).observe(document.body,{childList:true});
   updateQuoteVisibility();
 })();
 </script>
@@ -237,6 +241,6 @@
     }
 </script>
 
-<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+<script defer src="/analytics-consent.js?v=20261010-fix2" data-ga-id="G-H5YG9J6S6P"></script>
 </body>
 </html>
