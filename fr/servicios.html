@@ -13,7 +13,7 @@
 
     <meta name="description" content="Services digitaux pour entrepreneurs et petites entreprises : création web, études de marché, analyse digitale et stratégie.">
 
-    <link rel="stylesheet" href="../styles.css?v=20261010-footer">
+    <link rel="stylesheet" href="../styles.css?v=20261010-footer-compact">
     <link rel="stylesheet" href="../design.css">
     <script defer src="../design.js"></script>
 
@@ -200,10 +200,14 @@
   var bar=document.getElementById('du-mobile-quote');
   var footer=document.querySelector('.du-footer');
   if(!bar||!footer||!('IntersectionObserver' in window))return;
-  var observer=new IntersectionObserver(function(entries){
-    bar.classList.toggle('is-hidden',entries[0].isIntersecting);
-  },{threshold:0});
-  observer.observe(footer);
+  function updateQuoteVisibility(){
+    var rect=footer.getBoundingClientRect();
+    var footerVisible=rect.top<window.innerHeight && rect.bottom>0;
+    bar.classList.toggle('is-hidden',footerVisible);
+  }
+  window.addEventListener('scroll',updateQuoteVisibility,{passive:true});
+  window.addEventListener('resize',updateQuoteVisibility);
+  updateQuoteVisibility();
 })();
 </script>
 
