@@ -543,7 +543,15 @@ const serviceLabels = {
 if (Object.prototype.hasOwnProperty.call(serviceLabels, selectedService)) {
     const select = form.querySelector("#proyecto");
     const option = Array.from(select.options).find(item => item.textContent.trim() === serviceLabels[selectedService]);
-    if (option) select.value = option.value;
+    if (option) {
+        select.value = option.value;
+        const note = document.createElement("p");
+        note.className = "du-selected-service-note";
+        note.setAttribute("role", "status");
+        note.textContent = "Servicio seleccionado: " + serviceLabels[selectedService];
+        note.style.cssText = "margin:8px 0 16px;font-size:14px;line-height:1.5;color:#484039";
+        select.closest("div").appendChild(note);
+    }
 }
 
 form.addEventListener("submit", async function(event) {
