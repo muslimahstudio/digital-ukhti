@@ -6270,3 +6270,23 @@ body.portfolio-page {
     outline-offset: 2px;
     border-color: #8a6127;
 }
+
+/* Pie de página accesible y CTA móvil */
+.du-footer{background:#f7f4ee;color:#24211c;border-top:1px solid #d8d0c2;padding:36px max(20px,5%) 28px;text-align:left;font-size:14px}
+.du-footer-inner{max-width:1180px;margin:0 auto}
+.du-footer-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin:14px 0}
+.du-footer a{color:#24211c;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px;max-width:100%;overflow-wrap:anywhere}
+.du-footer a:hover{color:#77551d}
+.du-footer p{margin:8px 0}
+.du-footer-language{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:12px}
+.du-footer-language a[aria-current="page"]{font-weight:700;text-decoration:none}
+.du-mobile-quote{display:none}
+@media(max-width:767px){
+ body:has(.du-mobile-quote){padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+ .du-footer{padding:30px 20px 26px}
+ .du-footer-links{gap:4px 18px}
+ .du-mobile-quote{display:flex;position:fixed;z-index:900;bottom:0;left:0;right:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:#f7f4ee;border-top:1px solid #d8d0c2;box-shadow:0 -3px 16px rgba(0,0,0,.09)}
+ .du-mobile-quote a{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;border-radius:4px;background:#24211c;color:#fff!important;font-size:15px;font-weight:600;text-decoration:none;text-align:center;padding:10px 16px;box-sizing:border-box}
+ .du-mobile-quote.is-hidden{display:none}
+}
+@media(min-width:768px){.du-mobile-quote{display:none!important}}
