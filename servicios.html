@@ -13,7 +13,7 @@
 
     <meta name="description" content="Servicios digitales para emprendedores y pequeños negocios: diseño web, estudios de mercado, análisis digital y estrategia.">
 
-    <link rel="stylesheet" href="styles.css?v=20261003">
+    <link rel="stylesheet" href="styles.css?v=20261010-footer">
     <link rel="stylesheet" href="design.css">
     <script defer src="design.js"></script>
 
@@ -177,11 +177,42 @@
 </main>
 
 
-<footer>
+<footer class="du-footer">
+  <div class="du-footer-inner">
+    <p><strong>Digital Ukhti</strong></p>
+    <nav class="du-footer-links" aria-label="Navegación del pie de página">
+      <a href="servicios.html">Servicios</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#proceso">Cómo trabajo</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="aprende.html">Aprende</a>
+      <a href="guias.html">Recursos</a>
+    </nav>
+    <p><a href="mailto:holadigitalukhti@gmail.com">holadigitalukhti@gmail.com</a></p>
+    <div class="du-footer-language" aria-label="Seleccionar idioma">
+      <span>Idioma:</span>
+      <a href="servicios.html" aria-current="page" lang="es">Español</a>
+      <a href="fr/servicios.html"  lang="fr">Français</a>
+    </div>
+    <nav class="du-footer-links" aria-label="Información legal">
+      <a href="privacidad.html">Política de privacidad</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+    </nav>
     <p>© 2026 Digital Ukhti</p>
-
-    <nav class="legal-links" aria-label="Información legal" style="display:flex;flex-wrap:wrap;gap:10px 24px;min-height:0;padding:0;margin-top:12px"><a href="privacidad.html">Política de privacidad</a><a href="aviso-legal.html">Aviso legal</a></nav>
+  </div>
 </footer>
+<div class="du-mobile-quote" id="du-mobile-quote"><a href="index.html#contacto">Solicitar presupuesto</a></div>
+<script>
+(function(){
+  var bar=document.getElementById('du-mobile-quote');
+  var footer=document.querySelector('.du-footer');
+  if(!bar||!footer||!('IntersectionObserver' in window))return;
+  var observer=new IntersectionObserver(function(entries){
+    bar.classList.toggle('is-hidden',entries[0].isIntersecting);
+  },{threshold:0});
+  observer.observe(footer);
+})();
+</script>
 
 
 <script>
