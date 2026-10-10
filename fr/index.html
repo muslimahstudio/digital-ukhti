@@ -16,7 +16,7 @@
         content="Création de sites web, SEO, analyse et stratégie digitale pour les entrepreneurs, professionnels et petites entreprises qui souhaitent améliorer leur présence en ligne."
     >
 
-    <link rel="stylesheet" href="../styles.css?v=20261010-footer-compact">
+    <link rel="stylesheet" href="../styles.css?v=20261010-floating-fix">
     <link rel="stylesheet" href="../design.css">
     <script defer src="../design.js"></script>
 
@@ -620,14 +620,21 @@
 (function(){
   var bar=document.getElementById('du-mobile-quote');
   var footer=document.querySelector('.du-footer');
-  if(!bar||!footer||!('IntersectionObserver' in window))return;
+  if(!bar||!footer)return;
   function updateQuoteVisibility(){
     var rect=footer.getBoundingClientRect();
-    var footerVisible=rect.top<window.innerHeight && rect.bottom>0;
-    bar.classList.toggle('is-hidden',footerVisible);
+    var nearFooter=rect.top<window.innerHeight+96 && rect.bottom>0;
+    var mobile=window.matchMedia('(max-width:767px)').matches;
+    var showBar=mobile&&!nearFooter;
+    bar.classList.toggle('is-hidden',!showBar);
+    bar.style.setProperty('display',showBar?'flex':'none','important');
+    document.body.classList.toggle('du-quote-visible',showBar);
   }
   window.addEventListener('scroll',updateQuoteVisibility,{passive:true});
   window.addEventListener('resize',updateQuoteVisibility);
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(updateQuoteVisibility,{rootMargin:'0px 0px 96px 0px'}).observe(footer);
+  }
   updateQuoteVisibility();
 })();
 </script>

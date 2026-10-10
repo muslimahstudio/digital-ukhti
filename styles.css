@@ -6327,3 +6327,10 @@ body.portfolio-page {
  .du-consent-settings{bottom:calc(90px + env(safe-area-inset-bottom,0px))!important;right:12px!important}
  body:has(.du-mobile-quote.is-hidden) .du-consent-settings{bottom:12px!important}
 }
+
+/* Botones flotantes: no se superponen en móvil */
+@media(max-width:767px){
+ .du-mobile-quote.is-hidden{display:none!important}
+ .du-consent-settings{bottom:12px!important;right:12px!important;min-height:44px;z-index:9999}
+ body.du-quote-visible .du-consent-settings{bottom:calc(92px + env(safe-area-inset-bottom,0px))!important}
+}
