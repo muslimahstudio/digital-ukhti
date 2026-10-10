@@ -6307,3 +6307,23 @@ body.portfolio-page {
  .du-footer{padding-inline:16px}
  .du-footer-links{column-gap:8px}
 }
+
+/* Compactación final del pie: móvil y escritorio */
+.du-footer{padding:20px 18px 16px}
+.du-footer-inner{max-width:640px}
+.du-footer-inner>p:first-child{margin:0 0 2px}
+.du-footer-links{column-gap:12px;margin:0 0 4px}
+.du-footer-language{margin:0;gap:0 12px}
+.du-footer-inner>p{margin:0}
+.du-footer-inner>p:last-child{margin-top:2px;font-size:12px}
+@media(max-width:767px){
+ .du-footer{padding:18px 16px 16px}
+ .du-footer-inner{max-width:440px}
+ .du-footer-links{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:10px;margin:0 0 4px}
+ .du-footer-links a{min-height:44px;line-height:1.3}
+ .du-footer-links[aria-label="Información legal"],.du-footer-links[aria-label="Informations légales"]{grid-template-columns:1fr;gap:0;margin-top:4px}
+ .du-footer-inner>p:first-child{margin-bottom:0}
+ .du-footer-language{margin-top:0}
+ .du-consent-settings{bottom:calc(90px + env(safe-area-inset-bottom,0px))!important;right:12px!important}
+ body:has(.du-mobile-quote.is-hidden) .du-consent-settings{bottom:12px!important}
+}
