@@ -559,16 +559,11 @@ form.addEventListener("submit", async function(event) {
         });
     
         if (response.ok) {
-    
-            // La página de agradecimiento envía el evento tras la navegación.
+            // Registrar la conversión solo si el visitante aceptó estadísticas.
             if (localStorage.getItem("digital-ukhti-analytics-consent") === "accepted") {
                 sessionStorage.setItem("du-lead-submitted", "1");
             }
-            form.reset();
-            formStatus.textContent = "Votre message a bien été envoyé. Merci d’avoir contacté Digital Ukhti. Je vous répondrai dès que possible.";
-            formStatus.hidden = false;
-            formStatus.focus();
-    
+            window.location.assign("gracias.html");
         } else {
     
             formStatus.textContent = "L’envoi n’a pas pu être confirmé. Veuillez réessayer : votre message est conservé dans le formulaire.";
