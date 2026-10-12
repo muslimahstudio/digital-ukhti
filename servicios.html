@@ -13,7 +13,7 @@
 
     <meta name="description" content="Servicios digitales para emprendedores y pequeños negocios: diseño web, estudios de mercado, análisis digital y estrategia.">
 
-    <link rel="stylesheet" href="styles.css?v=20261010-floating-fix2">
+    <link rel="stylesheet" href="styles.css?v=20261012-no-overlap">
     <link rel="stylesheet" href="design.css">
     <script defer src="design.js"></script>
 
@@ -201,33 +201,7 @@
     <p>© 2026 Digital Ukhti</p>
   </div>
 </footer>
-<div class="du-mobile-quote" id="du-mobile-quote"><a href="index.html#contacto">Solicitar presupuesto</a></div>
-<script>
-(function(){
-  var bar=document.getElementById('du-mobile-quote');
-  var footer=document.querySelector('.du-footer');
-  if(!bar||!footer)return;
-  function updateQuoteVisibility(){
-    var rect=footer.getBoundingClientRect();
-    var pageBottom=document.documentElement.scrollHeight-(window.scrollY+window.innerHeight);
-    var nearFooter=rect.top<window.innerHeight+140 || pageBottom<Math.max(140,footer.offsetHeight+80);
-    var showBar=window.matchMedia('(max-width:767px)').matches&&!nearFooter;
-    bar.hidden=!showBar;
-    bar.style.setProperty('display',showBar?'flex':'none','important');
-    document.body.classList.toggle('du-quote-visible',showBar);
-    var privacy=document.querySelector('.du-consent-settings');
-    if(privacy){
-      privacy.style.setProperty('bottom',showBar?'calc(94px + env(safe-area-inset-bottom, 0px))':'12px','important');
-      privacy.style.setProperty('right','12px','important');
-    }
-  }
-  window.addEventListener('scroll',updateQuoteVisibility,{passive:true});
-  window.addEventListener('resize',updateQuoteVisibility);
-  window.addEventListener('load',updateQuoteVisibility);
-  new MutationObserver(updateQuoteVisibility).observe(document.body,{childList:true});
-  updateQuoteVisibility();
-})();
-</script>
+<div class="du-inline-quote"><a href="index.html#contacto">Solicitar presupuesto</a></div>
 
 
 <script>
