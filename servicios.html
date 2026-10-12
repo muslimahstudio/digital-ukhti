@@ -13,7 +13,7 @@
 
     <meta name="description" content="Servicios digitales para emprendedores y pequeños negocios: diseño web, estudios de mercado, análisis digital y estrategia.">
 
-    <link rel="stylesheet" href="styles.css?v=20261012-no-overlap">
+    <link rel="stylesheet" href="styles.css?v=20261012-floating-safe">
     <link rel="stylesheet" href="design.css">
     <script defer src="design.js"></script>
 
@@ -201,7 +201,26 @@
     <p>© 2026 Digital Ukhti</p>
   </div>
 </footer>
-<div class="du-inline-quote"><a href="index.html#contacto">Solicitar presupuesto</a></div>
+<div class="du-floating-quote" id="du-floating-quote"><a href="index.html#contacto">Solicitar presupuesto</a></div>
+<script>
+(function(){
+  var quote=document.getElementById('du-floating-quote');
+  var footer=document.querySelector('.du-footer');
+  if(!quote||!footer)return;
+  function sync(){
+    var footerTop=footer.getBoundingClientRect().top;
+    var mobile=window.matchMedia('(max-width:767px)').matches;
+    var visible=mobile&&footerTop>window.innerHeight-20;
+    quote.hidden=!visible;
+    document.documentElement.classList.toggle('du-floating-active',visible);
+  }
+  window.addEventListener('scroll',sync,{passive:true});
+  window.addEventListener('resize',sync);
+  window.addEventListener('pageshow',sync);
+  if('IntersectionObserver' in window)new IntersectionObserver(sync).observe(footer);
+  sync();
+})();
+</script>
 
 
 <script>
