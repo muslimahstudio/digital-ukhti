@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>What Is HTML? | Digital Ukhti</title>
+
+    <meta name="description"
+          content="Learn what HTML is, how tags work and how to create your first HTML document from scratch.">
+
+    <link rel="stylesheet" href="../styles.css?v=20261003">
+    <link rel="stylesheet" href="../design.css">
+    <script defer src="../design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/en/leccion-03-que-es-html.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-03-que-es-html.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-03-que-es-html.html">
+<link rel="alternate" hreflang="en" href="https://digitalukhti.com/en/leccion-03-que-es-html.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-03-que-es-html.html">
+<link rel="stylesheet" href="../language.css">
+<script defer src="../language.js"></script>
+</head>
+
+<body class="du-site">
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div role="group" class="language-switch" aria-label="Choose language"><a href="../leccion-03-que-es-html.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="../fr/leccion-03-que-es-html.html" lang="fr" hreflang="fr">FR</a><span aria-hidden="true">|</span><a href="leccion-03-que-es-html.html" lang="en" hreflang="en" aria-current="page">EN</a></div><div class="menu">
+            <a href="index.html">Home</a>
+            <a href="aprende.html">Learn</a>
+            <a href="guias.html">Resources</a>
+            <a href="index.html#services">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#about">About Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- CABECERA -->
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">
+            ← Web design from scratch
+        </a>
+
+        <p class="section-label">LESSON 03 · HTML</p>
+
+        <h1>What is HTML?</h1>
+
+        <p class="lesson-intro">
+            It is time to start writing code. In this lesson, you will learn what HTML is, how its tags work and how to create your first web document.
+        </p>
+
+        <div class="lesson-meta">
+            <span>Level · Beginner</span>
+            <span>Time · 20–25 min</span>
+            <span>Path · Web design</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+        <!-- 01 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>What does HTML mean?</h2>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+            </p>
+
+            <p>
+                It is the language we use to define the structure and content of a web page.
+            </p>
+
+            <p>
+                With HTML, we can tell the browser which element is a heading, which is a paragraph, where an image should appear and which text should become a link.
+            </p>
+
+            <div class="lesson-note">
+                <strong>Important:</strong>
+                HTML mainly defines structure. Later, we will use CSS to control how that structure looks.
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>HTML uses tags.</h2>
+
+            <p>
+                Most HTML elements are written using an opening tag and a closing tag.
+            </p>
+
+            <p>For example, a paragraph:</p>
+
+            <div class="lesson-code">
+                &lt;p&gt;This is my first paragraph.&lt;/p&gt;
+            </div>
+
+            <p>
+                The first tag opens the element:
+            </p>
+
+            <div class="lesson-code">
+                &lt;p&gt;
+            </div>
+
+            <p>
+                And the second closes it:
+            </p>
+
+            <div class="lesson-code">
+                &lt;/p&gt;
+            </div>
+
+            <p>
+                Between them, we write the content we want to display on the page.
+            </p>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>Some basic tags.</h2>
+
+            <p>
+                You do not need to memorise hundreds of tags. We will start with a few that you will use regularly.
+            </p>
+
+            <div class="lesson-concepts">
+
+                <div>
+                    <span>01</span>
+                    <h3>&lt;h1&gt;</h3>
+                    <p>
+                        Defines the main heading of a page.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>&lt;p&gt;</h3>
+                    <p>
+                        Defines a paragraph of text.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>&lt;a&gt;</h3>
+                    <p>
+                        Creates a link.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>The basic structure of an HTML document.</h2>
+
+            <p>
+                An HTML page begins with a basic structure that we will use almost every time.
+            </p>
+
+            <div class="lesson-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br><br>
+
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;My first website&lt;/title&gt;<br>
+&lt;/head&gt;<br><br>
+
+&lt;body&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h1&gt;My first web page&lt;/h1&gt;<br>
+&nbsp;&nbsp;&lt;p&gt;I am learning HTML.&lt;/p&gt;<br><br>
+
+&lt;/body&gt;<br><br>
+
+&lt;/html&gt;
+            </div>
+
+            <p>
+                It may seem like a lot at first, but we will go through each part.
+            </p>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>HTML, HEAD and BODY.</h2>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>
+                        <strong>&lt;html&gt;</strong> contains the entire HTML document.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>
+                        <strong>&lt;head&gt;</strong> contains information about the page that does not normally appear directly in its content.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>
+                        <strong>&lt;body&gt;</strong> contains everything visitors see: headings, text, images, buttons and other content.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Headings have a hierarchy.</h2>
+
+            <p>
+                HTML has six heading levels:
+            </p>
+
+            <div class="lesson-code">
+&lt;h1&gt;Main heading&lt;/h1&gt;<br>
+&lt;h2&gt;Section heading&lt;/h2&gt;<br>
+&lt;h3&gt;Subheading&lt;/h3&gt;<br>
+&lt;h4&gt;Level 4&lt;/h4&gt;<br>
+&lt;h5&gt;Level 5&lt;/h5&gt;<br>
+&lt;h6&gt;Level 6&lt;/h6&gt;
+            </div>
+
+            <p>
+                Do not choose headings simply because of their visual size. They represent the organisation and hierarchy of the content.
+            </p>
+
+            <div class="lesson-note">
+                We will normally use an <strong>h1</strong> for the main heading of each page and <strong>h2</strong> for its major sections.
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>How to create a link.</h2>
+
+            <p>
+                Links connect pages to one another.
+            </p>
+
+            <p>We use the tag:</p>
+
+            <div class="lesson-code">
+                &lt;a&gt;
+            </div>
+
+            <p>
+                For example:
+            </p>
+
+            <div class="lesson-code">
+                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+            </div>
+
+            <p>
+                The <strong>href</strong> attribute tells the browser which page the link should open.
+            </p>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>Create your first HTML file.</h2>
+
+            <p>
+                Now let's create something real.
+            </p>
+
+            <p>
+                Create a folder on your computer called:
+            </p>
+
+            <div class="lesson-code">
+                my-first-website
+            </div>
+
+            <p>
+                Inside it, create a file named:
+            </p>
+
+            <div class="lesson-code">
+                index.html
+            </div>
+
+            <p>
+                The name <strong>index.html</strong> is important because it is commonly used for a website's homepage.
+            </p>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Write your first page.</h2>
+
+            <p>
+                Inside <strong>index.html</strong>, write:
+            </p>
+
+            <div class="lesson-code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br><br>
+
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;My first website&lt;/title&gt;<br>
+&lt;/head&gt;<br><br>
+
+&lt;body&gt;<br><br>
+
+&nbsp;&nbsp;&lt;h1&gt;Welcome to my website&lt;/h1&gt;<br><br>
+
+&nbsp;&nbsp;&lt;p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This is my first page created with HTML.<br>
+&nbsp;&nbsp;&lt;/p&gt;<br><br>
+
+&lt;/body&gt;<br><br>
+
+&lt;/html&gt;
+            </div>
+
+            <p>
+                Save the file and open it in your browser.
+            </p>
+
+            <p>
+                If everything is correct, you will see your heading and first paragraph.
+            </p>
+
+        </section>
+
+
+        <!-- SUMMARY -->
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">SUMMARY</p>
+
+            <h2>What you have learned.</h2>
+
+            <ul>
+                <li>HTML defines the structure of a web page.</li>
+                <li>HTML uses tags.</li>
+                <li>Many tags have opening and closing forms.</li>
+                <li>HEAD contains information about the page.</li>
+                <li>BODY contains the visible content.</li>
+                <li>Headings organise content.</li>
+                <li>Links are created using the &lt;a&gt; tag.</li>
+                <li>The homepage is usually named index.html.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- EJERCICIO -->
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">PUT IT INTO PRACTICE</p>
+
+            <h2>Build your first HTML page.</h2>
+
+            <p>
+                Use your <strong>index.html</strong> file and add:
+            </p>
+
+            <ol>
+                <li>A main heading using h1.</li>
+                <li>A subheading using h2.</li>
+                <li>Two paragraphs.</li>
+                <li>One link.</li>
+            </ol>
+
+            <p>
+                Then save the file and reopen it in your browser to check the changes.
+            </p>
+
+            <div class="lesson-note">
+                <strong>Do not worry about the design.</strong>
+                For now, the page will be very simple. In the next lesson, you will learn how CSS transforms its appearance.
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <section class="lesson-navigation">
+
+        <div>
+            <p>PREVIOUS LESSON</p>
+
+            <a href="leccion-02-antes-de-crear-tu-web.html">
+                ← 02 · What you need before creating your website
+            </a>
+        </div>
+
+      <div class="lesson-next">
+    <p>NEXT LESSON</p>
+
+    <a href="../leccion-04-que-es-css.html" lang="es">
+        04 · What is CSS? (Spanish) →
+    </a>
+</div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+</body>
+</html>
