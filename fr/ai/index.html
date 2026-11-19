@@ -23,6 +23,11 @@
 .ai-examples ul {padding-inline-start:1.3em}
 .ai-examples li {margin-block:8px}
 @media(max-width:480px){.ai-demo :is(th,td){padding:6px;font-size:.875rem}}
+#ai-task-diagnostic {margin-block:32px}
+#ai-task-diagnostic details {margin-block:12px;padding:0 16px;border:1px solid var(--border);border-radius:var(--radius-card);background:var(--blanco)}
+#ai-task-diagnostic summary {min-height:44px;padding-block:12px;cursor:pointer;font-weight:600}
+#ai-task-diagnostic details p {margin-bottom:12px}
+#ai-task-diagnostic details a {margin-bottom:16px}
 </style></head>
 <body class="du-site"><header><div class="ai-header"><a class="logo" href="/fr/">Digital Ukhti</a><div class="language-switch"><a href="/ai/" lang="es">ES</a><span aria-hidden="true"> | </span><a href="/fr/ai/" lang="fr" aria-current="true">FR</a><span aria-hidden="true"> | </span><a href="/en/ai/" lang="en">EN</a></div></div></header>
 <main class="ai-main"><p class="eyebrow">Automatisation et IA</p><h1>Digital Ukhti AI</h1><p>Une section en cours de développement pour explorer l’automatisation des tâches répétitives dans les petites entreprises.</p>
@@ -33,6 +38,25 @@
 <details id="draft-reply" hidden><summary>Voir le brouillon de réponse</summary><h3>Brouillon à relire</h3><p>Bonjour Marie. Merci pour votre demande de devis. Quels services aimeriez-vous présenter et avez-vous déjà un site web ? Ces informations me permettront de vous orienter vers la prochaine étape.</p><p>Cette réponse utilise un modèle d’exemple et reste dans la démonstration.</p></details>
 </section>
 <section class="ai-examples" aria-labelledby="automation-examples"><h2 id="automation-examples">Que pourriez-vous automatiser dans votre entreprise ?</h2><ul><li>Organiser les demandes de devis dans un tableau de suivi.</li><li>Repérer les demandes qui attendent encore une réponse.</li><li>Préparer des brouillons à relire avant de les envoyer.</li></ul></section>
+<section id="ai-task-diagnostic" aria-labelledby="ai-task-title">
+  <h2 id="ai-task-title">Quelle tâche vous prend le plus de temps ?</h2>
+  <p>Choisissez une tâche pour découvrir par où commencer.</p>
+  <details>
+    <summary>Classer les demandes que je reçois</summary>
+    <p>Enregistrez chaque demande dans un tableau avec sa date et son statut pour les retrouver au même endroit.</p>
+    <a class="button-secondary" href="/fr/?servicio=ia&amp;tarea=organizar#contacto">Expliquez-moi comment vous procédez aujourd’hui</a>
+  </details>
+  <details>
+    <summary>Penser à relancer les demandes</summary>
+    <p>Repérez les demandes en attente et programmez un rappel pour les examiner.</p>
+    <a class="button-secondary" href="/fr/?servicio=ia&amp;tarea=seguimiento#contacto">Expliquez-moi comment vous procédez aujourd’hui</a>
+  </details>
+  <details>
+    <summary>Répondre aux questions fréquentes</summary>
+    <p>Utilisez un modèle pour préparer un brouillon que vous pourrez relire avant de l’envoyer.</p>
+    <a class="button-secondary" href="/fr/?servicio=ia&amp;tarea=responder#contacto">Expliquez-moi comment vous procédez aujourd’hui</a>
+  </details>
+</section>
 <div class="ai-actions"><a class="button-primary" href="/fr/?servicio=ia#contacto">Parlez-moi d’une tâche à automatiser</a><a class="button-secondary" href="/fr/servicios.html">Retour aux services</a></div></main>
 <script>
 document.getElementById('simulate').addEventListener('click', () => {

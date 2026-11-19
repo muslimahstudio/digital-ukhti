@@ -520,5 +520,17 @@ document.querySelectorAll('.menu a').forEach(function (link) {
 
 
 <script defer src="/analytics-consent.js?v=20261119-mobile-controls" data-ga-id="G-H5YG9J6S6P"></script>
+<script id="ai-task-diagnostic">
+(() => {
+  const params = new URLSearchParams(location.search);
+  if (params.get('servicio') !== 'ia') return;
+  const tasks = new Map([["organizar","Ordenar las consultas que recibo"],["seguimiento","Acordarme de hacer seguimiento"],["responder","Responder preguntas repetidas"]]);
+  const task = tasks.get(params.get('tarea'));
+  const message = document.getElementById('mensaje');
+  if (task && message && !message.value) {
+    message.value = "Tarea que quiero automatizar: " + task + "\n\nAsí lo hago hoy:\n";
+  }
+})();
+</script>
 </body>
 </html>

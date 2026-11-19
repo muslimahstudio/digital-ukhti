@@ -23,6 +23,11 @@
 .ai-examples ul {padding-inline-start:1.3em}
 .ai-examples li {margin-block:8px}
 @media(max-width:480px){.ai-demo :is(th,td){padding:6px;font-size:.875rem}}
+#ai-task-diagnostic {margin-block:32px}
+#ai-task-diagnostic details {margin-block:12px;padding:0 16px;border:1px solid var(--border);border-radius:var(--radius-card);background:var(--blanco)}
+#ai-task-diagnostic summary {min-height:44px;padding-block:12px;cursor:pointer;font-weight:600}
+#ai-task-diagnostic details p {margin-bottom:12px}
+#ai-task-diagnostic details a {margin-bottom:16px}
 </style></head>
 <body class="du-site"><header><div class="ai-header"><a class="logo" href="/">Digital Ukhti</a><div class="language-switch"><a href="/ai/" lang="es" aria-current="true">ES</a><span aria-hidden="true"> | </span><a href="/fr/ai/" lang="fr">FR</a><span aria-hidden="true"> | </span><a href="/en/ai/" lang="en">EN</a></div></div></header>
 <main class="ai-main"><p class="eyebrow">Automatización e IA</p><h1>Digital Ukhti AI</h1><p>Una sección en desarrollo para explorar cómo automatizar tareas repetitivas en pequeños negocios.</p>
@@ -33,6 +38,25 @@
 <details id="draft-reply" hidden><summary>Ver borrador de respuesta</summary><h3>Borrador para revisar</h3><p>Hola, María. Gracias por pedir un presupuesto para tu web. ¿Podrías contarme qué servicios quieres mostrar y si ya tienes una página? Con esos datos podré orientarte sobre el siguiente paso.</p><p>Esta respuesta usa una plantilla de ejemplo y se queda en la demo.</p></details>
 </section>
 <section class="ai-examples" aria-labelledby="automation-examples"><h2 id="automation-examples">¿Qué podrías automatizar en tu negocio?</h2><ul><li>Organizar las solicitudes de presupuesto en una hoja de seguimiento.</li><li>Identificar qué consultas siguen pendientes de respuesta.</li><li>Preparar borradores de respuesta para revisarlos antes de enviarlos.</li></ul></section>
+<section id="ai-task-diagnostic" aria-labelledby="ai-task-title">
+  <h2 id="ai-task-title">¿Qué tarea te quita más tiempo?</h2>
+  <p>Elige una tarea para ver por dónde podrías empezar.</p>
+  <details>
+    <summary>Ordenar las consultas que recibo</summary>
+    <p>Registra cada solicitud en una hoja con la fecha y el estado para tenerlas todas a mano.</p>
+    <a class="button-secondary" href="/?servicio=ia&amp;tarea=organizar#contacto">Cuéntame cómo lo haces hoy</a>
+  </details>
+  <details>
+    <summary>Acordarme de hacer seguimiento</summary>
+    <p>Identifica qué consultas siguen pendientes y programa un recordatorio para revisarlas.</p>
+    <a class="button-secondary" href="/?servicio=ia&amp;tarea=seguimiento#contacto">Cuéntame cómo lo haces hoy</a>
+  </details>
+  <details>
+    <summary>Responder preguntas repetidas</summary>
+    <p>Usa una plantilla para preparar un borrador de respuesta que puedas revisar antes de enviarlo.</p>
+    <a class="button-secondary" href="/?servicio=ia&amp;tarea=responder#contacto">Cuéntame cómo lo haces hoy</a>
+  </details>
+</section>
 <div class="ai-actions"><a class="button-primary" href="/?servicio=ia#contacto">Cuéntame qué tarea te gustaría automatizar</a><a class="button-secondary" href="/servicios.html">Volver a Servicios</a></div></main>
 <script>
 document.getElementById('simulate').addEventListener('click', () => {

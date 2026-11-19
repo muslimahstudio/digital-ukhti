@@ -23,6 +23,11 @@
 .ai-examples ul {padding-inline-start:1.3em}
 .ai-examples li {margin-block:8px}
 @media(max-width:480px){.ai-demo :is(th,td){padding:6px;font-size:.875rem}}
+#ai-task-diagnostic {margin-block:32px}
+#ai-task-diagnostic details {margin-block:12px;padding:0 16px;border:1px solid var(--border);border-radius:var(--radius-card);background:var(--blanco)}
+#ai-task-diagnostic summary {min-height:44px;padding-block:12px;cursor:pointer;font-weight:600}
+#ai-task-diagnostic details p {margin-bottom:12px}
+#ai-task-diagnostic details a {margin-bottom:16px}
 </style></head>
 <body class="du-site"><header><div class="ai-header"><a class="logo" href="/en/">Digital Ukhti</a><div class="language-switch"><a href="/ai/" lang="es">ES</a><span aria-hidden="true"> | </span><a href="/fr/ai/" lang="fr">FR</a><span aria-hidden="true"> | </span><a href="/en/ai/" lang="en" aria-current="true">EN</a></div></div></header>
 <main class="ai-main"><p class="eyebrow">Automation and AI</p><h1>Digital Ukhti AI</h1><p>A section in development exploring how small businesses can automate repetitive tasks.</p>
@@ -33,6 +38,25 @@
 <details id="draft-reply" hidden><summary>View draft reply</summary><h3>Draft for review</h3><p>Hi Maria. Thanks for requesting a website quote. Which services would you like to showcase, and do you already have a website? That will help me suggest the next step.</p><p>This reply uses a sample template and stays within the demo.</p></details>
 </section>
 <section class="ai-examples" aria-labelledby="automation-examples"><h2 id="automation-examples">What could you automate in your business?</h2><ul><li>Organise quote requests in a tracking sheet.</li><li>Identify enquiries still waiting for a reply.</li><li>Prepare draft replies to review before sending.</li></ul></section>
+<section id="ai-task-diagnostic" aria-labelledby="ai-task-title">
+  <h2 id="ai-task-title">Which task takes up most of your time?</h2>
+  <p>Choose a task to see where you could start.</p>
+  <details>
+    <summary>Organising the enquiries I receive</summary>
+    <p>Log each enquiry in a sheet with its date and status so you can find them all in one place.</p>
+    <a class="button-secondary" href="/en/?servicio=ia&amp;tarea=organizar#contact">Tell me how you do it today</a>
+  </details>
+  <details>
+    <summary>Remembering to follow up</summary>
+    <p>Identify enquiries still waiting for a reply and set a reminder to review them.</p>
+    <a class="button-secondary" href="/en/?servicio=ia&amp;tarea=seguimiento#contact">Tell me how you do it today</a>
+  </details>
+  <details>
+    <summary>Answering recurring questions</summary>
+    <p>Use a template to prepare a draft reply you can review before sending.</p>
+    <a class="button-secondary" href="/en/?servicio=ia&amp;tarea=responder#contact">Tell me how you do it today</a>
+  </details>
+</section>
 <div class="ai-actions"><a class="button-primary" href="/en/?servicio=ia#contact">Tell me what task you’d like to automate</a><a class="button-secondary" href="/en/servicios.html">Back to Services</a></div></main>
 <script>
 document.getElementById('simulate').addEventListener('click', () => {
