@@ -69,7 +69,6 @@ body.du-site .du-service-link-row {margin:1rem auto 0;text-align:center}
 body.du-site .du-full-terms .package-price {font-size:var(--text-xl);font-weight:600}
 body.du-site .du-full-terms .du-package-details ul {padding-inline-start:1.4em}
 body.du-site .du-full-terms .du-method-materials {margin-block:1.5rem}
-body.du-site #du-contact-options[hidden] {display:none}
 </style></head>
 
 <body class="du-site du-home">
@@ -282,9 +281,9 @@ body.du-site #du-contact-options[hidden] {display:none}
             SOBRE DIGITAL UKHTI
         </p>
 
-        <h2>[NOMBRE]</h2>
+        <h2>Digital Ukhti</h2>
 
-        <div class="about-content"><p>[FRASE]</p></div>
+        <div class="about-content"><p>Diseño webs para pequeños negocios. Organizo tus servicios y creo una página clara, fácil de usar en móvil y con una forma sencilla de contactar contigo.</p></div>
 
         </div>
 
@@ -310,7 +309,7 @@ body.du-site #du-contact-options[hidden] {display:none}
 
     <p class="contact-response-time">Te respondo en 24-48 horas laborables.</p>
     <p id="du-contact-email" class="contact-email" aria-live="polite"></p>
-    <div id="du-contact-options" hidden>WhatsApp o teléfono: [NÚMERO]</div>
+    
 
     <form class="contact-form" action="https://formspree.io/f/mrpzprnq" method="POST">
 
@@ -420,7 +419,7 @@ body.du-site #du-contact-options[hidden] {display:none}
 <script>
 
 const form = document.querySelector(".contact-form");
-const DU_CONTACT = { email: "holadigitalukhti@gmail.com", whatsappUrl: "", bookingUrl: "" };
+const DU_CONTACT = { email: "holadigitalukhti@gmail.com" };
 const contactEmail = document.querySelector(".du-contact-email-placeholder");
 if (contactEmail) { contactEmail.textContent = DU_CONTACT.email; contactEmail.href = "mailto:" + DU_CONTACT.email; }
 const formStatus = document.getElementById("du-form-status");
