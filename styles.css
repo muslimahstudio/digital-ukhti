@@ -6351,3 +6351,47 @@ body.portfolio-page {
  .du-inline-quote a{display:flex;min-height:48px;align-items:center;justify-content:center;padding:10px 16px;box-sizing:border-box;background:#80622f;color:#fff;text-align:center;text-decoration:none;border-radius:4px;font-size:16px}
  .du-consent-settings{bottom:12px!important;right:12px!important}
 }
+
+/* Mobile quote and cookie settings: two independent, non-overlapping controls.
+   Keep the bottom content reachable and hide the CTA when the cookie dialog is shown. */
+@media (max-width:767px) {
+  body.du-home:has(.du-inline-quote) {
+    padding-bottom:calc(94px + env(safe-area-inset-bottom, 0px))!important;
+  }
+  body.du-home .du-inline-quote {
+    display:block!important;
+    position:fixed!important;
+    left:12px!important;
+    right:auto!important;
+    bottom:calc(12px + env(safe-area-inset-bottom, 0px))!important;
+    width:calc(100% - 164px)!important;
+    margin:0!important;
+    padding:0!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    z-index:9500!important;
+  }
+  body.du-home .du-inline-quote a {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    min-height:48px;
+    padding:10px 8px;
+    text-align:center;
+    line-height:1.25;
+    font-size:clamp(12px, 3.7vw, 16px);
+    overflow-wrap:anywhere;
+  }
+  body.du-home .du-consent-settings {
+    right:12px!important;
+    bottom:calc(12px + env(safe-area-inset-bottom, 0px))!important;
+    max-width:128px;
+    min-height:48px!important;
+    z-index:9999;
+  }
+  body.du-home:has(.du-consent) .du-inline-quote {
+    display:none!important;
+  }
+}

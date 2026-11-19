@@ -7,6 +7,7 @@
   if (!measurementId || !/^G-[A-Z0-9]+$/.test(measurementId)) return;
 
   const french = document.documentElement.lang === 'fr';
+  const english = document.documentElement.lang === 'en';
   const key = 'digital-ukhti-analytics-consent';
   const stored = localStorage.getItem(key);
   let loaded = false;
@@ -39,8 +40,8 @@
   const settings = document.createElement('button');
   settings.type = 'button';
   settings.className = 'du-consent-settings';
-  settings.textContent = french ? 'Confidentialité' : 'Privacidad';
-  settings.setAttribute('aria-label', french ? 'Modifier les préférences de cookies' : 'Cambiar preferencias de cookies');
+  settings.textContent = french ? 'Confidentialité' : english ? 'Privacy' : 'Privacidad';
+  settings.setAttribute('aria-label', french ? 'Modifier les préférences de cookies' : english ? 'Change cookie preferences' : 'Cambiar preferencias de cookies');
   document.body.appendChild(settings);
   // Mantener el acceso a privacidad fuera de la franja del presupuesto.
   function syncPrivacyPosition(){
@@ -48,7 +49,7 @@
     const quoteVisible=quote && getComputedStyle(quote).display!=='none' && !quote.hidden;
     settings.style.setProperty('bottom',quoteVisible?'calc(94px + env(safe-area-inset-bottom, 0px))':'12px','important');
     settings.style.setProperty('right','12px','important');
-    settings.style.setProperty('min-height','44px','important');
+    settings.style.setProperty('min-height','48px','important');
   }
   window.addEventListener('scroll',syncPrivacyPosition,{passive:true});
   window.addEventListener('resize',syncPrivacyPosition);
@@ -62,8 +63,8 @@
     const panel = document.createElement('section');
     panel.className = 'du-consent';
     panel.setAttribute('role', 'dialog');
-    panel.setAttribute('aria-label', french ? 'Préférences de cookies' : 'Preferencias de cookies');
-    panel.innerHTML = french ? '<p>Nous utilisons Google Analytics pour mesurer les visites uniquement si vous acceptez. Vous pouvez refuser ou modifier votre choix à tout moment. <a href="/fr/privacidad.html" lang="fr">Politique de confidentialité</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Refuser les statistiques</button><button type="button" data-accept>Accepter les statistiques</button></div>' : '<p>Usamos Google Analytics para conocer las visitas a esta web solo si aceptas. Puedes rechazarlo o cambiar tu elección cuando quieras. <a href="/privacidad.html">Política de privacidad</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Rechazar estadísticas</button><button type="button" data-accept>Aceptar estadísticas</button></div>';
+    panel.setAttribute('aria-label', french ? 'Préférences de cookies' : english ? 'Cookie preferences' : 'Preferencias de cookies');
+    panel.innerHTML = french ? '<p>Nous utilisons Google Analytics pour mesurer les visites uniquement si vous acceptez. Vous pouvez refuser ou modifier votre choix à tout moment. <a href="/fr/privacidad.html" lang="fr">Politique de confidentialité</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Refuser les statistiques</button><button type="button" data-accept>Accepter les statistiques</button></div>' : english ? '<p>We use Google Analytics to measure visits only if you agree. You can refuse or change your choice at any time. <a href="/privacidad.html" lang="es">Privacy policy (Spanish)</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Reject analytics</button><button type="button" data-accept>Accept analytics</button></div>' : '<p>Usamos Google Analytics para conocer las visitas a esta web solo si aceptas. Puedes rechazarlo o cambiar tu elección cuando quieras. <a href="/privacidad.html">Política de privacidad</a>.</p><div class="du-consent-actions"><button type="button" data-reject>Rechazar estadísticas</button><button type="button" data-accept>Aceptar estadísticas</button></div>';
     document.body.appendChild(panel);
     function choose(value) {
       localStorage.setItem(key, value);
