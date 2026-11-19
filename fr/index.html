@@ -70,7 +70,9 @@ body.du-site .du-full-terms .package-price {font-size:var(--text-xl);font-weight
 body.du-site .du-full-terms .du-package-details ul {padding-inline-start:1.4em}
 body.du-site .du-full-terms .du-method-materials {margin-block:1.5rem}
 </style><style>
-body.du-site .logo.du-monogram {display:block;position:relative;width:48px;height:48px;flex:0 0 48px;overflow:hidden;justify-self:start;mix-blend-mode:multiply}
+body.du-site .logo.du-monogram {display:inline-flex;flex:0 0 auto;flex-direction:column;align-items:center;justify-self:start;gap:4px;line-height:1;text-decoration:none;color:inherit}
+body.du-site .du-monogram-art {display:block;position:relative;width:48px;height:48px;overflow:hidden;mix-blend-mode:multiply}
+body.du-site .du-monogram-name {font-size:1rem;font-weight:600;letter-spacing:.035em;white-space:nowrap}
 body.du-site .du-monogram img {position:absolute;max-width:none;width:204.8%;height:auto;left:-52%;top:-30.8%;display:block}
 </style></head>
 
@@ -79,7 +81,7 @@ body.du-site .du-monogram img {position:absolute;max-width:none;width:204.8%;hei
 <header>
     <nav>
 
-        <a class="logo du-monogram" href="./" aria-label="Digital Ukhti, accueil"><img src="/images/brand/digital-ukhti-monogram-source.jpg" alt="" width="1536" height="1536"></a>
+        <a class="logo du-monogram" href="./" aria-label="Digital Ukhti, accueil"><span class="du-monogram-art"><img src="/images/brand/digital-ukhti-monogram-source.jpg" alt="" width="1536" height="1536"></span><span class="du-monogram-name">Digital Ukhti</span></a>
 
         <div role="group" class="language-switch" aria-label="Choisir la langue"><a href="../" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="./" lang="fr" hreflang="fr" aria-current="true">FR</a><span aria-hidden="true">|</span><a href="../en/" lang="en" hreflang="en">EN</a></div>
         <div class="menu">
