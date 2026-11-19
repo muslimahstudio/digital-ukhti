@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect your own domain | Digital Ukhti</title>
+
+    <meta name="description"
+          content="Learn how domains, DNS and HTTPS work and how to connect a custom domain to GitHub Pages.">
+
+    <link rel="stylesheet" href="/styles.css?v=20261003">
+    <link rel="stylesheet" href="/design.css">
+    <script defer src="/design.js"></script>
+<link rel="canonical" href="https://digitalukhti.com/en/leccion-10-conecta-tu-dominio.html">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/leccion-10-conecta-tu-dominio.html">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/leccion-10-conecta-tu-dominio.html">
+<link rel="alternate" hreflang="x-default" href="https://digitalukhti.com/leccion-10-conecta-tu-dominio.html">
+<link rel="stylesheet" href="/language.css">
+<script defer src="/language.js"></script>
+<link rel="alternate" hreflang="en" href="https://digitalukhti.com/en/leccion-10-conecta-tu-dominio.html">
+</head>
+
+<body class="du-site">
+
+<header>
+    <nav>
+
+        <a href="index.html" class="brand">DIGITAL UKHTI</a>
+
+        <div role="group" class="language-switch" aria-label="Choose language"><a href="/leccion-10-conecta-tu-dominio.html" lang="es" hreflang="es">ES</a><span aria-hidden="true">|</span><a href="/fr/leccion-10-conecta-tu-dominio.html" lang="fr" hreflang="fr">FR</a><span aria-hidden="true">|</span><a href="/en/leccion-10-conecta-tu-dominio.html" lang="en" hreflang="en" aria-current="true">EN</a></div><div class="menu">
+            <a href="index.html">Home</a>
+            <a href="aprende.html">Learn</a>
+            <a href="guias.html">Resources</a>
+            <a href="servicios.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html#about">About Digital Ukhti</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+    </nav>
+</header>
+
+
+<main>
+
+    
+
+    <section class="lesson-hero">
+
+        <a href="aprende-diseno-web.html" class="lesson-back">← Web design from scratch</a>
+
+        <p class="section-label">LESSON 10 · DOMAINS AND DNS</p>
+
+        <h1>Connect your own domain</h1>
+
+        <p class="lesson-intro">Your website has a structure, a design and several pages. Now you’ll learn how a domain gives visitors a professional address for your project.</p>
+
+        <div class="lesson-meta">
+            <span>Level · Beginner</span>
+            <span>Time · 25–35 min</span>
+            <span>Path · Web design</span>
+        </div>
+
+    </section>
+
+
+    <article class="lesson-content">
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">01</p>
+
+            <h2>What is a domain?</h2>
+
+            <p>A domain is a name people enter in their browsers to reach a website.</p>
+
+            <p>Here’s an example:</p>
+
+            <div class="lesson-code">
+www.example.com
+            </div>
+
+            <p>A recognisable name is easier to remember than a technical address.</p>
+
+            <div class="lesson-note">Think of the domain as the address visitors use to reach your site.</div>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">02</p>
+
+            <h2>Domains and hosting</h2>
+
+            <p>Each plays a different role in getting your website online.</p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p><strong>Domain</strong> — the address visitors use to find your website.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p><strong>Hosting</strong> — the service that stores and serves your website files.</p>
+                </div>
+
+            </div>
+
+            <p>If you publish with GitHub Pages, GitHub can serve those files for you.</p>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">03</p>
+
+            <h2>What is DNS?</h2>
+
+            <p>DNS stands for <strong>Domain Name System</strong>.</p>
+
+            <p>DNS records help direct traffic for a domain to the appropriate service.</p>
+
+            <p>Here’s a simple way to picture it:</p>
+
+            <div class="lesson-code">
+example.com<br>
+↓<br>
+DNS<br>
+↓<br>
+server or hosting service
+            </div>
+
+            <div class="lesson-note">Connecting a domain usually involves updating some DNS records with the provider that manages it.</div>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">04</p>
+
+            <h2>The root domain and www</h2>
+
+            <p>These addresses are related and may use different DNS records.</p>
+
+            <div class="lesson-code">
+example.com<br>
+www.example.com
+            </div>
+
+            <p>The first is called the root domain or apex domain.</p>
+
+            <p><strong>www</strong> is a subdomain.</p>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">05</p>
+
+            <h2>Add your domain in GitHub Pages</h2>
+
+            <p>If you use GitHub Pages, add the custom domain in the repository settings before directing DNS traffic to GitHub.</p>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Open your project repository.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Go to <strong>Settings</strong>.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Open <strong>Pages</strong>.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Find <strong>Custom domain</strong>.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Enter the domain you want to use and save it.</p>
+                </div>
+
+            </div>
+
+            <p>Once you configure the DNS records, GitHub can check them.</p>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">06</p>
+
+            <h2>Configure the DNS records</h2>
+
+            <p>Open the DNS settings at the provider that manages your domain.</p>
+
+            <p>The records you need depend on whether you’re connecting the root domain or a subdomain such as <code>www</code>.</p>
+
+            <div class="lesson-note">Check the platform’s current documentation before adding DNS records. IP addresses and other values in older tutorials may have changed.</div>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">07</p>
+
+            <h2>What is a CNAME record?</h2>
+
+            <p>A <strong>CNAME</strong> record lets one name, such as a subdomain, point to another domain name.</p>
+
+            <p>For a GitHub Pages site, you might point:</p>
+
+            <div class="lesson-code">
+www
+            </div>
+
+            <p>to an address like:</p>
+
+            <div class="lesson-code">
+username.github.io
+            </div>
+
+            <p>The exact destination depends on the account or organisation hosting the site.</p>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">08</p>
+
+            <h2>DNS changes can take time</h2>
+
+            <p>After you update a record, the change may take time to appear everywhere.</p>
+
+            <p>This is commonly called <strong>DNS propagation</strong>.</p>
+
+            <div class="lesson-note">If a change hasn’t taken effect yet, double-check the records and give the update time to propagate before editing them again.</div>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">09</p>
+
+            <h2>Enable HTTPS</h2>
+
+            <p>HTTPS encrypts the connection between the browser and the website.</p>
+
+            <p>After GitHub Pages checks the domain and HTTPS is available, look for <strong>Enforce HTTPS</strong> in Pages settings.</p>
+
+            <p>Your site should use an address such as:</p>
+
+            <div class="lesson-code">
+https://example.com
+            </div>
+
+            <p>rather than the unencrypted HTTP address:</p>
+
+            <div class="lesson-code">
+http://example.com
+            </div>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">10</p>
+
+            <h2>Check the versions of your address</h2>
+
+            <p>When setup is complete, test the addresses that apply to your configuration.</p>
+
+            <div class="lesson-code">
+https://example.com<br>
+https://www.example.com
+            </div>
+
+            <p>Make sure each one takes visitors to the primary address you set up.</p>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">11</p>
+
+            <h2>Common mistakes</h2>
+
+            <div class="lesson-steps">
+
+                <div>
+                    <span>01</span>
+                    <p>Misspelling the domain name.</p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <p>Using the wrong DNS record.</p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <p>Leaving conflicting or duplicate records in place.</p>
+                </div>
+
+                <div>
+                    <span>04</span>
+                    <p>Testing before DNS changes have propagated.</p>
+                </div>
+
+                <div>
+                    <span>05</span>
+                    <p>Forgetting to test HTTPS.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block">
+
+            <p class="lesson-number">12</p>
+
+            <h2>Check what each record does before changing it</h2>
+
+            <p>Your DNS panel may contain records for other services.</p>
+
+            <p>For example, some records may be used for your domain’s email.</p>
+
+            <div class="lesson-note">Identify what an existing record does before removing it. Keep the records that your other services still need.</div>
+
+        </section>
+
+
+        
+
+        <section class="lesson-block lesson-summary">
+
+            <p class="section-label">SUMMARY</p>
+
+            <h2>What you’ve learned</h2>
+
+            <ul>
+                <li>What a domain is.</li>
+                <li>The difference between a domain and hosting.</li>
+                <li>What DNS does.</li>
+                <li>The difference between the root domain and www.</li>
+                <li>Where to set up a domain in GitHub Pages.</li>
+                <li>What a CNAME record does.</li>
+                <li>Why DNS changes can take time.</li>
+                <li>Why HTTPS matters.</li>
+                <li>Why to test each version of your domain.</li>
+                <li>Why to review DNS records before removing them.</li>
+            </ul>
+
+        </section>
+
+
+        
+
+        <section class="lesson-exercise">
+
+            <p class="section-label">PUT IT INTO PRACTICE</p>
+
+            <h2>Plan your domain connection</h2>
+
+            <p>Walk through the setup so you know what to do when you’re ready to connect a domain.</p>
+
+            <ol>
+                <li>Identify where your website is hosted.</li>
+                <li>Identify where you’d manage your domain.</li>
+                <li>Find your provider’s DNS settings.</li>
+                <li>Find Settings → Pages in GitHub.</li>
+                <li>Locate the Custom domain field.</li>
+                <li>Read the current <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">GitHub Pages documentation on custom domains</a>.</li>
+                <li>Check how to enable HTTPS.</li>
+            </ol>
+
+            <div class="lesson-note"><strong>You can complete this course without buying a domain.</strong> The goal is to understand the steps so you can use them when you’re ready.</div>
+
+        </section>
+
+    </article>
+
+
+    
+
+    <section class="lesson-navigation">
+
+        <div>
+
+            <p>PREVIOUS LESSON</p>
+
+            <a href="leccion-09-varias-paginas-y-enlaces.html">← 09 · Create and connect multiple pages</a>
+
+        </div>
+
+      <div class="lesson-next">
+
+    <p>NEXT LESSON</p>
+
+    <a href="../leccion-11-seo-basico.html" lang="es">11 · Basic SEO before publishing (Spanish) →</a>
+
+</div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 Digital Ukhti</p>
+</footer>
+
+
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
+    });
+}
+</script>
+
+<script defer src="/analytics-consent.js" data-ga-id="G-H5YG9J6S6P"></script>
+</body>
+</html>
