@@ -17,17 +17,27 @@
 .ai-header {max-width:950px;margin:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:12px 20px}
 .ai-header a {display:inline-flex;align-items:center;min-height:44px}
 .ai-actions {display:flex;flex-wrap:wrap;gap:12px}
+#draft-reply {margin-top:16px}
+#draft-reply summary {min-height:44px;padding-block:10px;cursor:pointer;font-weight:600}
+.ai-examples {margin-block:32px}
+.ai-examples ul {padding-inline-start:1.3em}
+.ai-examples li {margin-block:8px}
+@media(max-width:480px){.ai-demo :is(th,td){padding:6px;font-size:.875rem}}
 </style></head>
 <body class="du-site"><header><div class="ai-header"><a class="logo" href="/en/">Digital Ukhti</a><div class="language-switch"><a href="/ai/" lang="es">ES</a><span aria-hidden="true"> | </span><a href="/fr/ai/" lang="fr">FR</a><span aria-hidden="true"> | </span><a href="/en/ai/" lang="en" aria-current="true">EN</a></div></div></header>
 <main class="ai-main"><p class="eyebrow">Automation and AI</p><h1>Digital Ukhti AI</h1><p>A section in development exploring how small businesses can automate repetitive tasks.</p>
 <section class="ai-demo" aria-labelledby="demo-title"><h2 id="demo-title">From a contact form to a tracking sheet</h2><p>This simulation runs in your browser with fictional data. It sends no data and does not connect to Make or Google Sheets.</p>
 <p><strong>Name:</strong> Maria Example<br><strong>Subject:</strong> Website quote request</p>
 <button class="button-primary" type="button" id="simulate">Simulate an enquiry</button>
-<div id="simulation-result" role="status"><table id="tracking-sheet" hidden><thead><tr><th scope="col">Name</th><th scope="col">Subject</th><th scope="col">Date received</th></tr></thead><tbody><tr><td>Maria Example</td><td>Website quote request</td><td id="received-date"></td></tr></tbody></table></div>
-</section><div class="ai-actions"><a class="button-primary" href="/en/?servicio=ia#contact">Tell me what task you’d like to automate</a><a class="button-secondary" href="/en/servicios.html">Back to Services</a></div></main>
+<div id="simulation-result" role="status"><table id="tracking-sheet" hidden><thead><tr><th scope="col">Name</th><th scope="col">Subject</th><th scope="col">Date received</th><th scope="col">Status</th></tr></thead><tbody><tr><td>Maria Example</td><td>Website quote request</td><td id="received-date"></td><td>Pending</td></tr></tbody></table></div>
+<details id="draft-reply" hidden><summary>View draft reply</summary><h3>Draft for review</h3><p>Hi Maria. Thanks for requesting a website quote. Which services would you like to showcase, and do you already have a website? That will help me suggest the next step.</p><p>This reply uses a sample template and stays within the demo.</p></details>
+</section>
+<section class="ai-examples" aria-labelledby="automation-examples"><h2 id="automation-examples">What could you automate in your business?</h2><ul><li>Organise quote requests in a tracking sheet.</li><li>Identify enquiries still waiting for a reply.</li><li>Prepare draft replies to review before sending.</li></ul></section>
+<div class="ai-actions"><a class="button-primary" href="/en/?servicio=ia#contact">Tell me what task you’d like to automate</a><a class="button-secondary" href="/en/servicios.html">Back to Services</a></div></main>
 <script>
 document.getElementById('simulate').addEventListener('click', () => {
   document.getElementById('received-date').textContent = new Intl.DateTimeFormat(document.documentElement.lang, {dateStyle:'medium'}).format(new Date());
   document.getElementById('tracking-sheet').hidden = false;
+  document.getElementById('draft-reply').hidden = false;
 });
 </script></body></html>
