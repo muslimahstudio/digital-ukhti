@@ -217,7 +217,9 @@ body.du-site .du-monogram img {position:absolute;max-width:none;width:204.8%;hei
   const tasks = new Map([["organizar","Organising the enquiries I receive"],["seguimiento","Remembering to follow up"],["responder","Answering recurring questions"]]);
   const task = tasks.get(params.get('tarea'));
   const message = document.getElementById('en-message');
-  if (task && message && !message.value) {
+  if (params.get('tarea') === 'otra' && message && !message.value) {
+    message.value = "The task I repeat:\nThe tools I use:\nWhat I’d like to simplify:";
+  } else if (task && message && !message.value) {
     message.value = "Task I’d like to automate: " + task + "\n\nHere’s how I do it today:\n";
   }
 })();
