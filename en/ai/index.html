@@ -28,6 +28,10 @@
 #ai-task-diagnostic summary {min-height:44px;padding-block:12px;cursor:pointer;font-weight:600}
 #ai-task-diagnostic details p {margin-bottom:12px}
 #ai-task-diagnostic details a {margin-bottom:16px}
+#ai-process {margin-block:32px}
+#ai-process ol {padding-inline-start:1.5em}
+#ai-process li {margin-block:16px;padding-inline-start:.25em}
+#ai-process h3 {margin:0 0 4px}
 </style></head>
 <body class="du-site"><header><div class="ai-header"><a class="logo" href="/en/">Digital Ukhti</a><div class="language-switch"><a href="/ai/" lang="es">ES</a><span aria-hidden="true"> | </span><a href="/fr/ai/" lang="fr">FR</a><span aria-hidden="true"> | </span><a href="/en/ai/" lang="en" aria-current="true">EN</a></div></div></header>
 <main class="ai-main"><p class="eyebrow">Automation and AI</p><h1>Digital Ukhti AI</h1><p>A section in development exploring how small businesses can automate repetitive tasks.</p>
@@ -57,7 +61,15 @@
     <a class="button-secondary" href="/en/?servicio=ia&amp;tarea=responder#contact">Tell me how you do it today</a>
   </details>
 </section>
-<div class="ai-actions"><a class="button-primary" href="/en/?servicio=ia#contact">Tell me what task you’d like to automate</a><a class="button-secondary" href="/en/servicios.html">Back to Services</a></div></main>
+<section id="ai-process" aria-labelledby="ai-process-title">
+  <h2 id="ai-process-title">How could we turn your idea into an automation?</h2>
+  <ol>
+    <li><h3>Tell me how you do it today</h3><p>What task you repeat, which tools you use and where it takes up the most time.</p></li>
+    <li><h3>Choose a first improvement</h3><p>For example, automatically log enquiries so you can review them in one place.</p></li>
+    <li><h3>Test the workflow with examples</h3><p>We review what works, what needs adjusting and which decisions you want to keep making yourself.</p></li>
+  </ol>
+</section>
+<div class="ai-actions"><a class="button-primary" href="/en/?servicio=ia#contact">Tell me which task you want to simplify</a><a class="button-secondary" href="/en/servicios.html">Back to Services</a></div></main>
 <script>
 document.getElementById('simulate').addEventListener('click', () => {
   document.getElementById('received-date').textContent = new Intl.DateTimeFormat(document.documentElement.lang, {dateStyle:'medium'}).format(new Date());
