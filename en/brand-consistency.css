@@ -1,0 +1,11 @@
+/* English pages: exact brand palette and type scale used by ES/FR. */
+:root{--marfil:#FAF8F4;--beige:#EFEBE5;--negro:#1C1A18;--dorado:#80632F;--dorado-oscuro:#634B23;--blanco:#FFFFFF;--text-muted:#514B45;--border:#D8D1C7;--font-body:'Inter',sans-serif;--font-heading:'Cormorant Garamond',serif;--text-base:1rem;--text-h3:1.75rem;--text-h2:clamp(2rem,3.4vw,3.25rem);--text-h1:clamp(2.5rem,4.5vw,4rem)}
+body{font-family:var(--font-body);font-size:var(--text-base);color:var(--negro);background:var(--marfil)}
+h1,h2,h3{font-family:var(--font-heading);font-weight:500;text-wrap:balance}
+h1{font-size:var(--text-h1);line-height:1.08}h2{font-size:var(--text-h2);line-height:1.15}h3{font-size:var(--text-h3);line-height:1.2}
+p,li{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--dorado);outline-offset:3px}
+.eyebrow{color:var(--text-muted);letter-spacing:.08em;font-size:var(--text-base)}
+.hero{background:var(--beige)}.beige{background:var(--beige)}.contact{background:var(--beige)}
+.button{background:var(--negro);color:var(--blanco)}.button.outline{background:transparent;color:var(--negro);border-color:var(--negro)}
+.card,.service{border-color:var(--border)}.brand{color:var(--negro)}
+footer{background:var(--negro);color:var(--blanco)}
