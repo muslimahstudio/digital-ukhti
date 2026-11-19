@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Ukhti AI | Automatisation et IA</title><meta name="description" content="Une section en cours de développement pour explorer l’automatisation des tâches répétitives dans les petites entreprises.">
+<link rel="canonical" href="https://digitalukhti.com/fr/ai/">
+<link rel="alternate" hreflang="es" href="https://digitalukhti.com/ai/">
+<link rel="alternate" hreflang="fr" href="https://digitalukhti.com/fr/ai/">
+<link rel="alternate" hreflang="en" href="https://digitalukhti.com/en/ai/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="/styles.css?v=20261119-mobile-controls"><link rel="stylesheet" href="/design.css"><link rel="stylesheet" href="/language.css">
+<style>
+.ai-main {max-width:950px;margin:auto;padding:clamp(24px,6vw,70px) clamp(20px,5vw,48px)}
+.ai-main h1,.ai-main h2 {margin-block:12px}
+.ai-demo {margin-block:32px;padding:clamp(16px,4vw,30px);background:var(--blanco);border:1px solid var(--border);border-radius:var(--radius-card)}
+.ai-demo button {margin-block:16px;cursor:pointer}
+.ai-demo table {width:100%;table-layout:fixed;border-collapse:collapse;text-align:left;margin-top:12px}
+.ai-demo :is(th,td) {padding:8px;border:1px solid var(--border);overflow-wrap:anywhere;vertical-align:top}
+.ai-header {max-width:950px;margin:auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:12px 20px}
+.ai-header a {display:inline-flex;align-items:center;min-height:44px}
+.ai-actions {display:flex;flex-wrap:wrap;gap:12px}
+</style></head>
+<body class="du-site"><header><div class="ai-header"><a class="logo" href="/fr/">Digital Ukhti</a><div class="language-switch"><a href="/ai/" lang="es">ES</a><span aria-hidden="true"> | </span><a href="/fr/ai/" lang="fr" aria-current="true">FR</a><span aria-hidden="true"> | </span><a href="/en/ai/" lang="en">EN</a></div></div></header>
+<main class="ai-main"><p class="eyebrow">Automatisation et IA</p><h1>Digital Ukhti AI</h1><p>Une section en cours de développement pour explorer l’automatisation des tâches répétitives dans les petites entreprises.</p>
+<section class="ai-demo" aria-labelledby="demo-title"><h2 id="demo-title">Du formulaire au tableau de suivi</h2><p>Simulation avec des données fictives. Elle s’exécute dans votre navigateur, sans envoyer de données ni se connecter à Make ou Google Sheets.</p>
+<p><strong>Nom:</strong> Marie Exemple<br><strong>Objet:</strong> Devis pour un site web</p>
+<button class="button-primary" type="button" id="simulate">Simuler une demande</button>
+<div id="simulation-result" role="status"><table id="tracking-sheet" hidden><thead><tr><th scope="col">Nom</th><th scope="col">Objet</th><th scope="col">Date de réception</th></tr></thead><tbody><tr><td>Marie Exemple</td><td>Devis pour un site web</td><td id="received-date"></td></tr></tbody></table></div>
+</section><div class="ai-actions"><a class="button-primary" href="/fr/?servicio=ia#contacto">Parlez-moi d’une tâche à automatiser</a><a class="button-secondary" href="/fr/servicios.html">Retour aux services</a></div></main>
+<script>
+document.getElementById('simulate').addEventListener('click', () => {
+  document.getElementById('received-date').textContent = new Intl.DateTimeFormat(document.documentElement.lang, {dateStyle:'medium'}).format(new Date());
+  document.getElementById('tracking-sheet').hidden = false;
+});
+</script></body></html>
