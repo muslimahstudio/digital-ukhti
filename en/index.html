@@ -5,6 +5,18 @@ body.du-home header .menu{margin-left:0}body.du-home .hero .eyebrow{font-size:va
 </style><style>body.du-site .du-consent-settings {min-height:44px}
 body.du-site .du-home-revision-link {display:inline-flex;align-items:center;justify-content:center;min-height:44px}
 body.du-site.du-home .hero-buttons a {min-height:44px}
+body.du-site.du-home > .du-mobile-contact {display:none}
+@media (min-width:1200px) {
+  body.du-site.du-home header .menu {display:flex;position:static;width:auto;flex-direction:row;align-items:center;gap:clamp(.65rem,1.4vw,1.4rem);padding:0;background:transparent}
+  body.du-site.du-home header .menu-toggle {display:none}
+  body.du-site.du-home header > nav {gap:1rem}
+}
+@media (max-width:380px) {
+  body.du-site.du-home header > nav {display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:.5rem}
+  body.du-site.du-home header .logo {grid-column:1;grid-row:1}
+  body.du-site.du-home header .menu-toggle {grid-column:2;grid-row:1}
+  body.du-site.du-home header .language-switch {grid-column:1/-1;grid-row:2;justify-self:start}
+}
 body.du-site.du-home .menu a {min-height:44px;display:inline-flex;align-items:center}
 body.du-site .du-faq summary,body.du-site .du-package-details summary,body.du-site .du-method-details summary {min-height:44px;padding-block:10px;box-sizing:border-box}
 body.du-site.du-home .du-faq p {max-width:44ch}
