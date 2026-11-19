@@ -1,23 +1,21 @@
-/* English homepage parity with Spanish homepage */
-.resources-section{padding:75px max(6%,calc((100% - 1120px)/2));background:#faf8f4;color:#1c1a18}
-.resources-section:nth-of-type(even){background:#f4f0e9}
-.resources-section .contact-eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#80632f}
-.resources-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(34px,4vw,54px);line-height:1.13;margin:16px 0 20px}
-.resources-section .resources-intro{max-width:850px;margin:0 0 28px;line-height:1.8}
-.resources-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:35px 0}
-.resource-card{border:1px solid #d8cfc2;padding:30px;background:#fff;min-width:0}
-.resource-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:31px;margin:12px 0}
-.resource-card .package-name{font-size:12px;letter-spacing:.16em;color:#80632f}
-.resource-card .package-price{font-size:28px;font-weight:700;color:#80632f;margin:20px 0}
-.resource-card .package-audience{line-height:1.65}
-.resource-card a{color:#80632f}
-.du-package-details{margin-top:20px}
-.du-package-details summary{cursor:pointer;font-weight:600}
-.du-package-details li{margin:10px 0}
-.du-pending{font-size:13px;line-height:1.6}
-.du-faq{max-width:850px;margin:30px auto 0}
-.du-faq details{border-bottom:1px solid #d8cfc2;padding:18px 0}
-.du-faq summary{cursor:pointer;font-weight:600}
-.du-faq details p{line-height:1.75}
-.resources-section .button-primary{display:inline-block;background:#80632f;color:#fff;text-decoration:none;padding:15px 24px}
-@media(max-width:760px){.resources-section{padding:55px 6%}.resources-grid{grid-template-columns:1fr}.resource-card{padding:25px}.resources-section h2{font-size:38px}}
+/* English homepage uses the same shared components as the Spanish homepage. */
+.du-home .home-services-grid .home-service-photo{display:block;width:100%;height:auto;aspect-ratio:8/5;object-fit:cover;border-radius:8px;margin:0 0 18px}
+.du-home .home-offer .home-service-actions{display:flex;flex-direction:column;gap:12px;margin-top:auto;padding-top:8px}
+.du-home .home-offer .home-service-actions a{color:var(--negro);font-size:12px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;line-height:1.5}
+.du-home .home-offer .home-service-actions a:hover{text-decoration:underline}
+.du-home #free-diagnostic{background:var(--beige)}
+.du-home #process .home-services-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+.du-home #english-contact-form{max-width:850px;gap:30px}
+.du-home .contact-section .contact-response-time{max-width:850px;margin-left:auto;margin-right:auto}
+.du-home .resource-card .package-price{font-family:var(--font-heading);font-size:clamp(26px,3vw,35px);font-weight:500;color:var(--negro)}
+.du-home .home-portfolio .project-preview-content{display:flex;flex-direction:column}
+.du-home .home-portfolio .project-preview-content a{align-self:flex-start}
+@media(max-width:1100px){.du-home #process .home-services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .du-home #process .home-services-grid{grid-template-columns:1fr}
+ .du-home #english-contact-form{gap:30px}
+ .du-home .contact-section #english-contact-form button{width:100%;justify-self:stretch}
+ .du-home #english-contact-form input:not([type=hidden]),.du-home #english-contact-form select,.du-home #english-contact-form textarea{padding:16px 18px}
+ .du-home .du-inline-quote{position:static}
+ .du-home .du-consent-settings{right:12px!important;bottom:12px!important}
+}
