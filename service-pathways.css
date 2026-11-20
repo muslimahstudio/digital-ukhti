@@ -1,0 +1,26 @@
+.service-pathways {
+    margin-block: 1.5rem 2rem;
+}
+
+.service-pathways > h2 {
+    margin-block: 0 0.75rem;
+}
+
+.service-pathways-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.du-site .service-pathways-links a {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 44px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .service-pathways-links {
+        flex-direction: column;
+    }
+}
