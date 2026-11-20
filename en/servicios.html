@@ -48,6 +48,34 @@ body.du-site .du-full-terms .package-price {font-size:var(--text-xl);font-weight
 body.du-site .du-full-terms .du-package-details ul {padding-inline-start:1.4em}
 body.du-site .du-full-terms .du-method-materials {margin-block:1.5rem}
 body.du-site #du-contact-options[hidden] {display:none}
+
+@media (max-width: 767px) {
+    body.du-site:has(.du-services-start) {
+        padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)) !important;
+    }
+
+    body.du-site .du-services-start {
+        position: fixed;
+        z-index: 9500;
+        inset-inline: 12px 106px;
+        bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+        padding: 0;
+        background: transparent;
+    }
+
+    body.du-site .du-services-start a {
+        min-height: 48px;
+    }
+
+    body.du-site:has(.du-services-start) .du-consent-settings {
+        bottom: calc(12px + env(safe-area-inset-bottom, 0px)) !important;
+        min-height: 48px;
+    }
+
+    body.du-site:has(.du-consent) .du-services-start {
+        display: none;
+    }
+}
 </style>    <link rel="stylesheet" href="/service-pathways.css?v=compact">
 </head>
 
@@ -237,7 +265,7 @@ body.du-site #du-contact-options[hidden] {display:none}
     <p>© 2026 Digital Ukhti</p>
   </div>
 </footer>
-<div class="du-inline-quote"><a href="index.html#contact">Request a quote</a></div>
+<div class="du-inline-quote du-services-start"><a href="index.html#contact">Start</a></div>
 
 
 <script>
