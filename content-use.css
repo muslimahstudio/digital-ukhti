@@ -1,0 +1,48 @@
+.du-content-use {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: min(42rem, calc(100% - 2rem));
+    max-height: 85vh;
+    max-height: 85dvh;
+    overflow: auto;
+    padding: clamp(1rem, 4vw, 2rem);
+    border: 1px solid #d8cbb7;
+    border-radius: 0.75rem;
+    background: #faf7f0;
+    color: #211e19;
+}
+
+.du-content-use::backdrop {
+    background: rgb(0 0 0 / 65%);
+}
+
+.du-content-use form {
+    float: right;
+    margin: 0 0 0.5rem 0.75rem;
+}
+
+.du-content-use button {
+    display: grid;
+    place-items: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    border: 1px solid currentColor;
+    border-radius: 0.25rem;
+    background: transparent;
+    color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.du-content-use h2 {
+    margin: 0 0 1rem;
+}
+
+.du-content-use p {
+    clear: both;
+    margin: 0 0 0.75rem;
+    line-height: 1.6;
+}

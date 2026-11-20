@@ -38,7 +38,8 @@ body.du-site .logo.du-monogram {display:inline-flex;flex:0 0 auto;flex-direction
 body.du-site .du-monogram-art {display:block;position:relative;width:48px;height:48px;overflow:hidden;mix-blend-mode:multiply}
 body.du-site .du-monogram-name {font-size:1rem;font-weight:600;letter-spacing:.035em;white-space:nowrap}
 body.du-site .du-monogram img {position:absolute;max-width:none;width:204.8%;height:auto;left:-52%;top:-30.8%;display:block}
-</style></head><body class="du-site du-home"><header>
+</style><link rel="stylesheet" href="/content-use.css">
+</head><body class="du-site du-home"><header>
     <nav>
 
         <a class="logo du-monogram" href="./" aria-label="Digital Ukhti, home"><span class="du-monogram-art"><img src="/images/brand/digital-ukhti-monogram-source.jpg" alt="" width="1536" height="1536"></span><span class="du-monogram-name">Digital Ukhti</span></a>
@@ -210,8 +211,18 @@ body.du-site .du-monogram img {position:absolute;max-width:none;width:204.8%;hei
 <nav class="du-footer-links" aria-label="Footer navigation"><a href="servicios.html">Services</a><a href="portfolio.html">Portfolio</a><a href="index.html#process">How I Work</a><a href="#contact">Contact</a><a href="aprende.html">Learn</a><a href="guias.html" id="free-diagnostic">Resources</a></nav>
 <p><a href="mailto:holadigitalukhti@gmail.com">holadigitalukhti@gmail.com</a></p>
 <div class="du-footer-language" aria-label="Choose language"><span>Language:</span><a href="../index.html" lang="es">Español</a><a href="../fr/index.html" lang="fr">Français</a><a href="index.html" lang="en" aria-current="page">English</a></div>
-<nav class="du-footer-links" aria-label="Legal information"><a href="/en/privacidad.html">Privacy policy</a><a href="/en/aviso-legal.html">Legal notice</a></nav>
+<nav class="du-footer-links" aria-label="Legal information"><a href="/en/privacidad.html">Privacy policy</a><a href="/en/aviso-legal.html">Legal notice</a>
+      <a href="/en/aviso-legal.html#uso-contenido" data-content-use>Use of content</a></nav>
 <p>© 2026 Digital Ukhti</p></div></footer>
+<dialog class="du-content-use" aria-labelledby="du-content-use-title">
+  <form method="dialog"><button type="submit" aria-label="Close" autofocus>×</button></form>
+  <h2 id="du-content-use-title">Use of content</h2>
+  <p>You can read the lessons and guides, apply what you learn to your own business and share links to the original pages.</p>
+<p>You can adapt downloadable templates and publish the finished result as part of your own business. Ask for permission before reselling or redistributing the files, even if you modify them. If a resource comes with its own usage terms, those terms apply.</p>
+<p>You can view the portfolio and demos and share their links. Ask the rights holder for permission before reusing their text, images or designs in another project.</p>
+<p>Third-party rights and exceptions under applicable law still apply.</p>
+</dialog>
+<script src="/content-use.js" defer></script>
 <div class="du-inline-quote"><a href="#contact">Request a quote</a></div><script>const menuToggle=document.querySelector(".menu-toggle");const menu=document.querySelector("header .menu");menuToggle.addEventListener("click",()=>{const open=menu.classList.toggle("active");menuToggle.setAttribute("aria-expanded",String(open));});menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{menu.classList.remove("active");menuToggle.setAttribute("aria-expanded","false")}));</script><script>(function(){const form=document.getElementById('english-contact-form');const status=document.getElementById('english-form-status');const service=new URLSearchParams(location.search).get('servicio');const values={web:'Diseño y desarrollo web',analisis:'Análisis de presencia digital',seo:'SEO y optimización web',mercado:'Estudio de mercado',ia:'Automatización e IA',qr:'Código QR para reseñas de Google'};if(Object.prototype.hasOwnProperty.call(values,service))form.elements.proyecto.value=values[service];form.addEventListener('submit',async function(event){event.preventDefault();const button=form.querySelector('button[type=submit]');button.disabled=true;status.hidden=true;try{const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});if(response.ok){sessionStorage.setItem('du-lead-submitted','1');window.location.assign('gracias.html');return;}else{status.textContent='Your enquiry could not be confirmed. Please try again. Your message is still in the form.';status.hidden=false;}}catch(error){status.textContent='Your message could not be sent. Check your connection and try again. Your text has been kept.';status.hidden=false;}finally{button.disabled=false;}})})();</script><script defer src="/analytics-consent.js?v=english-legal" data-ga-id="G-H5YG9J6S6P"></script><script id="ai-task-diagnostic">
 (() => {
   const params = new URLSearchParams(location.search);
