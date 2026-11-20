@@ -1,37 +1,26 @@
 .service-pathways {
-    margin-block: 2rem 3rem;
-    text-align: start;
+    margin-block: 1.5rem 2rem;
 }
 
 .service-pathways > h2 {
-    margin-block: 0 1rem;
-}
-
-.service-pathways-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-}
-
-.service-pathways-grid .resource-card {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-}
-
-.service-pathways-grid .resource-card h3 {
-    line-height: 1.25;
     margin-block: 0 0.75rem;
 }
 
-.service-pathways-grid .resource-card a {
-    align-self: flex-start;
-    margin-top: auto;
-    min-height: 44px;
+.service-pathways-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
 }
 
-@media (max-width: 768px) {
-    .service-pathways-grid {
-        grid-template-columns: minmax(0, 1fr);
+.du-site .service-pathways-links a {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 44px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .service-pathways-links {
+        flex-direction: column;
     }
 }
