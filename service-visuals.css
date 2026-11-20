@@ -1,4 +1,4 @@
-body.du-site .services-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;grid-auto-rows:1fr;gap:20px}
+body.du-site .services-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;grid-auto-rows:auto;gap:20px}
 body.du-site .services-page .service-card{min-width:0;padding:24px;min-height:0}
 body.du-site .services-page .service-card h2{font-size:27px;margin-bottom:12px;line-height:1.15}
 body.du-site .services-page .service-card p{font-size:15px;line-height:1.55;margin-bottom:18px}
