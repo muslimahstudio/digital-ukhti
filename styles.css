@@ -3864,9 +3864,6 @@ div.home-service-item > p {
 }
 
 .courses-benefits > div {
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    align-items: center;
     padding: 22px 0;
     border-bottom: 1px solid #cfc7b8;
 }
